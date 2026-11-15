@@ -1,0 +1,23 @@
+{
+  "model": "roneneldan/TinyStories-8M",
+  "temperature": 0.8,
+  "top_k": 50,
+  "max_new_tokens": 80,
+  "stories": [
+    {
+      "prompt": "Once upon a time, there was a little girl named Lily.",
+      "seed": 1234,
+      "text": "Once upon a time, there was a little girl named Lily. She loved to play outside, but it was very cold. So, she decided to go to the park and play on the swings. \n\nWhen she got there, she saw a big dog. The dog was very playful and had a wagging tail. Lily wanted to play with the dog, but the dog wouldn't let her. \n\nSuddenly, a boy came running and yelled"
+    },
+    {
+      "prompt": "Tom and his dog went to the park. They saw",
+      "seed": 1235,
+      "text": "Tom and his dog went to the park. They saw a big slide. It was shiny and fun. Tom wanted to slide down the slide. He ran to the slide and started to go fast.\n\nBut when he got to the slide, he saw something bad. A big dog was biting him. The dog had a big mouth and many sharp teeth. Tom was scared. He wanted to run away, but the dog took a bite and bit"
+    },
+    {
+      "prompt": "One day, a small rabbit found a shiny red ball.",
+      "seed": 1236,
+      "text": "One day, a small rabbit found a shiny red ball. He wanted to play with it, so he started to roll it very fast. But the ball was too big for him to roll very far.\n\nJust then, a kind bird saw the rabbit and said, \"Little rabbit, why are you so sad?\" The rabbit replied, \"I want to play with the red ball, but it's too big for me to roll.\" The bird said"
+    }
+  ]
+}

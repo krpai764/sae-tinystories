@@ -1,0 +1,11 @@
+{
+  "batch": 32,
+  "seq_len": 256,
+  "layer": 3,
+  "forward_seconds": {
+    "cpu": 2.969845883400558,
+    "mps": 1.3870157334000397
+  },
+  "faster": "mps",
+  "speedup_mps_over_cpu": 2.141176781117307
+}

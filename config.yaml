@@ -14,8 +14,8 @@ device:
   speed_test_repeats: 20
 
 model:
-  name: null                # chosen in Stage 1 after checking which roneneldan/TinyStories-* IDs exist
-  layer: null               # middle layer, chosen in Stage 1
+  name: roneneldan/TinyStories-8M  # 8 blocks, width 256, 19.7M params (chosen in Stage 1)
+  layer: 3                  # residual stream after block 3 (0-indexed) = midpoint of 8 blocks
   max_seq_len: 256
 
 data:
@@ -34,6 +34,10 @@ sae:
   dead_fraction_resample: 0.1
 
 generation:
-  prompts: []               # fixed prompts, set in Stage 1
+  seed: 1234                # same seed + prompt -> same story
+  prompts:
+    - "Once upon a time, there was a little girl named Lily."
+    - "Tom and his dog went to the park. They saw"
+    - "One day, a small rabbit found a shiny red ball."
   max_new_tokens: 80
   temperature: 0.8
