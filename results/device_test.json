@@ -1,0 +1,32 @@
+{
+  "torch_version": "2.15.0",
+  "repeats": 20,
+  "shapes": {
+    "square": {
+      "shape": [
+        2048,
+        2048,
+        2048
+      ],
+      "cpu_ms": 29.67839169996296,
+      "cpu_gflops": 578.8679305024956,
+      "mps_ms": 21.728031250040658,
+      "mps_gflops": 790.6776728318564,
+      "speedup_mps_over_cpu": 1.3659033972489993
+    },
+    "sae_encoder_4096x512x4096": {
+      "shape": [
+        4096,
+        512,
+        4096
+      ],
+      "cpu_ms": 34.45556665001277,
+      "cpu_gflops": 498.6093933240721,
+      "mps_ms": 25.830333299927588,
+      "mps_gflops": 665.1044330135749,
+      "speedup_mps_over_cpu": 1.333918778744886
+    }
+  },
+  "mps_available": true,
+  "faster_overall": "mps"
+}

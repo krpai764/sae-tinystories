@@ -1,0 +1,19 @@
+# environment
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.DS_Store
+
+# data and checkpoints (large, regenerable)
+data/
+activations/
+checkpoints/
+*.npy
+*.memmap
+*.pt
+*.pth
+*.safetensors
+*.bin
+.cache/
+hf_cache/

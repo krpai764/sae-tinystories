@@ -1,0 +1,39 @@
+# Single source of truth for every setting. Scripts read this via src/config.py.
+seed: 1234
+
+paths:
+  data_dir: data            # token ids, activation memmaps (git-ignored)
+  checkpoint_dir: checkpoints
+  results_dir: results
+  figures_dir: figures
+  hf_cache_dir: hf_cache    # keeps downloaded models/datasets inside the project
+
+device:
+  preferred: mps            # auto | cpu | mps ; mps won the Stage 0 matmul test narrowly, re-check in Stage 1 on the real model
+  speed_test_matrix: 2048   # size of matmul used in scripts/device_test.py
+  speed_test_repeats: 20
+
+model:
+  name: null                # chosen in Stage 1 after checking which roneneldan/TinyStories-* IDs exist
+  layer: null               # middle layer, chosen in Stage 1
+  max_seq_len: 256
+
+data:
+  dataset: roneneldan/TinyStories
+  train_split: train
+  heldout_split: validation # never used to train the SAE
+  num_train_tokens: 3000000 # Stage 2 target (2-5M)
+  num_heldout_tokens: 200000
+
+sae:
+  expansion: 8              # dictionary size = 8 x model width
+  lr: 3.0e-4
+  batch_size: 4096
+  l1_coeffs: []             # four values, found by a short trial in Stage 3
+  dead_window_batches: 5000
+  dead_fraction_resample: 0.1
+
+generation:
+  prompts: []               # fixed prompts, set in Stage 1
+  max_new_tokens: 80
+  temperature: 0.8
