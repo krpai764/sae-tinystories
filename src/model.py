@@ -93,3 +93,14 @@ def get_activations(model, input_ids: torch.Tensor, layer: int) -> torch.Tensor:
     with residual_hook(model, layer, store=store):
         model(input_ids)
     return store[0]
+
+
+@torch.no_grad()
+def shuffle_weights(model, seed: int):
+    """Random-model control (Bricken et al. 2023): shuffle the entries of every parameter
+    tensor independently. Keeps each weight's value distribution, destroys learned structure."""
+    g = torch.Generator().manual_seed(seed)
+    for p in model.parameters():
+        flat = p.data.view(-1)
+        flat.copy_(flat[torch.randperm(flat.numel(), generator=g)])
+    return model

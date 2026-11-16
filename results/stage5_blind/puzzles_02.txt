@@ -1,0 +1,324 @@
+### P050
+LABEL: ' in' after 'loved to play'
+A.  day on, Lily and her new friend played together every day. They[[ loved]] each other's company
+B.  song was always noticed by the neighborhood birds, which would come and join[[ in]] with their own ch
+C. ⏎⏎The two flew all over the mountain. The little bear delighted[[ in]] all the beauty he
+D.  its way through the soil. ⏎⏎One sunny morning, the[[ seed]]'s work paid off
+E.  new home, Pippin was surprised to see that everything was covered[[ in]] snow and ice.
+F. "Let's find a shelter!" Sue said. "We can hide[[ under]] the slide."⏎
+G.  found the most beautiful fountain. The fountain was so large and sparkled[[ in]] the sunshine. Lucy
+H.  on, it was very careful to stay in the deep ocean and not[[ come]] close to the shore
+I.  the twins.⏎⏎"Hello, Tom and Lily. What do[[ you]] have for me?"
+J.  were all there. ⏎⏎When he was finished, he played[[ his]] guitar and sang his
+
+### P051
+LABEL: ' more' in 'make it more fun/angry'
+A.  the yard. When it was time to go in, she took one[[ last]] swing before going inside
+B. Once upon a time, there was a[[ jet]]. The jet wanted
+C. ?" Ben asks.⏎⏎"We have to squish the grapes[[ with]] our feet!" Lily
+D. cy kept going outside to her pond everyday. She would always find a[[ new]] way to solve the
+E. Of course, Timmy. Just make sure you don't forget anything[[ important]]," his mom replied
+F.  and Ben have a visitor. It is their cousin Lily. Lily is[[ older]] than Anna and Ben
+G. Can I have this pan, mom?" Anna asks, pointing to the[[ big]] pan.⏎⏎
+H. apler to put the papers together. She used the calculator to make[[ some]] numbers. She was
+I.  was a lovely daisy that lived in the garden. Daisy was the[[ most]] successful flower in the
+J.  be fair if one bear got the pick but the other didn't.[[ The]] fox nodded and agreed
+
+### P052
+LABEL: ' bit' in 'a (little) bit scared'
+A.  it. It was even more delicious than it smelled! She took another[[ slice]] and offered it to
+B.  take a closer look, but he was afraid. ⏎⏎N[[emo]] took a deep breath
+C.  Dad said, â€œThat stone is special. You[[ can]]'t pick it.
+D.  day, the doggy was scavenging around looking for something new to[[ chew]]. He stumbled upon
+E.  Whenever they wanted to play, his tail kept wagging! He was[[ the]] happiest dog around!
+F. Anna and Ben[[ love]] to play with blocks
+G. "Who are they?" Lily asks Tom.⏎⏎"I don[['t]] know," Tom says
+H. After that day, Winnie was no longer scared. She felt proud[[ and]] happy that she had
+I. . All of a sudden the tree stopped twisting and backed away from Tony[[a]].⏎⏎Tony
+J.  there was a little lamb named Daisy. She liked to play in the[[ me]]adow and feel the
+
+### P053
+LABEL: ' lived' in 'there lived a ...'
+A.  whisper encouraging words to it. The baby bird answered by singing one little[[ tweet]]. A new friendship
+B. Once upon a time, there was an adventurous little[[ girl]]. She jumped and
+C. , there was a little bird named Jack. Jack was very adventurous and[[ loved]] to explore the world
+D. Once, there was a kind little[[ girl]] called Lucy. One
+E.  you do with your nose?" ⏎⏎Lily thought for a[[ moment]] and then said,
+F. .⏎⏎As she was walking, Ella heard a noise coming[[ from]] behind the trees.
+G. Once there was a little girl named Suz[[ie]]. Suzie was
+H. Once upon a time there[[ lived]] a poor family.
+I. [[Once]] upon a time,
+J. ⏎Just then, he heard a voice from behind. It was a[[ sweet]], melodic voice
+
+### P054
+LABEL: ' The' starting the 2nd sentence, referring back to a just-introduced noun
+A.  They would splash in the water and have a lot of fun together every[[ day]].⏎⏎One
+B. .⏎⏎On his way, he passed a big barn covered by[[ a]] shut gate. The
+C.  found a stick and used it to measure the height of the gate.[[ The]] gate was very high
+D.  he got closer he could see it was a big bird!⏎⏎[[The]] hunter got a little
+E. . She was exploring the world and came across a bush. She observed[[ it]] carefully and saw that
+F.  upon a time there was a little girl. She liked to wink all[[ the]] time. Every day
+G.  side.⏎⏎Suddenly all the lights in the house lit up.[[ The]] little girl was amazed
+H.  and thankful, she had managed to do it using only the spilled milk[[.]] Sarah was so proud
+I.  was a little boy named Timmy. Timmy was very sleepy and[[ wanted]] to go to bed
+J.  named Timmy. Timmy liked to play outside in the grass.[[ His]] mommy and daddy
+
+### P055
+LABEL: ' sang' / ' sing'
+A.  backyard, especially when the sun was shining and the birds were chir[[ping]]. ⏎⏎
+B.  there was a little girl named Lily. She loved to play outside in[[ her]] backyard, but her
+C.  of my slide?"⏎⏎The little girl smiled. "I think[[ it]] was great! You
+D. , he played his guitar and sang his delicious songs. It was a[[ beautiful]] day and everyone stopped
+E.  do something special. She thought of a great idea. She wanted to[[ bow]] like a princess.
+F.  away. Every night, it glowed more and more.⏎⏎[[One]] night, something special
+G.  was all dressed up, the kids ran to the playground. They wanted[[ to]] choose the most exciting
+H.  Everyone laughed and smiled when Sarah arrived. ⏎⏎With a sudden[[ roar]], the flame grew
+I.  He looked around, not knowing where the noise had come from. His[[ mom]] noticed the sound too
+J.  to run towards it, but his leash held him back again. He[[ wh]]ined and tried to
+
+### P056
+LABEL: ' Lily' after 'a little girl named'
+A. .⏎⏎Each day, Joey clapped his hands and the light[[ shone]] in his room.
+B.  But when she opened the door she was surprised to discover a secret magical[[ kingdom]]! There were bears
+C. , there was a stubborn seed. Every day, the seed wanted to[[ bloom]] like all the other
+D. Once upon a time, there was a little boy named Tim[[my]]. Timmy loved
+E. Once upon a time, there lived a little boy called[[ Jack]]. He loved to
+F. ⏎Suddenly they heard a noise coming from the living room. They ran[[ to]] see what was happening
+G.  is important too. We can play again tomorrow."⏎⏎Timmy[[ felt]] sad, but he
+H.  sang at church." Her mom smiled and said, "That's a[[ very]] kind thing to say
+I.  watched them for awhile.⏎⏎Jane stared up at the sky and[[ noticed]] some clouds in the
+J.  always discovering new things. One day, the clumsy bear found some mail[[ in]] the forest. He
+
+### P057
+LABEL: ' little' in 'there was a little boy/girl'
+A.  park when he heard a loud scream. He looked around and saw a[[ little]] boy crying. Harry
+B. Once upon a time, there was a[[ little]] boy named Timmy
+C. Once upon a time, there was a[[ little]] girl called Ruby.
+D.  back towards her. The swan had a surprise for the little girl[[ -]] a beautiful feather!
+E.  thought for a minute and slowly nodded. Together, they looked at the[[ pattern]] and started to make
+F.  back in the jar. Lily felt happy again because she got her t[[eddy]] bear back and her
+G.  a big crane that lifted boxes and put them on the dock. They[[ saw]] another boat with a
+H. Once upon a time, in a[[ small]] town, there was
+I.  was so excited he jumped around in circles. ⏎⏎But then[[ as]] she was cooking the
+J. Once upon a time, in a calm[[ little]] town, there lived
+
+### P058
+LABEL: ' wish'
+A.  bunny felt so proud of himself that he hopped around and around in a[[ circle]], cheering with each
+B.  she loved to wear. One day, she lost her veil and was[[ very]] sad. She looked
+C. Once upon a time, a fluffy k[[itty]] was out for a
+D.  one gift was different. It was a small box with a ring inside[[.]]⏎⏎Sue
+E.  tools and make things. One day, they find a big box of[[ screws]] in the garage.
+F. Molly and her dad had a[[ fun]] morning. They played
+G.  it for him whenever they went grocery shopping. He would spread it onto[[ his]] toast in the morning
+H. , and lines that made pretty pictures.⏎⏎One day, Lucy[[ found]] an apple in her
+I.  She said, "You can draw the dragonfly and send it to[[ your]] dad. He will
+J. , who they shared their adventures with. Freddy learned that it's better[[ to]] be kind and share
+
+### P059
+LABEL: 'After' at the start of a paragraph ('After the game,')
+A.  blew so hard that the bench moved a little bit! The coat slipped[[ off]] the bench and got
+B. . She was scared, but she wanted to see who it was.[[ She]] tiptoed
+C.  up, Timmy. Keep trying," said his dad.⏎⏎[[Finally]], Timmy hit
+D.  splashing all around. It was so much fun! After he was[[ done]], he got back
+E.  to the world saying, "We're here! It's so pretty[[!"]]⏎⏎The jet
+F.  of little bubbles. The little boy had so much fun making bubbles with[[ his]] little pipe!
+G.  quickly turned around and saw a big furry human standing right in front of[[ him]]. The little mouse
+H.  how mummy had comforted him and he felt brave again.⏎⏎[[Eventually]] the sun set and
+I.  bird liked the new home and thanked the people for helping him. The[[ bird]] was so happy that
+J.  also learn from books, games and nature."⏎⏎They reached the[[ park]] and ran to the
+
+### P060
+LABEL: 'apped' completing 'clapped'
+A.  to pick him up right away. When Max saw Sarah, he w[[agged]] his tail and l
+B.  and grabbed the coin, then flew into his nest in the treet[[op]].⏎⏎The
+C.  she loved her teddy bear very much.⏎⏎Lily decided[[ to]] go to the kitchen
+D.  mommy said, "Yes, we can improve the tree. Let[['s]] give it some water
+E. , his thumb had vanished! John's family and friends were amazed and[[ cheered]] with laughter.⏎
+F.  girl called Jane. She loved to dance in the sunshine, feeling the[[ rhythm]] move through her.
+G. .⏎⏎Then they came to the ostriches. Ostric[[hes]] are big birds with
+H.  wanted to show the rainbow to her friend, Tim. So, she[[ ran]] to Tim's house
+I.  and Mia were playing in the tent in the backyard. It was dark[[ outside]] and they had a
+J.  so happy to have its new home! Snowy and the couple were[[ best]] friends and they were
+
+### P061
+LABEL: 'ite' completing kite / excite (duplicate of #23)
+A. That's so cool!" she said.⏎⏎From that day on[[,]] the knight and the
+B.  beautiful flower. It was such a special moment that the boy would never[[ forget]].
+C.  were very happy to hear him sing. They would all come running over[[,]] gather around the elderly
+D.  big piece of paper. Lily was very happy. She wanted to draw[[ something]] yummy on the
+E.  small ball. They throw the balls to each other and catch them.[[⏎]]⏎One day,
+F.  cry. She saw the snake. She was scared, but she was[[ brave]]. She picked up
+G.  for a walk in the park with his mom. Joey's heart filled[[ with]] joy as they walked
+H.  special. ⏎⏎Tim was so excited! He went to his[[ friends]] to tell them all
+I.  outside. Timmy was sad because he missed the lightning. He went[[ outside]] to ride his bike
+J. €œThat was so much fun! I love riding with you[[.]]â€⏎⏎
+
+### P062
+LABEL: First sub-token of a story-initial name (Ab-by, Su-zie)
+A.  only for a little while. Then we have to go home and change[[.]] You are very wet
+B.  girl named Lily. She had a favorite teddy bear named Mr.[[ Sn]]uggles. One
+C.  so big and comfortable," she said. "Can I sit on it[[ now]]?"⏎⏎"
+D.  she wouldn't be able to see the beautiful view anymore.⏎⏎[[J]]ill was scared,
+E. . The knight laughed and smiled and continued to wander around the garden marvel[[ing]] at all the wonders
+F.  if she wanted to join him in the hole. Lizzie said[[ yes]] and so Charlie and
+G. Hudson was a 3 year old boy. He lived in[[ an]] igloo by the
+H.  see a park ranger near the swings. They wave to him and tell[[ him]] about the stuff.
+I.  was something Dad and lily did every day. ⏎Lily[[ skipped]] along, happily matching
+J.  never seen one before and was so excited!⏎⏎Alice tapped the[[ oy]]ster and talked to
+
+### P063
+LABEL: ' no' in 'Oh no'
+A.  you. Timmy learned that it's not about how much money you[[ have]], but how you
+B.  home, Lily saw that her mom's phone was not there anymore.[[ She]] asked her mom,
+C.  The seal smiled, and they played together. They laughed and giggled[[ as]] they splashed around
+D. Once upon a time there was a nation of[[ very]] obedient people. Everyone
+E.  loud. You have to be quiet and go to sleep. You are[[ disturbing]] the silence of the
+F. . He smiled, because he was so glad that the strong bench hadn[['t]] been blown away.
+G.  â€œThank you for being so obedient. You have[[ made]] our nation even more
+H. ."⏎⏎"I'm so sorry," said Billy. "It[[ sounded]] like it broke."
+I.  there was a little girl named Lily. She loved to eat yummy[[ food]] with her fork.
+J.  got dirty and torn.⏎⏎"Look what you did! You[[ broke]] my book!" Tom
+
+### P064
+LABEL: ' fast' in 'too fast'
+A. I want to go on it and see the world."⏎⏎"[[Me]] too," Sue said
+B.  final time. He gave himself a pat on the back for being so[[ smart]] and remembering his lunch
+C.  girl smiled. "I think it was great! You were sliding so[[ fast]]!"⏎⏎The
+D.  hippos. They put on big gray suits and masks. They make[[ loud]] noises and splash water
+E. Philip was looking around his bedroom, feeling bored. He[[ wanted]] to play with something
+F.  me fix my car?" Amy asked. Her mom looked at the broken[[ car]] and said, "
+G.  in the sky. Her mommy told her that the bird always returns[[ to]] its nest to stay
+H.  back.⏎⏎They ran after the dog, but it was too[[ fast]]. They could not
+I.  guitar every day.⏎⏎One day, Tom played his guitar near[[ a]] big tree. A
+J. Once[[ upon]] a time, there
+
+### P065
+LABEL: ' something' after 'noticed'
+A.  too fast for him, and he couldn't catch it. ⏎[[⏎]]As the sun started
+B. ?"⏎⏎Lily smiled and said, "Yes, please!"[[ They]] played on the swings
+C. . Rabbit?"⏎⏎"I'm here to urge you to do[[ something]] magical," he said
+D. , curly hair and the bluest eyes. He would often cry when[[ something]] scared him or if
+E. Once upon a time[[,]] there lived a special
+F.  enjoyed exploring without noise. Around the corner of her garden, she spotted[[ something]] lively. She was
+G.  managed to get the ball from them and started running around with it.[[ Everyone]] was cheering and smiling
+H.  One day, she was walking in the woods when she heard something.[[ It]] sounded like singing.
+I.  fly the kite, so she pulled the string and the kite[[ went]] higher and higher.
+J.  they go to the sandbox. They make a castle and a moat[[.]]⏎⏎But Tom
+
+### P066
+LABEL: ' name'
+A.  helping me," said the little girl. ⏎⏎"You're[[ welcome]]," replied Emma,
+B.  and eventually she finished her homework.⏎⏎Mommy praised her and[[ said]], "You did
+C.  can come out if you want!"⏎⏎So, the fox slowly[[ hopped]] out from the bush
+D.  could carry and set out. ⏎⏎When they reached the garden[[,]] they were amazed and
+E.  the banana, please?" Toto said, "Yes, I can[[ help]] you." So T
+F. 's more fun when we all play together." Tim thought about it and[[ realized]] that Sam was right
+G.  a dependable spot for Benny to hide. Justin smiled, knowing his[[ friend]] was safe.⏎
+H.  to give the toy back. The frog said, "I am sorry[[.]] Please forgive me."
+I. � a big, silver trumpet in a clearing. ⏎⏎The[[ little]] girl couldn't believe
+J.  air. He plucked some flowers and put them behind his ears and[[ gave]] one to his mum
+
+### P067
+LABEL: ' part' in 'be part of the family/band'
+A.  a good job, Sara. You know what? The peanut is not[[ just]] a flower. It
+B.  the sun.⏎⏎Mom watches them from a bench. She smiles[[ and]] takes pictures. She
+C. "I love you too," she said. ⏎⏎Timmy[[ fell]] asleep soon after,
+D.  to the weird pirate?" Nobody knew. ⏎⏎Some people said[[,]] "Maybe he buried
+E. Once upon a time, there was a driver named Tim. Tim[[ drove]] a big truck that
+F. Hello, little bug," said a voice. The bug looked and saw[[ a]] bird sitting on the
+G.  the fun.⏎⏎The lion gratefully joined them and played with[[ the]] children until sunset.
+H. rot burst from the darkness. The parrot warned the frog to get[[ out]] of the tree,
+I.  and claps. He waits for his turn. He wants to go[[ high]] too.⏎⏎
+J.  around.⏎⏎Then they came to the ostriches. Ost[[ric]]hes are big birds
+
+### P068
+LABEL: ' naughty' (and 'stupid'): misbehaviour adjectives
+A.  to take better care of her pet and to take it to the veterinarian[[ more]] often. ⏎
+B. ila, you have to go to bed. It is late and you[[ are]] tired. You can
+C.  thinking of such a good idea. But one day, a hunter came[[ into]] the forest. The
+D.  and the ball rolled back and forth. Tom and Max were happy they[[ didn]]'t fight anymore.
+E. . She wanted her mommy to make her feel better.⏎⏎[[Mom]]my came into Lily
+F. Once there was a[[ silly]] gorilla named Stan.
+G.  don't know, Lily," said Max. "I just feel gr[[umpy]] today." ⏎
+H. When the washing machine finished, Jenny was supposed to take the clothes out[[,]] but the clothes were
+I.  the doggy asked his owner, "what is this box that makes[[ noise]]?". The man replied
+J.  didn't want his sister to be mad, so he gave her the[[ fake]] doll back. His
+
+### P069
+LABEL: ' on' in 'sit on the sofa/grass'
+A.  last conversation at the park. She also wished she had made him sit[[ in]] a safer seat on
+B. , "Maybe the plane could hear us too if we shouted loud enough[[."]]⏎⏎His dad
+C.  tail. One day, Spot found a bone in the park. The[[ bone]] was very big and
+D.  wanted it. So he decided to steal it. He grabbed the envelope[[ in]] his mouth and ran
+E. Once upon a time, there[[ was]] a dark and gloomy
+F.  They planted trees and cleaned the streets. ⏎⏎But when the[[ ruler]] came back from his
+G.  hurt a lot. He cried and ran to his mom, who was[[ in]] the kitchen.⏎
+H.  take it, but the ball was special. Lucky struggled to pull it[[ out]], because it was
+I.  ⏎⏎The goat was so thirsty and miserable that it fell down[[ and]] could not get up
+J.  knew that the rude fox had caused trouble and that they should have stayed[[ inside]] the coop.
+
+### P070
+LABEL: ' hear'
+A.  more expensive than the other fruits but George wanted an apple desperately. His[[ mom]] said he could have
+B.  together. They would play ball, run, and laugh all day.[[⏎]]⏎One day,
+C.  to another restaurant. He hesitated, but then agreed. He thought it[[ might]] be fun to try
+D. ⏎⏎Mummy asked Jack if he wanted some more cheese. He[[ was]] so excited! His
+E. . They run to the top of the hill and get ready to let[[ go]] of their jet.
+F.  in the park and climb trees. One day, he saw a post[[ with]] a sign that said
+G.  icy ground and hurt her arm. She cried and cried.⏎⏎[[Sam]] and their friends ran
+H. .⏎⏎"Maybe it is a dragon egg!" Lila said[[.]] "We are so
+I.  control the ball and play a game. ⏎⏎Joe was happy[[ to]] see Lucy enjoy the
+J.  it and play with it.⏎⏎He reaches for the cable,[[ but]] his mom stops him
+
+### P071
+LABEL: ' today' in speech (can't do it today)
+A.  help him. ⏎He quickly jumped away and ran over to a[[ bush]]. The spider chased
+B. Her brother stopped crying and smiled. They both had fun playing with the[[ cardboard]] box, and Lily
+C. , in a small open house, there lived a little boy named Tim[[.]] Tim loved to eat
+D.  a sound. It is the ice cream truck. They love ice cream[[.]] They run to their
+E.  had said. He realised that it's not always about being attractive -[[ sometimes]] it's about being
+F.  and one was bright. She was so careful not to break them as[[ she]] took them over to
+G.  "Good morning, Timmy! It's time to get ready for[[ school]]." Timmy was
+H.  wallet?" The old man said, "Yes! I lost my wallet[[ today]]." Tom gave the
+I. Anna and Ben are twins. They like to play together.[[ Today]] they want to visit
+J. .⏎⏎When Timmy woke up, he was so happy about[[ his]] dream. He told
+
+### P072
+LABEL: ' bite' in 'wanted to bite (us)' (threat)
+A. It's a harmless bug," his mom replied. "It won't[[ hurt]] you."⏎⏎
+B. , can I have the insect? I want to keep it as a[[ pet]]!"⏎⏎Tom
+C.  So he grabbed his snowman and ran away.⏎⏎But when[[ Hudson]] got to the beach
+D.  her. The little girl was so happy to see the swan up[[ close]]. She wanted to
+E.  to run. But the volcano was fit and didn't want to hurt[[ Tim]]my. So,
+F.  an olive". So mom took her to the store and found an olive[[ for]] Bella. Bella held
+G.  hungry bunny named Bubbles. Bubbles was very hungry and wanted to[[ eat]] some carrots. But
+H.  well. She feels the pan slipping from her hands. She tries to[[ catch]] it, but it
+I. !" ⏎⏎Jack hugged his mom and went back to his room[[ to]] play with the secret
+J.  had an idea. He got a bucket full of water and put it[[ in]] front of his sister
+
+### P073
+LABEL: ' looking' in 'looking for'
+A.  being kind to others was the right thing to do. She learned that[[ finding]] peace in her heart
+B.  Lucy always remembered the surprise cupcake and the secret dish. Whenever she[[ looked]] at the fancy dish
+C.  He laughed and played, happy that the light was back.⏎⏎[[Each]] day, Joey cl
+D.  Kitty and Doggy away. They were so sad that they didn't[[ find]] something nice in the
+E.  It was long, thin, and dry. Sue asked her mom,[[ "]]What is that?"
+F. . The heavy tomato rolled in and nestled up to all the other[[ veggies]].⏎⏎The
+G.  saw a beautiful blue one in the shop window.⏎⏎The dress[[ looked]] so nice that L
+H.  a big dog lying under a tree. Timmy's friend said,[[ "]]Don't go near
+I.  play a new game. She showed them all how to play it,[[ and]] the team was very
+J.  she could do with it. Molly and her mom went inside and starting[[ looking]] around.⏎⏎
+
+### P074
+LABEL: ' write' / ' wrote' (in a journal)
+A.  and carefully put them back together. After a while, the car was[[ fixed]] and looked like new
+B.  ground. Her eyes lit up as she ran over to it, kn[[elt]] down and picked it
+C.  soft and warm. They are fun. Do you want to read and[[ draw]] with me?"⏎
+D.  to do his best. He managed to score many goals, and the[[ older]] boys were envious
+E.  upon a time, there was a busy faucet named Tess.[[ Tess]] lived by the river
+F.  was not hurt anymore. They were very happy and loved each other very[[ much]].
+G.  and get ready for dinner!â€⏎⏎As Jenna entered the[[ house]], she felt her
+H.  started to follow the other students. The teacher gave each student a long[[ pencil]]. He felt relaxed
+I.  of planet because it was made out of pink bubblegum. The[[ pink]] bubblegum was
+J.  had a wonderful chat.⏎⏎The bird thanked Lily for being brave[[ enough]] to speak to him

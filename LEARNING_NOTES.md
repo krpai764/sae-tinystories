@@ -54,3 +54,14 @@
 1. *What does loss recovered measure that variance explained does not?* Whether the information the model actually relies on survives, via the downstream loss, not just raw reconstruction error.
 2. *Why two baselines?* Zero-ablation is easy to beat; mean-ablation removes only the token-specific part, so it gives a more honest, lower number.
 3. *Why leave position 0 untouched in the main numbers?* The autoencoder never trained on that constant start-of-story vector; I also report replacing it, and the conclusions don't change.
+
+## Stage 5: Interpret features
+
+**What it did.** Took 200 random features from the chosen autoencoder and, for each, collected the 20 text snippets where it fires most strongly, 5 random firings, and the output words its direction promotes. Wrote a label for each (all labels are AI-written, not human-checked). Then tested the labels blind: a fresh AI that never saw the evidence got only the label and had to pick the 5 real firing snippets out of 10. Did the same for an autoencoder trained on a copy of the model with its weights shuffled.
+
+**Why.** Top examples are seductive: even the shuffled model's features looked clean at the top (41/50 seemed clear). The blind test with random (often weak) firings is a fairer check: real labels scored 0.78 versus 0.56 for the control (chance 0.50), and only 37/200 real features passed the strict "random firings fit too" rule.
+
+**Interview questions**
+1. *Why train an SAE on a model with shuffled weights?* As a control: if its features looked just as interpretable, our method would be finding patterns in the text or the method itself, not in the model.
+2. *Why sample firings uniformly rather than using the top ones in the blind test?* Top firings are the easiest cases; most firings are weaker, and a label should explain typical behaviour too. Detection fell from 0.94 for strong to 0.64 for weak firings.
+3. *What is the main weakness of this evaluation?* Labels were written and scored by AI models of the same family with no human check, and the non-firing distractors were random tokens, which makes the test easier than it could be.

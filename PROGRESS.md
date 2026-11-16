@@ -7,8 +7,8 @@ Brief: `BRIEF_sparse_autoencoders.md`. Working rules there apply (stop after eac
 - [x] Stage 1 Load the model — committed (efd12f2)
 - [x] Stage 2 Collect activations — done 2026-11-16, awaiting user approval/commit
 - [x] Stage 3 Train SAEs — committed (6999550)
-- [x] Stage 4 Faithfulness — done 2026-11-16, awaiting user review/commit
-- [ ] Stage 5 Interpret features
+- [x] Stage 4 Faithfulness — committed (a712af2)
+- [x] Stage 5 Interpret features — done 2026-11-16, awaiting user review/commit
 - [ ] Stage 6 Steering
 - [ ] Stage 7 Trace a behaviour (time-boxed, max 2 sessions)
 - [ ] Stage 8 Browser + README + REPORT
@@ -70,3 +70,15 @@ Stage 3: read the two SAE papers first (Bricken et al 2023; Cunningham et al 202
 - Caveat: even best SAE adds 0.30 nats (loss 1.84 vs 1.54, perplexity ~6.3 vs ~4.6); 96% recovered is relative to a very bad baseline (Bricken warned). Mean-ablation gives 1-4 points lower recovery.
 - MPS OOM at eval batch 32 (50k-vocab logits); use batch 8.
 - Carry-forward recommendation: lam=1 (L0 26.7, 0 dead, 0.928/0.910 recovered). User to confirm.
+
+## Stage 5 notes (in progress, 2026-11-16)
+- Chosen SAE: lam=1 (`interpret.chosen_lambda`). All 2048 features fire on train. 200 random live features (seed 1234), presented in random order and split into 4 batches of 50.
+- `scripts/stage5_examples.py` -> `results/stage5/features.json` (all 200: top-20, 5 random, frequency, promoted/suppressed tokens), `results/stage5/batch_{1..4}.md`.
+- `scripts/stage5_write_labels.py` holds Claude's suggestions (batch 1 done: 47 clear / 3 unclear by suggestion) -> `results/stage5/labels.csv`; user fills `your_*` columns. Guide: `results/stage5/LABELLING.md`.
+- Observation: random (typical) firings are often weak and on unrelated tokens even when the top examples are clean. 'random_examples_agree' records this: yes 19, partly 19, no 12 in batch 1.
+- Data quirk: TinyStories contains mojibake (curly quotes as 'â€œ'); one feature (#12, f137) tracks it.
+- USER CHANGE OF PLAN (2026-11-16): user will NOT hand-label. Claude's labels for all 200 are final. Final 'clear' = suggested verdict clear AND random_examples_agree == 'yes'. README and REPORT must state clearly that ALL labels are AI-written and not human-verified (README.md stub already says so).
+- Random-model control: `scripts/stage5_random_control.py` (shuffled weights, seed 4321, 400k tokens fp16 in data/random/, 120 epochs) -> `results/stage5_random_control.json`, checkpoints/sae_random/. Examples: `scripts/stage5_examples.py --random` -> results/stage5_random/. Labels for its first 50 features: `scripts/stage5_write_labels_random.py`.
+- Blind test: `scripts/stage5_blind_build.py` (puzzles: label + 5 firing [uniform among firings] + 5 non-firing snippets from unseen text; real+control anonymised and shuffled; key in results/stage5_blind/key.json) -> 10 fresh subagents (sonnet) answered from the puzzle files only -> raw answers saved in results/stage5_blind/responses.json -> `scripts/stage5_blind_score.py` -> results/stage5_blind_scores.json, results/stage5_blind_per_feature.csv, figures/stage5_blind.png. Report: `scripts/stage5_report.py` -> results/stage5_report.md.
+- Headline: real 37/200 clear (18.5%), control 1/50 (2%). Blind accuracy real 0.779 (n=200) vs control 0.564 (n=50), chance 0.5. Labeller's 'unclear' verdict did not predict blind accuracy (0.779).
+- Stage 5 done pending user review/commit. Next: Stage 6 steering (pick 5-8 features with high blind accuracy and 'clear').

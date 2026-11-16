@@ -16,7 +16,7 @@ def load_activations(data_dir: Path, name: str, exclude_pos0: bool = True) -> to
     """Load a split's activations into RAM as a float32 CPU tensor (pos-0 rows dropped)."""
     acts, _, _, pos, _ = load_split(data_dir, name)
     keep = pos > 0 if exclude_pos0 else np.ones(len(pos), dtype=bool)
-    return torch.from_numpy(np.asarray(acts)[keep])
+    return torch.from_numpy(np.asarray(acts)[keep].astype(np.float32))
 
 
 def rescale_factor(x: torch.Tensor) -> float:

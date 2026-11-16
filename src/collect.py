@@ -22,7 +22,7 @@ from src.model import get_activations
 
 def collect(model, seqs: list[np.ndarray], out_dir: Path, name: str, layer: int, device: str,
             batch_size: int = 32, checkpoint_every: int = 50, pad_id: int = 50256,
-            pad_multiple: int = 64, log=print) -> dict:
+            pad_multiple: int = 64, dtype=np.float32, log=print) -> dict:
     out_dir = Path(out_dir)
     out_dir.mkdir(parents=True, exist_ok=True)
     f = lambda suffix: out_dir / f"{name}_{suffix}"
@@ -41,7 +41,7 @@ def collect(model, seqs: list[np.ndarray], out_dir: Path, name: str, layer: int,
         assert acts.shape == (n, width), "existing file does not match plan; delete it"
         log(f"resuming {name}: {done}/{len(seqs)} stories already done")
     else:
-        acts = np.lib.format.open_memmap(f("acts.npy"), mode="w+", dtype=np.float32, shape=(n, width))
+        acts = np.lib.format.open_memmap(f("acts.npy"), mode="w+", dtype=dtype, shape=(n, width))
 
     batches = list(range(done, len(seqs), batch_size))
     for bi, a in enumerate(batches):

@@ -1,0 +1,93 @@
+{
+  "n_puzzles": 250,
+  "n_invalid_responses": 0,
+  "real_all_200": {
+    "n": 200,
+    "mean_accuracy": 0.779,
+    "chance": 0.5,
+    "p_value_vs_chance": 0.0,
+    "n_perfect_5of5": 55,
+    "n_significant_p05": 55,
+    "n_at_or_below_chance": 61
+  },
+  "real_first_50": {
+    "n": 50,
+    "mean_accuracy": 0.8,
+    "chance": 0.5,
+    "p_value_vs_chance": 0.0,
+    "n_perfect_5of5": 15,
+    "n_significant_p05": 15,
+    "n_at_or_below_chance": 10
+  },
+  "control_50": {
+    "n": 50,
+    "mean_accuracy": 0.5640000000000001,
+    "chance": 0.5,
+    "p_value_vs_chance": 0.00285,
+    "n_perfect_5of5": 2,
+    "n_significant_p05": 2,
+    "n_at_or_below_chance": 40
+  },
+  "real_final_clear": {
+    "n": 37,
+    "mean_accuracy": 0.8864864864864866,
+    "chance": 0.5,
+    "p_value_vs_chance": 0.0,
+    "n_perfect_5of5": 20,
+    "n_significant_p05": 20,
+    "n_at_or_below_chance": 4
+  },
+  "real_not_final_clear": {
+    "n": 163,
+    "mean_accuracy": 0.754601226993865,
+    "chance": 0.5,
+    "p_value_vs_chance": 0.0,
+    "n_perfect_5of5": 35,
+    "n_significant_p05": 35,
+    "n_at_or_below_chance": 57
+  },
+  "real_suggested_unclear": {
+    "n": 19,
+    "mean_accuracy": 0.7789473684210527,
+    "chance": 0.5,
+    "p_value_vs_chance": 0.0,
+    "n_perfect_5of5": 7,
+    "n_significant_p05": 7,
+    "n_at_or_below_chance": 7
+  },
+  "control_final_clear": {
+    "n": 1,
+    "mean_accuracy": 1.0,
+    "chance": 0.5,
+    "p_value_vs_chance": 0.00417,
+    "n_perfect_5of5": 1,
+    "n_significant_p05": 1,
+    "n_at_or_below_chance": 0
+  },
+  "final_clear_share": {
+    "real": 0.185,
+    "real_n": 37,
+    "control": 0.02,
+    "control_n": 1,
+    "real_suggested_clear_ignoring_random": 181,
+    "control_suggested_clear_ignoring_random": 41
+  },
+  "real_firing_detection_by_strength_tercile": {
+    "weak": 0.6437125748502994,
+    "middle": 0.7507507507507507,
+    "strong": 0.9429429429429429,
+    "tercile_edges": [
+      0.2039516121149063,
+      0.7625231742858887
+    ]
+  },
+  "control_firing_detection_by_strength_tercile": {
+    "weak": 0.5238095238095238,
+    "middle": 0.5421686746987951,
+    "strong": 0.6265060240963856,
+    "tercile_edges": [
+      0.1169639527797699,
+      0.3194392919540405
+    ]
+  }
+}
