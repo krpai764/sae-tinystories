@@ -1,0 +1,1552 @@
+{
+ "layer": 3,
+ "lambda": 1,
+ "rescale_factor": 6.363926405175133,
+ "mean_activation_norm_model_units": 2.5141711235046387,
+ "selection": "every label naming a topic/domain, any verdict or blind score, not already steered",
+ "prompts": [
+  "Once upon a time, there was a little girl named Lily.",
+  "Tom and his dog went to the park. They saw"
+ ],
+ "multipliers": [
+  0.5,
+  0.75,
+  1,
+  1.25,
+  1.5,
+  2
+ ],
+ "seed": 1234,
+ "features": [
+  {
+   "feature": 1137,
+   "group": "clear",
+   "label": "' rain' in 'started to rain'",
+   "blind_correct_of_5": 3,
+   "typical_strength_sae_units": 10.344213104248047,
+   "promoted_tokens": [
+    "forest",
+    "water",
+    "storm",
+    "drops",
+    " clouds",
+    "drop",
+    "co",
+    "bows",
+    " rain",
+    "cloud"
+   ],
+   "runs": [
+    {
+     "prompt_index": 0,
+     "kind": "none",
+     "multiplier": 0,
+     "vector_norm_model_units": 0.0,
+     "text": " She loved to play outside in the sunshine and pick flowers. One day, she found a shiny rock on the ground. She picked it up and showed it to her mom.\n\n\"Look, Mommy! I found a pretty rock!\" said",
+     "promoted_hits": 0,
+     "ppl_clean": 1.4211866855621338
+    },
+    {
+     "prompt_index": 0,
+     "kind": "feature",
+     "multiplier": 0.5,
+     "vector_norm_model_units": 0.8127226233482361,
+     "text": " She loved to play in her puddles when it rained. One day, Lily's mom told her to come inside because the water was coming in. Lily was sad because she didn't want to stop playing in the rain.\n\nL",
+     "promoted_hits": 1,
+     "ppl_clean": 2.422422409057617
+    },
+    {
+     "prompt_index": 0,
+     "kind": "random",
+     "multiplier": 0.5,
+     "vector_norm_model_units": 0.8127226233482361,
+     "text": " She loved to play in her tent with her friends. They would sleep in the tent and make plans to play every day. \n\nOne day, a bad boy named Max came to their tent. He wanted to play with them, but he",
+     "promoted_hits": 0,
+     "ppl_clean": 3.4034852981567383
+    },
+    {
+     "prompt_index": 0,
+     "kind": "feature",
+     "multiplier": 0.75,
+     "vector_norm_model_units": 1.2190837860107422,
+     "text": " Lily loved to play in the puddles. One day, she put on her boots and jumped in the puddles. But, the water started to come in. Lily forgot about her boots and started to fall. She would get wet from",
+     "promoted_hits": 0,
+     "ppl_clean": 5.712998867034912
+    },
+    {
+     "prompt_index": 0,
+     "kind": "random",
+     "multiplier": 0.75,
+     "vector_norm_model_units": 1.2190839052200317,
+     "text": " She had a lot of toys and friends, and they played on the same songs and had a cheerful smile.\n\nOne day, a boy came to play with her. He had a big, blue ball and he was very happy. He saw",
+     "promoted_hits": 0,
+     "ppl_clean": 7.096206188201904
+    },
+    {
+     "prompt_index": 0,
+     "kind": "feature",
+     "multiplier": 1,
+     "vector_norm_model_units": 1.6254452466964722,
+     "text": " Lily loved to play in the puddles. One day, she put on wet raincoat and her boots. Lily loved to put on her so her puddles started to fall.\n\nLily put on rainbows would come when she",
+     "promoted_hits": 3,
+     "ppl_clean": 15.335958480834961
+    },
+    {
+     "prompt_index": 0,
+     "kind": "random",
+     "multiplier": 1,
+     "vector_norm_model_units": 1.6254452466964722,
+     "text": " She had a lot of people, and they were sad. They thought, played, and they were very loud and happy. But then, one sister came to tease her. \"I want to make a good friend,\" she said, and when she",
+     "promoted_hits": 0,
+     "ppl_clean": 21.14043426513672
+    },
+    {
+     "prompt_index": 0,
+     "kind": "feature",
+     "multiplier": 1.25,
+     "vector_norm_model_units": 2.031806468963623,
+     "text": " Lily loved to fill her puddles in. Every day, or come back to coming in.\n\nRainbows came in and came. The days. Lily would come to fall and rain. Rainbows coming from coming in.\n\n every",
+     "promoted_hits": 3,
+     "ppl_clean": 109.14382934570312
+    },
+    {
+     "prompt_index": 0,
+     "kind": "random",
+     "multiplier": 1.25,
+     "vector_norm_model_units": 2.031806707382202,
+     "text": " She had a lot of people, and they were sad and wanted to play with their sad children. They called it to be friends and they played on it. \"Do you want to play with you on the children on the kids would call down to",
+     "promoted_hits": 0,
+     "ppl_clean": 61.0162239074707
+    },
+    {
+     "prompt_index": 0,
+     "kind": "feature",
+     "multiplier": 1.5,
+     "vector_norm_model_units": 2.4381675720214844,
+     "text": " Rain rained water and lots and rain water.\n\nJ rained rained and the rained and come to wet. The water started to pour.. Soon started to leave outside. ained from coming to rain. Soon rained rain",
+     "promoted_hits": 3,
+     "ppl_clean": 354.4834899902344
+    },
+    {
+     "prompt_index": 0,
+     "kind": "random",
+     "multiplier": 1.5,
+     "vector_norm_model_units": 2.4381678104400635,
+     "text": " She had a lot of people, and they were sad and they smiled and played on the smile on the loud and gave was to children. \"A very will. He will smile and kids will come to. Then the kids start to come to kids",
+     "promoted_hits": 0,
+     "ppl_clean": 242.5288848876953
+    },
+    {
+     "prompt_index": 0,
+     "kind": "feature",
+     "multiplier": 2,
+     "vector_norm_model_units": 3.2508904933929443,
+     "text": " Rain rained water wet p p water water.\n rain water pears rained coming to rained and! Soon. ainedained rain water p pained her started to rained.... ained rain rain pours rain rain",
+     "promoted_hits": 6,
+     "ppl_clean": 3990.9716796875
+    },
+    {
+     "prompt_index": 0,
+     "kind": "random",
+     "multiplier": 2,
+     "vector_norm_model_units": 3.2508904933929443,
+     "text": " She had a sad and made a to play on sad. \"Let's played on the with a child and he will make splles and swings, and will. boy children on his kids, and friends. children smiled and kids would be in kids",
+     "promoted_hits": 0,
+     "ppl_clean": 878.1318359375
+    },
+    {
+     "prompt_index": 1,
+     "kind": "none",
+     "multiplier": 0,
+     "vector_norm_model_units": 0.0,
+     "text": " a big slide. It was fun. The slide had ice cream. Tom and his dog ran to the slide. They started to play.\n\nA girl named Sue came to the park. She said, \"Can I play too?\" Tom and",
+     "promoted_hits": 0,
+     "ppl_clean": 2.4643781185150146
+    },
+    {
+     "prompt_index": 1,
+     "kind": "feature",
+     "multiplier": 0.5,
+     "vector_norm_model_units": 0.8127226233482361,
+     "text": " a big tree. At the tree, there was a hole. Tom said, \"Lily, I will get your ball for you!\"\n\nTom jumped off the tree and ran to the hole. The sun was shining. The rain was down",
+     "promoted_hits": 1,
+     "ppl_clean": 4.957029342651367
+    },
+    {
+     "prompt_index": 1,
+     "kind": "random",
+     "multiplier": 0.5,
+     "vector_norm_model_units": 0.8127226233482361,
+     "text": " a big gate. It was locked. The dog wanted to play.\n\n\"Can we play with you?\" asked a girl said. \"You need to lock the gate and have a nice home.\"\n\nThe boy smiled. \"We can",
+     "promoted_hits": 0,
+     "ppl_clean": 6.018086910247803
+    },
+    {
+     "prompt_index": 1,
+     "kind": "feature",
+     "multiplier": 0.75,
+     "vector_norm_model_units": 1.2190837860107422,
+     "text": " a big rainbow. The sky was bright and the water was pouring.\n\nTom poured and lots of pretty clouds in. Lots of rain started to come down. The rain started to fall.\n\nTom poured more and more raindrops falling.",
+     "promoted_hits": 5,
+     "ppl_clean": 13.586138725280762
+    },
+    {
+     "prompt_index": 1,
+     "kind": "random",
+     "multiplier": 0.75,
+     "vector_norm_model_units": 1.2190839052200317,
+     "text": " a man selling sunglasses. They were bright and happy. Tom wanted to play on the sunglasses. But they were not for kids. They were for kids.\n\nThe man said, \"I have sunglasses. I want to make children with them.",
+     "promoted_hits": 0,
+     "ppl_clean": 5.347346305847168
+    },
+    {
+     "prompt_index": 1,
+     "kind": "feature",
+     "multiplier": 1,
+     "vector_norm_model_units": 1.6254452466964722,
+     "text": " a big puddle and water came in. The water was pouring.\n\nTom poured andcoat. The clouds came from. Soon. The rain started to fall. Soon, and Lily came to rain. The pained and jumped into the p",
+     "promoted_hits": 3,
+     "ppl_clean": 33.84317398071289
+    },
+    {
+     "prompt_index": 1,
+     "kind": "random",
+     "multiplier": 1,
+     "vector_norm_model_units": 1.6254452466964722,
+     "text": " a man on the and they smiled. \"I want to play for my son. He has a good heart and he is very strong. He wants to make children smile. He played on the kids and he smiled. This is the word to remember",
+     "promoted_hits": 0,
+     "ppl_clean": 35.63853454589844
+    },
+    {
+     "prompt_index": 1,
+     "kind": "feature",
+     "multiplier": 1.25,
+     "vector_norm_model_units": 2.031806468963623,
+     "text": " a lot from. At last, the water came from. The drops came from. Rainbows came from coming.\n\nTom poured in the rain and put down. Soon, and Rainbows started to come down. This rain from the drops.",
+     "promoted_hits": 4,
+     "ppl_clean": 103.56941986083984
+    },
+    {
+     "prompt_index": 1,
+     "kind": "random",
+     "multiplier": 1.25,
+     "vector_norm_model_units": 2.031806707382202,
+     "text": " a boy and a girl came to kids. They wanted to play on the name on a red sheep. The boy and the boy said, \"Let's celebrate, the children and these children are called to play on the kids. They call out,",
+     "promoted_hits": 0,
+     "ppl_clean": 25.94504737854004
+    },
+    {
+     "prompt_index": 1,
+     "kind": "feature",
+     "multiplier": 1.5,
+     "vector_norm_model_units": 2.4381675720214844,
+     "text": " a lot from. At. Rain puddles in and so.\n\n drops water andcoat. The clouds in. Lots wet.. rain started to stop. Soon and from.\n\n rain pours.ained water from.\nained",
+     "promoted_hits": 3,
+     "ppl_clean": 1028.418212890625
+    },
+    {
+     "prompt_index": 1,
+     "kind": "random",
+     "multiplier": 1.5,
+     "vector_norm_model_units": 2.4381678104400635,
+     "text": " a boy and a girl came to kids. They had children, children, and they kids. They smiled and kids played on their songs and kids. They invited to kids to children: \"Let's kids play on the boy and kids kids play on",
+     "promoted_hits": 0,
+     "ppl_clean": 112.42573547363281
+    },
+    {
+     "prompt_index": 1,
+     "kind": "feature",
+     "multiplier": 2,
+     "vector_norm_model_units": 3.2508904933929443,
+     "text": " a.ained water and water p pouring water.\nained..\nJainedained. rainbows rained rained.Rainbows. rainbows waterbows wet pained from.\n\n rainbows rained. rained. more.",
+     "promoted_hits": 8,
+     "ppl_clean": 910.7588500976562
+    },
+    {
+     "prompt_index": 1,
+     "kind": "random",
+     "multiplier": 2,
+     "vector_norm_model_units": 3.2508904933929443,
+     "text": " a boy and a girl came to kids and they had a boy was to will. He has a happy children was at home and smile. \"Let's his children have to smile and bandles and kids to children children. They smile children play on",
+     "promoted_hits": 0,
+     "ppl_clean": 486.39324951171875
+    }
+   ]
+  },
+  {
+   "feature": 916,
+   "group": "not_clear",
+   "label": "Bees, hives and honey",
+   "blind_correct_of_5": 5,
+   "typical_strength_sae_units": 4.445925283432007,
+   "promoted_tokens": [
+    "comb",
+    "bees",
+    "ive",
+    " hive",
+    "Buzz",
+    "ectar",
+    " Food",
+    "gran",
+    "com",
+    "pling"
+   ],
+   "runs": [
+    {
+     "prompt_index": 0,
+     "kind": "none",
+     "multiplier": 0,
+     "vector_norm_model_units": 0.0,
+     "text": " She loved to play outside in the sunshine and pick flowers. One day, she found a shiny rock on the ground. She picked it up and showed it to her mom.\n\n\"Look, Mommy! I found a pretty rock!\" said",
+     "promoted_hits": 0,
+     "ppl_clean": 1.4211866855621338
+    },
+    {
+     "prompt_index": 0,
+     "kind": "feature",
+     "multiplier": 0.5,
+     "vector_norm_model_units": 0.34930679202079773,
+     "text": " She loved to play in her garden and look at the flowers. One day, she saw a bee buzzing around the flowers. \n\n\"Hello, bee. You're so pretty,\" Lily said.\n\n\"Thank you, little girl.",
+     "promoted_hits": 0,
+     "ppl_clean": 1.87709641456604
+    },
+    {
+     "prompt_index": 0,
+     "kind": "random",
+     "multiplier": 0.5,
+     "vector_norm_model_units": 0.34930679202079773,
+     "text": " She loved to play outside, but it was very cold. So, she decided to go to the park and play on the swings. \n\nWhen she got there, she saw a boy playing with a ball. She wanted to play too,",
+     "promoted_hits": 0,
+     "ppl_clean": 1.749274730682373
+    },
+    {
+     "prompt_index": 0,
+     "kind": "feature",
+     "multiplier": 0.75,
+     "vector_norm_model_units": 0.5239601731300354,
+     "text": " She loved to play in the forest near her house. One day, she found a yummy-looking berry on the ground. She picked it up and took a bite, but it was very sour. \n\nHer friend, Tommy,",
+     "promoted_hits": 0,
+     "ppl_clean": 2.0641891956329346
+    },
+    {
+     "prompt_index": 0,
+     "kind": "random",
+     "multiplier": 0.75,
+     "vector_norm_model_units": 0.5239602327346802,
+     "text": " She loved to play outside, but it was very cold. So, she decided to go to a place where it was warm. \n\nWhen she got there, she saw a big building with a sign that said \"Hot Prices.\" She didn",
+     "promoted_hits": 0,
+     "ppl_clean": 2.589603900909424
+    },
+    {
+     "prompt_index": 0,
+     "kind": "feature",
+     "multiplier": 1,
+     "vector_norm_model_units": 0.6986135840415955,
+     "text": " She loved to play in the forest near her house. One day, she found a yummy-looking berry on the ground. She picked it up and took a bite, but it was very sour. \n\nHer friend, Tommy,",
+     "promoted_hits": 0,
+     "ppl_clean": 2.0641891956329346
+    },
+    {
+     "prompt_index": 0,
+     "kind": "random",
+     "multiplier": 1,
+     "vector_norm_model_units": 0.6986135840415955,
+     "text": " She loved to play in her backyard and make a castle with a big tower. She was very creative and used only colorful bricks to make walls and towers that nobody could make as towers as high as her castle. \n\nOne day, when she",
+     "promoted_hits": 0,
+     "ppl_clean": 5.124775409698486
+    },
+    {
+     "prompt_index": 0,
+     "kind": "feature",
+     "multiplier": 1.25,
+     "vector_norm_model_units": 0.8732669353485107,
+     "text": " She loved to play in the forest near her house. One day, she found a yummy-looking bee hive on her honeycomb. She wanted to put some bee honey on it, but it was too buzzing around. She decided to wait until",
+     "promoted_hits": 2,
+     "ppl_clean": 4.47650146484375
+    },
+    {
+     "prompt_index": 0,
+     "kind": "random",
+     "multiplier": 1.25,
+     "vector_norm_model_units": 0.8732669353485107,
+     "text": " She had a lot of toys, but her favorite toy was a fake star. She loved to play with it every day.\n\nOne day, Lily's friend came over to play. Lily wanted to show her friend her toy star, but she",
+     "promoted_hits": 0,
+     "ppl_clean": 2.309462070465088
+    },
+    {
+     "prompt_index": 0,
+     "kind": "feature",
+     "multiplier": 1.5,
+     "vector_norm_model_units": 1.0479203462600708,
+     "text": " She loved to draw on pretty paper with her mommy. Honey was honey, honey, that garden was honey! One day, honey was very sticky and Honey was very sticky on the honey. Honey was very sticky and it made honey sticky in her",
+     "promoted_hits": 0,
+     "ppl_clean": 24.042598724365234
+    },
+    {
+     "prompt_index": 0,
+     "kind": "random",
+     "multiplier": 1.5,
+     "vector_norm_model_units": 1.0479204654693604,
+     "text": " She had a lot of toys, but her favorite toy was a fake star. She loved to play with it every day.\n\nOne day, Lily's friend came to visit and saw the fake star. \"This toy can shoot fire when it",
+     "promoted_hits": 0,
+     "ppl_clean": 3.528090238571167
+    },
+    {
+     "prompt_index": 0,
+     "kind": "feature",
+     "multiplier": 2,
+     "vector_norm_model_units": 1.397227168083191,
+     "text": " She liked to play in the garden, big bee hive honey on top honey. She loved to bees bee bees! One bee hive honeycomb was very sweet honey. She tried to make honey honey, but it was very sticky and she had sticky honey",
+     "promoted_hits": 3,
+     "ppl_clean": 55.35596466064453
+    },
+    {
+     "prompt_index": 0,
+     "kind": "random",
+     "multiplier": 2,
+     "vector_norm_model_units": 1.397227168083191,
+     "text": " She had a lot of toys and a big balls that could make a lot of bubbles. She was very loud and loud that all the water came out of the tops and started to fill up the leak.\n\nBut then, the bottom of the",
+     "promoted_hits": 0,
+     "ppl_clean": 20.307178497314453
+    },
+    {
+     "prompt_index": 1,
+     "kind": "none",
+     "multiplier": 0,
+     "vector_norm_model_units": 0.0,
+     "text": " a big slide. It was fun. The slide had ice cream. Tom and his dog ran to the slide. They started to play.\n\nA girl named Sue came to the park. She said, \"Can I play too?\" Tom and",
+     "promoted_hits": 0,
+     "ppl_clean": 2.4643781185150146
+    },
+    {
+     "prompt_index": 1,
+     "kind": "feature",
+     "multiplier": 0.5,
+     "vector_norm_model_units": 0.34930679202079773,
+     "text": " a big slide. It was very fun. Tom wanted to slide on the slide. He ran to the slide and climbed up. He slid down fast and laughed. Then he slid down again.\n\n\"Tom, it's time to play!\"",
+     "promoted_hits": 0,
+     "ppl_clean": 2.5578408241271973
+    },
+    {
+     "prompt_index": 1,
+     "kind": "random",
+     "multiplier": 0.5,
+     "vector_norm_model_units": 0.34930679202079773,
+     "text": " a big gate. At the gate, there was a gate. Tom wanted to see what was behind the gate. But the gate was locked.\n\nTom's friend, Lily, came to the park too. Lily wanted to help Tom. She",
+     "promoted_hits": 0,
+     "ppl_clean": 2.107929229736328
+    },
+    {
+     "prompt_index": 1,
+     "kind": "feature",
+     "multiplier": 0.75,
+     "vector_norm_model_units": 0.5239601731300354,
+     "text": " a big slide. It was very high. Tom wanted to slide on the slide. He ran to the slide and climbed up. He slid down fast and made a big splash.\n\n\"Wow, that was fun!\" Tom said.\n\n",
+     "promoted_hits": 0,
+     "ppl_clean": 2.070010185241699
+    },
+    {
+     "prompt_index": 1,
+     "kind": "random",
+     "multiplier": 0.75,
+     "vector_norm_model_units": 0.5239602327346802,
+     "text": " a big gate. At the gate, there was a gate. The gate was very high. Tom and his dog wanted to see what was on the other side.\n\nThey told a nice man near the gate. The man said, \"I",
+     "promoted_hits": 0,
+     "ppl_clean": 2.7521305084228516
+    },
+    {
+     "prompt_index": 1,
+     "kind": "feature",
+     "multiplier": 1,
+     "vector_norm_model_units": 0.6986135840415955,
+     "text": " a big slide. It was very high. Tom wanted to slide on the slide. He climbed to the top. But then, he felt very dizzy. He felt dizzy too.\n\n\"Buzz on me, honey,\" said the bee",
+     "promoted_hits": 1,
+     "ppl_clean": 3.7322306632995605
+    },
+    {
+     "prompt_index": 1,
+     "kind": "random",
+     "multiplier": 1,
+     "vector_norm_model_units": 0.6986135840415955,
+     "text": " a big gate. At the gate, there was a gate. The gate was very high. Tom wanted to raise a gate.\n\nTom had an idea. He wanted to find a way to raise the gate. This time, he found a",
+     "promoted_hits": 0,
+     "ppl_clean": 3.159040927886963
+    },
+    {
+     "prompt_index": 1,
+     "kind": "feature",
+     "multiplier": 1.25,
+     "vector_norm_model_units": 0.8732669353485107,
+     "text": " a bee hive. It was hive. The bees made honey. Tom wanted to drink some honey. He went to the hive.\n\n\"Buzz hive!\" said Tom. \"Bee hive!\"\n\nBuzzBee was very happy. \"Buzz pot",
+     "promoted_hits": 8,
+     "ppl_clean": 6.338496208190918
+    },
+    {
+     "prompt_index": 1,
+     "kind": "random",
+     "multiplier": 1.25,
+     "vector_norm_model_units": 0.8732669353485107,
+     "text": " a big gate. At the gate, there was a gate that was full of oxygen. The oxygen was like a big ball.\n\nTom wanted to see what was inside the big gate. He tried to open the door, but he could not",
+     "promoted_hits": 0,
+     "ppl_clean": 3.769686698913574
+    },
+    {
+     "prompt_index": 1,
+     "kind": "feature",
+     "multiplier": 1.5,
+     "vector_norm_model_units": 1.0479203462600708,
+     "text": " a bee hive. It was hive honey. Tom wanted to make honey. But he was not sure.\n\n\"Bee stuck in the hive,\" said his friend, Beebee. \"Buzz hive honey.\"Beebee was sticky. \"Buzz hive",
+     "promoted_hits": 7,
+     "ppl_clean": 17.304304122924805
+    },
+    {
+     "prompt_index": 1,
+     "kind": "random",
+     "multiplier": 1.5,
+     "vector_norm_model_units": 1.0479204654693604,
+     "text": " a big gate. At the gate, there was a gate that was full of oxygen. The oxygen was like a big ball.\n\nTom wanted to see what the oxygen was. He wanted to see more things. This problem was that there were",
+     "promoted_hits": 0,
+     "ppl_clean": 6.7954559326171875
+    },
+    {
+     "prompt_index": 1,
+     "kind": "feature",
+     "multiplier": 2,
+     "vector_norm_model_units": 1.397227168083191,
+     "text": " a bee hive. It was hive honey. Honeybees buzzing bees.\n\n\"Bee, bee, bees buzz buzz and honeybees!\" cried Beety.\n\n\"Bee hive, honeybees buzzing hive!\"beety bee hivebee hive buzz",
+     "promoted_hits": 9,
+     "ppl_clean": 70.28431701660156
+    },
+    {
+     "prompt_index": 1,
+     "kind": "random",
+     "multiplier": 2,
+     "vector_norm_model_units": 1.397227168083191,
+     "text": " a man with a cap. The cap was a cap made of a hat and a cap. The cap had a cap that made a loud sound.\n\nThe cap wanted to see something that could make a joke. This problem was that there was",
+     "promoted_hits": 0,
+     "ppl_clean": 11.731756210327148
+    }
+   ]
+  },
+  {
+   "feature": 1463,
+   "group": "not_clear",
+   "label": "' cold' (weather)",
+   "blind_correct_of_5": 3,
+   "typical_strength_sae_units": 9.196275854110718,
+   "promoted_tokens": [
+    " wind",
+    " cold",
+    " raining",
+    " weather",
+    " air",
+    " fog",
+    "gy",
+    " cloud",
+    " rainy",
+    "fl"
+   ],
+   "runs": [
+    {
+     "prompt_index": 0,
+     "kind": "none",
+     "multiplier": 0,
+     "vector_norm_model_units": 0.0,
+     "text": " She loved to play outside in the sunshine and pick flowers. One day, she found a shiny rock on the ground. She picked it up and showed it to her mom.\n\n\"Look, Mommy! I found a pretty rock!\" said",
+     "promoted_hits": 0,
+     "ppl_clean": 1.4211866855621338
+    },
+    {
+     "prompt_index": 0,
+     "kind": "feature",
+     "multiplier": 0.5,
+     "vector_norm_model_units": 0.7225316762924194,
+     "text": " She loved to play outside, but it was very cold. So, she went to the porch to get some hot food. \n\nSuddenly, she heard a loud noise. It was very scary! But, her mommy came outside and helped",
+     "promoted_hits": 1,
+     "ppl_clean": 3.283106565475464
+    },
+    {
+     "prompt_index": 0,
+     "kind": "random",
+     "multiplier": 0.5,
+     "vector_norm_model_units": 0.7225316762924194,
+     "text": " She loved to play with her toys and have fun with her friends. One day, Lily's mom asked her to pack her bag with some old clothes. Lily was eager to help and ran to her room. \n\nHer mom said, \"",
+     "promoted_hits": 0,
+     "ppl_clean": 2.760355234146118
+    },
+    {
+     "prompt_index": 0,
+     "kind": "feature",
+     "multiplier": 0.75,
+     "vector_norm_model_units": 1.0837974548339844,
+     "text": " She lived in a cold place and had lots of snow. One day, Lily found icy wind blowing outside and it made her shiver. She wanted to play outside, but she couldn't. She wanted to keep her cold and cold, but instead",
+     "promoted_hits": 4,
+     "ppl_clean": 7.047761917114258
+    },
+    {
+     "prompt_index": 0,
+     "kind": "random",
+     "multiplier": 0.75,
+     "vector_norm_model_units": 1.0837974548339844,
+     "text": " She loved to play with her toys and have fun with her toys. One day, her mommy told her it was time to do math. Lily didn't know what math was, so her mommy showed her a little copy. \"It's",
+     "promoted_hits": 0,
+     "ppl_clean": 2.889458179473877
+    },
+    {
+     "prompt_index": 0,
+     "kind": "feature",
+     "multiplier": 1,
+     "vector_norm_model_units": 1.4450633525848389,
+     "text": " She lived in the cold winter and ice on the ground. So, she sent her icy wind to her night. One day, cold air finally, but. Lily couldn't stop it all, even though. She wanted to play outside, but she",
+     "promoted_hits": 4,
+     "ppl_clean": 35.837650299072266
+    },
+    {
+     "prompt_index": 0,
+     "kind": "random",
+     "multiplier": 1,
+     "vector_norm_model_units": 1.4450633525848389,
+     "text": " She loved holding her toy cars and building. One day, she went to the park with her mom and found a bin with a lid on it. She wondered what her bin was. Maybe it was old and there. Maybe she had a little bit",
+     "promoted_hits": 0,
+     "ppl_clean": 11.992795944213867
+    },
+    {
+     "prompt_index": 0,
+     "kind": "feature",
+     "multiplier": 1.25,
+     "vector_norm_model_units": 1.8063290119171143,
+     "text": " She lived in the cold winter and ice. One day, and night, while shivering windgyly it outside. The air cold air and colder, but. The wind was already made, but. The snow was cold and windy when it",
+     "promoted_hits": 9,
+     "ppl_clean": 82.93431091308594
+    },
+    {
+     "prompt_index": 0,
+     "kind": "random",
+     "multiplier": 1.25,
+     "vector_norm_model_units": 1.8063292503356934,
+     "text": " She loved holding her toy cars and building. She had her favorite pink car, so adorable. Maybe she had it in her mind. Maybe it was not. Maybe her world was missing.\n",
+     "promoted_hits": 0,
+     "ppl_clean": 44.43781280517578
+    },
+    {
+     "prompt_index": 0,
+     "kind": "feature",
+     "multiplier": 1.5,
+     "vector_norm_model_units": 2.1675949096679688,
+     "text": " She wanted to play outside, but it was. It was on a cold wind, and wind. It was it winter outside. cold air and colder, but.\n\n day, and cold, shivering. The cold air would touch when it",
+     "promoted_hits": 8,
+     "ppl_clean": 76.07563018798828
+    },
+    {
+     "prompt_index": 0,
+     "kind": "random",
+     "multiplier": 1.5,
+     "vector_norm_model_units": 2.1675949096679688,
+     "text": " She loved holding her toy cars and building. She had her favorite in her heart. She was out of curious and ready. Maybe she had. Maybe she had. She had a missing out. What is. Maybe that is missing. What is out",
+     "promoted_hits": 0,
+     "ppl_clean": 111.26370239257812
+    },
+    {
+     "prompt_index": 0,
+     "kind": "feature",
+     "multiplier": 2,
+     "vector_norm_model_units": 2.8901267051696777,
+     "text": " night, and in night, shivering and shivering. shivered in the ground and wind. It snow outside in the air cold air., but.. and started to sh sh shiver.. night cold. and wind started when it",
+     "promoted_hits": 6,
+     "ppl_clean": 1077.1683349609375
+    },
+    {
+     "prompt_index": 0,
+     "kind": "random",
+     "multiplier": 2,
+     "vector_norm_model_units": 2.8901267051696777,
+     "text": " She had a lot of out of her eye. with her eye is not serious. What that can?\" curious and ordinary. What is up. with that.. She is curious and curious. What is out. What does out.\n What is",
+     "promoted_hits": 0,
+     "ppl_clean": 307.1280822753906
+    },
+    {
+     "prompt_index": 1,
+     "kind": "none",
+     "multiplier": 0,
+     "vector_norm_model_units": 0.0,
+     "text": " a big slide. It was fun. The slide had ice cream. Tom and his dog ran to the slide. They started to play.\n\nA girl named Sue came to the park. She said, \"Can I play too?\" Tom and",
+     "promoted_hits": 0,
+     "ppl_clean": 2.4643781185150146
+    },
+    {
+     "prompt_index": 1,
+     "kind": "feature",
+     "multiplier": 0.5,
+     "vector_norm_model_units": 0.7225316762924194,
+     "text": " a big puddle and wanted to play in it. Tom wanted to splash, but his dog did not like it. His dog said, \"No, Tom! Go away!\" Tom was sad and mad. He wanted to play with his dog,",
+     "promoted_hits": 0,
+     "ppl_clean": 2.7042183876037598
+    },
+    {
+     "prompt_index": 1,
+     "kind": "random",
+     "multiplier": 0.5,
+     "vector_norm_model_units": 0.7225316762924194,
+     "text": " a big box. It was brown and furry. Tom said, \"Let's see what's inside.\"\n\nThey opened the box and found a small box. It was very small. Tom tried to lift the lid. It was heavy. He",
+     "promoted_hits": 0,
+     "ppl_clean": 3.2203447818756104
+    },
+    {
+     "prompt_index": 1,
+     "kind": "feature",
+     "multiplier": 0.75,
+     "vector_norm_model_units": 1.0837974548339844,
+     "text": " a wallet on the ground. Tim wanted to see what was inside.\n\nTim was scared, but Tim was in the cold water. Tim wanted to go home, but Tim did not know. Tim shivered but he could not stop. Tim",
+     "promoted_hits": 1,
+     "ppl_clean": 8.418231010437012
+    },
+    {
+     "prompt_index": 1,
+     "kind": "random",
+     "multiplier": 0.75,
+     "vector_norm_model_units": 1.0837974548339844,
+     "text": " a big box. It was brown and furry. Tom said, \"What is this?\" He ran to the box and picked it up. It was rough and rusty. He wondered what it was for. He looked at it and said, \"I",
+     "promoted_hits": 0,
+     "ppl_clean": 3.863548755645752
+    },
+    {
+     "prompt_index": 1,
+     "kind": "feature",
+     "multiplier": 1,
+     "vector_norm_model_units": 1.4450633525848389,
+     "text": " a lot of fog and cold. Tim shivered and cold. Tim wanted to play, but Tim was shivering. His cold and day. Tim wanted to play outside, but Tim had a cold. Tim shivered and cold. Tim wanted to",
+     "promoted_hits": 6,
+     "ppl_clean": 12.264856338500977
+    },
+    {
+     "prompt_index": 1,
+     "kind": "random",
+     "multiplier": 1,
+     "vector_norm_model_units": 1.4450633525848389,
+     "text": " a big box. It was brown and furry. Tom's dog was enthusiastic. He loved the color. He ran to the box and opened it. What can do? What is available. He runs to the garage and stands in the corner. He",
+     "promoted_hits": 0,
+     "ppl_clean": 16.307109832763672
+    },
+    {
+     "prompt_index": 1,
+     "kind": "feature",
+     "multiplier": 1.25,
+     "vector_norm_model_units": 1.8063290119171143,
+     "text": " a lot of ice and water. He tried to get it, but it was. He was cold and shivering. His arms and colder. Tim and his coat. Tim and shivered the air. Tim shivered. It was, but then",
+     "promoted_hits": 2,
+     "ppl_clean": 54.35542678833008
+    },
+    {
+     "prompt_index": 1,
+     "kind": "random",
+     "multiplier": 1.25,
+     "vector_norm_model_units": 1.8063292503356934,
+     "text": " a big box. It was brown and furry. What is for?\"\n",
+     "promoted_hits": 0,
+     "ppl_clean": 22.134838104248047
+    },
+    {
+     "prompt_index": 1,
+     "kind": "feature",
+     "multiplier": 1.5,
+     "vector_norm_model_units": 2.1675949096679688,
+     "text": " a lot. It was, and there. The air was, but it was. Tim and wind. The air was and cold. Tim wanted to out. The air and colder. Tim, tried to play on the cold water. but it was",
+     "promoted_hits": 6,
+     "ppl_clean": 92.52789306640625
+    },
+    {
+     "prompt_index": 1,
+     "kind": "random",
+     "multiplier": 1.5,
+     "vector_norm_model_units": 2.1675949096679688,
+     "text": " a car in the corner. It is modest. What is. What is normal. What is modest.\n",
+     "promoted_hits": 0,
+     "ppl_clean": 118.43824005126953
+    },
+    {
+     "prompt_index": 1,
+     "kind": "feature",
+     "multiplier": 2,
+     "vector_norm_model_units": 2.8901267051696777,
+     "text": " a night in the air. and it started to freeze ice..\n, though, and wind. The air outside. and cold.. and out of air. and colder, like it tried to sh snow but it.. but it all",
+     "promoted_hits": 5,
+     "ppl_clean": 914.6129760742188
+    },
+    {
+     "prompt_index": 1,
+     "kind": "random",
+     "multiplier": 2,
+     "vector_norm_model_units": 2.8901267051696777,
+     "text": " a little box. It is not ordinary. What is available. What is normal. What is just.\n. What is out. What does. What can can keep up. What is a good. What does that is modest. What can can",
+     "promoted_hits": 0,
+     "ppl_clean": 295.88983154296875
+    }
+   ]
+  },
+  {
+   "feature": 687,
+   "group": "not_clear",
+   "label": "Parental safety warnings (\"don't go too close\"); promotes 'dangerous'",
+   "blind_correct_of_5": 4,
+   "typical_strength_sae_units": 3.653960335254669,
+   "promoted_tokens": [
+    " unsafe",
+    " dangerous",
+    " harm",
+    "arks",
+    " hurt",
+    " waste",
+    " cause",
+    " burn",
+    " prevent",
+    " liquid"
+   ],
+   "runs": [
+    {
+     "prompt_index": 0,
+     "kind": "none",
+     "multiplier": 0,
+     "vector_norm_model_units": 0.0,
+     "text": " She loved to play outside in the sunshine and pick flowers. One day, she found a shiny rock on the ground. She picked it up and showed it to her mom.\n\n\"Look, Mommy! I found a pretty rock!\" said",
+     "promoted_hits": 0,
+     "ppl_clean": 1.4211866855621338
+    },
+    {
+     "prompt_index": 0,
+     "kind": "feature",
+     "multiplier": 0.5,
+     "vector_norm_model_units": 0.28708377480506897,
+     "text": " She loved to play outside in the sunshine and pick flowers. One day, she found a shiny rock and put it in her pocket to keep it safe.\n\nAs she was playing, she noticed that some of the flowers she had lost every bit",
+     "promoted_hits": 0,
+     "ppl_clean": 2.331517219543457
+    },
+    {
+     "prompt_index": 0,
+     "kind": "random",
+     "multiplier": 0.5,
+     "vector_norm_model_units": 0.28708377480506897,
+     "text": " She loved to play outside, but it was very cold. So, she went to her mommy and said, \"Mommy, I am cold. Can we make a cocoa?\"\n\nMommy said, \"Sure, what kind of cocoa",
+     "promoted_hits": 0,
+     "ppl_clean": 1.984196662902832
+    },
+    {
+     "prompt_index": 0,
+     "kind": "feature",
+     "multiplier": 0.75,
+     "vector_norm_model_units": 0.43062567710876465,
+     "text": " She loved to play outside in the park with her mommy and daddy. One day, Lily's mommy told her to be careful and not let her step on her toes. \n\nLily walked around the park and saw some ducks swimming",
+     "promoted_hits": 0,
+     "ppl_clean": 2.3638460636138916
+    },
+    {
+     "prompt_index": 0,
+     "kind": "random",
+     "multiplier": 0.75,
+     "vector_norm_model_units": 0.43062564730644226,
+     "text": " She loved to play outside, but it was very cold. So, she went to her mommy and said, \"Mommy, I am cold. Can we make a cocoa?\"\n\nMommy said, \"Sure, what kind of cocoa",
+     "promoted_hits": 0,
+     "ppl_clean": 1.984196662902832
+    },
+    {
+     "prompt_index": 0,
+     "kind": "feature",
+     "multiplier": 1,
+     "vector_norm_model_units": 0.5741675496101379,
+     "text": " She loved to play outside in the park with her mommy and dad. One day, Lily's mommy told her to be careful and not let her step on her toes. \n\nLily walked around the park and saw some ducks swimming",
+     "promoted_hits": 0,
+     "ppl_clean": 2.7211387157440186
+    },
+    {
+     "prompt_index": 0,
+     "kind": "random",
+     "multiplier": 1,
+     "vector_norm_model_units": 0.5741675496101379,
+     "text": " She loved to play outside, but it was very cold. So, she went to her mommy and said, \"Mommy, I am so cold. Can we stay home today?\"\n\nMommy replied, \"Yes, let's stay",
+     "promoted_hits": 0,
+     "ppl_clean": 2.1763577461242676
+    },
+    {
+     "prompt_index": 0,
+     "kind": "feature",
+     "multiplier": 1.25,
+     "vector_norm_model_units": 0.717709481716156,
+     "text": " She loved to play outside in the park with her mommy and dad. One day, Lily's mommy told her to be careful and not let her step on her head on the step. \n\nLily was very careful and did not",
+     "promoted_hits": 0,
+     "ppl_clean": 3.274656295776367
+    },
+    {
+     "prompt_index": 0,
+     "kind": "random",
+     "multiplier": 1.25,
+     "vector_norm_model_units": 0.717709481716156,
+     "text": " She loved to play outside, but it was very cold. So, she went to her mommy and said, \"Mommy, I am so cold. Can we stay here and play inside?\"\n\nHer mommy said, \"Yes,",
+     "promoted_hits": 0,
+     "ppl_clean": 2.0164196491241455
+    },
+    {
+     "prompt_index": 0,
+     "kind": "feature",
+     "multiplier": 1.5,
+     "vector_norm_model_units": 0.8612513542175293,
+     "text": " She liked to play in the forest near her house. One day, she found a weak log on the ground. She was not careful and it broke. \n\nLily's mommy told her to step on the sharp rocks and step on",
+     "promoted_hits": 0,
+     "ppl_clean": 3.575190782546997
+    },
+    {
+     "prompt_index": 0,
+     "kind": "random",
+     "multiplier": 1.5,
+     "vector_norm_model_units": 0.8612512946128845,
+     "text": " She loved to play outside, but it was very cold. So, she asked her mom to bring her sweater, but her mom said, \"I don't want to. It's too cold, and it might freeze!\"\n\nLily's",
+     "promoted_hits": 0,
+     "ppl_clean": 2.8667831420898438
+    },
+    {
+     "prompt_index": 0,
+     "kind": "feature",
+     "multiplier": 2,
+     "vector_norm_model_units": 1.1483350992202759,
+     "text": " She liked to play in the water. One day, her mommy said, \"Lily, it's not ready to get wet.\"\n\nLily was playing outside when she saw a big water. Her mommy called her to get wet",
+     "promoted_hits": 0,
+     "ppl_clean": 5.242741107940674
+    },
+    {
+     "prompt_index": 0,
+     "kind": "random",
+     "multiplier": 2,
+     "vector_norm_model_units": 1.1483350992202759,
+     "text": " She was holding a piece of paper and said, \"Look, look, I found a pretty paper!\"\n\nLily's mom came and said, \"Lily, be careful, it's a safe climb the tree.\"\n\nLily",
+     "promoted_hits": 0,
+     "ppl_clean": 6.647947788238525
+    },
+    {
+     "prompt_index": 1,
+     "kind": "none",
+     "multiplier": 0,
+     "vector_norm_model_units": 0.0,
+     "text": " a big slide. It was fun. The slide had ice cream. Tom and his dog ran to the slide. They started to play.\n\nA girl named Sue came to the park. She said, \"Can I play too?\" Tom and",
+     "promoted_hits": 0,
+     "ppl_clean": 2.4643781185150146
+    },
+    {
+     "prompt_index": 1,
+     "kind": "feature",
+     "multiplier": 0.5,
+     "vector_norm_model_units": 0.28708377480506897,
+     "text": " a big gate. The gate was locked. Tom wanted to see what was behind it. He saw a pretty butterfly in the garden. The butterfly was very fast. Tom wanted to catch it.\n\nTom tried to catch the butterfly, but it",
+     "promoted_hits": 0,
+     "ppl_clean": 2.4018173217773438
+    },
+    {
+     "prompt_index": 1,
+     "kind": "random",
+     "multiplier": 0.5,
+     "vector_norm_model_units": 0.28708377480506897,
+     "text": " a big slide. The slide was fun. Tom wanted to slide down, but he was scared. He saw a girl named Sue at the bottom. Sue was also scared to slide.\n\nTom said, \"Sue, can I play with",
+     "promoted_hits": 0,
+     "ppl_clean": 2.4906647205352783
+    },
+    {
+     "prompt_index": 1,
+     "kind": "feature",
+     "multiplier": 0.75,
+     "vector_norm_model_units": 0.43062567710876465,
+     "text": " a big gate. The gate was locked. Tom wanted to see what was behind it. He saw a man with a hat. The man said, \"Do not go near the gate.\"\n\nTom went to the man and said, \"I",
+     "promoted_hits": 0,
+     "ppl_clean": 2.120251417160034
+    },
+    {
+     "prompt_index": 1,
+     "kind": "random",
+     "multiplier": 0.75,
+     "vector_norm_model_units": 0.43062564730644226,
+     "text": " a big park. At the park, there was a lot of waste. The waste was hard to collect. It was not very good. Tom felt sad.\n\nTom said to his dog, \"Let's make something new. We can make",
+     "promoted_hits": 2,
+     "ppl_clean": 3.7575249671936035
+    },
+    {
+     "prompt_index": 1,
+     "kind": "feature",
+     "multiplier": 1,
+     "vector_norm_model_units": 0.5741675496101379,
+     "text": " a big gate. The gate was locked. Tom wanted to see what was behind it. His dog was scared.\n\nTom said, \"Dog, can you please open the gate?\" The dog said, \"No, it is not safe.\"",
+     "promoted_hits": 0,
+     "ppl_clean": 2.1504790782928467
+    },
+    {
+     "prompt_index": 1,
+     "kind": "random",
+     "multiplier": 1,
+     "vector_norm_model_units": 0.5741675496101379,
+     "text": " a big park. At the park, there was a lot of waste. The waste was bad. It made a big mess.\n\nTom said to his dog, \"We need to pick the trash.\" His dog did not want to help.",
+     "promoted_hits": 2,
+     "ppl_clean": 3.0082035064697266
+    },
+    {
+     "prompt_index": 1,
+     "kind": "feature",
+     "multiplier": 1.25,
+     "vector_norm_model_units": 0.717709481716156,
+     "text": " a big well. At the park, there was water. Tom was thirsty, but he did not want to get wet.\n\nA little girl named Sue was playing near the well. She liked to throw her toys near the water. Sue did",
+     "promoted_hits": 0,
+     "ppl_clean": 4.307589530944824
+    },
+    {
+     "prompt_index": 1,
+     "kind": "random",
+     "multiplier": 1.25,
+     "vector_norm_model_units": 0.717709481716156,
+     "text": " a big park. At the park, there was a lot of waste. The waste was bad. It made a big mess.\n\nTom felt bad. He wanted to help. He said to his dog, \"I am sorry, do not",
+     "promoted_hits": 2,
+     "ppl_clean": 3.0724668502807617
+    },
+    {
+     "prompt_index": 1,
+     "kind": "feature",
+     "multiplier": 1.5,
+     "vector_norm_model_units": 0.8612513542175293,
+     "text": " a big well. At the park, there was water. Tom was thirsty, but he did not want to get wet.\n\nA little boy named Tim was playing near the well. Tim liked to throw water. Tim said, \"We don",
+     "promoted_hits": 0,
+     "ppl_clean": 4.973860740661621
+    },
+    {
+     "prompt_index": 1,
+     "kind": "random",
+     "multiplier": 1.5,
+     "vector_norm_model_units": 0.8612512946128845,
+     "text": " a big park. At the park, there was a lot of waste. The waste was bad. It made a big mess.\n\nTom felt bad. He wanted to help. But the waste was too bad. This made the park more sad",
+     "promoted_hits": 3,
+     "ppl_clean": 3.6525282859802246
+    },
+    {
+     "prompt_index": 1,
+     "kind": "feature",
+     "multiplier": 2,
+     "vector_norm_model_units": 1.1483350992202759,
+     "text": " a big fire. It was very loud. The fire was not for playing.\n\nHis mom was not home. She was very safe. Tom and his dog were not alert. They did not want to get hurt. They listened to the fire",
+     "promoted_hits": 1,
+     "ppl_clean": 6.149769306182861
+    },
+    {
+     "prompt_index": 1,
+     "kind": "random",
+     "multiplier": 2,
+     "vector_norm_model_units": 1.1483350992202759,
+     "text": " a big well. It was not safe. Tom wanted to see what was in it. He was troubled.\n\nTom was very sad. He saw a man who was fixing the well. The man was bad. This was not good.\n",
+     "promoted_hits": 0,
+     "ppl_clean": 5.7246880531311035
+    }
+   ]
+  },
+  {
+   "feature": 1970,
+   "group": "not_clear",
+   "label": "Objects of household chores (dishes, laundry, weeds)",
+   "blind_correct_of_5": 4,
+   "typical_strength_sae_units": 2.167584788799286,
+   "promoted_tokens": [
+    "kit",
+    "d",
+    " pots",
+    " spare",
+    "ify",
+    " pipes",
+    " tant",
+    " build",
+    " where",
+    " cigarette"
+   ],
+   "runs": [
+    {
+     "prompt_index": 0,
+     "kind": "none",
+     "multiplier": 0,
+     "vector_norm_model_units": 0.0,
+     "text": " She loved to play outside in the sunshine and pick flowers. One day, she found a shiny rock on the ground. She picked it up and showed it to her mom.\n\n\"Look, Mommy! I found a pretty rock!\" said",
+     "promoted_hits": 0,
+     "ppl_clean": 1.4211866855621338
+    },
+    {
+     "prompt_index": 0,
+     "kind": "feature",
+     "multiplier": 0.5,
+     "vector_norm_model_units": 0.17030249536037445,
+     "text": " She loved to play outside in the sunshine and pick flowers. One day, she found a shiny rock on the ground and showed it to her mommy. \n\nHer mommy said, \"That's a very pretty rock, Lily. Don",
+     "promoted_hits": 0,
+     "ppl_clean": 1.8479572534561157
+    },
+    {
+     "prompt_index": 0,
+     "kind": "random",
+     "multiplier": 0.5,
+     "vector_norm_model_units": 0.17030249536037445,
+     "text": " She loved to play outside in the park with her friends. One day, while they were playing, they saw a big dog. The dog was so big that Lily couldn't see his head. \n\nShe said to her friend, \"I",
+     "promoted_hits": 0,
+     "ppl_clean": 1.9175539016723633
+    },
+    {
+     "prompt_index": 0,
+     "kind": "feature",
+     "multiplier": 0.75,
+     "vector_norm_model_units": 0.2554537355899811,
+     "text": " She loved to play outside in the sunshine and pick flowers. One day, she found a shiny rock on the ground and showed it to her mommy. \n\n\"Look, mommy! I found a pretty rock!\" said Lily.\n",
+     "promoted_hits": 0,
+     "ppl_clean": 1.591416358947754
+    },
+    {
+     "prompt_index": 0,
+     "kind": "random",
+     "multiplier": 0.75,
+     "vector_norm_model_units": 0.2554537057876587,
+     "text": " She loved to play outside in the park with her friends. One day, while they were playing, they saw a big dog barking loudly. They were scared and ran away.\n\nLily's friends asked her why she was scared, and she",
+     "promoted_hits": 0,
+     "ppl_clean": 1.9112197160720825
+    },
+    {
+     "prompt_index": 0,
+     "kind": "feature",
+     "multiplier": 1,
+     "vector_norm_model_units": 0.3406049907207489,
+     "text": " She loved to play outside in the sunshine and pick flowers. One day, she found a shiny rock on the ground and showed it to her mommy. \n\n\"Look, mommy! I found a pretty rock!\" said Lily.\n",
+     "promoted_hits": 0,
+     "ppl_clean": 1.591416358947754
+    },
+    {
+     "prompt_index": 0,
+     "kind": "random",
+     "multiplier": 1,
+     "vector_norm_model_units": 0.3406049907207489,
+     "text": " She loved to play in her garden and look at the flowers. One day, she saw a big onion and it looked very strange. She asked her mommy, \"What is this onion, mommy?\" Her mommy replied, \"It's",
+     "promoted_hits": 0,
+     "ppl_clean": 2.182504653930664
+    },
+    {
+     "prompt_index": 0,
+     "kind": "feature",
+     "multiplier": 1.25,
+     "vector_norm_model_units": 0.42575621604919434,
+     "text": " She loved to play in her garden and collect pretty flowers. One day, she found a big, red tomato and decided to plant it in her garden. She watered it every day and waited patiently for it to grow.\n\nOne day, a",
+     "promoted_hits": 0,
+     "ppl_clean": 1.7620192766189575
+    },
+    {
+     "prompt_index": 0,
+     "kind": "random",
+     "multiplier": 1.25,
+     "vector_norm_model_units": 0.42575621604919434,
+     "text": " She loved to play in her garden, but one day her favorite flower garden was very messy. Lily tried and tried to clean it, but it wouldn't budge. She felt sad and didn't know what to do.\n\nHer mom came",
+     "promoted_hits": 0,
+     "ppl_clean": 2.4603238105773926
+    },
+    {
+     "prompt_index": 0,
+     "kind": "feature",
+     "multiplier": 1.5,
+     "vector_norm_model_units": 0.5109074711799622,
+     "text": " She had a lot of toys and a big yard to play on. One day, Lily's friend came over to play with her. They played with toys and had lots of fun. But suddenly, they heard a loud noise outside. It was a",
+     "promoted_hits": 0,
+     "ppl_clean": 2.4715538024902344
+    },
+    {
+     "prompt_index": 0,
+     "kind": "random",
+     "multiplier": 1.5,
+     "vector_norm_model_units": 0.5109074115753174,
+     "text": " She loved to play in her garden, where she had a big sunflower. She would look at the sun every day with her sunflower in her hand.\n\nOne day, Lily's mom told her to clean up her room. But Lily",
+     "promoted_hits": 1,
+     "ppl_clean": 2.478900671005249
+    },
+    {
+     "prompt_index": 0,
+     "kind": "feature",
+     "multiplier": 2,
+     "vector_norm_model_units": 0.6812099814414978,
+     "text": " She had a lot of toys and a big yard to play on. One day, Lily's friend, Tom, came over to play. He brought his toy truck and started to build a big tower. Lily thought the tower looked very tidy, so",
+     "promoted_hits": 1,
+     "ppl_clean": 3.4026989936828613
+    },
+    {
+     "prompt_index": 0,
+     "kind": "random",
+     "multiplier": 2,
+     "vector_norm_model_units": 0.6812099814414978,
+     "text": " She liked to play in her garden with her toys. One day, she found a big pumpkin pumpkin. It was big and round, and it had a face. She thought it was very funny.\n\nLily went inside the house and asked",
+     "promoted_hits": 0,
+     "ppl_clean": 3.3071515560150146
+    },
+    {
+     "prompt_index": 1,
+     "kind": "none",
+     "multiplier": 0,
+     "vector_norm_model_units": 0.0,
+     "text": " a big slide. It was fun. The slide had ice cream. Tom and his dog ran to the slide. They started to play.\n\nA girl named Sue came to the park. She said, \"Can I play too?\" Tom and",
+     "promoted_hits": 0,
+     "ppl_clean": 2.4643781185150146
+    },
+    {
+     "prompt_index": 1,
+     "kind": "feature",
+     "multiplier": 0.5,
+     "vector_norm_model_units": 0.17030249536037445,
+     "text": " a big slide. It was fun to climb and slide down. Tom wanted to play on the slide, but it was too high up. Sam wanted to go up the slide, but he was scared.\n\nTom said, \"Let's try",
+     "promoted_hits": 0,
+     "ppl_clean": 2.6121106147766113
+    },
+    {
+     "prompt_index": 1,
+     "kind": "random",
+     "multiplier": 0.5,
+     "vector_norm_model_units": 0.17030249536037445,
+     "text": " a big park. At the park, there was a big building. Tom and his dog ran to the building. They saw a man in a suit and a man in a suit. The man looked serious.\n\nTom said to his dog,",
+     "promoted_hits": 0,
+     "ppl_clean": 2.6164650917053223
+    },
+    {
+     "prompt_index": 1,
+     "kind": "feature",
+     "multiplier": 0.75,
+     "vector_norm_model_units": 0.2554537355899811,
+     "text": " a big tree. The sky was bright and the sun was warm. Tom and his dog ran to the tree. They saw a bird in the tree. The bird was deaf, so it could not hear. The bird could not hear, but it",
+     "promoted_hits": 0,
+     "ppl_clean": 2.3869707584381104
+    },
+    {
+     "prompt_index": 1,
+     "kind": "random",
+     "multiplier": 0.75,
+     "vector_norm_model_units": 0.2554537057876587,
+     "text": " a big park. At the park, there was a big building. Tom and his dog ran to the building. They saw a man in a suit and a man in a suit. The man looked serious.\n\nTom said to his dog,",
+     "promoted_hits": 0,
+     "ppl_clean": 2.6164650917053223
+    },
+    {
+     "prompt_index": 1,
+     "kind": "feature",
+     "multiplier": 1,
+     "vector_norm_model_units": 0.3406049907207489,
+     "text": " a big tree. It was very tall and had lots of leaves. Tom wanted to play with the leaves, but they were stuck up high. He wanted to run around to get them.\n\nTom asked his friend, Sam the dog, for",
+     "promoted_hits": 0,
+     "ppl_clean": 3.1089601516723633
+    },
+    {
+     "prompt_index": 1,
+     "kind": "random",
+     "multiplier": 1,
+     "vector_norm_model_units": 0.3406049907207489,
+     "text": " a big gate. It was locked. Tom wanted to unlock the gate. But he didn't know how.\n\nThen, a tall man came out of the house. He told Tom and the dog to help him. The tall man put the",
+     "promoted_hits": 0,
+     "ppl_clean": 3.1777868270874023
+    },
+    {
+     "prompt_index": 1,
+     "kind": "feature",
+     "multiplier": 1.25,
+     "vector_norm_model_units": 0.42575621604919434,
+     "text": " a big tree. It was dry and sunny. Tom and his dog went to play near the tree. The sun was hot and the tree started to rot. The tree started to rot. Tom and his dog were sad.\n\nA cop saw",
+     "promoted_hits": 0,
+     "ppl_clean": 2.9907689094543457
+    },
+    {
+     "prompt_index": 1,
+     "kind": "random",
+     "multiplier": 1.25,
+     "vector_norm_model_units": 0.42575621604919434,
+     "text": " a big gate. It was locked. The dog wanted to enter.\n\nTom said, \"Now I will be a hero.\" But the dog did not know the lock. Tom was sad. He asked his friend, Sam the dog, for",
+     "promoted_hits": 0,
+     "ppl_clean": 4.190811634063721
+    },
+    {
+     "prompt_index": 1,
+     "kind": "feature",
+     "multiplier": 1.5,
+     "vector_norm_model_units": 0.5109074711799622,
+     "text": " a big tree. It was dry and sunny. Tom liked the color. But he did not like the itch. He wanted to play with his ball and his dog.\n\nTom gave the ball to his dog. This made the itch more go",
+     "promoted_hits": 0,
+     "ppl_clean": 4.815208435058594
+    },
+    {
+     "prompt_index": 1,
+     "kind": "random",
+     "multiplier": 1.5,
+     "vector_norm_model_units": 0.5109074115753174,
+     "text": " a big gate. It was locked. The dog wanted to enter.\n\nTom said, \"Now I will be a hero!\" But the dog did not know the way. Tom was sad. He called for his mom. She heard him and",
+     "promoted_hits": 0,
+     "ppl_clean": 4.498623847961426
+    },
+    {
+     "prompt_index": 1,
+     "kind": "feature",
+     "multiplier": 2,
+     "vector_norm_model_units": 0.6812099814414978,
+     "text": " a big well. At the well, there was water and plants. Tom was very thirsty. He wanted to get a drink from the well.\n\nTom's mom gave him some water. There were many plants. This water was very strong.",
+     "promoted_hits": 0,
+     "ppl_clean": 4.4646124839782715
+    },
+    {
+     "prompt_index": 1,
+     "kind": "random",
+     "multiplier": 2,
+     "vector_norm_model_units": 0.6812099814414978,
+     "text": " a big gate. It was locked. The dog wanted to enter.\n\nTom said, \"Now I will be a hero!\" But the dog did not know the way. Tom was a cat. The dog was very big. The dog did",
+     "promoted_hits": 0,
+     "ppl_clean": 4.656563758850098
+    }
+   ]
+  },
+  {
+   "feature": 715,
+   "group": "not_clear",
+   "label": "' play' a musical instrument",
+   "blind_correct_of_5": 3,
+   "typical_strength_sae_units": 4.956584072113037,
+   "promoted_tokens": [
+    " skills",
+    " mine",
+    " her",
+    " cards",
+    " all",
+    " backwards",
+    " contests",
+    " louder",
+    " faster",
+    " deaf"
+   ],
+   "runs": [
+    {
+     "prompt_index": 0,
+     "kind": "none",
+     "multiplier": 0,
+     "vector_norm_model_units": 0.0,
+     "text": " She loved to play outside in the sunshine and pick flowers. One day, she found a shiny rock on the ground. She picked it up and showed it to her mom.\n\n\"Look, Mommy! I found a pretty rock!\" said",
+     "promoted_hits": 1,
+     "ppl_clean": 1.4211866855621338
+    },
+    {
+     "prompt_index": 0,
+     "kind": "feature",
+     "multiplier": 0.5,
+     "vector_norm_model_units": 0.38942810893058777,
+     "text": " She loved to play in her garden and look at the flowers. One day, she saw a beautiful crown on a flower. \n\n\"Wow, this crown is so pretty!\" said Lily.\n\nShe decided to collect the crown and put",
+     "promoted_hits": 1,
+     "ppl_clean": 2.4509644508361816
+    },
+    {
+     "prompt_index": 0,
+     "kind": "random",
+     "multiplier": 0.5,
+     "vector_norm_model_units": 0.38942813873291016,
+     "text": " She loved to play outside in the sunshine. One day, she saw a butterfly flying around her garden. It was so pretty! But then, she saw a dead butterfly on a flower. Lily felt sad because she couldn't play with the butterfly anymore",
+     "promoted_hits": 1,
+     "ppl_clean": 2.142531156539917
+    },
+    {
+     "prompt_index": 0,
+     "kind": "feature",
+     "multiplier": 0.75,
+     "vector_norm_model_units": 0.5841421484947205,
+     "text": " She loved to play in her backyard with her toys. One day, she found a shiny ornament on the ground. It was round and had pretty colors on it.\n\nLily's friend, Tim, came over and asked, \"What's",
+     "promoted_hits": 2,
+     "ppl_clean": 2.1808884143829346
+    },
+    {
+     "prompt_index": 0,
+     "kind": "random",
+     "multiplier": 0.75,
+     "vector_norm_model_units": 0.5841421484947205,
+     "text": " She loved to play outside in the sunshine. One day, she saw a butterfly flying around her garden. It was so pretty! But then, she saw a dead butterfly. She didn't want it to be dead, so she decided to keep it",
+     "promoted_hits": 1,
+     "ppl_clean": 2.182234048843384
+    },
+    {
+     "prompt_index": 0,
+     "kind": "feature",
+     "multiplier": 1,
+     "vector_norm_model_units": 0.7788562178611755,
+     "text": " She had a lot of toys and games in her room. Sometimes, she would stand in her room and play with her favorite teddy bear.\n\nOne day, Lily's teacher came to her and asked her a question. \"What color is",
+     "promoted_hits": 5,
+     "ppl_clean": 3.7646162509918213
+    },
+    {
+     "prompt_index": 0,
+     "kind": "random",
+     "multiplier": 1,
+     "vector_norm_model_units": 0.7788562774658203,
+     "text": " She loved to play in the jungle near her house. One day, she found a big, scary crocodile! She was scared and didn't know what to do. She tried to run away, but the crocodile was too fast.\n\n",
+     "promoted_hits": 1,
+     "ppl_clean": 1.9495244026184082
+    },
+    {
+     "prompt_index": 0,
+     "kind": "feature",
+     "multiplier": 1.25,
+     "vector_norm_model_units": 0.9735703468322754,
+     "text": " She had a lot of toys and games in her room. Sometimes, she would stand in her garden and play with her dolls. But sometimes, she was a bad boy. She would tease her toys and make funny faces.\n\nOne day,",
+     "promoted_hits": 4,
+     "ppl_clean": 5.159392356872559
+    },
+    {
+     "prompt_index": 0,
+     "kind": "random",
+     "multiplier": 1.25,
+     "vector_norm_model_units": 0.9735702872276306,
+     "text": " She loved to play in the jungle near her house. One day, she found a big, scary spider. She didn't know what to do, but she didn't want to leave it. \n\nShe decided to follow the spider when it",
+     "promoted_hits": 1,
+     "ppl_clean": 2.9308996200561523
+    },
+    {
+     "prompt_index": 0,
+     "kind": "feature",
+     "multiplier": 1.5,
+     "vector_norm_model_units": 1.168284296989441,
+     "text": " She had a lot of toys and games in her room. Sometimes, she would stand in the garden and play with her favorite teddy bear.\n\nOne day, Lily's teacher came to her. The children saw the play and said, \"",
+     "promoted_hits": 3,
+     "ppl_clean": 6.7464094161987305
+    },
+    {
+     "prompt_index": 0,
+     "kind": "random",
+     "multiplier": 1.5,
+     "vector_norm_model_units": 1.168284296989441,
+     "text": " She loved to play in the sea and look at herself in the pretty blue seas. One day, she went to a new place to explore. She went inside and saw a big, beautiful seashell. She couldn't wait to explore what was hidden",
+     "promoted_hits": 0,
+     "ppl_clean": 7.178615570068359
+    },
+    {
+     "prompt_index": 0,
+     "kind": "feature",
+     "multiplier": 2,
+     "vector_norm_model_units": 1.557712435722351,
+     "text": " Lily had a lot of her talents in her talent. her favorite animal, a graceful deer that gracely and graceful in the ground. The deer would dance in the trees and twinkle on the ground. Lily and the deer were the best in the",
+     "promoted_hits": 3,
+     "ppl_clean": 20.72955894470215
+    },
+    {
+     "prompt_index": 0,
+     "kind": "random",
+     "multiplier": 2,
+     "vector_norm_model_units": 1.5577125549316406,
+     "text": " She loved to play in her home in the ocean. One day, she was very excited as she could today was ready to explore what was in the world.\n\nAs she walked on her adventure, she couldn't wait to find what she would",
+     "promoted_hits": 2,
+     "ppl_clean": 11.040167808532715
+    },
+    {
+     "prompt_index": 1,
+     "kind": "none",
+     "multiplier": 0,
+     "vector_norm_model_units": 0.0,
+     "text": " a big slide. It was fun. The slide had ice cream. Tom and his dog ran to the slide. They started to play.\n\nA girl named Sue came to the park. She said, \"Can I play too?\" Tom and",
+     "promoted_hits": 0,
+     "ppl_clean": 2.4643781185150146
+    },
+    {
+     "prompt_index": 1,
+     "kind": "feature",
+     "multiplier": 0.5,
+     "vector_norm_model_units": 0.38942810893058777,
+     "text": " a big tree. The tree had many leaves. Tom and his dog wanted to play near the tree.\n\nAs they played, they saw a small bird. The bird was sad. Tom and his dog looked at the bird. They wanted to",
+     "promoted_hits": 0,
+     "ppl_clean": 1.8544728755950928
+    },
+    {
+     "prompt_index": 1,
+     "kind": "random",
+     "multiplier": 0.5,
+     "vector_norm_model_units": 0.38942813873291016,
+     "text": " a big park. At the park, there was a big slide. Tom and his dog ran to the slide. They started to go down. The slide was long and fun. Tom and his dog went up and down the slide as they went.",
+     "promoted_hits": 0,
+     "ppl_clean": 2.8445324897766113
+    },
+    {
+     "prompt_index": 1,
+     "kind": "feature",
+     "multiplier": 0.75,
+     "vector_norm_model_units": 0.5841421484947205,
+     "text": " a big tree. The tree had many leaves. Tom and the dog wanted to play near the tree.\n\nAs they played, they saw a small bird. The bird was sad. Tom tried to make the bird feel better. He wanted to",
+     "promoted_hits": 0,
+     "ppl_clean": 2.210855484008789
+    },
+    {
+     "prompt_index": 1,
+     "kind": "random",
+     "multiplier": 0.75,
+     "vector_norm_model_units": 0.5841421484947205,
+     "text": " a big park. At the park, there was a big slide. Tom and his dog ran to the slide. They started to go down the slide together. The slide was very fun.\n\nWhile they were at the bottom of the slide,",
+     "promoted_hits": 0,
+     "ppl_clean": 2.547121047973633
+    },
+    {
+     "prompt_index": 1,
+     "kind": "feature",
+     "multiplier": 1,
+     "vector_norm_model_units": 0.7788562178611755,
+     "text": " a big statue. It was the same as the ball. Tom was excited and said, \"Tom, I am a dependable dog. I will help you.\" Then, Tom told a nice cat to play on the ball. They ran and laughed",
+     "promoted_hits": 0,
+     "ppl_clean": 7.518686294555664
+    },
+    {
+     "prompt_index": 1,
+     "kind": "random",
+     "multiplier": 1,
+     "vector_norm_model_units": 0.7788562774658203,
+     "text": " a big park. At the park, there was a new park. Tom and his dog ran to the new park. They were very happy.\n\nThey played in the new park all day. They ran to the new park as they ran.",
+     "promoted_hits": 1,
+     "ppl_clean": 3.28468656539917
+    },
+    {
+     "prompt_index": 1,
+     "kind": "feature",
+     "multiplier": 1.25,
+     "vector_norm_model_units": 0.9735703468322754,
+     "text": " a big statue. It was clear and pretty. Tom said, \"Let's play with the statue.\"\n\nMia came up with a pale star in her hand. She told a nice man. The man was the one of the statue.",
+     "promoted_hits": 1,
+     "ppl_clean": 7.455577373504639
+    },
+    {
+     "prompt_index": 1,
+     "kind": "random",
+     "multiplier": 1.25,
+     "vector_norm_model_units": 0.9735702872276306,
+     "text": " a big park. At first, it was fun. Tom liked the park a lot. He ran and played with his dog. They played and had fun together. Then, Tom played a new game. The game was separate. They could play the",
+     "promoted_hits": 0,
+     "ppl_clean": 5.161591529846191
+    },
+    {
+     "prompt_index": 1,
+     "kind": "feature",
+     "multiplier": 1.5,
+     "vector_norm_model_units": 1.168284296989441,
+     "text": " a big statue. It was clear and pretty. Tom said, \"Let's play with the statue. I will strike the ball first. I will be the best.\"\n\nTom played the statue. The ball was very impressive. He ran fast",
+     "promoted_hits": 0,
+     "ppl_clean": 5.64309024810791
+    },
+    {
+     "prompt_index": 1,
+     "kind": "random",
+     "multiplier": 1.5,
+     "vector_norm_model_units": 1.168284296989441,
+     "text": " a big park. At first, it was fun. Tom loved to run and jump. He would run fast to feel happy.\n\nOne day, his dog wanted to act. He could do so many things. This day was his playd",
+     "promoted_hits": 0,
+     "ppl_clean": 14.052054405212402
+    },
+    {
+     "prompt_index": 1,
+     "kind": "feature",
+     "multiplier": 2,
+     "vector_norm_model_units": 1.557712435722351,
+     "text": " a big ball. The ball was fragile. The ball was a match. The birds were in the square.\n\nTom and the balls were loud and clap loudly. The birds came from the nearby nearby. \"Twinkle the word and sing",
+     "promoted_hits": 0,
+     "ppl_clean": 29.405324935913086
+    },
+    {
+     "prompt_index": 1,
+     "kind": "random",
+     "multiplier": 2,
+     "vector_norm_model_units": 1.5577125549316406,
+     "text": " a big park and they were happy there. They wanted to perform for their families. They were ready.\n\nAs they were ready, they felt ready. They were ready to have a nice day. The sun was shining and they could play in",
+     "promoted_hits": 0,
+     "ppl_clean": 7.973906517028809
+    }
+   ]
+  }
+ ]
+}

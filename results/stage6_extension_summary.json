@@ -1,0 +1,767 @@
+{
+ "break_threshold_ppl": 20.0,
+ "features": [
+  {
+   "feature": 1137,
+   "group": "clear",
+   "label": "' rain' in 'started to rain'",
+   "blind_correct_of_5": 3,
+   "theme_words": [
+    "cloud",
+    "clouds",
+    "puddle",
+    "puddles",
+    "rain",
+    "rained",
+    "raining",
+    "rainy",
+    "storm",
+    "umbrella",
+    "wet"
+   ],
+   "none": {
+    "theme_hits_mean": 0.0
+   },
+   "by_multiplier": {
+    "0.5": {
+     "feature": {
+      "theme_hits_mean": 2.0,
+      "promoted_hits_mean": 1.0,
+      "ppl_median": 3.689725875854492,
+      "broken_of_n": "0/2"
+     },
+     "random": {
+      "theme_hits_mean": 0.0,
+      "promoted_hits_mean": 0.0,
+      "ppl_median": 4.7107861042022705,
+      "broken_of_n": "0/2"
+     }
+    },
+    "0.75": {
+     "feature": {
+      "theme_hits_mean": 3.0,
+      "promoted_hits_mean": 2.5,
+      "ppl_median": 9.649568796157837,
+      "broken_of_n": "0/2"
+     },
+     "random": {
+      "theme_hits_mean": 0.0,
+      "promoted_hits_mean": 0.0,
+      "ppl_median": 6.221776247024536,
+      "broken_of_n": "0/2"
+     }
+    },
+    "1": {
+     "feature": {
+      "theme_hits_mean": 3.5,
+      "promoted_hits_mean": 3.0,
+      "ppl_median": 24.589566230773926,
+      "broken_of_n": "1/2"
+     },
+     "random": {
+      "theme_hits_mean": 0.0,
+      "promoted_hits_mean": 0.0,
+      "ppl_median": 28.389484405517578,
+      "broken_of_n": "2/2"
+     }
+    },
+    "1.25": {
+     "feature": {
+      "theme_hits_mean": 2.0,
+      "promoted_hits_mean": 3.5,
+      "ppl_median": 106.35662460327148,
+      "broken_of_n": "2/2"
+     },
+     "random": {
+      "theme_hits_mean": 0.0,
+      "promoted_hits_mean": 0.0,
+      "ppl_median": 43.48063564300537,
+      "broken_of_n": "2/2"
+     }
+    },
+    "1.5": {
+     "feature": {
+      "theme_hits_mean": 8.0,
+      "promoted_hits_mean": 3.0,
+      "ppl_median": 691.4508514404297,
+      "broken_of_n": "2/2"
+     },
+     "random": {
+      "theme_hits_mean": 0.0,
+      "promoted_hits_mean": 0.0,
+      "ppl_median": 177.47731018066406,
+      "broken_of_n": "2/2"
+     }
+    },
+    "2": {
+     "feature": {
+      "theme_hits_mean": 8.5,
+      "promoted_hits_mean": 7.0,
+      "ppl_median": 2450.865264892578,
+      "broken_of_n": "2/2"
+     },
+     "random": {
+      "theme_hits_mean": 0.0,
+      "promoted_hits_mean": 0.0,
+      "ppl_median": 682.2625427246094,
+      "broken_of_n": "2/2"
+     }
+    }
+   },
+   "fluent_on_theme_runs": [
+    {
+     "prompt": 0,
+     "k": 0.5,
+     "theme_hits": 3
+    },
+    {
+     "prompt": 0,
+     "k": 0.75,
+     "theme_hits": 3
+    },
+    {
+     "prompt": 0,
+     "k": 1,
+     "theme_hits": 3
+    },
+    {
+     "prompt": 1,
+     "k": 0.5,
+     "theme_hits": 1
+    },
+    {
+     "prompt": 1,
+     "k": 0.75,
+     "theme_hits": 3
+    }
+   ]
+  },
+  {
+   "feature": 916,
+   "group": "not_clear",
+   "label": "Bees, hives and honey",
+   "blind_correct_of_5": 5,
+   "theme_words": [
+    "bee",
+    "bees",
+    "buzz",
+    "buzzing",
+    "flower",
+    "flowers",
+    "hive",
+    "hives",
+    "honey"
+   ],
+   "none": {
+    "theme_hits_mean": 0.5
+   },
+   "by_multiplier": {
+    "0.5": {
+     "feature": {
+      "theme_hits_mean": 2.5,
+      "promoted_hits_mean": 0.0,
+      "ppl_median": 2.2174686193466187,
+      "broken_of_n": "0/2"
+     },
+     "random": {
+      "theme_hits_mean": 0.0,
+      "promoted_hits_mean": 0.0,
+      "ppl_median": 1.9286019802093506,
+      "broken_of_n": "0/2"
+     }
+    },
+    "0.75": {
+     "feature": {
+      "theme_hits_mean": 0.0,
+      "promoted_hits_mean": 0.0,
+      "ppl_median": 2.067099690437317,
+      "broken_of_n": "0/2"
+     },
+     "random": {
+      "theme_hits_mean": 0.0,
+      "promoted_hits_mean": 0.0,
+      "ppl_median": 2.6708672046661377,
+      "broken_of_n": "0/2"
+     }
+    },
+    "1": {
+     "feature": {
+      "theme_hits_mean": 1.5,
+      "promoted_hits_mean": 0.5,
+      "ppl_median": 2.8982099294662476,
+      "broken_of_n": "0/2"
+     },
+     "random": {
+      "theme_hits_mean": 0.0,
+      "promoted_hits_mean": 0.0,
+      "ppl_median": 4.141908168792725,
+      "broken_of_n": "0/2"
+     }
+    },
+    "1.25": {
+     "feature": {
+      "theme_hits_mean": 8.5,
+      "promoted_hits_mean": 5.0,
+      "ppl_median": 5.407498836517334,
+      "broken_of_n": "0/2"
+     },
+     "random": {
+      "theme_hits_mean": 0.0,
+      "promoted_hits_mean": 0.0,
+      "ppl_median": 3.039574384689331,
+      "broken_of_n": "0/2"
+     }
+    },
+    "1.5": {
+     "feature": {
+      "theme_hits_mean": 10.5,
+      "promoted_hits_mean": 3.5,
+      "ppl_median": 20.67345142364502,
+      "broken_of_n": "1/2"
+     },
+     "random": {
+      "theme_hits_mean": 0.0,
+      "promoted_hits_mean": 0.0,
+      "ppl_median": 5.161773085594177,
+      "broken_of_n": "0/2"
+     }
+    },
+    "2": {
+     "feature": {
+      "theme_hits_mean": 15.5,
+      "promoted_hits_mean": 6.0,
+      "ppl_median": 62.82014083862305,
+      "broken_of_n": "2/2"
+     },
+     "random": {
+      "theme_hits_mean": 0.0,
+      "promoted_hits_mean": 0.0,
+      "ppl_median": 16.0194673538208,
+      "broken_of_n": "1/2"
+     }
+    }
+   },
+   "fluent_on_theme_runs": [
+    {
+     "prompt": 0,
+     "k": 0.5,
+     "theme_hits": 5
+    },
+    {
+     "prompt": 0,
+     "k": 1.25,
+     "theme_hits": 5
+    },
+    {
+     "prompt": 1,
+     "k": 1,
+     "theme_hits": 3
+    },
+    {
+     "prompt": 1,
+     "k": 1.25,
+     "theme_hits": 12
+    },
+    {
+     "prompt": 1,
+     "k": 1.5,
+     "theme_hits": 12
+    }
+   ]
+  },
+  {
+   "feature": 1463,
+   "group": "not_clear",
+   "label": "' cold' (weather)",
+   "blind_correct_of_5": 3,
+   "theme_words": [
+    "coat",
+    "cold",
+    "freezing",
+    "ice",
+    "icy",
+    "shiver",
+    "shivering",
+    "snow",
+    "warm",
+    "winter"
+   ],
+   "none": {
+    "theme_hits_mean": 0.5
+   },
+   "by_multiplier": {
+    "0.5": {
+     "feature": {
+      "theme_hits_mean": 0.5,
+      "promoted_hits_mean": 0.5,
+      "ppl_median": 2.993662476539612,
+      "broken_of_n": "0/2"
+     },
+     "random": {
+      "theme_hits_mean": 0.0,
+      "promoted_hits_mean": 0.0,
+      "ppl_median": 2.9903500080108643,
+      "broken_of_n": "0/2"
+     }
+    },
+    "0.75": {
+     "feature": {
+      "theme_hits_mean": 3.5,
+      "promoted_hits_mean": 2.5,
+      "ppl_median": 7.732996463775635,
+      "broken_of_n": "0/2"
+     },
+     "random": {
+      "theme_hits_mean": 0.0,
+      "promoted_hits_mean": 0.0,
+      "ppl_median": 3.3765034675598145,
+      "broken_of_n": "0/2"
+     }
+    },
+    "1": {
+     "feature": {
+      "theme_hits_mean": 5.5,
+      "promoted_hits_mean": 5.0,
+      "ppl_median": 24.05125331878662,
+      "broken_of_n": "1/2"
+     },
+     "random": {
+      "theme_hits_mean": 0.0,
+      "promoted_hits_mean": 0.0,
+      "ppl_median": 14.14995288848877,
+      "broken_of_n": "0/2"
+     }
+    },
+    "1.25": {
+     "feature": {
+      "theme_hits_mean": 5.5,
+      "promoted_hits_mean": 5.5,
+      "ppl_median": 68.64486885070801,
+      "broken_of_n": "2/2"
+     },
+     "random": {
+      "theme_hits_mean": 0.0,
+      "promoted_hits_mean": 0.0,
+      "ppl_median": 33.286325454711914,
+      "broken_of_n": "2/2"
+     }
+    },
+    "1.5": {
+     "feature": {
+      "theme_hits_mean": 4.0,
+      "promoted_hits_mean": 7.0,
+      "ppl_median": 84.30176162719727,
+      "broken_of_n": "2/2"
+     },
+     "random": {
+      "theme_hits_mean": 0.0,
+      "promoted_hits_mean": 0.0,
+      "ppl_median": 114.85097122192383,
+      "broken_of_n": "2/2"
+     }
+    },
+    "2": {
+     "feature": {
+      "theme_hits_mean": 4.5,
+      "promoted_hits_mean": 5.5,
+      "ppl_median": 995.8906555175781,
+      "broken_of_n": "2/2"
+     },
+     "random": {
+      "theme_hits_mean": 0.0,
+      "promoted_hits_mean": 0.0,
+      "ppl_median": 301.5089569091797,
+      "broken_of_n": "2/2"
+     }
+    }
+   },
+   "fluent_on_theme_runs": [
+    {
+     "prompt": 0,
+     "k": 0.5,
+     "theme_hits": 1
+    },
+    {
+     "prompt": 0,
+     "k": 0.75,
+     "theme_hits": 6
+    },
+    {
+     "prompt": 1,
+     "k": 1,
+     "theme_hits": 6
+    }
+   ]
+  },
+  {
+   "feature": 687,
+   "group": "not_clear",
+   "label": "Parental safety warnings (\"don't go too close\"); promotes 'dangerous'",
+   "blind_correct_of_5": 4,
+   "theme_words": [
+    "careful",
+    "close",
+    "danger",
+    "dangerous",
+    "hurt",
+    "safe",
+    "stay",
+    "warned",
+    "warning"
+   ],
+   "none": {
+    "theme_hits_mean": 0.0
+   },
+   "by_multiplier": {
+    "0.5": {
+     "feature": {
+      "theme_hits_mean": 0.5,
+      "promoted_hits_mean": 0.0,
+      "ppl_median": 2.3666672706604004,
+      "broken_of_n": "0/2"
+     },
+     "random": {
+      "theme_hits_mean": 0.0,
+      "promoted_hits_mean": 0.0,
+      "ppl_median": 2.237430691719055,
+      "broken_of_n": "0/2"
+     }
+    },
+    "0.75": {
+     "feature": {
+      "theme_hits_mean": 0.5,
+      "promoted_hits_mean": 0.0,
+      "ppl_median": 2.242048740386963,
+      "broken_of_n": "0/2"
+     },
+     "random": {
+      "theme_hits_mean": 0.0,
+      "promoted_hits_mean": 1.0,
+      "ppl_median": 2.8708608150482178,
+      "broken_of_n": "0/2"
+     }
+    },
+    "1": {
+     "feature": {
+      "theme_hits_mean": 1.0,
+      "promoted_hits_mean": 0.0,
+      "ppl_median": 2.4358088970184326,
+      "broken_of_n": "0/2"
+     },
+     "random": {
+      "theme_hits_mean": 1.0,
+      "promoted_hits_mean": 1.0,
+      "ppl_median": 2.592280626296997,
+      "broken_of_n": "0/2"
+     }
+    },
+    "1.25": {
+     "feature": {
+      "theme_hits_mean": 1.0,
+      "promoted_hits_mean": 0.0,
+      "ppl_median": 3.7911229133605957,
+      "broken_of_n": "0/2"
+     },
+     "random": {
+      "theme_hits_mean": 0.5,
+      "promoted_hits_mean": 1.0,
+      "ppl_median": 2.5444432497024536,
+      "broken_of_n": "0/2"
+     }
+    },
+    "1.5": {
+     "feature": {
+      "theme_hits_mean": 0.5,
+      "promoted_hits_mean": 0.0,
+      "ppl_median": 4.274525761604309,
+      "broken_of_n": "0/2"
+     },
+     "random": {
+      "theme_hits_mean": 0.0,
+      "promoted_hits_mean": 1.5,
+      "ppl_median": 3.259655714035034,
+      "broken_of_n": "0/2"
+     }
+    },
+    "2": {
+     "feature": {
+      "theme_hits_mean": 1.0,
+      "promoted_hits_mean": 0.5,
+      "ppl_median": 5.696255207061768,
+      "broken_of_n": "0/2"
+     },
+     "random": {
+      "theme_hits_mean": 1.5,
+      "promoted_hits_mean": 0.0,
+      "ppl_median": 6.1863179206848145,
+      "broken_of_n": "0/2"
+     }
+    }
+   },
+   "fluent_on_theme_runs": [
+    {
+     "prompt": 0,
+     "k": 0.5,
+     "theme_hits": 1
+    },
+    {
+     "prompt": 0,
+     "k": 0.75,
+     "theme_hits": 1
+    },
+    {
+     "prompt": 0,
+     "k": 1.25,
+     "theme_hits": 2
+    },
+    {
+     "prompt": 0,
+     "k": 1.5,
+     "theme_hits": 1
+    },
+    {
+     "prompt": 1,
+     "k": 1,
+     "theme_hits": 1
+    },
+    {
+     "prompt": 1,
+     "k": 2,
+     "theme_hits": 2
+    }
+   ]
+  },
+  {
+   "feature": 1970,
+   "group": "not_clear",
+   "label": "Objects of household chores (dishes, laundry, weeds)",
+   "blind_correct_of_5": 4,
+   "theme_words": [
+    "chores",
+    "clean",
+    "cleaning",
+    "dishes",
+    "laundry",
+    "mess",
+    "sweep",
+    "tidy",
+    "wash",
+    "washing",
+    "weeds"
+   ],
+   "none": {
+    "theme_hits_mean": 0.0
+   },
+   "by_multiplier": {
+    "0.5": {
+     "feature": {
+      "theme_hits_mean": 0.0,
+      "promoted_hits_mean": 0.0,
+      "ppl_median": 2.2300339341163635,
+      "broken_of_n": "0/2"
+     },
+     "random": {
+      "theme_hits_mean": 0.0,
+      "promoted_hits_mean": 0.0,
+      "ppl_median": 2.2670094966888428,
+      "broken_of_n": "0/2"
+     }
+    },
+    "0.75": {
+     "feature": {
+      "theme_hits_mean": 0.0,
+      "promoted_hits_mean": 0.0,
+      "ppl_median": 1.9891935586929321,
+      "broken_of_n": "0/2"
+     },
+     "random": {
+      "theme_hits_mean": 0.0,
+      "promoted_hits_mean": 0.0,
+      "ppl_median": 2.2638424038887024,
+      "broken_of_n": "0/2"
+     }
+    },
+    "1": {
+     "feature": {
+      "theme_hits_mean": 0.0,
+      "promoted_hits_mean": 0.0,
+      "ppl_median": 2.3501882553100586,
+      "broken_of_n": "0/2"
+     },
+     "random": {
+      "theme_hits_mean": 0.0,
+      "promoted_hits_mean": 0.0,
+      "ppl_median": 2.680145740509033,
+      "broken_of_n": "0/2"
+     }
+    },
+    "1.25": {
+     "feature": {
+      "theme_hits_mean": 0.0,
+      "promoted_hits_mean": 0.0,
+      "ppl_median": 2.3763940930366516,
+      "broken_of_n": "0/2"
+     },
+     "random": {
+      "theme_hits_mean": 0.5,
+      "promoted_hits_mean": 0.0,
+      "ppl_median": 3.3255677223205566,
+      "broken_of_n": "0/2"
+     }
+    },
+    "1.5": {
+     "feature": {
+      "theme_hits_mean": 0.0,
+      "promoted_hits_mean": 0.0,
+      "ppl_median": 3.643381118774414,
+      "broken_of_n": "0/2"
+     },
+     "random": {
+      "theme_hits_mean": 0.5,
+      "promoted_hits_mean": 0.5,
+      "ppl_median": 3.4887622594833374,
+      "broken_of_n": "0/2"
+     }
+    },
+    "2": {
+     "feature": {
+      "theme_hits_mean": 0.5,
+      "promoted_hits_mean": 0.5,
+      "ppl_median": 3.9336557388305664,
+      "broken_of_n": "0/2"
+     },
+     "random": {
+      "theme_hits_mean": 0.0,
+      "promoted_hits_mean": 0.0,
+      "ppl_median": 3.981857657432556,
+      "broken_of_n": "0/2"
+     }
+    }
+   },
+   "fluent_on_theme_runs": [
+    {
+     "prompt": 0,
+     "k": 2,
+     "theme_hits": 1
+    }
+   ]
+  },
+  {
+   "feature": 715,
+   "group": "not_clear",
+   "label": "' play' a musical instrument",
+   "blind_correct_of_5": 3,
+   "theme_words": [
+    "drum",
+    "drums",
+    "guitar",
+    "instrument",
+    "music",
+    "piano",
+    "play",
+    "played",
+    "sing",
+    "singing",
+    "song",
+    "songs",
+    "violin"
+   ],
+   "none": {
+    "theme_hits_mean": 1.5
+   },
+   "by_multiplier": {
+    "0.5": {
+     "feature": {
+      "theme_hits_mean": 1.5,
+      "promoted_hits_mean": 0.5,
+      "ppl_median": 2.152718663215637,
+      "broken_of_n": "0/2"
+     },
+     "random": {
+      "theme_hits_mean": 1.0,
+      "promoted_hits_mean": 0.5,
+      "ppl_median": 2.493531823158264,
+      "broken_of_n": "0/2"
+     }
+    },
+    "0.75": {
+     "feature": {
+      "theme_hits_mean": 1.5,
+      "promoted_hits_mean": 1.0,
+      "ppl_median": 2.195871949195862,
+      "broken_of_n": "0/2"
+     },
+     "random": {
+      "theme_hits_mean": 0.5,
+      "promoted_hits_mean": 0.5,
+      "ppl_median": 2.3646775484085083,
+      "broken_of_n": "0/2"
+     }
+    },
+    "1": {
+     "feature": {
+      "theme_hits_mean": 1.0,
+      "promoted_hits_mean": 2.5,
+      "ppl_median": 5.641651272773743,
+      "broken_of_n": "0/2"
+     },
+     "random": {
+      "theme_hits_mean": 1.0,
+      "promoted_hits_mean": 1.0,
+      "ppl_median": 2.617105484008789,
+      "broken_of_n": "0/2"
+     }
+    },
+    "1.25": {
+     "feature": {
+      "theme_hits_mean": 1.0,
+      "promoted_hits_mean": 2.5,
+      "ppl_median": 6.307484865188599,
+      "broken_of_n": "0/2"
+     },
+     "random": {
+      "theme_hits_mean": 2.5,
+      "promoted_hits_mean": 0.5,
+      "ppl_median": 4.046245574951172,
+      "broken_of_n": "0/2"
+     }
+    },
+    "1.5": {
+     "feature": {
+      "theme_hits_mean": 2.0,
+      "promoted_hits_mean": 1.5,
+      "ppl_median": 6.19474983215332,
+      "broken_of_n": "0/2"
+     },
+     "random": {
+      "theme_hits_mean": 0.5,
+      "promoted_hits_mean": 0.0,
+      "ppl_median": 10.61533498764038,
+      "broken_of_n": "0/2"
+     }
+    },
+    "2": {
+     "feature": {
+      "theme_hits_mean": 0.5,
+      "promoted_hits_mean": 1.5,
+      "ppl_median": 25.067441940307617,
+      "broken_of_n": "2/2"
+     },
+     "random": {
+      "theme_hits_mean": 1.0,
+      "promoted_hits_mean": 1.0,
+      "ppl_median": 9.507037162780762,
+      "broken_of_n": "0/2"
+     }
+    }
+   },
+   "fluent_on_theme_runs": [
+    {
+     "prompt": 0,
+     "k": 1.5,
+     "theme_hits": 2
+    }
+   ]
+  }
+ ]
+}

@@ -74,6 +74,25 @@ steering:                   # Stage 6
     - "Once upon a time, there was a little girl named Lily."
     - "Tom and his dog went to the park. They saw"
 
+steering_extension:         # Stage 6 extension: context/theme features, gentler strengths
+  # rule: every Stage 5 label naming a topic/domain (not a syntactic slot or a single next token),
+  # regardless of clear verdict or blind score, excluding features already steered
+  clear_features: [1137]          # ' rain' in 'started to rain' (clear, 3/5 blind)
+  unclear_features: [916, 1463, 687, 1970, 715]  # bees/honey, cold weather, safety warnings, chores, music
+  multipliers: [0.5, 0.75, 1, 1.25, 1.5, 2]
+  # theme words, fixed BEFORE looking at the steered text; counted as whole lower-case words
+  theme_words:
+    1137: [rain, raining, rained, rainy, wet, umbrella, cloud, clouds, storm, puddle, puddles]
+    916: [bee, bees, honey, hive, hives, buzz, buzzing, flower, flowers]
+    1463: [cold, snow, winter, freezing, ice, icy, coat, shiver, shivering, warm]
+    687: [dangerous, danger, careful, safe, hurt, warned, warning, stay, close]
+    1970: [clean, cleaning, dishes, laundry, sweep, chores, wash, washing, weeds, tidy, mess]
+    715: [music, song, songs, sing, singing, drum, drums, guitar, piano, instrument, violin, play, played]
+  max_new_tokens: 50
+  prompts:
+    - "Once upon a time, there was a little girl named Lily."
+    - "Tom and his dog went to the park. They saw"
+
 generation:
   seed: 1234                # same seed + prompt -> same story
   prompts:

@@ -28,7 +28,8 @@ from src.model import load_model, residual_hook
 from src.sae import SparseAutoencoder
 
 cfg = load_config()
-sc = cfg["steering"]
+EXT = "--ext" in sys.argv  # Stage 6 extension: theme features
+sc = cfg["steering_extension" if EXT else "steering"]
 set_seed(cfg["seed"])
 layer, lam = cfg["model"]["layer"], cfg["interpret"]["chosen_lambda"]
 scale = json.loads((ROOT / "results" / "stage3_runs.json").read_text())["rescale_factor"]
@@ -73,7 +74,7 @@ def ppl_clean(seq, n_prompt):
 
 
 results = []
-groups = [("clear_5of5", f) for f in sc["clear_features"]] + [("not_clear", f) for f in sc["unclear_features"]]
+groups = [("clear" if EXT else "clear_5of5", f) for f in sc["clear_features"]] + [("not_clear", f) for f in sc["unclear_features"]]
 if "--smoke" in sys.argv:  # one feature, one prompt, written to a separate file
     groups, sc["prompts"] = groups[:1], sc["prompts"][:1]
 for group, fid in groups:
@@ -108,9 +109,9 @@ for group, fid in groups:
 od = ROOT / "results" / "stage6"
 od.mkdir(parents=True, exist_ok=True)
 mean_norm = 16 / scale  # mean activation norm in model units (rescaling sets it to sqrt(256)=16)
-(od / ("steering_smoke.json" if "--smoke" in sys.argv else "steering.json")).write_text(json.dumps({
+(od / ("steering_smoke.json" if "--smoke" in sys.argv else "steering_extension.json" if EXT else "steering.json")).write_text(json.dumps({
     "layer": layer, "lambda": lam, "rescale_factor": scale, "mean_activation_norm_model_units": mean_norm,
-    "selection": "strictly clear in Stage 5 AND 5/5 on the blind test (clear_5of5); plus 2 not-clear features",
+    "selection": ("every label naming a topic/domain, any verdict or blind score, not already steered" if EXT else "strictly clear in Stage 5 AND 5/5 on the blind test (clear_5of5); plus 2 not-clear features"),
     "prompts": sc["prompts"], "multipliers": sc["multipliers"], "seed": cfg["generation"]["seed"],
     "features": results}, indent=1, ensure_ascii=False))
 print("wrote", od)
