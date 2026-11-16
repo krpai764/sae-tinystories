@@ -6,7 +6,7 @@ Brief: `BRIEF_sparse_autoencoders.md`. Working rules there apply (stop after eac
 - [x] Stage 0 Setup — done and committed (089d099)
 - [x] Stage 1 Load the model — committed (efd12f2)
 - [x] Stage 2 Collect activations — done 2026-11-16, awaiting user approval/commit
-- [ ] Stage 3 Train SAEs
+- [x] Stage 3 Train SAEs — done 2026-11-16, awaiting user review/commit
 - [ ] Stage 4 Faithfulness
 - [ ] Stage 5 Interpret features
 - [ ] Stage 6 Steering
@@ -50,3 +50,15 @@ Stage 3: read the two SAE papers first (Bricken et al 2023; Cunningham et al 202
 - Machine has 8.6 GB RAM, so keep Stage 3 batches/dictionary modest, and avoid loading all of train_acts into RAM twice (2.56 GB; memmap or one copy is fine).
 - Note for later: `data/` is regenerable by `scripts/stage2_collect_activations.py` (rerun resumes).
 - Results: `results/stage2_stats.json` (smoke run: `stage2_stats_smoke.json`, 20k tokens, kept as a record), `results/stage2_checks.json`.
+
+## Stage 3 notes (in progress, 2026-11-16)
+- Read both papers; differences + decisions in `docs/method_comparison.md`. User approved all 12 proposals.
+- Deviation #13 (found while testing): brief's W_e = W_d^T init makes the initial reconstruction ~4x too large (W_d W_d^T ~ 8I, ReLU halves). `sae.enc_init_scale: 0.25` (= 2d/m) keeps the direction, fixes the scale. 1-epoch test on 1M tokens, lam=3: loss after 244 steps 114 (scaled) vs 317 (brief's). Needs user sign-off.
+- Toy-problem test initially failed because lam=0.02 was too weak for the toy scale (L0 ~15 vs true ~1.6); at lam=0.2 all 32 true directions recovered (median cos 0.994). Not a code bug.
+- Code: `src/sae.py` (SAE, parallel-grad removal, resampling, geometric median), `src/train.py` (loop, eval, checkpoint/resume), `tests/test_sae.py` (25 tests total pass), `scripts/stage3_pilot.py`.
+- Pilot (5 epochs, no resampling, lambdas 0.3/1/3/10/30): `results/stage3_pilot.json`, `figures/stage3_pilot.png`. L0 still falling at epoch 5 for every lambda (not converged). Dead-in-epoch climbs for lam=3 (0, 0, 0.7%, 2.5%, 3.0%). lam>=10 collapses (VE <= 0.11). Epoch time rose from ~40 s to ~70 s during the run (likely thermal throttling on the fanless Air).
+- User decided: keep 2.5M fp32 data, lambdas [0.5,1,2,4], W_e scale 0.25 approved, 20 epochs, resampling after epochs 2/4/6/8.
+- Full runs: `scripts/stage3_train.py` -> `results/stage3_runs.json`, `results/stage3_train.log`, `figures/stage3_training.png`, `figures/stage3_density.png`, checkpoints `checkpoints/sae/lam_*/ckpt.pt`.
+- Final (held-out): lam 0.5 VE 0.930 L0 88.2 dead 0; lam 1 VE 0.890 L0 26.7 dead 0; lam 2 VE 0.850 L0 10.4 dead 0 (1 resampled); lam 4 VE 0.784 L0 5.5, dead-in-epoch 2.2%, 171/2048 never fire on held-out (624 resampled; dead peaked 23% at epoch 4).
+- L0 levelled off (<2%/epoch over last 3) for 0.5, 1, 2 (still drifting ~1%/epoch); NOT for lam 4 (~2.2%/epoch).
+- Next: Stage 4 faithfulness (zero- and mean-ablation baselines), then choose one SAE.

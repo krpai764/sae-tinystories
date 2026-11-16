@@ -1,0 +1,98 @@
+{
+  "rescale_factor": 6.363926405175133,
+  "epochs": 2,
+  "batch_size": 4096,
+  "lr": 0.0003,
+  "seed": 1234,
+  "resampling": false,
+  "train_tokens": 100000,
+  "eval_tokens": 20000,
+  "runs": {
+    "0.3": {
+      "final": {
+        "variance_explained": 0.9495986653180789,
+        "mse_per_token": 7.7333388671875,
+        "l0": 902.31385,
+        "l1": 114.35488125,
+        "loss": 42.039803242187496,
+        "dead_fraction": 0.0,
+        "density_gt_1pct": 1.0
+      },
+      "epochs": [
+        {
+          "epoch": 1,
+          "seconds": 1.9088671207427979,
+          "dead_fraction_train_epoch": 0.0,
+          "resampled": 0,
+          "variance_explained": 0.9393195282927256,
+          "mse_per_token": 9.3105203125,
+          "l0": 956.34825,
+          "l1": 125.69055,
+          "loss": 47.01768531249999,
+          "dead_fraction": 0.0,
+          "density_gt_1pct": 1.0
+        },
+        {
+          "epoch": 2,
+          "seconds": 1.800656795501709,
+          "dead_fraction_train_epoch": 0.0,
+          "resampled": 0,
+          "variance_explained": 0.9495986653180789,
+          "mse_per_token": 7.7333388671875,
+          "l0": 902.31385,
+          "l1": 114.35488125,
+          "loss": 42.039803242187496,
+          "dead_fraction": 0.0,
+          "density_gt_1pct": 1.0
+        }
+      ],
+      "b_d_init": {
+        "geometric_median_minus_mean_norm": 0.3247391879558563,
+        "mean_norm": 10.221519470214844
+      }
+    },
+    "1": {
+      "final": {
+        "variance_explained": 0.8346716663614346,
+        "mse_per_token": 25.3671859375,
+        "l0": 836.62485,
+        "l1": 77.88493125,
+        "loss": 103.25211718749999,
+        "dead_fraction": 0.0,
+        "density_gt_1pct": 1.0
+      },
+      "epochs": [
+        {
+          "epoch": 1,
+          "seconds": 1.8092479705810547,
+          "dead_fraction_train_epoch": 0.0,
+          "resampled": 0,
+          "variance_explained": 0.8588894275482418,
+          "mse_per_token": 21.65132890625,
+          "l0": 948.147,
+          "l1": 99.901134375,
+          "loss": 121.55246328125,
+          "dead_fraction": 0.0,
+          "density_gt_1pct": 1.0
+        },
+        {
+          "epoch": 2,
+          "seconds": 1.6859707832336426,
+          "dead_fraction_train_epoch": 0.0,
+          "resampled": 0,
+          "variance_explained": 0.8346716663614346,
+          "mse_per_token": 25.3671859375,
+          "l0": 836.62485,
+          "l1": 77.88493125,
+          "loss": 103.25211718749999,
+          "dead_fraction": 0.0,
+          "density_gt_1pct": 1.0
+        }
+      ],
+      "b_d_init": {
+        "geometric_median_minus_mean_norm": 0.3247391879558563,
+        "mean_norm": 10.221519470214844
+      }
+    }
+  }
+}

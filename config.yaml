@@ -34,9 +34,18 @@ sae:
   expansion: 8              # dictionary size = 8 x model width
   lr: 3.0e-4
   batch_size: 4096
-  l1_coeffs: []             # four values, found by a short trial in Stage 3
+  l1_coeffs: [0.5, 1, 2, 4] # from the Stage 3 pilot; 2x spacing (3x would put 2 of 4 runs outside the usable 0.5-4 range)
+  epochs: 20
+  resample_after_epochs: [2, 4, 6, 8]  # Bricken's 4 resampling points, scaled to the first 40% of training
+  resample_pool: 200000     # inputs scored when choosing resampling directions (Bricken: 819,200)
+  l0_plateau_rel_change: 0.02  # 'levelled off' = L0 changed < 2% per epoch over the last 3 epochs
   dead_window_batches: 5000
+  enc_init_scale: 0.25      # W_e init = 0.25 * W_d^T (= 2d/m); 1.0 gave a 4x-too-large initial reconstruction
   dead_fraction_resample: 0.1
+
+sae_pilot:                  # Stage 3 pilot: wide lambda grid, short, no resampling
+  lambdas: [0.3, 1, 3, 10, 30]
+  epochs: 5
 
 generation:
   seed: 1234                # same seed + prompt -> same story

@@ -32,3 +32,14 @@
 1. *Why keep a held-out split, and how did you check it was really held out?* To measure the autoencoder on text it never saw. I checked for exact story overlap by comparing token sequences and found 3 duplicates in the dataset, then excluded them.
 2. *How do you know the saved activations are correct?* A test recomputes random stories one at a time on the CPU and compares to the saved rows (max difference about 2e-6), which also shows padding in batches does not change real tokens thanks to causal attention.
 3. *Why did the first collection run crash, and how did you diagnose it?* The Apple GPU backend kept memory per distinct input shape, and sorted-by-length batches had almost every length once. I reproduced it in a small benchmark, saw driver memory climb from 2.8 to 7 GB, then bucketed lengths and confirmed memory stayed flat.
+
+## Stage 3: Train the sparse autoencoders
+
+**What it did.** Built a sparse autoencoder from scratch: it turns each 256-number activation into 2048 non-negative "feature strengths", most of them zero, then rebuilds the activation as a weighted sum of 2048 unit-length directions. Trained four versions with different sparsity penalties (λ = 0.5, 1, 2, 4) for 20 passes over 2.5M tokens.
+
+**Why.** λ trades accuracy for sparsity: bigger λ means fewer active features per token (easier to interpret) but worse reconstruction. Variance explained fell from 0.93 to 0.78 as active features per token fell from 88 to 5.5. Features that stop firing ("dead") waste capacity; at λ = 4 almost a quarter died by epoch 4, so they were re-initialised toward inputs the autoencoder reconstructed worst (Bricken et al.'s resampling).
+
+**Interview questions**
+1. *Why constrain decoder columns to unit length?* Otherwise the model can shrink feature strengths and grow the directions, cutting the L1 penalty without becoming sparser.
+2. *What is a dead feature and why resample it?* One that never fires; it contributes nothing. Resampling points it at badly reconstructed inputs so it can learn something useful.
+3. *How did you pick λ?* A short pilot over a wide grid found the usable range (λ ≥ 10 collapsed, λ = 0.3 was dense), then four values spaced 2x within it.
