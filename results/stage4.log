@@ -1,0 +1,208 @@
+W1116 10:44:49.849000 40923 .venv/lib/python3.13/site-packages/torch/distributed/elastic/multiprocessing/redirects.py:35] NOTE: Redirects are currently not supported in MacOs.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/108 [00:00<?, ?it/s]Loading weights: 100%|██████████| 108/108 [00:00<00:00, 25465.75it/s]
+[transformers] [1mGPTNeoForCausalLM LOAD REPORT[0m from: roneneldan/TinyStories-8M
+Key                                                               | Status     |  | 
+------------------------------------------------------------------+------------+--+-
+transformer.h.{0, 1, 2, 3, 4, 5, 6, 7}.attn.attention.bias        | UNEXPECTED |  | 
+transformer.h.{0, 1, 2, 3, 4, 5, 6, 7}.attn.attention.masked_bias | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+1029 held-out stories, 198858 predicted tokens; device mps
+baselines done (p0kept)
+  lam 0.5 p0kept done
+  lam 1 p0kept done
+  lam 2 p0kept done
+  lam 4 p0kept done
+baselines done (all_positions)
+  lam 0.5 all_positions done
+  lam 1 all_positions done
+  lam 2 all_positions done
+  lam 4 all_positions done
+{
+ "n_stories": 1029,
+ "n_predicted_tokens": 198858,
+ "rescale_factor": 6.363926405175133,
+ "device": "mps",
+ "bootstrap_resamples": 1000,
+ "L_clean": 1.5351268569305883,
+ "settings": {
+  "p0kept": {
+   "L_zero": 8.99118555084297,
+   "L_mean": 7.515304075111661,
+   "saes": {
+    "0.5": {
+     "L_spliced": 1.8372838653431554,
+     "stage3": {
+      "variance_explained": 0.929608138832951,
+      "l0": 88.23323175331141,
+      "dead_fraction": 0.0
+     },
+     "dead_fraction_last_train_epoch": 0.0,
+     "loss_recovered_zero": 0.9594749691738254,
+     "loss_recovered_zero_ci95": [
+      0.9585987456258519,
+      0.9602727901967041
+     ],
+     "loss_recovered_mean": 0.9494735695300229,
+     "loss_recovered_mean_ci95": [
+      0.9483865332385908,
+      0.9505279730509145
+     ],
+     "extra_loss_nats": 0.3021570084125671
+    },
+    "1": {
+     "L_spliced": 2.0754053832349757,
+     "stage3": {
+      "variance_explained": 0.8901769785104502,
+      "l0": 26.694646431121704,
+      "dead_fraction": 0.0
+     },
+     "dead_fraction_last_train_epoch": 0.0,
+     "loss_recovered_zero": 0.9275383217214336,
+     "loss_recovered_zero_ci95": [
+      0.9261259320696038,
+      0.92888590956677
+     ],
+     "loss_recovered_mean": 0.9096550977349266,
+     "loss_recovered_mean_ci95": [
+      0.9078586009596503,
+      0.9113873628384972
+     ],
+     "extra_loss_nats": 0.5402785263043874
+    },
+    "2": {
+     "L_spliced": 2.4032479393340616,
+     "stage3": {
+      "variance_explained": 0.8497826144196676,
+      "l0": 10.37252210119784,
+      "dead_fraction": 0.0
+     },
+     "dead_fraction_last_train_epoch": 0.0,
+     "loss_recovered_zero": 0.8835683679485699,
+     "loss_recovered_zero_ci95": [
+      0.8816252566156351,
+      0.8854947142637759
+     ],
+     "loss_recovered_mean": 0.854833552463263,
+     "loss_recovered_mean_ci95": [
+      0.8523353901130207,
+      0.8573277505605792
+     ],
+     "extra_loss_nats": 0.8681210824034733
+    },
+    "4": {
+     "L_spliced": 2.9779765959877236,
+     "stage3": {
+      "variance_explained": 0.783558196119214,
+      "l0": 5.544267768960766,
+      "dead_fraction": 0.08349609375
+     },
+     "dead_fraction_last_train_epoch": 0.02197265625,
+     "loss_recovered_zero": 0.8064862686455013,
+     "loss_recovered_zero_ci95": [
+      0.8037504551094417,
+      0.8090946258205799
+     ],
+     "loss_recovered_mean": 0.7587279295552397,
+     "loss_recovered_mean_ci95": [
+      0.7553403677264302,
+      0.7619148573189494
+     ],
+     "extra_loss_nats": 1.4428497390571353
+    }
+   },
+   "loss_ratio_zero_over_clean": 5.85696583331257,
+   "loss_ratio_mean_over_clean": 4.895558983404243
+  },
+  "all_positions": {
+   "L_zero": 9.148164148390828,
+   "L_mean": 7.100172592190863,
+   "saes": {
+    "0.5": {
+     "L_spliced": 1.8368962677538772,
+     "stage3": {
+      "variance_explained": 0.929608138832951,
+      "l0": 88.23323175331141,
+      "dead_fraction": 0.0
+     },
+     "dead_fraction_last_train_epoch": 0.0,
+     "loss_recovered_zero": 0.9603614957775405,
+     "loss_recovered_zero_ci95": [
+      0.9594822026148779,
+      0.961200446607673
+     ],
+     "loss_recovered_mean": 0.9457741364260008,
+     "loss_recovered_mean_ci95": [
+      0.944580483221237,
+      0.9469749615183672
+     ],
+     "extra_loss_nats": 0.3017694108232889
+    },
+    "1": {
+     "L_spliced": 2.068551420332204,
+     "stage3": {
+      "variance_explained": 0.8901769785104502,
+      "l0": 26.694646431121704,
+      "dead_fraction": 0.0
+     },
+     "dead_fraction_last_train_epoch": 0.0,
+     "loss_recovered_zero": 0.9299327531207586,
+     "loss_recovered_zero_ci95": [
+      0.9285152380467228,
+      0.9313473223171199
+     ],
+     "loss_recovered_mean": 0.9041473172409304,
+     "loss_recovered_mean_ci95": [
+      0.9020912331775386,
+      0.9060760868940153
+     ],
+     "extra_loss_nats": 0.5334245634016157
+    },
+    "2": {
+     "L_spliced": 2.4035214529246667,
+     "stage3": {
+      "variance_explained": 0.8497826144196676,
+      "l0": 10.37252210119784,
+      "dead_fraction": 0.0
+     },
+     "dead_fraction_last_train_epoch": 0.0,
+     "loss_recovered_zero": 0.8859332270750624,
+     "loss_recovered_zero_ci95": [
+      0.884015869661008,
+      0.8879118661158056
+     ],
+     "loss_recovered_mean": 0.8439555329272662,
+     "loss_recovered_mean_ci95": [
+      0.8411621581654217,
+      0.8466736105807937
+     ],
+     "extra_loss_nats": 0.8683945959940784
+    },
+    "4": {
+     "L_spliced": 2.98190976490777,
+     "stage3": {
+      "variance_explained": 0.783558196119214,
+      "l0": 5.544267768960766,
+      "dead_fraction": 0.08349609375
+     },
+     "dead_fraction_last_train_epoch": 0.02197265625,
+     "loss_recovered_zero": 0.8099598290947453,
+     "loss_recovered_zero_ci95": [
+      0.8071730561470255,
+      0.8124726976279095
+     ],
+     "loss_recovered_mean": 0.7400231773819346,
+     "loss_recovered_mean_ci95": [
+      0.7363807597102106,
+      0.7436623164563394
+     ],
+     "extra_loss_nats": 1.4467829079771817
+    }
+   },
+   "loss_ratio_zero_over_clean": 5.9592235697590095,
+   "loss_ratio_mean_over_clean": 4.625137369029758
+  }
+ }
+}

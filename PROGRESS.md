@@ -6,8 +6,8 @@ Brief: `BRIEF_sparse_autoencoders.md`. Working rules there apply (stop after eac
 - [x] Stage 0 Setup — done and committed (089d099)
 - [x] Stage 1 Load the model — committed (efd12f2)
 - [x] Stage 2 Collect activations — done 2026-11-16, awaiting user approval/commit
-- [x] Stage 3 Train SAEs — done 2026-11-16, awaiting user review/commit
-- [ ] Stage 4 Faithfulness
+- [x] Stage 3 Train SAEs — committed (6999550)
+- [x] Stage 4 Faithfulness — done 2026-11-16, awaiting user review/commit
 - [ ] Stage 5 Interpret features
 - [ ] Stage 6 Steering
 - [ ] Stage 7 Trace a behaviour (time-boxed, max 2 sessions)
@@ -62,3 +62,11 @@ Stage 3: read the two SAE papers first (Bricken et al 2023; Cunningham et al 202
 - Final (held-out): lam 0.5 VE 0.930 L0 88.2 dead 0; lam 1 VE 0.890 L0 26.7 dead 0; lam 2 VE 0.850 L0 10.4 dead 0 (1 resampled); lam 4 VE 0.784 L0 5.5, dead-in-epoch 2.2%, 171/2048 never fire on held-out (624 resampled; dead peaked 23% at epoch 4).
 - L0 levelled off (<2%/epoch over last 3) for 0.5, 1, 2 (still drifting ~1%/epoch); NOT for lam 4 (~2.2%/epoch).
 - Next: Stage 4 faithfulness (zero- and mean-ablation baselines), then choose one SAE.
+
+## Stage 4 notes (2026-11-16)
+- `src/eval.py`, `scripts/stage4_faithfulness.py` -> `results/stage4_faithfulness.json`, `figures/stage4_faithfulness.png`; `scripts/stage4_table.py` -> `results/stage4_table.md`; `tests/test_eval.py` (32 tests total).
+- Held-out: 1,029 stories, 198,858 predicted tokens. Clean loss 1.535 nats; zero-ablation 8.991; mean-ablation 7.515 (pos 0 left real). Position 0 treated two ways (kept real = main; also replaced = variant); conclusions identical.
+- Loss recovered (zero / mean base, pos0 kept): lam0.5 .959/.949; lam1 .928/.910; lam2 .884/.855; lam4 .806/.759. Extra loss vs clean: +0.30/+0.54/+0.87/+1.44 nats. Bootstrap 95% CIs (over stories) are within ~±0.002.
+- Caveat: even best SAE adds 0.30 nats (loss 1.84 vs 1.54, perplexity ~6.3 vs ~4.6); 96% recovered is relative to a very bad baseline (Bricken warned). Mean-ablation gives 1-4 points lower recovery.
+- MPS OOM at eval batch 32 (50k-vocab logits); use batch 8.
+- Carry-forward recommendation: lam=1 (L0 26.7, 0 dead, 0.928/0.910 recovered). User to confirm.

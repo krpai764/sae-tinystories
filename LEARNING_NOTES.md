@@ -43,3 +43,14 @@
 1. *Why constrain decoder columns to unit length?* Otherwise the model can shrink feature strengths and grow the directions, cutting the L1 penalty without becoming sparser.
 2. *What is a dead feature and why resample it?* One that never fires; it contributes nothing. Resampling points it at badly reconstructed inputs so it can learn something useful.
 3. *How did you pick λ?* A short pilot over a wide grid found the usable range (λ ≥ 10 collapsed, λ = 0.3 was dense), then four values spaced 2x within it.
+
+## Stage 4: Faithfulness
+
+**What it did.** Took the held-out stories, ran the model normally to get its next-word loss, then ran it again with the layer-3 activations replaced by (a) the autoencoder's reconstruction, (b) all zeros and (c) the average activation. "Loss recovered" = how much of the damage from wiping the layer (b or c) the reconstruction undoes.
+
+**Why.** Variance explained says the reconstruction is numerically close, but not whether it keeps what the model *uses*. Loss recovered tests that directly. Zeroing is a weak baseline (the activations have a large constant component), so I also report mean-replacement, which is stricter. Even the most faithful autoencoder raises loss by 0.30 nats, so a "96% recovered" headline understates how much the model still loses.
+
+**Interview questions**
+1. *What does loss recovered measure that variance explained does not?* Whether the information the model actually relies on survives, via the downstream loss, not just raw reconstruction error.
+2. *Why two baselines?* Zero-ablation is easy to beat; mean-ablation removes only the token-specific part, so it gives a more honest, lower number.
+3. *Why leave position 0 untouched in the main numbers?* The autoencoder never trained on that constant start-of-story vector; I also report replacing it, and the conclusions don't change.
