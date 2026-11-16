@@ -93,6 +93,29 @@ steering_extension:         # Stage 6 extension: context/theme features, gentler
     - "Once upon a time, there was a little girl named Lily."
     - "Tom and his dog went to the park. They saw"
 
+trace:                      # Stage 7: pronoun after a named character
+  # names are single tokens with a leading space and common in the training tokens; split alternates by frequency
+  girl_names_rank: [Lily, Mia, Sara, Sarah, Sally]
+  girl_names_heldout: [Anna, Lucy, Sue, Jane, Amy]
+  boy_names_rank: [Tim, Tom, Bob, John, Tommy]
+  boy_names_heldout: [Ben, Jack, Joe, Billy, Jim]
+  frames:                   # {N} = name, {G} = girl/boy; case = pronoun capitalised (She/He) or lower (she/he)
+    - {id: went,    kind: name_only, case: cap,   text: "One day, {N} went to the park."}
+    - {id: found,   kind: name_only, case: cap,   text: "Once upon a time, {N} found a big red ball."}
+    - {id: because, kind: name_only, case: lower, text: "Yesterday, {N} was very happy because"}
+    - {id: but,     kind: name_only, case: lower, text: "One day, {N} wanted to play outside, but"}
+    - {id: named,   kind: noun_name, case: cap,   text: "Once upon a time, there was a little {G} named {N}."}
+    - {id: who,     kind: noun_name, case: lower, text: "There was a kind {G} named {N} who was sad because"}
+  top_k: 10
+  n_random_sets: 100
+  pass_fraction: 0.95       # top-10 must beat this share of random sets on held-out names
+  flip_top_k: [5, 10]       # per-gender features used in the flip test
+  flip_strengths: [0.5, 1, 1.5, 2]  # x the feature's mean activation on the other gender's prompts (same frame and position)
+  flip_random_draws: 20
+  # post-hoc (added after seeing that shared context features dominate the top-10): gender-selective features
+  selective_ratio: 5        # mean peak activation on one gender's ranking-name prompts >= 5x the other's
+  selective_k: 5
+
 generation:
   seed: 1234                # same seed + prompt -> same story
   prompts:

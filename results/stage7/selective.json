@@ -1,0 +1,833 @@
+{
+ "definition": "selective = mean peak activation on own-gender ranking-name prompts >= 5x other gender's (name-only prompts)",
+ "post_hoc": true,
+ "k": 5,
+ "sets": {
+  "girl": {
+   "n_selective_candidates": 59,
+   "features": [
+    1511,
+    1735,
+    905,
+    1630,
+    1324
+   ],
+   "per_feature": {
+    "1511": {
+     "rank_effect_own": 2.8756320476531982,
+     "heldout_effect_own": 5.249632835388184,
+     "heldout_effect_other": -1.4305115314527939e-07,
+     "mean_peak_act": {
+      "girl_rank": 1.2377980947494507,
+      "girl_heldout": 2.283719301223755,
+      "boy_rank": 0.08648433536291122,
+      "boy_heldout": 0.0
+     },
+     "heldout_names_peak_act": {
+      "Anna": 0.0,
+      "Lucy": 3.0356826782226562,
+      "Sue": 2.66168212890625,
+      "Jane": 3.4658849239349365,
+      "Amy": 2.2553462982177734
+     }
+    },
+    "1735": {
+     "rank_effect_own": 0.5813988447189331,
+     "heldout_effect_own": 0.1993924081325531,
+     "heldout_effect_other": -1.4305115314527939e-07,
+     "mean_peak_act": {
+      "girl_rank": 1.0020304918289185,
+      "girl_heldout": 0.3449578583240509,
+      "boy_rank": 0.01159544475376606,
+      "boy_heldout": 0.0
+     },
+     "heldout_names_peak_act": {
+      "Anna": 0.0,
+      "Lucy": 0.0,
+      "Sue": 1.7247892618179321,
+      "Jane": 0.0,
+      "Amy": 0.0
+     }
+    },
+    "905": {
+     "rank_effect_own": 0.4758111536502838,
+     "heldout_effect_own": 0.0470312125980854,
+     "heldout_effect_other": -0.11303691565990448,
+     "mean_peak_act": {
+      "girl_rank": 0.501515805721283,
+      "girl_heldout": 0.036310434341430664,
+      "boy_rank": 0.0,
+      "boy_heldout": 0.09799385815858841
+     },
+     "heldout_names_peak_act": {
+      "Anna": 0.10013587027788162,
+      "Lucy": 0.0814162865281105,
+      "Sue": 0.0,
+      "Jane": 0.0,
+      "Amy": 0.0
+     }
+    },
+    "1630": {
+     "rank_effect_own": 0.46569380164146423,
+     "heldout_effect_own": 3.814697322468419e-07,
+     "heldout_effect_other": -1.4305115314527939e-07,
+     "mean_peak_act": {
+      "girl_rank": 0.32621732354164124,
+      "girl_heldout": 0.0,
+      "boy_rank": 0.0,
+      "boy_heldout": 0.0
+     },
+     "heldout_names_peak_act": {
+      "Anna": 0.0,
+      "Lucy": 0.0,
+      "Sue": 0.0,
+      "Jane": 0.0,
+      "Amy": 0.0
+     }
+    },
+    "1324": {
+     "rank_effect_own": 0.3858192563056946,
+     "heldout_effect_own": 0.0768195167183876,
+     "heldout_effect_other": -0.09270753711462021,
+     "mean_peak_act": {
+      "girl_rank": 0.8577594757080078,
+      "girl_heldout": 0.12717323005199432,
+      "boy_rank": 0.02177557349205017,
+      "boy_heldout": 0.07662667334079742
+     },
+     "heldout_names_peak_act": {
+      "Anna": 0.00844106450676918,
+      "Lucy": 0.41962292790412903,
+      "Sue": 0.0,
+      "Jane": 0.0806240513920784,
+      "Amy": 0.1271781027317047
+     }
+    }
+   },
+   "heldout_girl_prompts": {
+    "clean_score": 9.42003345489502,
+    "drop": 5.663760185241699,
+    "score_after": 3.7562732696533203,
+    "pair_accuracy_after": 1.0,
+    "random_drop_mean": 0.09625022858381271,
+    "random_drop_max": 1.7158010005950928,
+    "beats_n_random": 100,
+    "n_random": 100
+   },
+   "heldout_boy_prompts": {
+    "clean_score": 8.699274063110352,
+    "drop": -0.20574431121349335,
+    "score_after": 8.90501880645752,
+    "pair_accuracy_after": 1.0,
+    "random_drop_mean": 0.11972547322511673,
+    "random_drop_max": 1.4338815212249756,
+    "beats_n_random": 3,
+    "n_random": 100
+   },
+   "ranking_names_own_gender_drop": 5.082643985748291,
+   "ranking_names_clean_score": 8.960897445678711
+  },
+  "boy": {
+   "n_selective_candidates": 39,
+   "features": [
+    1314,
+    1416,
+    1532,
+    1197,
+    2037
+   ],
+   "per_feature": {
+    "1314": {
+     "rank_effect_own": 2.887624740600586,
+     "heldout_effect_own": 0.6699313521385193,
+     "heldout_effect_other": -0.045842695981264114,
+     "mean_peak_act": {
+      "girl_rank": 0.0,
+      "girl_heldout": 0.03410691022872925,
+      "boy_rank": 1.816886305809021,
+      "boy_heldout": 0.4949215054512024
+     },
+     "heldout_names_peak_act": {
+      "Ben": 0.03510531783103943,
+      "Jack": 0.19266483187675476,
+      "Joe": 1.1146671772003174,
+      "Billy": 0.0,
+      "Jim": 1.1321702003479004
+     }
+    },
+    "1416": {
+     "rank_effect_own": 1.9705299139022827,
+     "heldout_effect_own": 0.9135187268257141,
+     "heldout_effect_other": -0.001243162201717496,
+     "mean_peak_act": {
+      "girl_rank": 0.0,
+      "girl_heldout": 0.006992238573729992,
+      "boy_rank": 2.211052417755127,
+      "boy_heldout": 1.000274896621704
+     },
+     "heldout_names_peak_act": {
+      "Ben": 1.5797027349472046,
+      "Jack": 1.276068925857544,
+      "Joe": 0.0,
+      "Billy": 1.3606362342834473,
+      "Jim": 0.7849655747413635
+     }
+    },
+    "1532": {
+     "rank_effect_own": 1.098357081413269,
+     "heldout_effect_own": 1.2918403148651123,
+     "heldout_effect_other": -0.11059021949768066,
+     "mean_peak_act": {
+      "girl_rank": 0.0216217041015625,
+      "girl_heldout": 0.10964357852935791,
+      "boy_rank": 2.899202585220337,
+      "boy_heldout": 3.0583701133728027
+     },
+     "heldout_names_peak_act": {
+      "Ben": 3.1393871307373047,
+      "Jack": 2.977306604385376,
+      "Joe": 3.527470111846924,
+      "Billy": 2.3953733444213867,
+      "Jim": 3.2523140907287598
+     }
+    },
+    "1197": {
+     "rank_effect_own": 0.9256711006164551,
+     "heldout_effect_own": 0.6256094574928284,
+     "heldout_effect_other": -0.14423628151416779,
+     "mean_peak_act": {
+      "girl_rank": 0.08378490060567856,
+      "girl_heldout": 0.11794616281986237,
+      "boy_rank": 1.052335500717163,
+      "boy_heldout": 0.7336593866348267
+     },
+     "heldout_names_peak_act": {
+      "Ben": 0.0,
+      "Jack": 0.0,
+      "Joe": 1.6299586296081543,
+      "Billy": 0.9142507314682007,
+      "Jim": 1.1240875720977783
+     }
+    },
+    "2037": {
+     "rank_effect_own": 0.8849008679389954,
+     "heldout_effect_own": -1.4305115314527939e-07,
+     "heldout_effect_other": 3.814697322468419e-07,
+     "mean_peak_act": {
+      "girl_rank": 0.0,
+      "girl_heldout": 0.0,
+      "boy_rank": 0.811915397644043,
+      "boy_heldout": 0.0
+     },
+     "heldout_names_peak_act": {
+      "Ben": 0.0,
+      "Jack": 0.0,
+      "Joe": 0.0,
+      "Billy": 0.0,
+      "Jim": 0.0
+     }
+    }
+   },
+   "heldout_girl_prompts": {
+    "clean_score": 9.42003345489502,
+    "drop": -0.3021218180656433,
+    "score_after": 9.72215461730957,
+    "pair_accuracy_after": 1.0,
+    "random_drop_mean": 0.14830642938613892,
+    "random_drop_max": 5.1306915283203125,
+    "beats_n_random": 5,
+    "n_random": 100
+   },
+   "heldout_boy_prompts": {
+    "clean_score": 8.699274063110352,
+    "drop": 4.338440895080566,
+    "score_after": 4.36083459854126,
+    "pair_accuracy_after": 1.0,
+    "random_drop_mean": 0.16650576889514923,
+    "random_drop_max": 4.275879859924316,
+    "beats_n_random": 100,
+    "n_random": 100
+   },
+   "ranking_names_own_gender_drop": 10.235898971557617,
+   "ranking_names_clean_score": 9.159494400024414
+  }
+ },
+ "flip": [
+  {
+   "target_prompts": "girl",
+   "added_features_of": "boy",
+   "added_features": [
+    1314,
+    1416,
+    1532,
+    1197,
+    2037
+   ],
+   "strength": 0.5,
+   "prompt_kind": "name_only",
+   "n": 20,
+   "clean_score": 9.42003345489502,
+   "max_added_norm_model_units": 0.5520254373550415,
+   "feature_add": {
+    "score": 3.8598384857177734,
+    "flip_rate_pair": 0.0,
+    "top1_is_other_pronoun": 0.0
+   },
+   "feature_swap": {
+    "score": -1.3840548992156982,
+    "flip_rate_pair": 0.75,
+    "top1_is_other_pronoun": 0.6000000238418579
+   },
+   "ablate_own_only": {
+    "score": 3.7562732696533203,
+    "flip_rate_pair": 0.0,
+    "top1_is_other_pronoun": 0.0
+   },
+   "random_add": {
+    "score": 9.359343528747559,
+    "flip_rate_pair": 0.0,
+    "top1_is_other_pronoun": 0.0
+   }
+  },
+  {
+   "target_prompts": "girl",
+   "added_features_of": "boy",
+   "added_features": [
+    1314,
+    1416,
+    1532,
+    1197,
+    2037
+   ],
+   "strength": 0.5,
+   "prompt_kind": "noun_name",
+   "n": 10,
+   "clean_score": 9.824731826782227,
+   "max_added_norm_model_units": 0.5520254373550415,
+   "feature_add": {
+    "score": 6.515805244445801,
+    "flip_rate_pair": 0.0,
+    "top1_is_other_pronoun": 0.0
+   },
+   "feature_swap": {
+    "score": 5.350588321685791,
+    "flip_rate_pair": 0.0,
+    "top1_is_other_pronoun": 0.0
+   },
+   "ablate_own_only": {
+    "score": 8.090128898620605,
+    "flip_rate_pair": 0.0,
+    "top1_is_other_pronoun": 0.0
+   },
+   "random_add": {
+    "score": 9.807340621948242,
+    "flip_rate_pair": 0.0,
+    "top1_is_other_pronoun": 0.0
+   }
+  },
+  {
+   "target_prompts": "girl",
+   "added_features_of": "boy",
+   "added_features": [
+    1314,
+    1416,
+    1532,
+    1197,
+    2037
+   ],
+   "strength": 1,
+   "prompt_kind": "name_only",
+   "n": 20,
+   "clean_score": 9.42003345489502,
+   "max_added_norm_model_units": 1.104050874710083,
+   "feature_add": {
+    "score": -0.43705081939697266,
+    "flip_rate_pair": 0.75,
+    "top1_is_other_pronoun": 0.699999988079071
+   },
+   "feature_swap": {
+    "score": -5.126405239105225,
+    "flip_rate_pair": 0.9,
+    "top1_is_other_pronoun": 0.699999988079071
+   },
+   "ablate_own_only": {
+    "score": 3.7562732696533203,
+    "flip_rate_pair": 0.0,
+    "top1_is_other_pronoun": 0.0
+   },
+   "random_add": {
+    "score": 8.535694122314453,
+    "flip_rate_pair": 0.0,
+    "top1_is_other_pronoun": 0.0
+   }
+  },
+  {
+   "target_prompts": "girl",
+   "added_features_of": "boy",
+   "added_features": [
+    1314,
+    1416,
+    1532,
+    1197,
+    2037
+   ],
+   "strength": 1,
+   "prompt_kind": "noun_name",
+   "n": 10,
+   "clean_score": 9.824731826782227,
+   "max_added_norm_model_units": 1.104050874710083,
+   "feature_add": {
+    "score": 3.571361541748047,
+    "flip_rate_pair": 0.0,
+    "top1_is_other_pronoun": 0.0
+   },
+   "feature_swap": {
+    "score": 2.7960498332977295,
+    "flip_rate_pair": 0.0,
+    "top1_is_other_pronoun": 0.0
+   },
+   "ablate_own_only": {
+    "score": 8.090128898620605,
+    "flip_rate_pair": 0.0,
+    "top1_is_other_pronoun": 0.0
+   },
+   "random_add": {
+    "score": 9.81153678894043,
+    "flip_rate_pair": 0.0,
+    "top1_is_other_pronoun": 0.0
+   }
+  },
+  {
+   "target_prompts": "girl",
+   "added_features_of": "boy",
+   "added_features": [
+    1314,
+    1416,
+    1532,
+    1197,
+    2037
+   ],
+   "strength": 1.5,
+   "prompt_kind": "name_only",
+   "n": 20,
+   "clean_score": 9.42003345489502,
+   "max_added_norm_model_units": 1.6560763120651245,
+   "feature_add": {
+    "score": -3.877669095993042,
+    "flip_rate_pair": 1.0,
+    "top1_is_other_pronoun": 0.75
+   },
+   "feature_swap": {
+    "score": -7.939464569091797,
+    "flip_rate_pair": 1.0,
+    "top1_is_other_pronoun": 0.75
+   },
+   "ablate_own_only": {
+    "score": 3.7562732696533203,
+    "flip_rate_pair": 0.0,
+    "top1_is_other_pronoun": 0.0
+   },
+   "random_add": {
+    "score": 7.715531349182129,
+    "flip_rate_pair": 0.0,
+    "top1_is_other_pronoun": 0.0
+   }
+  },
+  {
+   "target_prompts": "girl",
+   "added_features_of": "boy",
+   "added_features": [
+    1314,
+    1416,
+    1532,
+    1197,
+    2037
+   ],
+   "strength": 1.5,
+   "prompt_kind": "noun_name",
+   "n": 10,
+   "clean_score": 9.824731826782227,
+   "max_added_norm_model_units": 1.6560763120651245,
+   "feature_add": {
+    "score": 0.6000418663024902,
+    "flip_rate_pair": 0.2,
+    "top1_is_other_pronoun": 0.10000000149011612
+   },
+   "feature_swap": {
+    "score": -0.10414476692676544,
+    "flip_rate_pair": 0.5,
+    "top1_is_other_pronoun": 0.5
+   },
+   "ablate_own_only": {
+    "score": 8.090128898620605,
+    "flip_rate_pair": 0.0,
+    "top1_is_other_pronoun": 0.0
+   },
+   "random_add": {
+    "score": 9.37930965423584,
+    "flip_rate_pair": 0.0,
+    "top1_is_other_pronoun": 0.0
+   }
+  },
+  {
+   "target_prompts": "girl",
+   "added_features_of": "boy",
+   "added_features": [
+    1314,
+    1416,
+    1532,
+    1197,
+    2037
+   ],
+   "strength": 2,
+   "prompt_kind": "name_only",
+   "n": 20,
+   "clean_score": 9.42003345489502,
+   "max_added_norm_model_units": 2.208101749420166,
+   "feature_add": {
+    "score": -6.832758903503418,
+    "flip_rate_pair": 1.0,
+    "top1_is_other_pronoun": 0.75
+   },
+   "feature_swap": {
+    "score": -10.293451309204102,
+    "flip_rate_pair": 1.0,
+    "top1_is_other_pronoun": 0.75
+   },
+   "ablate_own_only": {
+    "score": 3.7562732696533203,
+    "flip_rate_pair": 0.0,
+    "top1_is_other_pronoun": 0.0
+   },
+   "random_add": {
+    "score": 7.141207695007324,
+    "flip_rate_pair": 0.03,
+    "top1_is_other_pronoun": 0.004999999888241291
+   }
+  },
+  {
+   "target_prompts": "girl",
+   "added_features_of": "boy",
+   "added_features": [
+    1314,
+    1416,
+    1532,
+    1197,
+    2037
+   ],
+   "strength": 2,
+   "prompt_kind": "noun_name",
+   "n": 10,
+   "clean_score": 9.824731826782227,
+   "max_added_norm_model_units": 2.208101749420166,
+   "feature_add": {
+    "score": -2.778191089630127,
+    "flip_rate_pair": 1.0,
+    "top1_is_other_pronoun": 1.0
+   },
+   "feature_swap": {
+    "score": -3.6996848583221436,
+    "flip_rate_pair": 1.0,
+    "top1_is_other_pronoun": 1.0
+   },
+   "ablate_own_only": {
+    "score": 8.090128898620605,
+    "flip_rate_pair": 0.0,
+    "top1_is_other_pronoun": 0.0
+   },
+   "random_add": {
+    "score": 9.21082592010498,
+    "flip_rate_pair": 0.0,
+    "top1_is_other_pronoun": 0.0
+   }
+  },
+  {
+   "target_prompts": "boy",
+   "added_features_of": "girl",
+   "added_features": [
+    1511,
+    1735,
+    905,
+    1630,
+    1324
+   ],
+   "strength": 0.5,
+   "prompt_kind": "name_only",
+   "n": 20,
+   "clean_score": 8.699274063110352,
+   "max_added_norm_model_units": 0.23161791265010834,
+   "feature_add": {
+    "score": 5.917639255523682,
+    "flip_rate_pair": 0.0,
+    "top1_is_other_pronoun": 0.0
+   },
+   "feature_swap": {
+    "score": 0.9813836812973022,
+    "flip_rate_pair": 0.35,
+    "top1_is_other_pronoun": 0.25
+   },
+   "ablate_own_only": {
+    "score": 4.36083459854126,
+    "flip_rate_pair": 0.0,
+    "top1_is_other_pronoun": 0.0
+   },
+   "random_add": {
+    "score": 8.651018142700195,
+    "flip_rate_pair": 0.0,
+    "top1_is_other_pronoun": 0.0
+   }
+  },
+  {
+   "target_prompts": "boy",
+   "added_features_of": "girl",
+   "added_features": [
+    1511,
+    1735,
+    905,
+    1630,
+    1324
+   ],
+   "strength": 0.5,
+   "prompt_kind": "noun_name",
+   "n": 10,
+   "clean_score": 9.007217407226562,
+   "max_added_norm_model_units": 0.23161791265010834,
+   "feature_add": {
+    "score": 8.066078186035156,
+    "flip_rate_pair": 0.0,
+    "top1_is_other_pronoun": 0.0
+   },
+   "feature_swap": {
+    "score": 5.487435817718506,
+    "flip_rate_pair": 0.0,
+    "top1_is_other_pronoun": 0.0
+   },
+   "ablate_own_only": {
+    "score": 6.8899030685424805,
+    "flip_rate_pair": 0.0,
+    "top1_is_other_pronoun": 0.0
+   },
+   "random_add": {
+    "score": 9.024200439453125,
+    "flip_rate_pair": 0.0,
+    "top1_is_other_pronoun": 0.0
+   }
+  },
+  {
+   "target_prompts": "boy",
+   "added_features_of": "girl",
+   "added_features": [
+    1511,
+    1735,
+    905,
+    1630,
+    1324
+   ],
+   "strength": 1,
+   "prompt_kind": "name_only",
+   "n": 20,
+   "clean_score": 8.699274063110352,
+   "max_added_norm_model_units": 0.4632358253002167,
+   "feature_add": {
+    "score": 3.055356502532959,
+    "flip_rate_pair": 0.0,
+    "top1_is_other_pronoun": 0.0
+   },
+   "feature_swap": {
+    "score": -2.126986265182495,
+    "flip_rate_pair": 1.0,
+    "top1_is_other_pronoun": 0.800000011920929
+   },
+   "ablate_own_only": {
+    "score": 4.36083459854126,
+    "flip_rate_pair": 0.0,
+    "top1_is_other_pronoun": 0.0
+   },
+   "random_add": {
+    "score": 8.646865844726562,
+    "flip_rate_pair": 0.0,
+    "top1_is_other_pronoun": 0.0
+   }
+  },
+  {
+   "target_prompts": "boy",
+   "added_features_of": "girl",
+   "added_features": [
+    1511,
+    1735,
+    905,
+    1630,
+    1324
+   ],
+   "strength": 1,
+   "prompt_kind": "noun_name",
+   "n": 10,
+   "clean_score": 9.007217407226562,
+   "max_added_norm_model_units": 0.4632358253002167,
+   "feature_add": {
+    "score": 6.875157833099365,
+    "flip_rate_pair": 0.0,
+    "top1_is_other_pronoun": 0.0
+   },
+   "feature_swap": {
+    "score": 3.9345908164978027,
+    "flip_rate_pair": 0.0,
+    "top1_is_other_pronoun": 0.0
+   },
+   "ablate_own_only": {
+    "score": 6.8899030685424805,
+    "flip_rate_pair": 0.0,
+    "top1_is_other_pronoun": 0.0
+   },
+   "random_add": {
+    "score": 8.987578392028809,
+    "flip_rate_pair": 0.0,
+    "top1_is_other_pronoun": 0.0
+   }
+  },
+  {
+   "target_prompts": "boy",
+   "added_features_of": "girl",
+   "added_features": [
+    1511,
+    1735,
+    905,
+    1630,
+    1324
+   ],
+   "strength": 1.5,
+   "prompt_kind": "name_only",
+   "n": 20,
+   "clean_score": 8.699274063110352,
+   "max_added_norm_model_units": 0.6948537230491638,
+   "feature_add": {
+    "score": 0.4139522612094879,
+    "flip_rate_pair": 0.3,
+    "top1_is_other_pronoun": 0.15000000596046448
+   },
+   "feature_swap": {
+    "score": -5.147036075592041,
+    "flip_rate_pair": 1.0,
+    "top1_is_other_pronoun": 0.8500000238418579
+   },
+   "ablate_own_only": {
+    "score": 4.36083459854126,
+    "flip_rate_pair": 0.0,
+    "top1_is_other_pronoun": 0.0
+   },
+   "random_add": {
+    "score": 8.589615821838379,
+    "flip_rate_pair": 0.0,
+    "top1_is_other_pronoun": 0.0
+   }
+  },
+  {
+   "target_prompts": "boy",
+   "added_features_of": "girl",
+   "added_features": [
+    1511,
+    1735,
+    905,
+    1630,
+    1324
+   ],
+   "strength": 1.5,
+   "prompt_kind": "noun_name",
+   "n": 10,
+   "clean_score": 9.007217407226562,
+   "max_added_norm_model_units": 0.6948537230491638,
+   "feature_add": {
+    "score": 5.467133045196533,
+    "flip_rate_pair": 0.0,
+    "top1_is_other_pronoun": 0.0
+   },
+   "feature_swap": {
+    "score": 2.304605007171631,
+    "flip_rate_pair": 0.0,
+    "top1_is_other_pronoun": 0.0
+   },
+   "ablate_own_only": {
+    "score": 6.8899030685424805,
+    "flip_rate_pair": 0.0,
+    "top1_is_other_pronoun": 0.0
+   },
+   "random_add": {
+    "score": 8.971599578857422,
+    "flip_rate_pair": 0.0,
+    "top1_is_other_pronoun": 0.0
+   }
+  },
+  {
+   "target_prompts": "boy",
+   "added_features_of": "girl",
+   "added_features": [
+    1511,
+    1735,
+    905,
+    1630,
+    1324
+   ],
+   "strength": 2,
+   "prompt_kind": "name_only",
+   "n": 20,
+   "clean_score": 8.699274063110352,
+   "max_added_norm_model_units": 0.9264716506004333,
+   "feature_add": {
+    "score": -1.946393609046936,
+    "flip_rate_pair": 1.0,
+    "top1_is_other_pronoun": 0.75
+   },
+   "feature_swap": {
+    "score": -8.156103134155273,
+    "flip_rate_pair": 1.0,
+    "top1_is_other_pronoun": 0.800000011920929
+   },
+   "ablate_own_only": {
+    "score": 4.36083459854126,
+    "flip_rate_pair": 0.0,
+    "top1_is_other_pronoun": 0.0
+   },
+   "random_add": {
+    "score": 8.110487937927246,
+    "flip_rate_pair": 0.0,
+    "top1_is_other_pronoun": 0.0
+   }
+  },
+  {
+   "target_prompts": "boy",
+   "added_features_of": "girl",
+   "added_features": [
+    1511,
+    1735,
+    905,
+    1630,
+    1324
+   ],
+   "strength": 2,
+   "prompt_kind": "noun_name",
+   "n": 10,
+   "clean_score": 9.007217407226562,
+   "max_added_norm_model_units": 0.9264716506004333,
+   "feature_add": {
+    "score": 3.8961052894592285,
+    "flip_rate_pair": 0.0,
+    "top1_is_other_pronoun": 0.0
+   },
+   "feature_swap": {
+    "score": 0.6337807774543762,
+    "flip_rate_pair": 0.2,
+    "top1_is_other_pronoun": 0.10000000149011612
+   },
+   "ablate_own_only": {
+    "score": 6.8899030685424805,
+    "flip_rate_pair": 0.0,
+    "top1_is_other_pronoun": 0.0
+   },
+   "random_add": {
+    "score": 8.926233291625977,
+    "flip_rate_pair": 0.0,
+    "top1_is_other_pronoun": 0.0
+   }
+  }
+ ]
+}

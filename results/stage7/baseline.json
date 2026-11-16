@@ -1,0 +1,82 @@
+{
+ "n_prompts": 120,
+ "identity_max_abs_diff": 2.47955322265625e-05,
+ "all": {
+  "n": 120,
+  "clean_score": 9.234661102294922,
+  "clean_pair_accuracy": 1.0,
+  "clean_top1_is_correct": 0.7333333492279053,
+  "recon_only_score": 10.097075462341309,
+  "recon_only_pair_accuracy": 1.0
+ },
+ "name_only/girl": {
+  "n": 40,
+  "clean_score": 9.190465927124023,
+  "clean_pair_accuracy": 1.0,
+  "clean_top1_is_correct": 0.75,
+  "recon_only_score": 10.36005973815918,
+  "recon_only_pair_accuracy": 1.0
+ },
+ "name_only/boy": {
+  "n": 40,
+  "clean_score": 8.929384231567383,
+  "clean_pair_accuracy": 1.0,
+  "clean_top1_is_correct": 0.75,
+  "recon_only_score": 9.768623352050781,
+  "recon_only_pair_accuracy": 1.0
+ },
+ "noun_name/girl": {
+  "n": 20,
+  "clean_score": 9.880441665649414,
+  "clean_pair_accuracy": 1.0,
+  "clean_top1_is_correct": 0.8500000238418579,
+  "recon_only_score": 10.623239517211914,
+  "recon_only_pair_accuracy": 1.0
+ },
+ "noun_name/boy": {
+  "n": 20,
+  "clean_score": 9.287820816040039,
+  "clean_pair_accuracy": 1.0,
+  "clean_top1_is_correct": 0.550000011920929,
+  "recon_only_score": 9.701850891113281,
+  "recon_only_pair_accuracy": 1.0
+ },
+ "name_only": {
+  "n": 80,
+  "clean_score": 9.059925079345703,
+  "clean_pair_accuracy": 1.0,
+  "clean_top1_is_correct": 0.75,
+  "recon_only_score": 10.064340591430664,
+  "recon_only_pair_accuracy": 1.0
+ },
+ "noun_name": {
+  "n": 40,
+  "clean_score": 9.584131240844727,
+  "clean_pair_accuracy": 1.0,
+  "clean_top1_is_correct": 0.699999988079071,
+  "recon_only_score": 10.162545204162598,
+  "recon_only_pair_accuracy": 1.0
+ },
+ "per_name_clean_score_name_only": {
+  "Amy": 9.742981910705566,
+  "Anna": 9.833320617675781,
+  "Ben": 9.375545501708984,
+  "Billy": 9.018938064575195,
+  "Bob": 8.510652542114258,
+  "Jack": 9.68063735961914,
+  "Jane": 8.928938865661621,
+  "Jim": 7.559603691101074,
+  "Joe": 7.86164665222168,
+  "John": 8.661247253417969,
+  "Lily": 9.273653030395508,
+  "Lucy": 10.26826000213623,
+  "Mia": 8.232461929321289,
+  "Sally": 8.598700523376465,
+  "Sara": 9.482024192810059,
+  "Sarah": 9.217644691467285,
+  "Sue": 8.326666831970215,
+  "Tim": 10.195674896240234,
+  "Tom": 9.950342178344727,
+  "Tommy": 8.479557037353516
+ }
+}

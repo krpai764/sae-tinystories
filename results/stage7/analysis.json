@@ -1,0 +1,613 @@
+{
+ "n_firing": 559,
+ "top_k": 10,
+ "tops": {
+  "overall": [
+   1493,
+   88,
+   1314,
+   1511,
+   1384,
+   1879,
+   1416,
+   1869,
+   668,
+   1532
+  ],
+  "girl": [
+   1493,
+   1511,
+   88,
+   1384,
+   1879,
+   1869,
+   668,
+   1735,
+   905,
+   1630
+  ],
+  "boy": [
+   1493,
+   88,
+   1314,
+   1416,
+   1384,
+   1879,
+   1532,
+   1869,
+   1408,
+   1197
+  ]
+ },
+ "features": {
+  "88": {
+   "rank_effect": {
+    "overall": 2.78629994392395,
+    "girl": 2.1102375984191895,
+    "boy": 3.4623618125915527
+   },
+   "heldout_effect": {
+    "overall": 2.7775719165802,
+    "girl": 2.256568431854248,
+    "boy": 3.2985756397247314
+   },
+   "in_top": [
+    "overall",
+    "girl",
+    "boy"
+   ],
+   "mean_peak_act_girl_prompts": 5.231647253036499,
+   "mean_peak_act_boy_prompts": 5.231647253036499,
+   "peak_token_counts": {
+    " day": 40,
+    "Yesterday": 20
+   },
+   "stage5_label_AI_written": {
+    "label": "' day' in story-initial 'One day'",
+    "final_clear": "True",
+    "blind": 3
+   },
+   "heldout_percentile_among_firing": {
+    "overall": 0.9964221824686941,
+    "girl": 0.9946332737030411,
+    "boy": 0.9964221824686941
+   }
+  },
+  "668": {
+   "rank_effect": {
+    "overall": 0.8194332122802734,
+    "girl": 0.7525112628936768,
+    "boy": 0.8863545656204224
+   },
+   "heldout_effect": {
+    "overall": 0.8297113180160522,
+    "girl": 0.811688244342804,
+    "boy": 0.8477346301078796
+   },
+   "in_top": [
+    "overall",
+    "girl"
+   ],
+   "mean_peak_act_girl_prompts": 2.9521897157033283,
+   "mean_peak_act_boy_prompts": 2.9732550462086995,
+   "peak_token_counts": {
+    " because": 40
+   },
+   "stage5_label_AI_written": null,
+   "heldout_percentile_among_firing": {
+    "overall": 0.9874776386404294,
+    "girl": 0.9856887298747764,
+    "boy": 0.9821109123434705
+   }
+  },
+  "905": {
+   "rank_effect": {
+    "overall": 0.23790593445301056,
+    "girl": 0.4758111536502838,
+    "boy": 7.152557373046875e-07
+   },
+   "heldout_effect": {
+    "overall": -0.03300285339355469,
+    "girl": 0.0470312125980854,
+    "boy": -0.11303691565990448
+   },
+   "in_top": [
+    "girl"
+   ],
+   "mean_peak_act_girl_prompts": 0.2341411123673121,
+   "mean_peak_act_boy_prompts": 0.04177215298016866,
+   "peak_token_counts": {
+    "<name>": 24
+   },
+   "stage5_label_AI_written": null,
+   "heldout_percentile_among_firing": {
+    "overall": 0.04293381037567084,
+    "girl": 0.8980322003577818,
+    "boy": 0.012522361359570662
+   }
+  },
+  "1197": {
+   "rank_effect": {
+    "overall": 0.4113233983516693,
+    "girl": -0.10302434116601944,
+    "boy": 0.9256711006164551
+   },
+   "heldout_effect": {
+    "overall": 0.2406865805387497,
+    "girl": -0.14423628151416779,
+    "boy": 0.6256094574928284
+   },
+   "in_top": [
+    "boy"
+   ],
+   "mean_peak_act_girl_prompts": 0.07946010281642278,
+   "mean_peak_act_boy_prompts": 0.8322779809435209,
+   "peak_token_counts": {
+    "<name>": 49
+   },
+   "stage5_label_AI_written": null,
+   "heldout_percentile_among_firing": {
+    "overall": 0.9570661896243292,
+    "girl": 0.02146690518783542,
+    "boy": 0.9749552772808586
+   }
+  },
+  "1314": {
+   "rank_effect": {
+    "overall": 1.443811058998108,
+    "girl": -2.28881845032447e-06,
+    "boy": 2.887624740600586
+   },
+   "heldout_effect": {
+    "overall": 0.31204432249069214,
+    "girl": -0.045842695981264114,
+    "boy": 0.6699313521385193
+   },
+   "in_top": [
+    "overall",
+    "boy"
+   ],
+   "mean_peak_act_girl_prompts": 0.011368970076243082,
+   "mean_peak_act_boy_prompts": 1.1253675361474356,
+   "peak_token_counts": {
+    "<name>": 39
+   },
+   "stage5_label_AI_written": null,
+   "heldout_percentile_among_firing": {
+    "overall": 0.9695885509838998,
+    "girl": 0.05366726296958855,
+    "boy": 0.9767441860465116
+   }
+  },
+  "1384": {
+   "rank_effect": {
+    "overall": 1.139002799987793,
+    "girl": 0.9834338426589966,
+    "boy": 1.2945716381072998
+   },
+   "heldout_effect": {
+    "overall": 1.1623790264129639,
+    "girl": 1.164567232131958,
+    "boy": 1.1601907014846802
+   },
+   "in_top": [
+    "overall",
+    "girl",
+    "boy"
+   ],
+   "mean_peak_act_girl_prompts": 4.451145569483439,
+   "mean_peak_act_boy_prompts": 4.451145569483439,
+   "peak_token_counts": {
+    ",": 100
+   },
+   "stage5_label_AI_written": {
+    "label": "',' after 'One day'",
+    "final_clear": "True",
+    "blind": 5
+   },
+   "heldout_percentile_among_firing": {
+    "overall": 0.9946332737030411,
+    "girl": 0.9910554561717353,
+    "boy": 0.9892665474060823
+   }
+  },
+  "1408": {
+   "rank_effect": {
+    "overall": 0.3640064001083374,
+    "girl": -0.23403048515319824,
+    "boy": 0.9620434045791626
+   },
+   "heldout_effect": {
+    "overall": 0.2617911696434021,
+    "girl": -0.5654069185256958,
+    "boy": 1.0889891386032104
+   },
+   "in_top": [
+    "boy"
+   ],
+   "mean_peak_act_girl_prompts": 0.44777198135852814,
+   "mean_peak_act_boy_prompts": 1.096479022502899,
+   "peak_token_counts": {
+    "<name>": 73
+   },
+   "stage5_label_AI_written": {
+    "label": "'John' as first token of a story",
+    "final_clear": "False",
+    "blind": 2
+   },
+   "heldout_percentile_among_firing": {
+    "overall": 0.962432915921288,
+    "girl": 0.007155635062611807,
+    "boy": 0.9874776386404294
+   }
+  },
+  "1416": {
+   "rank_effect": {
+    "overall": 0.9852638244628906,
+    "girl": -2.28881845032447e-06,
+    "boy": 1.9705299139022827
+   },
+   "heldout_effect": {
+    "overall": 0.4561377465724945,
+    "girl": -0.001243162201717496,
+    "boy": 0.9135187268257141
+   },
+   "in_top": [
+    "overall",
+    "boy"
+   ],
+   "mean_peak_act_girl_prompts": 0.13095633511741955,
+   "mean_peak_act_boy_prompts": 2.1972260624170303,
+   "peak_token_counts": {
+    "<name>": 66,
+    ".": 2
+   },
+   "stage5_label_AI_written": null,
+   "heldout_percentile_among_firing": {
+    "overall": 0.9803220035778175,
+    "girl": 0.17889087656529518,
+    "boy": 0.9856887298747764
+   }
+  },
+  "1493": {
+   "rank_effect": {
+    "overall": 3.664991855621338,
+    "girl": 3.0148658752441406,
+    "boy": 4.315117359161377
+   },
+   "heldout_effect": {
+    "overall": 3.6229844093322754,
+    "girl": 3.1699087619781494,
+    "boy": 4.0760602951049805
+   },
+   "in_top": [
+    "overall",
+    "girl",
+    "boy"
+   ],
+   "mean_peak_act_girl_prompts": 5.692455927530925,
+   "mean_peak_act_boy_prompts": 5.692455927530925,
+   "peak_token_counts": {
+    "One": 40,
+    "Yesterday": 20
+   },
+   "stage5_label_AI_written": null,
+   "heldout_percentile_among_firing": {
+    "overall": 0.998211091234347,
+    "girl": 0.9964221824686941,
+    "boy": 0.998211091234347
+   }
+  },
+  "1511": {
+   "rank_effect": {
+    "overall": 1.3462871313095093,
+    "girl": 2.8756320476531982,
+    "boy": -0.18305782973766327
+   },
+   "heldout_effect": {
+    "overall": 2.624816417694092,
+    "girl": 5.249632835388184,
+    "boy": -1.4305115314527939e-07
+   },
+   "in_top": [
+    "overall",
+    "girl"
+   ],
+   "mean_peak_act_girl_prompts": 1.6908817966779073,
+   "mean_peak_act_boy_prompts": 0.03907137761513392,
+   "peak_token_counts": {
+    "<name>": 46
+   },
+   "stage5_label_AI_written": null,
+   "heldout_percentile_among_firing": {
+    "overall": 0.9946332737030411,
+    "girl": 0.998211091234347,
+    "boy": 0.2504472271914132
+   }
+  },
+  "1532": {
+   "rank_effect": {
+    "overall": 0.5484137535095215,
+    "girl": -0.0015295982593670487,
+    "boy": 1.098357081413269
+   },
+   "heldout_effect": {
+    "overall": 0.5906251072883606,
+    "girl": -0.11059021949768066,
+    "boy": 1.2918403148651123
+   },
+   "in_top": [
+    "overall",
+    "boy"
+   ],
+   "mean_peak_act_girl_prompts": 0.04375509222348531,
+   "mean_peak_act_boy_prompts": 2.213695945839087,
+   "peak_token_counts": {
+    "<name>": 59,
+    ",": 18,
+    " boy": 4
+   },
+   "stage5_label_AI_written": null,
+   "heldout_percentile_among_firing": {
+    "overall": 0.9821109123434705,
+    "girl": 0.028622540250447227,
+    "boy": 0.9928443649373881
+   }
+  },
+  "1630": {
+   "rank_effect": {
+    "overall": 0.23284725844860077,
+    "girl": 0.46569380164146423,
+    "boy": 7.152557373046875e-07
+   },
+   "heldout_effect": {
+    "overall": 1.1920928955078125e-07,
+    "girl": 3.814697322468419e-07,
+    "boy": -1.4305115314527939e-07
+   },
+   "in_top": [
+    "girl"
+   ],
+   "mean_peak_act_girl_prompts": 0.13471720814704896,
+   "mean_peak_act_boy_prompts": 0.0,
+   "peak_token_counts": {
+    "<name>": 6
+   },
+   "stage5_label_AI_written": null,
+   "heldout_percentile_among_firing": {
+    "overall": 0.2772808586762075,
+    "girl": 0.2504472271914132,
+    "boy": 0.2504472271914132
+   }
+  },
+  "1735": {
+   "rank_effect": {
+    "overall": 0.2871648967266083,
+    "girl": 0.5813988447189331,
+    "boy": -0.00706901540979743
+   },
+   "heldout_effect": {
+    "overall": 0.09969613701105118,
+    "girl": 0.1993924081325531,
+    "boy": -1.4305115314527939e-07
+   },
+   "in_top": [
+    "girl"
+   ],
+   "mean_peak_act_girl_prompts": 0.7304157639543215,
+   "mean_peak_act_boy_prompts": 0.01606883332133293,
+   "peak_token_counts": {
+    "<name>": 26
+   },
+   "stage5_label_AI_written": null,
+   "heldout_percentile_among_firing": {
+    "overall": 0.9355992844364938,
+    "girl": 0.9677996422182469,
+    "boy": 0.2504472271914132
+   }
+  },
+  "1869": {
+   "rank_effect": {
+    "overall": 0.9451940655708313,
+    "girl": 0.8992235064506531,
+    "boy": 0.9911643266677856
+   },
+   "heldout_effect": {
+    "overall": 0.827246367931366,
+    "girl": 0.8597267270088196,
+    "boy": 0.7947660088539124
+   },
+   "in_top": [
+    "overall",
+    "girl",
+    "boy"
+   ],
+   "mean_peak_act_girl_prompts": 1.7930864016215007,
+   "mean_peak_act_boy_prompts": 1.78358736038208,
+   "peak_token_counts": {
+    " park": 20
+   },
+   "stage5_label_AI_written": null,
+   "heldout_percentile_among_firing": {
+    "overall": 0.9874776386404294,
+    "girl": 0.9874776386404294,
+    "boy": 0.9803220035778175
+   }
+  },
+  "1879": {
+   "rank_effect": {
+    "overall": 1.0879437923431396,
+    "girl": 0.9595115780830383,
+    "boy": 1.2163759469985962
+   },
+   "heldout_effect": {
+    "overall": 1.1105090379714966,
+    "girl": 1.0473783016204834,
+    "boy": 1.1736398935317993
+   },
+   "in_top": [
+    "overall",
+    "girl",
+    "boy"
+   ],
+   "mean_peak_act_girl_prompts": 4.08954397837321,
+   "mean_peak_act_boy_prompts": 4.08954397837321,
+   "peak_token_counts": {
+    ",": 100
+   },
+   "stage5_label_AI_written": null,
+   "heldout_percentile_among_firing": {
+    "overall": 0.9910554561717353,
+    "girl": 0.9910554561717353,
+    "boy": 0.9910554561717353
+   }
+  }
+ },
+ "joint": {
+  "overall": {
+   "features": [
+    1493,
+    88,
+    1314,
+    1511,
+    1384,
+    1879,
+    1416,
+    1869,
+    668,
+    1532
+   ],
+   "overall": {
+    "clean_score": 9.059654235839844,
+    "top_drop": 7.646140098571777,
+    "score_after_top_ablation": 1.413513422012329,
+    "pair_accuracy_after": 0.85,
+    "random_drop_mean": 0.1229213997721672,
+    "random_drop_max": 1.3045215606689453,
+    "random_drop_p95": 0.5231990218162537,
+    "top_beats_n_random": 100,
+    "n_random": 100
+   },
+   "girl": {
+    "clean_score": 9.42003345489502,
+    "top_drop": 7.188626289367676,
+    "score_after_top_ablation": 2.2314083576202393,
+    "pair_accuracy_after": 1.0,
+    "random_drop_mean": 0.06848697364330292,
+    "random_drop_max": 1.6051170825958252,
+    "random_drop_p95": 0.4050321877002716,
+    "top_beats_n_random": 100,
+    "n_random": 100
+   },
+   "boy": {
+    "clean_score": 8.699274063110352,
+    "top_drop": 8.103655815124512,
+    "score_after_top_ablation": 0.595618486404419,
+    "pair_accuracy_after": 0.7,
+    "random_drop_mean": 0.1773558259010315,
+    "random_drop_max": 2.8652195930480957,
+    "random_drop_p95": 0.848594069480896,
+    "top_beats_n_random": 100,
+    "n_random": 100
+   },
+   "noun_name_heldout_drop": 4.467103004455566
+  },
+  "girl": {
+   "features": [
+    1493,
+    1511,
+    88,
+    1384,
+    1879,
+    1869,
+    668,
+    1735,
+    905,
+    1630
+   ],
+   "overall": {
+    "clean_score": 9.059654235839844,
+    "top_drop": 7.4928879737854,
+    "score_after_top_ablation": 1.5667659044265747,
+    "pair_accuracy_after": 0.875,
+    "random_drop_mean": 0.13861213624477386,
+    "random_drop_max": 1.3017594814300537,
+    "random_drop_p95": 0.6203387975692749,
+    "top_beats_n_random": 100,
+    "n_random": 100
+   },
+   "girl": {
+    "clean_score": 9.42003345489502,
+    "top_drop": 7.308287620544434,
+    "score_after_top_ablation": 2.111746311187744,
+    "pair_accuracy_after": 1.0,
+    "random_drop_mean": 0.06693745404481888,
+    "random_drop_max": 1.7703838348388672,
+    "random_drop_p95": 0.46688568592071533,
+    "top_beats_n_random": 100,
+    "n_random": 100
+   },
+   "boy": {
+    "clean_score": 8.699274063110352,
+    "top_drop": 7.677488803863525,
+    "score_after_top_ablation": 1.0217853784561157,
+    "pair_accuracy_after": 0.75,
+    "random_drop_mean": 0.21028681099414825,
+    "random_drop_max": 2.355030059814453,
+    "random_drop_p95": 1.015097737312317,
+    "top_beats_n_random": 100,
+    "n_random": 100
+   },
+   "noun_name_heldout_drop": 4.10024881362915
+  },
+  "boy": {
+   "features": [
+    1493,
+    88,
+    1314,
+    1416,
+    1384,
+    1879,
+    1532,
+    1869,
+    1408,
+    1197
+   ],
+   "overall": {
+    "clean_score": 9.059654235839844,
+    "top_drop": 6.967464447021484,
+    "score_after_top_ablation": 2.092189311981201,
+    "pair_accuracy_after": 0.725,
+    "random_drop_mean": 0.0987248495221138,
+    "random_drop_max": 2.666614294052124,
+    "random_drop_p95": 0.7508128881454468,
+    "top_beats_n_random": 100,
+    "n_random": 100
+   },
+   "girl": {
+    "clean_score": 9.42003345489502,
+    "top_drop": 5.290184497833252,
+    "score_after_top_ablation": 4.129848957061768,
+    "pair_accuracy_after": 1.0,
+    "random_drop_mean": 0.09715390205383301,
+    "random_drop_max": 5.321162223815918,
+    "random_drop_p95": 0.6113452911376953,
+    "top_beats_n_random": 99,
+    "n_random": 100
+   },
+   "boy": {
+    "clean_score": 8.699274063110352,
+    "top_drop": 8.644744873046875,
+    "score_after_top_ablation": 0.054529380053281784,
+    "pair_accuracy_after": 0.45,
+    "random_drop_mean": 0.100295789539814,
+    "random_drop_max": 2.66640043258667,
+    "random_drop_p95": 0.6916478872299194,
+    "top_beats_n_random": 100,
+    "n_random": 100
+   },
+   "noun_name_heldout_drop": 3.1300270557403564
+  }
+ },
+ "top_k_test_passed": true
+}

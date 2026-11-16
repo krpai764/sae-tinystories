@@ -80,3 +80,14 @@
 3. *Why scale by the feature's own firing strength?* It puts features on a common footing; a fixed absolute size would be gentle for some and huge for others. Even so, 2x was already as long as a typical activation here, so the brief's 2/5/10x was too strong.
 
 **Extension: theme features.** Steered 6 more features whose labels name a topic, at gentler strengths (0.5x to 2x). Bees, rain and cold worked: below about 1x the model wrote fluent stories about bee hives, puddles and icy wind, while random pushes of the same size did not. "Household chores" and "playing music" did nothing visible at any strength, and "safety warnings" was too weak to tell from the control. So topic-like features exist and are steerable here, but only about half of the topic labels gave usable steering, and the window between "no effect" and "broken" is roughly 0.5x to 1.5x.
+
+## Stage 7: Trace one behaviour
+
+**What it did.** Tested which autoencoder features the model needs to say "she" after a girl's name and "he" after a boy's. Built 120 short prompts (20 names, 6 sentence frames), scored each by how much the model prefers the right pronoun over the wrong one, then switched features off one at a time and measured the drop. Ranked on half the names, tested on the other half, and compared with random features.
+
+**What happened.** The planned test passed, but for a dull reason: the biggest drops came from features for the sentence opening ("One", "day", the comma), which fire the same for every name. A follow-up restricted to features that fire for only one gender found the real ones: one "girl's name" feature carries most of the effect for girls, and several name-specific features (Tom, Tim, Bob) do it for boys. Adding the other gender's features flipped the predicted pronoun on most or all prompts at one to two times normal strength; random directions almost never did.
+
+**Interview questions**
+1. *Why did the first test pass without answering the question?* The score is a gap between two words; anything that disrupts the context shrinks that gap. Ablation finds everything the behaviour depends on, not just what carries the information. Requiring a feature to fire differently for the two genders isolates the information.
+2. *Why add the reconstruction error back when switching a feature off?* So the only change to the model is that one feature. Without it you would also be measuring the damage from the autoencoder's imperfect reconstruction.
+3. *What is the difference between the ablation and flip tests?* Ablation shows a feature is needed; adding it to the opposite prompts and flipping the answer shows it is enough to carry the information. Here ablation alone never flipped the pronoun, so other features or the error term also carry gender.
