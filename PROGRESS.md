@@ -71,7 +71,7 @@ Stage 3: read the two SAE papers first (Bricken et al 2023; Cunningham et al 202
 - MPS OOM at eval batch 32 (50k-vocab logits); use batch 8.
 - Carry-forward recommendation: lam=1 (L0 26.7, 0 dead, 0.928/0.910 recovered). User to confirm.
 
-## Stage 5 notes (in progress, 2026-11-16)
+## Stage 5 notes (done, committed 5fa4669, 2026-11-16)
 - Chosen SAE: lam=1 (`interpret.chosen_lambda`). All 2048 features fire on train. 200 random live features (seed 1234), presented in random order and split into 4 batches of 50.
 - `scripts/stage5_examples.py` -> `results/stage5/features.json` (all 200: top-20, 5 random, frequency, promoted/suppressed tokens), `results/stage5/batch_{1..4}.md`.
 - `scripts/stage5_write_labels.py` holds Claude's suggestions (batch 1 done: 47 clear / 3 unclear by suggestion) -> `results/stage5/labels.csv`; user fills `your_*` columns. Guide: `results/stage5/LABELLING.md`.
@@ -82,3 +82,11 @@ Stage 3: read the two SAE papers first (Bricken et al 2023; Cunningham et al 202
 - Blind test: `scripts/stage5_blind_build.py` (puzzles: label + 5 firing [uniform among firings] + 5 non-firing snippets from unseen text; real+control anonymised and shuffled; key in results/stage5_blind/key.json) -> 10 fresh subagents (sonnet) answered from the puzzle files only -> raw answers saved in results/stage5_blind/responses.json -> `scripts/stage5_blind_score.py` -> results/stage5_blind_scores.json, results/stage5_blind_per_feature.csv, figures/stage5_blind.png. Report: `scripts/stage5_report.py` -> results/stage5_report.md.
 - Headline: real 37/200 clear (18.5%), control 1/50 (2%). Blind accuracy real 0.779 (n=200) vs control 0.564 (n=50), chance 0.5. Labeller's 'unclear' verdict did not predict blind accuracy (0.779).
 - Stage 5 done pending user review/commit. Next: Stage 6 steering (pick 5-8 features with high blind accuracy and 'clear').
+
+## Stage 6 notes (2026-11-16)
+- Selection (user instruction): main features ONLY from Stage 5 strictly-clear AND 5/5 blind (20 such); picked 6 with content-visible labels: 144, 597, 1211, 2014, 215, 1905. Plus 2 NOT-clear: 1693 ('time', 1/5 blind), 978 ('sunshine', 2/5). In config.yaml `steering`.
+- `scripts/stage6_steer.py` (CPU, `--smoke` for 1 feature) -> results/stage6/steering.json; `scripts/stage6_report.py` -> results/stage6_summary.json, figures/stage6_steering.png, results/stage6_report.md.
+- Vector = k x s x d / rescale, s = mean of top-20 activations, added at all positions except EOS prefix; control = random unit direction, same length. 2 prompts, seeds 1234/1235, 50 tokens.
+- Deviation: brief's 2/5/10x; smoke test showed 2x already breaks text (vector ~ as long as the mean activation, 2.51 model units), so k = [0.5,1,2,5,10].
+- Findings: at k=0.5 all text stays fluent (mild drift); at k=1 one prompt breaks for 597 and both for 1693 (not clear); at k=2 all 6 clear features break (ppl>20 under unsteered model) into their promoted next-tokens (little->'girl/boy', big-encounter->'scary monster', mom->'my', was-so->'so sad', story-end '.'->'The/They'). Random directions of equal length also break text at k>=2 but produce 0 promoted tokens. Steering mostly acts on the NEXT-token prediction, not a theme. Not-clear 'sunshine' (978) gave the most on-topic fluent steering ('sky was bright and sun was warm' at 2x, 'sunshine' at 5x); 'time' (1693) collapsed to 'to to to' by 2x.
+- Next: Stage 7 (trace one behaviour), brief suggests Fable.

@@ -64,6 +64,16 @@ random_control:             # Stage 5 sanity check (shuffled-weights model, Bric
   epochs: 120               # ~11.6k steps, close to the real SAE's 12.1k
   resample_after_epochs: [12, 24, 36, 48]
 
+steering:                   # Stage 6
+  # chosen from features strictly clear in Stage 5 AND 5/5 blind; picked for content-visible labels
+  clear_features: [144, 597, 1211, 2014, 215, 1905]
+  unclear_features: [1693, 978]   # not clear in Stage 5 ('time' 1/5 blind, 'sunshine' 2/5)
+  multipliers: [0.5, 1, 2, 5, 10] # x typical strong firing (mean of top-20 acts); brief asks 2,5,10; smoke test showed 2x already breaks text, so 0.5 and 1 added
+  max_new_tokens: 50
+  prompts:
+    - "Once upon a time, there was a little girl named Lily."
+    - "Tom and his dog went to the park. They saw"
+
 generation:
   seed: 1234                # same seed + prompt -> same story
   prompts:

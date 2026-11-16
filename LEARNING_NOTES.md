@@ -65,3 +65,16 @@
 1. *Why train an SAE on a model with shuffled weights?* As a control: if its features looked just as interpretable, our method would be finding patterns in the text or the method itself, not in the model.
 2. *Why sample firings uniformly rather than using the top ones in the blind test?* Top firings are the easiest cases; most firings are weaker, and a label should explain typical behaviour too. Detection fell from 0.94 for strong to 0.64 for weak firings.
 3. *What is the main weakness of this evaluation?* Labels were written and scored by AI models of the same family with no human check, and the non-firing distractors were random tokens, which makes the test easier than it could be.
+
+## Stage 6: Steering
+
+**What it did.** While the model wrote a story, added a multiple of one feature's direction to its internal activations at layer 3, and compared the text with no steering and with a random direction of the same length. Six features came from the ones that were both clear and 5/5 in the blind test; two were deliberately weak-label features.
+
+**Why.** If a feature really means something to the model, pushing on it should change the text in the matching way. The random control shows how much change you get just from disturbing the activations at all.
+
+**What happened.** At half a feature's usual strong firing the text stayed fluent and only drifted; at one times most stayed fluent. At two times, every chosen feature broke the text into repeats of the word the feature predicts next ("girl girl girl", "scary monster", "so so sad"). The random directions also broke the text at that size, but into unrelated words. One weak-label feature ("sunshine") steered the most gracefully.
+
+**Interview questions**
+1. *Why compare with a random direction of the same size?* Any big push breaks a small model; the control separates "the feature did something specific" from "we disturbed the activations".
+2. *Why did steering produce repeated next words rather than whole themes?* Many of these features fire on one token and predict the next; amplifying them hard pushes the model to emit that prediction over and over. Themes would need gentler pushes or more abstract features.
+3. *Why scale by the feature's own firing strength?* It puts features on a common footing; a fixed absolute size would be gentle for some and huge for others. Even so, 2x was already as long as a typical activation here, so the brief's 2/5/10x was too strong.
