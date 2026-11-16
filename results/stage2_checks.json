@@ -1,0 +1,18 @@
+{
+  "excluding_pos0": true,
+  "mean_vector_norm": 1.572936773300171,
+  "mean_raw_norm": 2.5141711235046387,
+  "mean_centred_norm": 1.951460838317871,
+  "fraction_of_squared_norm_in_mean": 0.38952091336250305,
+  "pca_top1_top5_top20_top100_variance_fraction": [
+    0.06929597035899832,
+    0.22552597834493354,
+    0.43451808777610557,
+    0.796455169314342
+  ],
+  "rescale_factor_to_norm_sqrt_width": 6.363926405175133,
+  "train_heldout_identical_stories": 0,
+  "heldout_stories": 1029,
+  "data_dir_bytes": 2791724395,
+  "data_dir_GB": 2.791724395
+}

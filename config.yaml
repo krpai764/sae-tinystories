@@ -22,8 +22,13 @@ data:
   dataset: roneneldan/TinyStories
   train_split: train
   heldout_split: validation # never used to train the SAE
-  num_train_tokens: 3000000 # Stage 2 target (2-5M)
+  num_train_tokens: 2500000 # Stage 2 target (brief: 2-5M); 2.5M fp32 x 256 = ~2.6 GB, keeps total under the 3 GB cap
   num_heldout_tokens: 200000
+  parquet_train_file: data/train-00000-of-00004-2d5a1467fff1081b.parquet        # one shard (249 MB) is plenty
+  parquet_valid_file: data/validation-00000-of-00001-869c898b519ad725.parquet
+  collect_batch_size: 32    # stories per forward pass during collection
+  collect_checkpoint_every: 50  # batches between progress saves (resume support)
+  tolerance_atol: 1.0e-3    # saved-vs-recomputed row check (mps batched vs cpu single)
 
 sae:
   expansion: 8              # dictionary size = 8 x model width

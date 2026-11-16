@@ -21,3 +21,14 @@
 1. *What is the residual stream, and why decompose it rather than a single MLP layer?* It is the sum of the embedding and every block's contributions, passed along the whole network, so it carries everything the model has computed so far. Features read from it can be used by all later layers.
 2. *How do you know your hook does not disturb the model?* A test compares logits with and without the hook for exact equality, and a second test shows that the replace path does change output when we zero the activations, proving the splice is really live.
 3. *Why a middle layer?* Early layers mostly hold token identity and late layers mostly encode next-token predictions; middle layers tend to hold richer abstract features, and there are still layers after it, so we can test splicing and steering effects.
+
+## Stage 2: Collect activations
+
+**What it did.** Ran the model over about 2.5 million tokens of TinyStories (12,747 stories) and saved the 256-number residual-stream vector at layer 3 for every token into one big memory-mapped file, alongside the token IDs, story index and position. Did the same for 200k tokens of held-out stories that the autoencoder will never train on.
+
+**Why.** The autoencoder is trained on these vectors, not on text. Saving them once is far cheaper than re-running the model every epoch. A memory-mapped file lets us read a slice from disk without loading all 2.6 GB into the laptop's 8.6 GB of RAM. Keeping the token ID for each row means that when a feature fires strongly, we can look up the exact word and story. Each story starts with an end-of-text token, which always produces the same vector; I will leave it out of training because it carries no information. Two things went wrong and were fixed: the first run crashed from GPU memory growth because every batch had a different length (fixed by padding to a few standard lengths), and the held-out set contained 3 stories identical to training stories (TinyStories has duplicates), so I excluded them.
+
+**Interview questions**
+1. *Why keep a held-out split, and how did you check it was really held out?* To measure the autoencoder on text it never saw. I checked for exact story overlap by comparing token sequences and found 3 duplicates in the dataset, then excluded them.
+2. *How do you know the saved activations are correct?* A test recomputes random stories one at a time on the CPU and compares to the saved rows (max difference about 2e-6), which also shows padding in batches does not change real tokens thanks to causal attention.
+3. *Why did the first collection run crash, and how did you diagnose it?* The Apple GPU backend kept memory per distinct input shape, and sorted-by-length batches had almost every length once. I reproduced it in a small benchmark, saw driver memory climb from 2.8 to 7 GB, then bucketed lengths and confirmed memory stayed flat.
