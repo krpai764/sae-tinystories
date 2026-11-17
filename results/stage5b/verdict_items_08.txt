@@ -1,0 +1,874 @@
+### V200
+LABEL: ' on' in 'sit on the sofa/grass'
+TOP EXAMPLES (20 strongest firings; number = firing strength):
+T1. (7.87) . I wish I had so many things too."⏎⏎They sit[[ on]] the sofa and watch
+T2. (7.86)  says.⏎⏎She gives them hot chocolate and cookies. They sit[[ on]] the couch and watch
+T3. (7.84)  then they heard a voice. It was their mom. She was sitting[[ on]] a bench, reading
+T4. (7.81) ," Lily says.⏎⏎They are sad and tired. They sit[[ on]] the grass and look
+T5. (7.76) ⏎⏎Anna and Ben listen to Mom. They settle down and sit[[ on]] a bench. They
+T6. (7.75)  like cartoons. They make me laugh."⏎⏎Tom and Lily sit[[ on]] the couch. They
+T7. (7.70)  soon." Mom says.⏎⏎Lily and Max sigh and sit[[ on]] the couch. They
+T8. (7.64) ⏎⏎After a while, Timmy got tired and he sat down[[ on]] a bench. He
+T9. (7.63)  not see it anymore. Lila felt sad and troubled. She sat[[ on]] the grass and cried
+T10. (7.61) , Timmy. Let's sit down and rest." Timmy sat[[ on]] his mom's lap
+T11. (7.57) !" Ben said. "We are so high!"⏎⏎They sat[[ on]] the grass and enjoyed
+T12. (7.52)  tell you."⏎⏎Lily and Ben followed Mommy and sat[[ on]] the couch. They
+T13. (7.48)  mom had packed her a tasty sandwich for her walk. She sat down[[ on]] the grass and took
+T14. (7.47)  has many colors and shapes. They want to try it. They sit[[ on]] the floor and open
+T15. (7.44) After a while, they got tired and stopped swinging. They sat down[[ on]] the grass and started
+T16. (7.39)  away and leaves Sam and Tom behind.⏎⏎Sam and Tom sit[[ on]] the grass. They
+T17. (7.39)  nod and say, "Yay, we love picnic!" They sit[[ on]] a blanket and eat
+T18. (7.38)  was too old or too silly for the park.⏎⏎She sat[[ on]] a bench and hugged
+T19. (7.36)  the zoo. But Anna and Ben did not care. They just sat[[ on]] a bench and p
+T20. (7.36) .⏎⏎They go to the circus in the afternoon. They sit[[ on]] the seats and wait
+RANDOM FIRINGS (10 firings chosen at random; number = firing strength):
+R1. (0.04)  you shout, the seagulls will hear you and come down[[ to]] say hello."⏎
+R2. (0.64)  thanked him and walked to the penguin pool. They held the fish[[ in]] their hands and waved
+R3. (0.04)  that he couldn't resist the cheese. He climbed up onto the table[[ and]] started to eat the
+R4. (2.10)  the deep river. From then on, it was very careful to stay[[ in]] the deep ocean and
+R5. (0.50) . Today, they want to pretend to be hippos. They put[[ on]] big gray suits and
+R6. (0.30) ."⏎⏎The beetle heard Ben's voice. It looked at him[[ with]] its tiny eyes.
+R7. (0.60)  says, "I don't know, Mia. Maybe you left it[[ at]] grandma's house."
+R8. (1.40)  One day, he saw a little monkey who could not reach the bananas[[ on]] the tree. So
+R9. (2.27)  massage pool.⏎⏎They look around and see an enormous ball floating[[ on]] the water. They
+R10. (4.80)  time to go inside. Little John put his sunglasses away and lay down[[ on]] the couch. He
+
+### V201
+LABEL: ' together' in 'let's ... together'
+TOP EXAMPLES (20 strongest firings; number = firing strength):
+T1. (10.73) ⏎⏎Tom said, "Sure! Let's get this board dry[[ together]]!" ⏎⏎
+T2. (10.23)  Her mommy said, "Don't get frustrated, let's look[[ together]]." After a few
+T3. (10.15) . ⏎⏎Mommy said, "Let's solve this problem[[ together]], Lily. We
+T4. (10.13)  and said, "Yes, it's time. Let's pay it[[ together]]." ⏎⏎
+T5. (10.08) . Her mom was sad too and said, "Let's fix it[[ together]]". So her mom
+T6. (10.02)  jet. The old man smiled and said, "Let's repair it[[ together]]." ⏎⏎
+T7. (9.86)  that it was wet. Max's dad said "We need to work[[ together]] to get the van
+T8. (9.82) I can help you get the fruit. Let's be creative and work[[ together]]."⏎⏎E
+T9. (9.82)  listen to them. Finally, Nutty realized that he needed to work[[ together]] with his friends to
+T10. (9.81)  "That's an interesting problem. Let's try to figure it out[[ together]]."⏎⏎M
+T11. (9.80) ⏎The King of one of the tribes said, "We must work[[ together]] if we want to
+T12. (9.79)  about it.⏎⏎The rabbit suggested, "Let's all work[[ together]]. We can pick
+T13. (9.78)  "It's okay, we all make mistakes. Let's fix it[[ together]]." They fixed the
+T14. (9.75)  fox said, "I can help you. Let's pack your bag[[ together]]!"⏎⏎The
+T15. (9.75)  people of her kingdom and spoke loudly: "We will have to work[[ together]] to make things right
+T16. (9.73)  the piano. ⏎⏎The boys realised that they needed to work[[ together]] in order to make
+T17. (9.70)  Let me see what I can do. Maybe I can sew it back[[ together]]."⏎⏎Mom
+T18. (9.70)  smiled and said, "Yes, let's go outside and fix it[[ together]]." They took some
+T19. (9.67)  Dave said "Be brave Joy and resist. We will press the switch[[ together]] and stop the trees
+T20. (9.67) ⏎He bent down and said, "Well, let's find it[[ together]]". The old man
+RANDOM FIRINGS (10 firings chosen at random; number = firing strength):
+R1. (1.67)  special to him.  One day, Tom and his sister were playing[[ together]] when suddenly she got
+R2. (1.97)  happy song to celebrate. The bird joined in and they sang and danced[[ together]] all day long.
+R3. (7.60)  she remembered something her mum had taught her. She quickly pushed her hands[[ together]] and shouted, �
+R4. (0.52) .⏎⏎Lily and Max start to cook the rice in their[[ pretend]] stove. They add
+R5. (8.76)  spoon and began to mix the batter. She loved watching the ingredients come[[ together]] in a big bowl
+R6. (3.59) .⏎⏎And from that day forth the prince and the kingdom were[[ united]] in happiness. The
+R7. (3.35) , so she hugged the monkey. They decided to go for a walk[[ together]], and they had
+R8. (0.29)  to mix the cake batter. The little boy was so happy that he[[ helped]] his mommy.
+R9. (3.53) The bird taught Lily how to whistle and they had a lot of fun[[ together]]. After a while
+R10. (0.07)  also laughing.⏎⏎Suddenly, the truck stopped right in front of[[ them]]. The driver got
+
+### V202
+LABEL: ' something'/' things' after 'build/create/design'
+TOP EXAMPLES (20 strongest firings; number = firing strength):
+T1. (4.83)  a time there was a little boy named Jake. Jake wanted to build[[ something]] special, so he
+T2. (4.82)  time, there was a little boy named Joe. He wanted to build[[ something]] very special out of
+T3. (4.76) Once upon a time, there was a nice man who wanted to create[[ something]] special. He had
+T4. (4.73)  time, there was a little girl named Amy. Amy loved to design[[ things]]. She would draw
+T5. (4.71)  time, there was a little boy named Jack. He wanted to make[[ something]] special, so he
+T6. (4.70)  upon a time, there was a little girl. She wanted to bake[[ something]] special! ⏎
+T7. (4.67) Once upon a time, a little girl wanted to build[[ something]] special. She found
+T8. (4.66)  time, there was a little girl called Sara. She wanted to make[[ something]] special to eat that
+T9. (4.66) Once there was a girl. She wanted to make[[ something]] cool with needle.
+T10. (4.65)  a time there was a little girl named Jane. Jane wanted to make[[ something]] special for her mom
+T11. (4.63)  there was a very eager little girl named Lucy. She wanted to create[[ something]] special. So one
+T12. (4.62) Once there was a boy named Davey who loved to build[[ things]]. He built a
+T13. (4.62)  time, there was a little girl called Lily. She wanted to make[[ something]] special, so she
+T14. (4.59)  a time, there was a boy named Timmy who loved to build[[ things]]. One day,
+T15. (4.57) Once upon a time there was a kind man. He wanted to build[[ something]] special for his friend
+T16. (4.56)  was a clever little boy named Timmy. Timmy loved to design[[ things]] with his building blocks
+T17. (4.56) Once upon a time there was a family. They wanted to bake[[ something]] special. So they
+T18. (4.54) Once there was a brother and sister. The brother wanted to create[[ something]] special for his sister
+T19. (4.51)  time, there was a little boy named Tim. Tim loved to build[[ things]]. One day,
+T20. (4.50)  upon a time there was a boy called Pete. He liked to build[[ things]]. But one day
+RANDOM FIRINGS (10 firings chosen at random; number = firing strength):
+R1. (0.15)  bag was called Luggage. Luggage had no friends. It was[[ sad]]. It wanted to
+R2. (0.19)  big red car and it was his favourite. Every day, he would[[ take]] his car for a
+R3. (0.01)  are playing in the kitchen. They see a big yellow box on the[[ floor]]. It is a
+R4. (0.19)  his den. He asked his friends to help him find pretty things to[[ put]] inside. They found
+R5. (0.06)  to take a walk in the woods. She walked deep into the woods[[,]] when she suddenly spotted
+R6. (0.37)  so excited to look around. She peered into a room and saw[[ something]] unexpected. ⏎
+R7. (0.56)  play with. One day, he decided to go on an adventure to[[ find]] some new friends.
+R8. (0.33)  of recipes that their mom gave them. They wanted to make a cake[[ for]] their dad's birthday
+R9. (0.05)  a cherry. She found a cherry tree and looked up at the cher[[ries]]. They were so
+R10. (0.25)  there was an adorable fisherman. Every day he would gather together his fishing[[ gear]] and head to the
+
+### V203
+LABEL: ',' after 'X was sad' (predicts 'but')
+TOP EXAMPLES (20 strongest firings; number = firing strength):
+T1. (6.51)  Bob a very low amount of money for it. Bob was very unhappy[[,]] so he decided to
+T2. (6.34)  wanted to be friends, but the rabbit disagreed. The deer was sad[[,]] and it looked around
+T3. (6.32)  eat. But her mom only bought fruits and vegetables. Lily was sad[[,]] but she was happy
+T4. (6.27)  told him they didn't have any oranges left. Timmy was sad[[,]] but his mom promised
+T5. (6.26)  said it was not safe to go outside the fence. Tommy was sad[[,]] but his mom said
+T6. (6.21)  family needed to sell her swing to make money. The girl was sad[[,]] but she understood.
+T7. (6.21)  need that toy. We need to save our money." Lily was sad[[,]] but she understood.
+T8. (6.20) , but her mommy said it was too expensive. Lily was sad[[,]] but she understood that
+T9. (6.17)  thought the doll was old and needed a new home. Lily was sad[[,]] but the old man
+T10. (6.17)  tripped and fell. His vegetables went rolling away! Benny was sad[[,]] but then he had
+T11. (6.14)  cookies because they were trying to save money. Timmy was still sad[[,]] but he understood.
+T12. (6.12)  in the car, but his dad said no. Timmy was sad[[,]] but he understood that
+T13. (6.12)  outside, she saw that the bird had flown away. Lily was sad[[,]] but then she remembered
+T14. (6.10)  best, but it was too heavy to lift. The girl was sad[[,]] so she went back
+T15. (6.08) , but his dad said it was too dangerous. Timmy was sad[[,]] but he knew his
+T16. (6.07)  the toy store and they found a toy truck. It wasn't expensive[[,]] but it was very
+T17. (6.06)  him in the arm and took the cards anyway. Timmy was sad[[,]] but he knew he
+T18. (6.06)  that the zebra's leg was broken. The zebra was sad[[,]] but Bob made him
+T19. (6.04) . We need to spend our money on food." Timmy was sad[[,]] but he understood.
+T20. (6.03)  he needed to rest and let his knee heal. Timmy was sad[[,]] but he knew his
+RANDOM FIRINGS (10 firings chosen at random; number = firing strength):
+R1. (0.01)  be my friend?" The little girl thought for a moment and then said[[,]] "Yes, I
+R2. (3.84)  her by throwing stones at her window. The woman was sad and scared[[,]] but she didn't
+R3. (0.04)  it back. But the bad guy didn't listen.⏎⏎Suddenly[[,]] the police arrived.
+R4. (4.61)  something strange. She heard someone praying beneath the tree. She was scared[[,]] but she wanted to
+R5. (0.16)  warm and friendly bear with a mustache!" They both laughed and played together[[,]] pretending to be bears
+R6. (0.21)  west, and Timmy went to bed with a smile on his face[[,]] dreaming of his new
+R7. (5.07) . She thought that was a bit strange. But Emma wasn't scared[[,]] she was curious.
+R8. (0.14)  asked her big brother, Tom, for help. But Tom was busy[[ playing]] with his toy cars
+R9. (1.05)  and Tim went to play with his friends. They all had fun together[[,]] and Tim was happy
+R10. (0.34)  graceful bird who wanted to decorate her nest. She had many ideas[[,]] but she needed help
+
+### V204
+LABEL: ' little' in paragraph-initial 'The little boy/girl'
+TOP EXAMPLES (20 strongest firings; number = firing strength):
+T1. (12.54)  call the police if he did not leave the farm.⏎⏎The[[ little]] boy's parents were
+T2. (12.51) Don't worry, it won't hurt you." ⏎⏎The[[ little]] boy kept his distance
+T3. (12.41)  would help her to behave better during the day. ⏎⏎The[[ little]] girl soon learned that
+T4. (12.35)  she should be sure to only use clean logs. ⏎⏎The[[ little]] girl smiled and said
+T5. (12.32)  days, the tide delivered jellyfish and crabs. ⏎⏎The[[ little]] boy was so excited
+T6. (12.28)  sure to show his child how much he loved him.⏎⏎The[[ little]] boy was so happy
+T7. (12.22)  bright colors and loud sound were a display of summer.⏎⏎The[[ little]] boy sat there,
+T8. (12.22)  got too hot during the summer and it made the plants die. The[[ little]] boy was sad,
+T9. (12.20) . He started to worry and he got very fearful.⏎⏎The[[ little]] boy quickly came back
+T10. (12.19)  a fun day, my love. Now let's go home." The[[ little]] girl agreed and they
+T11. (12.19) . "See, it's so easy!" said the mummy. The[[ little]] boy was so happy
+T12. (12.16)  sky was and how tiny he was compared to it.⏎⏎The[[ little]] boy's discovery made
+T13. (12.15)  see her son playing and having a fun time. ⏎⏎The[[ little]] boy was careful not
+T14. (12.15) . The cabin now looked even more perfect than before.⏎⏎The[[ little]] girl was so proud
+T15. (12.12)  nibble on them until the supply was gone. ⏎⏎The[[ little]] boy and his friends
+T16. (12.12)  people playing, laughing and having a great time.⏎ ⏎The[[ little]] boy wanted to join
+T17. (12.11)  big hug and said "Let's not do this again."⏎The[[ little]] boy said goodbye to
+T18. (12.09)  one, so he jumped in the air with joy!⏎⏎The[[ little]] boy was so glad
+T19. (12.08) 's give them some sunshine, and watch them bloom!"⏎⏎The[[ little]] girl was so excited
+T20. (12.07)  flew away and her dog was pulled back to safety.⏎⏎The[[ little]] girl was very happy
+RANDOM FIRINGS (10 firings chosen at random; number = firing strength):
+R1. (2.36) Mama was very proud of her[[ little]] girl, Mandy
+R2. (0.30)  on here?" Timmy said, "He wants my ball!" The[[ old]] man said, "
+R3. (1.91) , a big, scary creature appeared! It was a bear. The[[ poor]] bird was so frightened
+R4. (11.51) ⏎⏎Everyone was so proud of him for completing the flight. The[[ little]] boy smiled from ear
+R5. (0.20)  have a much nicer place to sleep now.⏎⏎Mama and[[ Baby]] walked away from the
+R6. (11.10)  again. But this time, the cabinet stood strong!⏎⏎The[[ little]] girl was so proud
+R7. (2.73) worm and helped shelter him until the storm had gone.⏎⏎The[[ inch]]worm was so happy
+R8. (9.19)  be careful and stay far away from them.â€⏎⏎The[[ little]] snake thanked the friendly
+R9. (9.46)  to him. She asked him why he was upset.⏎⏎The[[ little]] boy looked up at
+R10. (0.81)  parents told him about his ancestors. ⏎⏎One day, the[[ baby]] elephant's dad told
+
+### V205
+LABEL: ' felt' after 'suddenly' (sudden sensation)
+TOP EXAMPLES (20 strongest firings; number = firing strength):
+T1. (3.80)  the sky. One day, the birdie was flying when it suddenly[[ felt]] a gust of wind
+T2. (3.64)  She was walking on the road with her mommy. Suddenly, Lily[[ felt]] very hungry. She
+T3. (3.61) . She was walking and singing a little song to herself when suddenly she[[ felt]] something unpleasant on her
+T4. (3.61) , Peter was playing with his toys in his bed. Suddenly, he[[ felt]] sad and said,
+T5. (3.54)  her friends. One day, Lily was playing in the park when she[[ felt]] the ground shake.
+T6. (3.48)  having fun and making noises with their mouths.⏎⏎Suddenly, they[[ felt]] the floor shake.
+T7. (3.47)  sit on. One day, Lily was playing with her toys when she[[ felt]] something bite her leg
+T8. (3.45)  for a walk around the house. But one day, the cat suddenly[[ felt]] rather brave. So
+T9. (3.35)  a big city with many people and noises.⏎⏎Suddenly, they[[ felt]] the floor shake and
+T10. (3.27)  ⏎⏎One evening, when Sonia was running around, she suddenly[[ felt]] very tired. Her
+T11. (3.21)  had always liked cartoons and watched them everyday.⏎⏎Suddenly, he[[ felt]] something on his tail
+T12. (3.20)  One day, the ball was rolling down a hill when it started to[[ feel]] a strange motion.
+T13. (3.13)  was three years old. She was playing in her backyard, when she[[ felt]] something strange. It
+T14. (3.11)  kids called Jack and Jill. They were playing together when Jack began to[[ feel]] very weird. Jack
+T15. (3.05) igs. She liked to pretend she was a dragon. Suddenly the girl[[ felt]] very dizzy.
+T16. (3.03)  rolled on the grass, and chased the pigeons. Suddenly, he[[ felt]] a tickle in
+T17. (3.00)  her favorite flavor - chocolate. But when she took a bite, she[[ felt]] something hard inside.
+T18. (2.99)  he started to walk towards it. ⏎⏎Suddenly, Boomer[[ felt]] something pinch his back
+T19. (2.99)  to peek out to see if his friends were coming. Suddenly, he[[ felt]] a muscle in his
+T20. (2.95)  in the sunshine and pick flowers in the grass. One day, she[[ felt]] thirsty and needed a
+RANDOM FIRINGS (10 firings chosen at random; number = firing strength):
+R1. (0.03)  could not see the end.⏎⏎"This looks like a tube[[,"]] said Jill.⏎
+R2. (0.19)  named Lily. One day, Lily woke up early and saw the sun[[ rise]] in the sky.
+R3. (0.37)  He was looking for his friends, but he saw something else. It[[ was]] a black cube!
+R4. (0.11)  a big red lollipop, but Lily accidentally dropped it on the[[ floor]]. ⏎⏎
+R5. (0.82) . She loved to play outside, but today the weather seemed a little[[ strange]]. So, she
+R6. (0.28) hoo!" he said.⏎⏎But then he saw something.[[ There]] was a little girl
+R7. (0.01)  saw her and smiled. She was so happy to see the child having[[ so]] much fun, but
+R8. (0.97)  pillow under her head. When she woke up, she saw that it[[ was]] dark outside. She
+R9. (0.17)  hunter. He was looking for something mysterious. He didn't know what[[ he]] wanted to find but
+R10. (0.95)  girl named Mary was playing in the park. All of a sudden,[[ she]] saw something appear in
+
+### V206
+LABEL: ' the'/' a' after 'put them on'
+TOP EXAMPLES (20 strongest firings; number = firing strength):
+T1. (3.31)  windows and doors. They found some rocks and sticks and put them on[[ the]] castle. They were
+T2. (3.14)  makes stars and Ben makes circles.⏎⏎They put the shapes on[[ a]] tray and Mom puts
+T3. (3.13)  some rocks and sticks. She picked up two rocks and put them on[[ the]] snowman's face
+T4. (3.13)  a big bowl. They make shapes with the dough and put them on[[ a]] tray. Mom puts
+T5. (3.07)  on the shore. Their dad shows them how to put the worms on[[ the]] hooks. He says
+T6. (3.05)  cheese different. He took some blue and green blocks and put them on[[ the]] cheese. He said
+T7. (3.03)  They take plates, bowls, spoons and forks and put them on[[ the]] table. They sit
+T8. (3.00) , peas and salt from their toy kitchen. She put the pot on[[ the]] fire and stirred it
+T9. (2.99)  she could make with it. She took some broccoli and put it on[[ a]] plate. She used
+T10. (2.97)  the ruler. Ben cuts some candy with the knife and puts it on[[ the]] plate. They do
+T11. (2.96)  the corner pieces. They find four of them. They put them on[[ the]] floor. They make
+T12. (2.95)  face for the eyes. She picked up a stick and put it on[[ the]] snowman's face
+T13. (2.93)  was taken. Amy put the picture in the frame and put it on[[ her]] desk. Every night
+T14. (2.93)  a heart, a flower and a moon. They put their shapes on[[ a]] tray. Mom says
+T15. (2.91)  a brilliant idea, so they quickly sliced some cheese and placed it on[[ the]] toast.⏎⏎
+T16. (2.91)  are good boys. She gives them a hug and puts the car on[[ the]] shelf. She goes
+T17. (2.90)  the room. She put all the toys away, put the books on[[ the]] shelves and tidied
+T18. (2.90)  much his train weighs. He picks up the scale and puts it on[[ the]] floor. He puts
+T19. (2.90) ⏎They put the shapes on a tray and Mom puts the tray in[[ the]] oven. They wait
+T20. (2.90) , Sara!" Ben says. He takes the glove and puts it on[[ the]] snowman's face
+RANDOM FIRINGS (10 firings chosen at random; number = firing strength):
+R1. (0.48)  found the puppy. They decided to take the puppy with them on their[[ camping]] trip. Timmy
+R2. (0.06)  band on the ground. She picked it up and held it in her[[ hand]]. ⏎⏎
+R3. (0.42) . From that day on, Sarah made sure to always keep Max on[[ a]] leash when they went
+R4. (0.60)  Lily. She had a journal, where she drew pictures and wrote about[[ her]] day. Lily was
+R5. (0.46)  The bunny did what the fairy said. He washed the curtain in the[[ special]] soap.⏎⏎
+R6. (0.17)  The sheet was very attractive with many colors on it. It was on[[ a]] high shelf in her
+R7. (0.59)  course, Lily. It's very flexible and you can sit on it[[ any]] way you want,"
+R8. (1.26)  felt so happy and excited.⏎⏎He released the memory back into[[ the]] world. The bright
+R9. (1.26)  kitchen and saw a big plate of cookies and a jug of milk on[[ the]] table.⏎⏎
+R10. (0.19)  flew down from his tree and grabbed the coin, then brought it to[[ his]] beak. 
+
+### V207
+LABEL: ' way' in 'went on his way'
+TOP EXAMPLES (20 strongest firings; number = firing strength):
+T1. (8.48) ⏎⏎Molly picked up her mop again and continued on her[[ way]]. She was so
+T2. (8.25)  balloon!" ⏎⏎He grabbed the balloon and happily went on his[[ way]]. He was so
+T3. (8.25)  around.⏎⏎After playing the game, they happily continued on their[[ way]] to the picnic spot
+T4. (8.24)  old lady. He put the penny in his pocket and went on his[[ way]]. From that day
+T5. (8.16)  then he laughed. He put his helmet back on and went on his[[ way]]. Soon enough,
+T6. (8.14)  goodbye to the child, thanked them for their time and went on her[[ way]]. She was very
+T7. (8.05) ."⏎⏎Max bowed his head one more time and went on his[[ way]]. From that day
+T8. (8.04)  After they were finished, they said goodbye and then Ben went on his[[ way]]. He was so
+T9. (8.03) ut and said thank you to the squirrel. Then she went on her[[ way]], searching for her
+T10. (8.02)  and said, "Thank you!" and the old man continued on his[[ way]].
+T11. (8.02)  scared her, but Lily bravely walked past it and continued on her[[ way]].⏎⏎When
+T12. (8.02)  at Sarah and skipped away.⏎⏎Sarah smiled and continued on her[[ way]].
+T13. (7.99)  a great time and Martha was so happy to have gone. On the[[ way]] home her mommy
+T14. (7.98)  meet you!" He stood up, waved goodbye, and went on his[[ way]].⏎⏎As
+T15. (7.97)  but he quickly got back up, brushed himself off and continued on his[[ way]].⏎⏎When
+T16. (7.97)  cold.⏎⏎She turned around and started flying back. On the[[ way]], she saw some
+T17. (7.97)  the party, Sarah and her family got dressed up and went on their[[ way]]. When they arrived
+T18. (7.96)  he ate the apple he got down from the tree and went on his[[ way]]. As he was
+T19. (7.96)  it.⏎⏎The two said goodbye and the boy went on his[[ way]], feeling happy for
+T20. (7.95) 're welcome. Goodbye!"⏎⏎Tom waved goodbye and went on his[[ way]], feeling happy and
+RANDOM FIRINGS (10 firings chosen at random; number = firing strength):
+R1. (0.37) my came to take him home. They both grabbed hands and started to[[ run]] back. But it
+R2. (0.42)  strong!" Ben said.⏎⏎"Look, it can move this[[ way]] and that way!"
+R3. (0.51)  see the world, so he travelled to a big city. As he[[ walked]] around, he stopped
+R4. (0.03)  to put her favorite picture inside it. She rubbed the picture to make[[ sure]] it was clean before
+R5. (7.62)  Sandy laugh. She slowly surrendered and they headed back home. On the[[ way]], it started to
+R6. (0.02) ⏎Inside the cave, the owl found a wonderful surprise. A treasure[[ chest]] was tucked away in
+R7. (0.23)  They think it will be cool and fun.⏎⏎But when they[[ get]] to the fountain,
+R8. (0.11)  room with Lily. She tried to dry her blouse and comb her[[ hair]]. She hoped that
+R9. (0.26)  followed it. The laser led him back to his home in the bur[[row]]. ⏎⏎
+R10. (0.73)  he grabbed his snowman and ran away.⏎⏎But when Hudson[[ got]] to the beach,
+
+### V208
+LABEL: Small-animal nouns (squirrel, mouse)
+TOP EXAMPLES (20 strongest firings; number = firing strength):
+T1. (6.43) Chip was a small[[ mouse]] with very adventurous spirit
+T2. (6.36) Ben and Lily are[[ squirrel]]s. They like
+T3. (6.16)  animals in the forest were scared of him. One day, a little[[ squirrel]] named Sammy was gathering
+T4. (6.13) Once upon a time, there was a big cat and a little[[ mouse]]. They lived in
+T5. (6.05)  Forest friends for help.⏎⏎"What's inside?" said a[[ squirrel]].⏎⏎"
+T6. (6.01) One day, Tally the[[ mouse]] was very cold in
+T7. (6.01)  the way, the cart met different kinds of animals and plants. A[[ squirrel]] chattered overhead,
+T8. (5.97) Once upon a time there lived a cat and a[[ mouse]]. They lived in
+T9. (5.95)  tree but he didn't know how.⏎⏎Pete saw a[[ squirrel]] and said, 
+T10. (5.94)  the leaves on the tall trees. One day, she met a small[[ mouse]] who was very jealous
+T11. (5.92) ⏎⏎One morning, something special happened. He saw a small black[[ squirrel]]. She was so
+T12. (5.91)  in the woods near her house. One day, she met a brave[[ squirrel]] who was gathering nuts
+T13. (5.88) Once upon a time, there was a rabbit and a[[ squirrel]] who were very good
+T14. (5.88)  he kept safe and didn't show to anyone. One day, a[[ squirrel]] asked him what was
+T15. (5.87) Once upon a time, in a big forest, there lived a little[[ squirrel]] named Sam. Sam
+T16. (5.86) One day, a little[[ squirrel]] was walking around in
+T17. (5.85) One day, a[[ squirrel]] found a big nut
+T18. (5.83)  park, Sam saw many funny things like ducks, geese and even[[ squirrel]]s.⏎He
+T19. (5.83)  the apples himself. One day, Timmy saw a thin and hungry[[ squirrel]] trying to eat his
+T20. (5.81) . One day, Tweetie was flying around when she saw a little[[ mouse]] stuck in a hole
+RANDOM FIRINGS (10 firings chosen at random; number = firing strength):
+R1. (1.55)  got there, it found a silly looking frog. The bunny and the[[ frog]] smiled at each other
+R2. (0.68) 's friends encourage him to make something with the velvet. So, the[[ bunny]] made a pink velvet
+R3. (0.03)  tried until the ball finally came out.⏎⏎When Lucky held the[[ ball]], he noticed that
+R4. (0.10)  ran away as fast as he could and he was too quick for the[[ lion]].⏎⏎The
+R5. (0.22) man, maybe someone would play with him. So he grabbed his snow[[man]] and ran away.
+R6. (1.07) .⏎⏎The rabbit thanked the fox for being so helpful and the[[ fox]] smiled. He was
+R7. (0.08)  noise which caught Sally's attention. She turned around and looked at the[[ seal]] and it spoke to
+R8. (0.32)  smell your flower?"⏎⏎"Sure, little bug," said the[[ bird]]. "But you
+R9. (0.46)  a voice from inside the barn. "What are you doing, little[[ boy]]?", the voice asked
+R10. (0.03)  new friend. Timmy yelled, "Stop! Don't shoot the[[ bird]]!" The bad guy
+
+### V209
+LABEL: ' glad' in "I'm glad you ..."
+TOP EXAMPLES (20 strongest firings; number = firing strength):
+T1. (7.85)  Clara," she said, "Welcome to my castle. I'm so[[ glad]] you were brave enough
+T2. (7.80)  man smiled and said, "You're welcome, Lily. I'm[[ glad]] you enjoyed it!"
+T3. (7.74)  looked at him with a pleased expression. She said, "I'm[[ glad]] you liked it."
+T4. (7.73) The pilot smiled and said: "You're welcome! I'm so[[ glad]] you're happy!"
+T5. (7.71)  cheered!⏎⏎The dragon smiled and said, "I'm so[[ glad]] I managed to make
+T6. (7.70)  friend." Joe smiled and said, "That's ok, I'm[[ glad]] we found them."
+T7. (7.64) ⏎⏎Anna says, "You're welcome, Ben. I'm[[ glad]] you liked it.
+T8. (7.62) Her mom smiled. "You're welcome, sweetheart. I'm[[ glad]] you like it!"
+T9. (7.61)  The monster was friendly and it said, "Hello! I'm so[[ glad]] you found me!"
+T10. (7.61) "Well, Sarah it's very nice to meet you. I'm[[ glad]] you're enjoying my
+T11. (7.61)  grandma smiled and replied, "You're welcome, Lily. I'm[[ glad]] you like it.
+T12. (7.60)  the old man, who said, "You're welcome. I'm[[ glad]] we could get the
+T13. (7.58)  thanked the fox and said, "You're so smart! I'm[[ glad]] that I asked for
+T14. (7.58) !"⏎⏎The voice laughed and said, "Well, I'm[[ glad]] you like the glow
+T15. (7.57)  The old man smiled at the ostrich and said, "I'm[[ glad]] I was able to
+T16. (7.55)  line, Maggie said, "Thank you mommy! I'm so[[ glad]] we waited in line
+T17. (7.54) . Her mummy then said to her, "Jane, I'm so[[ glad]] you like the dress
+T18. (7.54)  Lily smiled and said, "You're welcome, Tommy. I'm[[ glad]] you liked it."
+T19. (7.52) Lily hugged her new bear tightly and said, "I'm so[[ glad]] we bought him."
+T20. (7.52)  before." ⏎⏎His mom smiled and said, "I'm[[ glad]] you liked it,
+RANDOM FIRINGS (10 firings chosen at random; number = firing strength):
+R1. (0.26)  were not lonely anymore. They played together every day. They were very[[ happy]]. And Luggage
+R2. (0.16)  excited. He began picking them up and eating them. He was so[[ happy]] that spoiling himself
+R3. (0.17)  then her mommy came and brought her an umbrella! She was so[[ happy]] and ran to put
+R4. (0.19)  the cable and started playing with it. The cable was very soft and[[ comfortable]]. She hugged it
+R5. (0.27) ⏎The child's mama saw her and smiled. She was so[[ happy]] to see the child
+R6. (0.21)  started to read a fun story. Tim, Sam, and Sue were[[ happy]]. They sat and
+R7. (0.09)  smiled. The owner thanked Bob for helping the pup. Bob was so[[ happy]] to be useful to
+R8. (2.40)  and not get wet. The umbrella kept her dry. She was so[[ lucky]]!
+R9. (0.03) ! Sarah was so excited, she had done it! She was so[[ happy]] and thankful, she
+R10. (0.38) Today,[[ Little]] Willy was playing
+
+### V210
+LABEL: ' turned' (turned into / around / out)
+TOP EXAMPLES (20 strongest firings; number = firing strength):
+T1. (11.84) €™s mischievous behavior had turned into something amazing. He[[ turned]] into a beautiful butterfly
+T2. (11.78) Suddenly, she heard a soft "meow" behind her. She[[ turned]] around and saw a
+T3. (11.74) . He shouted out, "What is happening?!" ⏎⏎It[[ turned]] out that the sun
+T4. (11.74)  bag. Days went by, and the apple began to rot. It[[ turned]] brown and yucky
+T5. (11.72) .⏎⏎But suddenly, Max felt something bite his tail. He[[ turned]] around and saw a
+T6. (11.71)  shake. Suddenly, Leoâ€™s mischievous behavior had[[ turned]] into something amazing.
+T7. (11.71)  As she was washing, she heard a soft fluttering sound. She[[ turned]] around and saw the
+T8. (11.70)  prune.⏎⏎When Lily ate the magic prune, she[[ turned]] into a frog.
+T9. (11.68)  patiently. The next day, when she woke up, her flower had[[ turned]] a pretty shade of
+T10. (11.68) . But then he stopped, remembering what the birds had said. He[[ turned]] back and boldly said
+T11. (11.67) €™s a really nice flower Millie!â€ Millie[[ turned]] around and saw her
+T12. (11.66)  tell his mom about the ghost. His mom came to his room and[[ turned]] on the light.
+T13. (11.66)  and bitter, and Patch was scared. Just when she was about to[[ turn]] around and run back
+T14. (11.65) ⏎After a while, Lily's friend started to feel sick. It[[ turned]] out that the cookie
+T15. (11.63)  The dog wagged its tail and licked her hand. The lady[[ turned]] to Timmy and
+T16. (11.62) ⏎⏎After a few days, Lily saw that the caterpillar had[[ turned]] into a beautiful butterfly
+T17. (11.61)  and the playground was melting in the heat. Amie's excitement quickly[[ turned]] to fear. J
+T18. (11.57) .⏎⏎As the sun started to set, Lily's mommy[[ turned]] on a light so
+T19. (11.54) €™ve been waiting for hours!â€⏎⏎The doctor[[ turned]] to the man and
+T20. (11.47)  all closed up. ⏎⏎The family felt so helpless. They[[ turned]] around and drove away
+RANDOM FIRINGS (10 firings chosen at random; number = firing strength):
+R1. (0.42) . She opened the paint and she put it on the walls. She[[ painted]] the walls slowly and
+R2. (2.19)  driving to the park when they got into a big accident. The car[[ spun]] around and Lily felt
+R3. (0.16)  didn't understand why he had to be quiet.⏎⏎The dog[[ looked]] back at his owner
+R4. (0.31)  can do it! I am a brave tiger!â€ She ran[[ around]] roaring with joy,
+R5. (0.25)  in the forest. He was so excited that he started playing it right[[ away]]. The sound of
+R6. (1.14)  he found a strange looking measure. He picked it up and started to[[ twist]] it around. He
+R7. (0.03)  did it. He watched them spray water on the flame. The flame[[ went]] away and the fire
+R8. (0.39)  It was a rare, multi-coloured lollipop. Y[[von]]ne couldn't wait
+R9. (0.53)  sang a happy song while looking at himself. ⏎⏎After observing[[ all]] these new things in
+R10. (0.53)  a big smile on his face. He had her basketball and he had[[ painted]] it purple, just
+
+### V211
+LABEL: Sentence-initial 'Her' followed by mom/mommy
+TOP EXAMPLES (20 strongest firings; number = firing strength):
+T1. (6.89)  a nap. She asked her mom if she could take a nap.[[ Her]] mom was so happy
+T2. (6.87)  she didn't know how. She asked her mommy for help.[[ Her]] mommy said they
+T3. (6.83) ⏎⏎She went back to her mom and told her what happened.[[ Her]] mom hugged her and
+T4. (6.80) , her mom was nearby and saw what she was trying to do.[[ Her]] mom said â
+T5. (6.75)  sleepy. She asked her mommy if she could take a nap.[[ Her]] mommy said yes
+T6. (6.74)  ran up to her mom and asked if she could paint the top.[[ Her]] mom said yes and
+T7. (6.74)  still didn't fit. She decided to ask her mom for help.[[ Her]] mom came and helped
+T8. (6.74)  was too heavy for her. She asked her mommy for help.[[ Her]] mommy picked up
+T9. (6.74)  away crying. She went home and told her mom what had happened.[[ Her]] mom hugged her and
+T10. (6.74)  scared because she didn't know what an exam was. ⏎⏎[[Her]] mommy explained that
+T11. (6.73)  and started to act out. She threw her toys and cried loudly.[[ Her]] mom explained that it
+T12. (6.73)  house. She asked her mommy if she could help the bird.[[ Her]] mommy said,
+T13. (6.71)  but it was too hard. She asked her mommy for help.[[ Her]] mommy helped her
+T14. (6.70)  She asked her mom, "Can I have some water, please?"[[ Her]] mom said, "
+T15. (6.69)  told her mommy about the big, fearful animal. ⏎⏎[[Her]] mommy told her
+T16. (6.67)  didn't know what exercise was, so she asked her mommy.[[ Her]] mommy said exercise
+T17. (6.66) my, I am hungry. Can I have some apples, please?"[[ Her]] mom said, "
+T18. (6.65)  worried because she didn't know how to do it. ⏎⏎[[Her]] mommy said,
+T19. (6.65) , but it was too full. She asked her mom for help.[[ Her]] mom said, "
+T20. (6.63) ⏎Lily went to her mommy and told her what happened.[[ Her]] mommy hugged her
+RANDOM FIRINGS (10 firings chosen at random; number = firing strength):
+R1. (0.28)  it jumped around with joy. Its upset had been replaced with a deep[[ content]]ment. Sam was
+R2. (0.12)  He loved to sing and talk into it all day. One day,[[ his]] little sister, Sue
+R3. (0.04) ?" she asked. John stopped and pointed at the carrot.⏎⏎[[Maria]] shook her head.
+R4. (0.09)  to scoop up some of the animals. Sidney was scared and he knew[[ his]] friends were in danger
+R5. (0.42)  shy.⏎⏎"Please stay and have fun, Lily," said[[ her]] mom.⏎⏎
+R6. (0.18)  and started to assemble them. As she was doing this, Gwen[['s]] mum saw what she
+R7. (5.43)  have one anywhere, so he asked his mom for help.⏎⏎[[His]] mom put on her
+R8. (0.49)  and they searched the whole zoo together.⏎⏎Finally, they found[[ her]] mom and dad and
+R9. (0.60)  you look carefully." Lucy dried her tears and looked carefully. She saw[[ her]] dad in the clear
+R10. (0.02)  to help and handed over the basket.⏎⏎The radish continued[[ his]] journey but soon he
+
+### V212
+LABEL: ' felt' after a sensory action; mixed (5.5% dense)
+TOP EXAMPLES (20 strongest firings; number = firing strength):
+T1. (2.15)  day, Timmy went to the sea. He saw the waves and[[ felt]] the sand on his
+T2. (1.79)  she didn't know. Timmy never found his toys again and he[[ felt]] very fine. The
+T3. (1.76) , but his friend was stubborn and wouldn't share. Timmy asked[[ nicely]], but his friend
+T4. (1.75)  the sea, Timmy got hungry. He ate a sweet apple and[[ felt]] happy. Then,
+T5. (1.74) .⏎⏎Timmy thought that was a good idea, so they[[ ordered]] a new football and
+T6. (1.71)  daddy. One day, Timmy's mommy had an urge to[[ bake]] cookies, so she
+T7. (1.65)  together. Timmy was happy he could help his mommy and he[[ felt]] proud of himself for
+T8. (1.62)  is just waiting for his food to cook in his basket." Timmy[[ felt]] better and started to
+T9. (1.61) . "But be more careful next time." ⏎⏎Timmy[[ felt]] bad, but he
+T10. (1.61) my played with his toys and his mommy read a book. Finally[[,]] the cookies were ready
+T11. (1.61)  be afraid. I am here to help." Timmy and his friends[[ felt]] much better knowing the
+T12. (1.60)  share, so he bit Billy. Billy started to cry and Timmy[[ felt]] sorry. ⏎
+T13. (1.59)  wanted to press the button, but he knew he shouldn't. He[[ felt]] guilty for even thinking
+T14. (1.59)  rest and couldn't play outside for a while.⏎⏎Timmy[[ felt]] stupid for not being
+T15. (1.57)  help her.⏎⏎Timmy was excited to help his mommy[[ bake]] cookies. They got
+T16. (1.56)  Timmy fell off his bike and hurt himself. He cried for help[[,]] but nobody heard him
+T17. (1.55) my understood and promised to only write in his journal when his mommy[[ permitted]] him to do so
+T18. (1.55)  so proud of him for being brave and helping the puppy. Timmy[[ felt]] happy and proud too
+T19. (1.55)  and didn't want to share his desk. ⏎⏎Tommy[[ felt]] sad, but then
+T20. (1.54)  decided to take a nap first. When he woke up, it was[[ dark]] outside. Timmy
+RANDOM FIRINGS (10 firings chosen at random; number = firing strength):
+R1. (0.33)  his dad replied.⏎⏎They walked through the forest until they found[[ a]] lost puppy. Tim
+R2. (0.16) . ⏎⏎They flew in an airplane to a new country.[[ There]] were a lot of
+R3. (0.18)  to help, so her mommy let her put the letter in the[[ mailbox]]. Lily was so
+R4. (0.00) ," his mom said.⏎⏎So, Timmy and his mom[[ went]] to the toy store
+R5. (0.02) ie. We have gum at home," Mom said.⏎⏎But[[ Lily]] did not listen.
+R6. (0.47) . Freddy lived in a big pond with lots of other frogs. One[[ day]], Freddy forgot where
+R7. (0.06)  Lily said.⏎⏎They looked at the book and learned about many[[ animals]]. They had fun
+R8. (0.30) ⏎⏎Timmy went up to the vendor and said, "Hi[[!]] I want to buy
+R9. (0.10)  to climb it and meet his friends all the way at the top.[[ But]] as he tried,
+R10. (0.34)  the mud on them."⏎⏎Lily sighed and said, "[[Okay]], I'll clean
+
+### V213
+LABEL: ' name'
+TOP EXAMPLES (20 strongest firings; number = firing strength):
+T1. (4.11)  What is your name, my child?" The child said, "My[[ name]] is Fred". The
+T2. (3.97)  said that if he wanted the chair very badly, he could sign his[[ name]] on a page.
+T3. (3.94)  very happy. ⏎⏎Finally, the man gave the glue a[[ name]]. He called it
+T4. (3.94)  ⏎⏎One day, someone new moved into the neighbourhood. His[[ name]] was Dog and he
+T5. (3.93)  animals. Lily loved animals. She had a dog at home. His[[ name]] was Spot.⏎
+T6. (3.88)  introduce herself.⏎⏎"Hello!", Fluffy said. "My[[ name]] is Fluffy,
+T7. (3.86) Once upon a time there was a boy. His[[ name]] was Tim and he
+T8. (3.81)  was sad and worried about Spot. She walked and walked, calling his[[ name]]. Then, she
+T9. (3.77) , "It is all right, don't worry. What is your[[ name]], my child?"
+T10. (3.75) Once upon a time there was a wise old monkey. His[[ name]] was Bob. He
+T11. (3.74)  He looked attractive to Jill. He said hello to her and asked her[[ name]]. He said he
+T12. (3.74) Once upon a time there lived a boy. His[[ name]] was Tom. Tom
+T13. (3.73)  better.⏎⏎Joe got his courage back, and he remembered his[[ name]]. He said his
+T14. (3.73)  her and asked "Who are you?". The little girl replied "My[[ name]] is Lila and
+T15. (3.73) ⏎⏎"Hello, dog," Sara says. "What is your[[ name]]?"⏎⏎The
+T16. (3.73) Once upon a time, there was a boy who loved adventure. His[[ name]] was David. He
+T17. (3.72)  was a little girl and her mom. The girlâ€™s[[ name]] was Anna and her
+T18. (3.72)  little boy grinned. He liked the idea and he carefully wrote down his[[ name]] on the page.
+T19. (3.70)  big book with many pages. She writes her name, her mom's[[ name]], and her cat
+T20. (3.69)  her his name. Joe was so shy and he couldn't remember his[[ name]]. He was very
+RANDOM FIRINGS (10 firings chosen at random; number = firing strength):
+R1. (0.18)  One day, Lucy went to her grandma's house. At the house[[,]] she saw a fancy
+R2. (0.15)  much better after the wash, and was so grateful to her mama[[ for]] taking such good care
+R3. (0.05)  around looking for something new to chew. He stumbled upon a much bigger[[ bone]] than he had ever
+R4. (0.14)  and shiny.⏎⏎When she looked closer, she noticed it was[[ quite]] messy. There were
+R5. (0.11)  Then, she washed the fruit and put them in a basket.⏎[[⏎]]As they were walking
+R6. (0.34)  car and he was confused. ⏎⏎Jenny said, "[[Don]]'t worry, Tim
+R7. (0.10)  juice. They sat together and drank their juice while looking at their clean[[ and]] tidy room. From
+R8. (0.18)  you to do something magical," he said.⏎⏎The little girl[[ felt]] embarrassed at first,
+R9. (0.29)  was in her bedroom, looking for something colorful. On the nightstand[[,]] she saw a glass
+R10. (0.01)  One day she decided to take a walk in the woods. She walked[[ deep]] into the woods,
+
+### V214
+LABEL: 'Sam' as the first token of a story
+TOP EXAMPLES (20 strongest firings; number = firing strength):
+T1. (5.23) [[Sam]] was very excited.
+T2. (5.23) [[Sam]] and Tom are friends
+T3. (5.23) [[Sam]] liked to play his
+T4. (5.23) [[Sam]] and Lily were playing
+T5. (5.23) [[Sam]] and Ben were friends
+T6. (5.23) [[Sam]] and Lily liked to
+T7. (5.23) [[Sam]] and Mia liked to
+T8. (5.23) [[Sam]] and Tom are friends
+T9. (5.23) [[Sam]] the rabbit hopped happily
+T10. (5.23) [[Sam]] and Mia are friends
+T11. (5.23) [[Sam]]my was standing by
+T12. (5.23) [[Sam]] liked to play with
+T13. (5.23) [[Sam]] was walking along the
+T14. (5.23) [[Sam]] was a 3 year
+T15. (5.23) [[Sam]] and Mia are friends
+T16. (5.23) [[Sam]] and Tracy were best
+T17. (5.23) [[Sam]] and Lily were twins
+T18. (5.23) [[Sam]] and Lily were playing
+T19. (5.23) [[Sam]] had a uniform that
+T20. (5.23) [[Sam]] and Lily were playing
+RANDOM FIRINGS (10 firings chosen at random; number = firing strength):
+R1. (3.57)  a time, there was an intelligent kangaroo. His name was[[ Sam]]. He was very
+R2. (0.03)  quick and cheap. ⏎⏎The veterinarian checked if her puppy was[[ healthy]]. He checked all
+R3. (0.24)  and her teacher said,⏎"That's an interesting challenge. Do[[ you]] think you can fix
+R4. (0.01)  at this insect! It is so pretty and shiny!"⏎⏎M[[ia]] went up the tree
+R5. (0.06) Once upon a time, there was a little frog named Freddy.[[ Freddy]] lived in a big
+R6. (0.20)  she was a good girl. From that day on, Lily wore her[[ medal]] everywhere she went.
+R7. (0.29) , so it stayed put and waited for the next tide.⏎⏎[[Sure]] enough, when the
+R8. (1.54) ie wanted to keep going but John wanted to remain safe.⏎⏎[[Jan]]ie asked John,
+R9. (0.01) , so she went inside. ⏎⏎As she wandered around,[[ Sally]] noticed an indoor garden
+R10. (0.18)  the wallet to Mr. Brown. He was so happy! He thanked[[ Bob]]o and Lily for
+
+### V215
+LABEL: Opening quote mark for a written word/title/sign ('wrote the word "play')
+TOP EXAMPLES (20 strongest firings; number = firing strength):
+T1. (10.21)  by the idea, so together they cut out paper and wrote the word[[ "]]play" on it
+T2. (9.83)  Sam. Sam said, "I believe we can play a game called[[ ']]Hide and Seek'."
+T3. (9.82)  a big heart on the paper. They cut it out. They write[[ "]]We love you,
+T4. (9.72) . He decided to put up a big sign outside the store that said[[ "]]Mildy's
+T5. (9.71)  room and gets his paper and crayons. He starts to write[[ "]]A-E-
+T6. (9.69)  her name on the rail. She did not see the sign that said[[ "]]Do not write on
+T7. (9.61)  it with her friends. But she had to wait for everyone to sing[[ "]]Happy Birthday" to
+T8. (9.53) . They make a sign with a stick and a paper. They write[[ "]]Luna's tuna
+T9. (9.52)  around the cushion. She made up lots of stories that her dolls could[[ ']]act' out on
+T10. (9.51)  and line them up at the start. They count to three and say[[ "]]go!" They push
+T11. (9.51)  road near the park. They did not see the big sign that said[[ "]]Stop". They did
+T12. (9.50)  saw something. Across the street, there was a big sign that said[[ "]]Opera Tonight".
+T13. (9.44)  to get their toys, but they did not see the sign that said[[ "]]Do not touch".
+T14. (9.43)  went out to play with his friends. They played a fun game called[[ "]]call and find."
+T15. (9.43) , Lucy had an idea. She wanted to play a new game called[[ "]]pass."⏎⏎
+T16. (9.38) , I will write on paper only. But can I keep the word[[ ']]will' on the
+T17. (9.30) ⏎The unicorn said, "We are going to play a game called[[ ']]Cover'. I want
+T18. (9.26)  so they ran towards it. They did not see the sign that said[[ "]]Do not touch the
+T19. (9.24) Soon they saw a post. It had a sign on it that said[[ "]]This way to the
+T20. (9.24)  get any answers. Then he put up a big sign. It said[[ "]]Help! Lost brown
+RANDOM FIRINGS (10 firings chosen at random; number = firing strength):
+R1. (3.75)  saw a tiny cut on a tree. Mia was curious and said,[[ "]]I wonder who made
+R2. (0.10)  says, "How will you do that, Mia?" Mia says,[[ "]]I can use a
+R3. (4.80) . He was fit and strong, ready to fight! He shouted,[[ "]]I am the master
+R4. (1.17)  a swing. They run to the swing and take turns.⏎⏎[["]]Can I go first
+R5. (1.04)  "We should spray the skunk with water." Timmy said,[[ "]]No, that's
+R6. (2.42) , because he'd never seen anything like it! He asked Lucky,[[ "]]Where did you find
+R7. (1.03)  the butterfly.⏎⏎Lily thought for a moment and said,[[ "]]I have a calm
+R8. (0.55)  to come near her. Then, she heard a voice.⏎⏎[["]]Why don't you
+R9. (0.20)  her mom's phone was not there anymore. She asked her mom,[[ "]]Where is your phone
+R10. (1.85)  both very excited and confused.⏎⏎He asked the nearby fox,[[ "]]What should I do
+
+### V216
+LABEL: ' mom'/' parents' as speaker replying to a request ('Her mom said yes')
+TOP EXAMPLES (20 strongest firings; number = firing strength):
+T1. (2.63)  the girl asked her parents, "Can I borrow some fun?" Her[[ parents]] smiled and said,
+T2. (2.58)  something special. She asked her mommy if she could paint. Her[[ mom]]my said yes and
+T3. (2.53) . She asked her parents if she could complete her first task. Her[[ parents]] said yes and helped
+T4. (2.50)  She asked her mom, "Can we go up the hill?" Her[[ mom]] said, "Yes
+T5. (2.49)  the park. She asked her mommy if she could go, but[[ mom]]my said no.
+T6. (2.46) ⏎She asked her mom, "What can I search for?" Her[[ mom]] said, "Why
+T7. (2.46)  Jane asked her mom, "Can I please have a print?" Her[[ mom]] smiled and said,
+T8. (2.45)  the market. She asked her mom if she could go, but her[[ mom]] said no. Jane
+T9. (2.45)  special. She asked her mommy if she could paint. Her mom[[my]] said yes and gave
+T10. (2.43)  mommy, "Mommy, can I make a snack?" Her[[ mom]] said, "Yes
+T11. (2.43)  new sweater. She asked her mom for a new sweater, but her[[ mom]] said she had to
+T12. (2.42) , Dave and Sara asked their parents if they could make jelly. Their[[ parents]] said yes and allowed
+T13. (2.42)  in the moonlight. He asked his parents what it was, but[[ they]] could not explain.
+T14. (2.41)  up to her mom and asked if she could paint the top. Her[[ mom]] said yes and gave
+T15. (2.41)  in the closet. She asked her mom if she could, but her[[ mom]] said no. She
+T16. (2.41)  her mum, "Can I go look for a surprise today?" Her[[ mum]] smiled and said,
+T17. (2.38)  park. She asked her mommy if she could go, but mom[[my]] said no. The
+T18. (2.37)  to the beach. She asked her mum if they could go. Her[[ mum]] said yes and they
+T19. (2.37)  mom, "Mommy, can I stand on the cushion?" Her[[ mom]] said, "Yes
+T20. (2.35) ⏎⏎Charlie asked his daddy, "Can I taste it?" His[[ daddy]] smiled and said,
+RANDOM FIRINGS (10 firings chosen at random; number = firing strength):
+R1. (0.22) smith and asked for special sparks to make the sword unique. The black[[smith]] agreed and the knight
+R2. (0.11)  was a boy who was very charming. One day he promised his mum[[ he]] would not mess up
+R3. (0.10)  thought the lion was very cool.⏎⏎One day, Mia's[[ vest]] got dirty from playing
+R4. (0.31)  and play?"⏎⏎Her mom smiled and said, "Of course[[ we]] can, Lily!
+R5. (1.09)  eating some carrots and Stinky requested if he could have one. Fl[[oppy]] gave him a carrot
+R6. (0.00)  wanted to play a game. He asked them if they wanted to play[[ with]] him.⏎⏎
+R7. (1.71) . Sue asked her mom, "What is that?"⏎⏎Her[[ mom]] said, "This
+R8. (0.34) , "That's a cool rock! Can I have it?"⏎[[⏎]]Lily replied,
+R9. (0.09)  said, "Hello!" The prince said, "Would you like to[[ be]] my friend?" The
+R10. (0.02) . Today, they want to pretend to be hippos. They put[[ on]] big gray suits and
+
+### V217
+LABEL: ' what' in "didn't know what to do"
+TOP EXAMPLES (20 strongest firings; number = firing strength):
+T1. (10.47)  necklace is cursed."⏎⏎Lily was fearful and didn't know[[ what]] to do. She
+T2. (10.40)  feel well. ⏎⏎Lily was scared and didn't know[[ what]] to do. She
+T3. (10.26)  very small like a little bug. Bob was scared and didn't know[[ what]] to do. 
+T4. (10.23)  enough money to buy a vest. Tim was sad and didn't know[[ what]] to do.⏎
+T5. (10.16)  he said. ⏎⏎Lily was sad and didn't know[[ what]] to do. She
+T6. (10.15)  put him in a cage. Timmy was scared and didn't know[[ what]] to do. He
+T7. (10.13)  didn't have enough money. Timmy was frustrated and didn't know[[ what]] to do.⏎
+T8. (10.12) 't have any other food. Peppa was sad and didn't know[[ what]] to do. 
+T9. (10.11)  Nemo!⏎⏎Nemo was very scared and didn't know[[ what]] to do. He
+T10. (10.09) 't available because it was broken. Lily was sad and didn't know[[ what]] to do.⏎
+T11. (10.03)  his beak! ⏎⏎Tweet was scared and didn't know[[ what]] to do. He
+T12. (10.03)  song and said it was boring. Lily felt sad and didn't know[[ what]] to do. She
+T13. (9.99)  driving, but the rock was too big. Purpy did not know[[ what]] to do.⏎
+T14. (9.99) . ⏎⏎Spike was very dizzy and didn't know[[ what]] was happening. He
+T15. (9.99)  wanted Jack to marry his daughter. Jack got scared and didn't know[[ what]] to say. Lily
+T16. (9.98)  started to get smaller and smaller. Emma was frightened and didn't know[[ what]] to do. She
+T17. (9.98)  the cubes with Timmy. Timmy was sad and didn't know[[ what]] to do. Then
+T18. (9.97)  the dog caught it. The bunny was very scared and didn't know[[ what]] to do. The
+T19. (9.97)  haircut? Your feathers look fine!" Blue felt embarrassed and didn't know[[ what]] to say. The
+T20. (9.96)  eat Tweet for lunch. Tweet was very scared and he didn't know[[ what]] to do.⏎
+RANDOM FIRINGS (10 firings chosen at random; number = firing strength):
+R1. (0.03)  cry and his mom came to help him. But it was too late[[ -]] the handle was stuck
+R2. (2.80) ily's friend, Max, saw that she was sad and asked her[[ what]] was wrong. Lily
+R3. (0.02)  look very exciting. It was dull and grey. But when she opened[[ the]] door she was surprised
+R4. (1.01) , "No Spot, stay here."⏎⏎Spot didn't understand[[ why]] he couldn't reach
+R5. (0.23)  looked yummy. Sue wanted to eat the pastry, but it was[[ not]] hers.⏎⏎
+R6. (2.56)  so big, and it was locked with a key. But nobody knew[[ where]] the key was.
+R7. (0.62)  game and Timmy felt sad. He learned that sometimes things don't[[ go]] as planned, but
+R8. (0.15)  interesting stuff all around. One day he wanted to go exploring and see[[ what]] was hiding in the
+R9. (5.85)  found a new toy for us to play with!"⏎⏎Tim knew[[ what]] poison was. He
+R10. (0.11)  She was so surprised, she couldn't believe it.⏎⏎"[[What]] is this place?"
+
+### V218
+LABEL: ' music'
+TOP EXAMPLES (20 strongest firings; number = firing strength):
+T1. (8.91) There was a musician who played[[ music]] every day. One
+T2. (8.43)  day, Tim and Spot were playing in the park. Tim heard some[[ music]] coming from far away
+T3. (8.40) , Timmy went to the park with his flute to play some[[ music]]. The sun was
+T4. (8.36)  named Jane. Jane was always so quiet. One day she heard some[[ music]] and it made her
+T5. (8.23)  musician walking around town. She hated him because he was always playing loud[[ music]].⏎⏎One
+T6. (8.22) Once upon a time there was a mighty band. They played[[ music]] all day. They
+T7. (8.17)  went to visit her grandpa at his house. Grandpa was playing[[ music]] on his guitar,
+T8. (8.16)  and liked to fix things.⏎⏎One day, he heard some[[ music]] in the street.
+T9. (8.10) a met a big drum named Drumby. Drumby liked to play[[ music]] with rhythm. He
+T10. (8.06)  and left her with her big brother, Max. Max was playing his[[ music]] very loud and Lily
+T11. (8.04) ⏎⏎When Lily got to the store, she saw a man playing[[ music]]. She started to
+T12. (8.04)  to use the pan as a drum.⏎⏎"Let's play[[ music]] with the pan!"
+T13. (8.01)  She loved to dance all the time. Every day, she would play[[ music]] and dance around her
+T14. (7.97) . One day, Tim took his guitar to the park to play some[[ music]].⏎⏎At
+T15. (7.96)  bird named Tweetie. Tweetie loved to sing and dance to the[[ music]] that the musician played
+T16. (7.94) , there was a jolly band of animals. They loved to play[[ music]] and dance in the
+T17. (7.93) Once upon a time there was a girl who really liked[[ music]]. Every day she
+T18. (7.93)  to join a band. The band was made up of animals who played[[ music]]. They had a
+T19. (7.93)  sound outside. He looked out the window and saw a big band playing[[ music]] in the park.
+T20. (7.92) Once there was a happy little boy who loved playing[[ music]]. He got a
+RANDOM FIRINGS (10 firings chosen at random; number = firing strength):
+R1. (0.82) , Jingle heard a bell ringing in the distance. He followed the[[ sound]] and found a lost
+R2. (1.25) The bug was safe, but the trumpet was still famous for its beautiful[[ sound]].
+R3. (0.02)  a brave girl who loved to explore. She walked through the jungle,[[ listening]] to the birds and
+R4. (0.34) . ⏎⏎The man got into the balloon and started to laugh[[ loudly]]. Suddenly, the
+R5. (0.73) Once there was a red[[ parade]]. It was a
+R6. (0.04)  word together, "Please!" The box opened, but instead of something[[ nice]], a big scary
+R7. (4.01) University is a place where you learn new things. You can learn about[[ songs]], colors, shapes
+R8. (0.07)  chuckled. "You'll see," she said again.⏎⏎M[[ina]] waited in excitement,
+R9. (2.19)  respect.⏎⏎Mandy nodded her head and started to play the[[ drum]]. She loved its
+R10. (2.09) , there was a kind and generous girl named Lily. She loved to[[ sing]] and make others happy
+
+### V219
+LABEL: Dense (5%): 'it'/adjectives when describing or touching an animal; mixed
+TOP EXAMPLES (20 strongest firings; number = firing strength):
+T1. (2.33)  "It makes holes in the tree."⏎⏎"Can we touch[[ it]]?" Lily asked.
+T2. (2.28)  "It is so big and hairy!"⏎⏎"Can we pet[[ it]]?" Ben asks.
+T3. (2.17)  run. They see a big dog with a ball. The dog is[[ brown]] and has a long
+T4. (2.15) .⏎⏎"Yes, let's pet the dog. It is[[ soft]] and warm," Ben
+T5. (2.12)  see a big dog with a ball in his mouth. The dog is[[ brown]] and fluffy and has
+T6. (2.12)  park. One day, they see a big dog. The dog is[[ brown]] and furry. It
+T7. (2.11)  with Mom. They saw a pond with many ducks. Some ducks were[[ white]] and brown, and
+T8. (2.07)  like strangers."⏎⏎Ben and Lily go near the dog and stroke[[ its]] fur. The dog
+T9. (2.07) ⏎⏎One day, they see a big dog. The dog is[[ brown]] and black. The
+T10. (2.05)  pointing to a brown bird with a green head. "Can we feed[[ it]]?"⏎⏎"
+T11. (2.05)  on a leaf. It was green and fuzzy. Lily wanted to touch[[ it]].⏎⏎"
+T12. (2.03)  She ran to the water and saw some fish. "Can I touch[[ them]]?"⏎⏎"
+T13. (2.00)  horns. "It is rough and hard. Do you want to touch[[ it]]?"⏎⏎L
+T14. (2.00)  many ducks and swans. Lily liked the swans. They were[[ white]] and graceful. She
+T15. (2.00)  day, they see a big field with many sheep. The sheep are[[ white]] and soft. They
+T16. (1.99)  It looked fierce. Tim and Lily were curious. They wanted to touch[[ it]].⏎⏎They
+T17. (1.98) . They saw a white rabbit under a tree. They wanted to pet[[ it]].⏎⏎"
+T18. (1.98)  day, they see a big dog in the park. The dog is[[ brown]] and furry. It
+T19. (1.98)  and trees and birds. They also saw a cute butterfly. It was[[ yellow]] and black and had
+T20. (1.98)  Mom. They see many pigeons on the grass. They want to[[ feed]] them some bread.
+RANDOM FIRINGS (10 firings chosen at random; number = firing strength):
+R1. (0.19)  playing hide and seek and having so much fun. Suddenly, an icy[[ drop]] came from the sky
+R2. (0.80)  say hello and ask if they can pet the dog. The owner smiles[[ and]] says yes. He
+R3. (0.31)  One day, she went to the park with her mom and saw a[[ small]] bird. The bird
+R4. (0.16)  Ben says. He points to each flower and says a number. "[[One]], two, three
+R5. (0.16) . He came to a big bush he had to go through. He[[ tried]] to push through it
+R6. (0.23)  bright colors. But she did not like to bathe. She hated[[ the]] water and the soap
+R7. (0.17)  stared at it for a long time. It was a big fish swimming[[ up]] the river! This
+R8. (0.43)  a penguin in the zoo. The penguin was so cute and[[ fluffy]]!⏎⏎Tim
+R9. (0.26)  and went to the crane. They climbed on the fence and tried to[[ touch]] the crane.⏎
+R10. (0.13)  They cut a big slice of cake and ate it. It was sweet[[ and]] soft. They smiled
+
+### V220
+LABEL: ' castle'
+TOP EXAMPLES (20 strongest firings; number = firing strength):
+T1. (3.14)  find a big cardboard box in the garage. They decide to make a[[ castle]].⏎⏎"
+T2. (2.91) Then they went to the beach where the three brothers built a large sand[[ castle]]. They worked together
+T3. (2.75)  work. Just then a lucky ladybug flew by and landed on their[[ castle]]. Annie said,
+T4. (2.72)  when she went on one of her adventures, she stumbled upon an old[[ castle]]. She was so
+T5. (2.68)  gate. Abbie was so happy and she became excited to explore the[[ castle]]. Inside she found
+T6. (2.65)  friend. ⏎⏎They gave the ladybug a tour of the[[ castle]] and even brought it
+T7. (2.64)  it forever. From that day on, Abbie never forgot the special[[ castle]], and the happy
+T8. (2.63) , she decided to pretend she was a princess who lived in a green[[ castle]]. She put on
+T9. (2.62) am around like a mighty superhero. He even swam through a little[[ castle]] and under a bridge
+T10. (2.56) . There was a note that said he must deliver the barrel to the[[ castle]].⏎⏎The
+T11. (2.55)  from that day on, Lily and Jack lived happily ever after in the[[ castle]].
+T12. (2.53) �Yes, you can take a nap here! Iâ€™[[ll]] stay close and watch
+T13. (2.50)  what to do next. She didn't know how to make her pretend[[ castle]] green. So,
+T14. (2.48)  the boy and together they reached the castle. At the entrance to the[[ castle]], the note that
+T15. (2.48)  by a mean old crab. ⏎⏎But Nemo and O[[ll]]ie were not afraid
+T16. (2.40)  mom gave her some green paint and a paintbrush. Lily painted her[[ castle]] green and was very
+T17. (2.39)  smiled. "Well, Clara," she said, "Welcome to my[[ castle]]. I'm so
+T18. (2.38) .⏎⏎The next day, Lily woke up and saw that the[[ castle]] was decorated with pretty
+T19. (2.38)  together. ⏎⏎Jack and Annie put the finishing touches on their[[ castle]] and stepped back to
+T20. (2.38)  by and landed on their castle. Annie said, "Look! Our[[ castle]] is so lucky!"
+RANDOM FIRINGS (10 firings chosen at random; number = firing strength):
+R1. (0.05)  up?" Lily was very brave and said, "Yes, Granny[[!]] Let's clean it
+R2. (0.02)  fountain that seemed to sparkle in the sun.⏎⏎Lily[[ and]] her friends were very
+R3. (0.23)  gardener first. He knows which herbs are available. Some herbs are[[ not]] for picking. They
+R4. (0.05) ! Jack was scared, but he wanted to get closer.⏎⏎[[He]] moved closer and soon
+R5. (0.02)  tripod. He turns it on and points it at Sam. He says[[,]] "Are you ready
+R6. (0.46)  keep it and thought his mom was being mean. He kicked the ground[[ and]] said, "But
+R7. (0.12) . Then she went home and told her mom about the nice boy she[[ had]] met at the park
+R8. (0.10)  of fun.⏎⏎Suddenly, something amazing happened. Lucy could fly[[,]] just like the monkey
+R9. (0.05)  cry.⏎⏎Sara lets go of the rope and runs to[[ Ben]]. She sees his
+R10. (0.25)  at home.⏎⏎"But mom, we love the steel train[[!]] It is so shiny
+
+### V221
+LABEL: Sentence-initial 'She' for a parent/adult taking action
+TOP EXAMPLES (20 strongest firings; number = firing strength):
+T1. (7.74) ⏎One day, their mom said she had a surprise for them.[[ She]] brought them a big
+T2. (7.59) ⏎One day, their mom said she had a surprise for them.[[ She]] told them to close
+T3. (7.51)  everywhere. She scolded Tom and Lily for being naughty and dangerous.[[ She]] took the tools away
+T4. (7.42)  is not a toy, and that they should not fight over it.[[ She]] says that they should
+T5. (7.39) ⏎⏎One day, mom says she has a surprise for them.[[ She]] says they have to
+T6. (7.33)  came to their room. She saw the mess and the angry faces.[[ She]] was not happy.
+T7. (7.32)  play anymore.⏎⏎Their mom came in and saw them fighting.[[ She]] said, "B
+T8. (7.22) One day, their mom told them to stop playing with the drum.[[ She]] said it was too
+T9. (7.22) ⏎⏎But then, Timmy's mom told him something important.[[ She]] said that sometimes things
+T10. (7.22)  was very angry and sad. She said they were naughty and selfish.[[ She]] said they had to
+T11. (7.21) One day, their mom told them to clean their wagon before dinner.[[ She]] said it was very
+T12. (7.18)  told them that a big truck would deliver a new toy for them.[[ She]] said it was a
+T13. (7.17) . She said they had to go to bed without dinner or stories.[[ She]] locked their door and
+T14. (7.16)  into their room and saw them under the bed. She was angry.[[ She]] said, "What
+T15. (7.13)  She said they should not touch things that do not belong to them.[[ She]]
+T16. (7.13)  what is wrong. She sees the broken truck and the sad twins.[[ She]] is not happy.
+T17. (7.12)  and told him that it was not safe for him to have it.[[ She]] explained to him that
+T18. (7.12)  each other. There are enough toys for both of you."⏎⏎[[She]] took the
+T19. (7.12)  knee hurt.⏎⏎Tim's mom came out and saw him.[[ She]] hugged him and helped
+T20. (7.11)  Timmy's mom came into the kitchen and saw him looking upset.[[ She]] asked him what was
+RANDOM FIRINGS (10 firings chosen at random; number = firing strength):
+R1. (0.68)  old man and he was very grateful. "Thank you so much,"[[ he]] said. "You
+R2. (3.69)  if they can pet the dog. The owner smiles and says yes.[[ He]] tells them the dog
+R3. (5.52)  rock! Timmy was so happy and showed it to his mom.[[ She]] said it was beautiful
+R4. (3.91) ."⏎⏎Lily listened to her friend and told her parents.[[ They]] took her to the
+R5. (0.05)  a good daughter.⏎⏎Lila helps mom with some chores.[[ She]] picks up her toys
+R6. (0.08)  room and make it tidy. She picked up all the toys and put[[ them]] in their toy box
+R7. (1.28) . She wanted the room to look special, so she got ready.[[ She]] opened the paint and
+R8. (2.44) , but her parents were worried. It was a dangerous win, and[[ they]] told Clara to put
+R9. (0.29) He heard a voice. It was his mom. She heard his scream[[ and]] came
+R10. (0.43) ⏎⏎Forever after, she thought of that day and remembered how[[ she]] stepped into the rhythm
+
+### V222
+LABEL: ',' after a sentence-initial 'Yes' / 'Wow' reply
+TOP EXAMPLES (20 strongest firings; number = firing strength):
+T1. (9.29)  and the clothes and the candy," Sara says.⏎⏎"Yes[[,]] Sara. I want
+T2. (9.02)  you want to have a snack?" Anna says.⏎⏎"Yes[[,]] please. I have
+T3. (8.84)  are very clever. Do you want some lunch?"⏎⏎"Yes[[,]] please," Ben says
+T4. (8.80)  to play with me?" the fairy doll said.⏎⏎"Yes[[,]] I do. You
+T5. (8.76) . Do you want to share?" Ben says.⏎⏎"Yes[[,]] please. That sounds
+T6. (8.73)  will play with you every day," Lily said.⏎⏎"Yes[[,]] Bob. You are
+T7. (8.71)  play. Do you like ball?" he said.⏎⏎"Yes[[,]] I like ball.
+T8. (8.68) flake. Do you want to take a bath?"⏎⏎"Yes[[,]] please," Lily said
+T9. (8.64) Do you want a muffin, Daddy?" ⏎⏎"Yes[[,]] please!" her dad
+T10. (8.64) . Do you want to help me make it?"⏎⏎"Yes[[,]] please!" Lily says
+T11. (8.60)  ride!"⏎⏎Emily thought it was a good idea. "Yes[[,]] let's go!"
+T12. (8.59)  cookies."⏎⏎Lily was happy. She said, "Yes[[,]] I want to play
+T13. (8.59) Ben nodded and smiled. He liked soup. He said, "Yes[[,]] Lily, I want
+T14. (8.58)  are a very big goose!"⏎⏎Gigi said, "Yes[[,]] I like to eat
+T15. (8.54)  a book with me?"⏎⏎Tom smiled and said, "Yes[[,]] Sara, I like
+T16. (8.54)  you want to make more?"⏎⏎Lila says, "Yes[[,]] please. I want
+T17. (8.53)  snacks."⏎⏎Lily is happy. She says, "Yes[[,]] I want to go
+T18. (8.52)  with me?"⏎⏎Binky was cheerful and said, "Yes[[,]] I love to play
+T19. (8.51) . Are these apples for me?" she asked.⏎⏎"Yes[[,]] Mrs. Lee.
+T20. (8.51)  you want to play with me?" asked Benny.⏎⏎"Yes[[,]] please!" said Bella
+RANDOM FIRINGS (10 firings chosen at random; number = firing strength):
+R1. (7.19) ?"⏎⏎The little girl got very excited and said, "Yes[[,]] I can help you
+R2. (0.02)  sun. The little boy thought it was so clever and he couldn't[[ help]] teasing it just a
+R3. (0.03)  try them. They leave their toys on a bench and run to the[[ slide]]. They take turns
+R4. (0.06)  waffle maker?" Her mom says, "How will you do that[[,]] Mia?" Mia says
+R5. (0.35)  everything in a big bowl.⏎⏎"Let's mix, mix[[,]] mix!" Lily says
+R6. (0.37) Can we cook some brain soup?"⏎⏎Mom laughs. She says[[,]]
+R7. (2.75)  to find food."⏎⏎Mia smiled and said, "Oh[[,]] I see! Well
+R8. (1.71)  a long beak. He looked very pretty.⏎⏎"Hello[[,]] bird," said the
+R9. (0.36) . He was so excited! The grapes were so big, and looked[[ so]] delicious. He started
+R10. (0.39) ! That is our sugar!" Lily shouts.⏎⏎"Go away[[,]] dog, you are
+
+### V223
+LABEL: ' out' in 'jumped out'
+TOP EXAMPLES (20 strongest firings; number = firing strength):
+T1. (6.91)  in the tub. She is hidden behind the shower curtain. She jumps[[ out]] and splashes Tom
+T2. (5.98)  was quiet. He waited for Mia to swim away. Then he jumped[[ out]] of the water and
+T3. (5.95)  in the shadows. They saw him and smelled his fear. They jumped[[ out]] and attacked him.
+T4. (5.95)  She heard a noise behind the bush. She crept closer. She jumped[[ out]] and pounced.
+T5. (5.89)  and lifts the lid.⏎⏎"Boo!" Ben shouts and jumps[[ out]] of the box.
+T6. (5.88)  looked for him everywhere but couldn't find him. Finally, Benny jumped[[ out]] and surprised Daisy.
+T7. (5.84)  up to a familiar sound. It was Sunny's song! She jumped[[ out]] of bed and ran
+T8. (5.84)  said. "Let's get out of here!"⏎⏎They jumped[[ out]] of the box and
+T9. (5.83)  see you, Max!â€, said Tim.⏎Max jumped[[ out]] from behind the tree
+T10. (5.82) What is it?" Ben asked, curious.⏎⏎Sara jumped[[ out]] and showed him the
+T11. (5.77) 's house. It stopped in front of the door. The driver jumped[[ out]] of the car and
+T12. (5.75)  She wanted to go back inside and get warm.⏎⏎She crawled[[ out]] of the hole and
+T13. (5.70)  the water, but he kicked and scratched and bit her. He jumped[[ out]] of the tub and
+T14. (5.69) . Mom said they could stop and climb it. Sara and Tom jumped[[ out]] of the car and
+T15. (5.65)  was so worried that she had forgotten to take a shower. She jumped[[ out]] of bed and ran
+T16. (5.63) ⏎The crocodile swims fast to Tom and Lily. It jumps[[ out]] of the water and
+T17. (5.62)  sofa and waited for Lily to come. When Lily came, he jumped[[ out]] and shouted "Boo
+T18. (5.59) .⏎⏎The next morning, Lily woke up early. She jumped[[ out]] of her bed and
+T19. (5.59)  the puddle and started to paint the ground with water. Luna jumped[[ out]] of the puddle
+T20. (5.53)  happy that the fox didn't find him. Suddenly, the fox jumped[[ out]] from behind the bush
+RANDOM FIRINGS (10 firings chosen at random; number = firing strength):
+R1. (1.38)  liked beetles. He wanted to play with it.⏎⏎He bent[[ down]] and reached out his
+R2. (3.18)  to splash in the water. He ran to the water and started jumping[[ up]] and down, spl
+R3. (0.32) ! He picked it up and threw it in the sky. Up and[[ up]] it went, until
+R4. (0.58)  his knee. He started to cry.⏎⏎His mom came running[[ over]] and said, �
+R5. (0.13)  angry and hungry. He roared and showed his teeth.⏎⏎Tom[[ and]] Sam were frightened.
+R6. (0.06) my eagerly took a bite. They were delicious! Timmy couldn't[[ stop]] eating them. His
+R7. (0.10)  that although it was tempting to be happy with just the one slice of[[ bread]], it was so
+R8. (0.06)  another handful of peanuts.⏎⏎"Tommy, what are you[[ doing]]?" his mom shouted
+R9. (0.23)  cat. The cat had sharp claws and was not friendly. Spot bark[[ed]] at the cat and
+R10. (0.04)  Tom and Lily wanted to see it closer.⏎⏎"Let's[[ go]] to the truck!"
+
+### V224
+LABEL: ' one' in 'But then one (of / day)'
+TOP EXAMPLES (20 strongest firings; number = firing strength):
+T1. (8.94)  funny they were and hoped they would stay for a bit. But then[[ one]] of the police officers
+T2. (8.63)  she was almost ready to give up hope.⏎⏎But then in[[ one]] store, she found
+T3. (8.63)  the tracks. It was sad that the passengers had gone away. Then[[ one]] day, a new
+T4. (8.62)  than Dave. His suit was helping him bounce really high! But then[[ one]] of Dave's bounces
+T5. (8.61)  considered moves, like his granddad had taught him. But then,[[ one]] day, Mato
+T6. (8.56) â€™t seem to get to the top.⏎⏎Then[[ one]] day, something wonderful
+T7. (8.54)  life. Its petals were bright and colourful.⏎⏎But then[[ one]] day, a nail
+T8. (8.54) fish was very grateful to the girl for saving its life. Then,[[ one]] day, the jelly
+T9. (8.53)  the days went by, the plant started sprouting new leaves. Then[[ one]] morning, the little
+T10. (8.53)  so happy to have a place that he belonged.⏎⏎But then[[ one]] day Punky's
+T11. (8.51)  kept asking permission to go, but Albert still felt uneasy. Then,[[ one]] day Albert had a
+T12. (8.45) . People thought it was a very special place.⏎⏎But then[[ one]] day, something started
+T13. (8.43)  better, but he just couldn't think of anything.⏎⏎Then[[ one]] day, Mildy
+T14. (8.43)  him. They felt bad because they couldn't help.⏎⏎Then[[ one]] day, a friendly
+T15. (8.43)  why she was so excited about the newspaper. ⏎⏎But then[[ one]] day Lea had
+T16. (8.41)  looked for a long time but he just couldn't find it. Then[[ one]] day, he saw
+T17. (8.40)  birds lined up and they were ready to run the race. Then,[[ one]] of the birds had
+T18. (8.40)  with leaves. But the circle was still there!⏎⏎Then,[[ one]] of the animals had
+T19. (8.38)  place where they could find food and be safe.⏎⏎Then,[[ one]] day, the animals
+T20. (8.38)  so she didn't understand why it was so dangerous.⏎⏎Then[[ one]] day, when she
+RANDOM FIRINGS (10 firings chosen at random; number = firing strength):
+R1. (0.42)  dogs needed a lot of space, food and care. They said maybe[[ someday]] they could get a
+R2. (0.10)  a modern toy car. Tom had seen this car before, but he[[ couldn]]'t remember where.
+R3. (7.78)  went to the line of stones. They started to walk on it,[[ one]] by one. They
+R4. (3.13)  very dark but he wanted an adventure.⏎⏎The rabbit chose the[[ one]] with lots of grass
+R5. (1.07)  avocado. This avocado was very special. It could talk and walk.[[ One]] day, the avocado
+R6. (1.38) . They can count to ten and say the names of the numbers.[[ One]] day, they go
+R7. (6.55)  near the ants. The ants all climbed up the pile and slowly,[[ one]] by one, they
+R8. (0.35)  than helping her mum and dad when they needed her. ⏎⏎[[One]] day her mum and
+R9. (0.14)  plenty of uses.⏎⏎"My triangle is the best!" said[[ a]] 3-year-
+R10. (1.08)  you can dream. And sometimes, dreams can come true."⏎⏎[[One]] night, Tom had

@@ -1,0 +1,324 @@
+### Q075
+LABEL: ' sunshine' in 'in the sunshine'
+A.  they heard a loud noise. It was thunder. They saw a bright[[ light]] in the sky.
+B.  light. It was coming from a big truck. It was delivering special[[ things]]. ⏎⏎
+C.  get his red meal," Mommy said. ⏎⏎"But[[ why]] can't he get
+D.  and they all had a great time together. Even though the dog looked[[ disgusting]] with his slob
+E.  nodded. The sleigh was driven by an old man with a long[[ beard]] and a red suit
+F.  apples, so he decided to take it home. He put the warm[[ sack]] of apples over his
+G.  explore. He saw the cone on Lily's bed and wanted to play[[ with]] it. He reached
+H.  you, too, Max," Lily said. "But we will always[[ have]] our memories. We
+I.  played, happy that the light was back.⏎⏎Each day,[[ Joey]] clapped his hands
+J.  upon a time, there was a little girl named Lily. She loved[[ going]] to the beach with
+
+### Q076
+LABEL: ' excited'
+A. Molly was feeling[[ excited]]. She was jumping
+B.  steps ahead of Davey, blocking his path. Davey was getting[[ scared]] and he wanted to
+C.  delicious and are a great snack". ⏎⏎Bella was so[[ happy]] to find out about
+D.  who wanted an apple. She found a big red apple in the garden[[,]] and she was so
+E. One day, Sally was feeling very[[ enthusiastic]]. She wanted to
+F.  on a rock. Ben could not catch it. He huffed and[[ p]]uffed.⏎⏎
+G.  she decided to explore a nearby forest and find out what's hidden in[[ there]]. She was told
+H.  old and loved playing with makeup. Every day Anne would put on her[[ special]] makeup, but it
+I.  promised Sarah he would take good care of her puppy. He said it[[ would]] be quick and cheap
+J.  painted it purple, just like Lily's favorite color! She was so[[ happy]] and thanked her brother
+
+### Q077
+LABEL: Small-animal nouns (squirrel, mouse)
+A. .⏎⏎"Hello, little bug," said a voice. The[[ bug]] looked and saw a
+B.  flew down. He said, "I can get you cherries.[[ I]]'ll make you a
+C. !"⏎⏎They both ran around the park, looking for a new[[ ball]]. Lily saw a
+D.  come inside. He was sad, but obeyed his mom and ran[[ inside]]. ⏎⏎
+E. , it was so beautiful. She decided to meet it. As she[[ got]] closer to the poppy
+F.  her hands along the child's back until the massage was finished. The[[ child]] felt very happy and
+G.  talking to him! He looked carefully and saw a friendly squirrel. The[[ squirrel]] said, â
+H. , "What is that bug?"⏎⏎"It's a harmless[[ bug]]," his mom replied
+I. .⏎⏎The boat began to sail on the pond. The rad[[ish]] felt the wind and
+J.  water and watch the plants grow. One day, mom gave her a[[ peanut]]. She said,
+
+### Q078
+LABEL: ' likes' / ' money' (two unrelated tokens)
+A.  what happened and came to help.⏎⏎She picked up Lily and[[ hugged]] her. She checked
+B.  spot. It is a hidden view of the pond. They can see[[ ducks]], fish, and
+C.  have to drink some water. Deal?"⏎⏎Ben nods. He[[ repeats]] "deal, deal
+D.  have some ice cream!" Joe smiled and felt better. ⏎⏎[[The]] end.
+E.  a big kiss on the forehead and told her to be more careful when[[ eating]] spicy food. From
+F. ?"⏎⏎Lily and Ben look at their mom. They feel[[ ashamed]]. They sign to
+G. ! ⏎⏎He decided to use his mind and make something special[[!]] He thought and thought
+H.  on the rip, and the book was like new again.⏎⏎[[Amy]] learned that when we
+I.  had one child, a three-year-old girl called Ella[[.]] One day, it
+J. . She sees the doll and the children. She is not happy.[[ She]] signs to them:
+
+### Q079
+LABEL: ' big' in 'gave X a big hug'
+A.  Then, Grandma pulled out some fake food.⏎⏎Mina[[ was]] surprised. "Grand
+B.  to take care of your teeth, so they stay perfect. You should[[ tell]] your parents."⏎
+C. , they saw a big, heavy truck drive by. It made a[[ loud]] noise and shook the
+D. , Mom, for helping me fix my car," Amy said with a[[ big]] smile. Her mom
+E.  push it and bounce it. They have fun with the ball.⏎[[⏎]]They hear their mom
+F.  was playing in her wardrobe when she accidentally closed the door. She was[[ stuck]] inside and couldn't
+G.  to cover her whole body so she wouldn't get wet. She played[[ with]] the umbrella for a
+H.  there was a little girl named Lily. One day, she found a[[ big]] box in her room
+I. His mum was so disappointed and angry. She said that until he could[[ promise]] not to mess up
+J.  Sam were brothers who liked to play in the woods. They had a[[ big]] axe that they used
+
+### Q080
+LABEL: Animal noun introduced as protagonist in the opening sentence (fox, cat)
+A. rot. It lived in a big garden with tall trees. The par[[rot]] had lots of fun
+B. Once upon a time, there was a mysterious[[ avocado]]. This avocado was
+C.  the other people, and soon they had a team of 4 people ready[[ to]] help. With all
+D.  Joe. Joe was very happy and fit. He loved to explore and[[ run]] around.⏎⏎
+E.  together to fix the spaceship.⏎⏎But then, a big asteroid[[ came]] flying towards them!
+F.  "Thank you, bird, for helping me sail. It is fun[[!"]] The bird smiled and
+G.  Snuggles and felt better. From that day on, Mia was[[ not]] scared of the dark
+H. Once upon a time, an old[[ man]] and his grandson lived
+I. One day, a[[ boy]] named Tim went to
+J.  to swim in the ocean with his friends. One day, Nemo[[ found]] a shiny piece of
+
+### Q081
+LABEL: ' Billy'
+A.  visit his other friend, a squirrel named Nutty. Nutty was[[ counting]] some nuts and St
+B.  She liked to look at the pretty flowers and chase the butterflies that flew[[ by]].⏎⏎As
+C.  full of wisdom. He told the boy stories and taught him important lessons[[.]]⏎⏎One day
+D. apped their hands and waited to see what would happen.⏎⏎After[[ a]] few moments, the
+E. € he asked the frog. The frog replied, â€�[[�]]I can make you
+F. Once upon a time[[ there]] was a little boy
+G.  bird was talking to her! It was the most gentle voice, and[[ they]] had a wonderful chat
+H. ⏎Suddenly, Nemo saw something shiny and new on the other side[[ of]] the rock. It
+I.  them with his sharp teeth and took them back home. He laid them[[ out]] all pretty on the
+J.  gasped with excitement as the skull opened. Inside it was a shiny treasure[[ chest]]. She carefully opened
+
+### Q082
+LABEL: ' instead' (choosing an alternative)
+A. Mommy, look at that funny truck!" Timmy said, pointing[[ at]] the truck.⏎
+B.  is growing in her tummy. Lila touches mom's tummy[[ and]] feels a bump.
+C.  too late. The baby elephant was too sad to listen. He went[[ off]] alone and stayed away
+D.  a small fire near the billboard. He was scared and ran to his[[ mom]]. "Mommy
+E.  "Patches is just trying to reach his goal, dear. It[[ looks]] like he is almost
+F.  and shouted, "Daddy! I hear an airplane!" ⏎⏎[[His]] dad smiled and replied
+G.  Lily thought about it and decided to stay.⏎⏎She played games[[,]] danced, and even
+H.  of the cookie and felt better.⏎⏎Then, he heard another[[ scream]]. This time it
+I. I love it!" Tim and his mom started to attach the train tracks[[ together]]. They made a
+J.  share with her brother. She gave him two treats and kept two for[[ herself]]. ⏎⏎
+
+### Q083
+LABEL: ' share' (deciding to share)
+A. owed. It was so very cheerful, making everyone around it smile.[[⏎]]⏎One day,
+B.  to others. There will always be people who need help and you can[[ use]] your kindness to make
+C.  back. They became friends and swam together every day. ⏎[[⏎]]One day, the
+D.  their things and applied for a passport. They were all excited to travel[[.]] ⏎⏎They
+E.  on the new shirt and hugged his brother. ⏎⏎The brother[[ said]], "You don
+F.  is my book. I found it first," Tom said. He was[[ selfish]] and did not want
+G.  and wide sun sat in the bluest sky. Its warmth remained with[[ the]] ground and made the
+H.  The bird appeared to be looking for something to eat. Lily wanted to[[ share]] her sugar with the
+I.  for helping his sister. Timmy learned that it's important to be[[ kind]] and helpful to others
+J.  frightened anymore. I have you and my waffle maker to make me[[ happy]]."
+
+### Q084
+LABEL: ' nearby' ('to a nearby pond/tree')
+A.  the man saw something outside. He got really alert, so he went[[ outside]] to check it out
+B.  the biggest. They spewed ash and smoke up into the sky.[[ The]] ash was so dark
+C.  as he was playing, he found a big tree with a small bird[[ on]] a branch.⏎
+D.  seal their bond of true friendship.  They both knew that no matter[[ what]], they would always
+E.  someone in trouble." ⏎⏎Mandy and Ange learned an important[[ lesson]] that day. If
+F.  grow. It grew into a strong, tall tree. The family came[[ back]] to the camp every
+G. I can help you". Looking up, he saw a beautiful butterfly fl[[uttering]] in the sky.
+H.  he was done, he got back in his car and drove home.[[ The]] end.
+I. !"⏎⏎Tom wanted to help the cat. He tried to climb[[ the]] tree, but it
+J.  really thirsty. She saw a big, juicy fruit hanging from a tree[[ nearby]]. She picked the
+
+### Q085
+LABEL: ' day' in 'The next day'
+A. aa!" Tim laughed and the goat seemed happy too.⏎⏎Every[[ day]], Tim and his
+B.  there was a tall ladder. The ladder enjoyed polishing himself so he[[ could]] stay nice and shiny
+C.  and she loved to carry him around everywhere she went.⏎⏎One[[ day]], Lily and Mitt
+D.  he got closer to the planet, he was so excited. He was[[ amazed]] at how soft and
+E. aid on it. She hugged Lily and kissed her.⏎⏎"[[Are]] you okay, Lily
+F.  family could spend the whole day there, and it remained a perfect sunny[[ day]].
+G. , who was standing helplessly in the rain. He asked her,[[ "]]Will you marry me
+H.  happy when his mom gave him the shirt. ⏎⏎On his[[ way]] to school, he
+I.  it every day and pretend he was a famous musician.⏎⏎One[[ morning]], Timmy's
+J.  home. She showed her parents everything she had learnt. It had been[[ an]] expensive lesson, but
+
+### Q086
+LABEL: '."' closing a spoken sentence
+A.  day, Sue saw a big pastry on the kitchen table. It was[[ cool]] and looked yummy
+B.  delicious picnic on the beach. But then, a big wave came and[[ swept]] Nemo away.
+C. So, the person said goodbye to worries and let the problem go.[[ It]] was hard, but
+D.  "You are right. This is awful. It is sour and bitter[[."]]⏎⏎They hear
+E.  home, Lily's mom painted the ceiling and it looked beautiful. Lily[[ was]] happy that she now
+F.  see what was under the tree.⏎⏎"Can we go there[[,]] mom?" Ben asked
+G.  said, "Hello, ostrich. You are nice."⏎⏎[[L]]ily wanted to try
+H. 'll be on our way now."⏎⏎The woman huffed and[[ walked]] away.⏎⏎
+I. ⏎⏎From that day on, Timmy always listened to his mom[[ and]] did what she asked
+J. . She opened it and saw a piece of chalk inside. She didn[['t]] know what to do
+
+### Q087
+LABEL: ' rain' in 'started to rain'
+A.  he put his beak in the water and tried to find more slices[[ of]] bread. But instead
+B.  argue and push each other. Mom tells them to stop and share.[[ She]] says they have to
+C. .⏎⏎Daisy was so happy to be safe and she thanked[[ Lady]]bug for being so
+D.  stuck.⏎⏎Upset, the boat called out to the[[ waves]]. "Why can
+E.  time, there was a little girl named Lily. She loved to draw[[ with]] her crayons
+F.  inside the chest. Whenever he wanted to go exploring again, he knew[[ his]] stuff would be safely
+G.  slices of bread. But instead, he found a delicious fish!⏎[[⏎]]The duck realised that
+H.  see Grandma."⏎⏎Baby smiled and said, "Yay[[!]] Let's go!"
+I. Sara nodded. She liked peanuts. She liked flowers. She liked[[ gardening]]. She said,
+J.  asked their mom if they could buy it, but she said no.[[ She]] said it was too
+
+### Q088
+LABEL: ' what' in "didn't know what to do"
+A.  she could do.⏎⏎One day Lucy asked her Mom, "[[What]] can I do today
+B.  her face. ⏎⏎One day, Sarah heard the sound of[[ something]] crackling in the
+C.  time, there was an adventurous thief. He was always looking for a[[ way]] to get some valuable
+D. ⏎But then, her mom told her that she could go outside for[[ a]] few minutes. She
+E. . One night, they got curious and decided to go on an adventure[[.]] They discovered a raft
+F.  in his backyard. The bird looked very sad and Timmy wanted to[[ help]].⏎⏎Tim
+G.  not sign to each other. They are troubled. They do not know[[ how]] to say sorry.
+H.  leash on him. He was excited to see what he could find.[[⏎]]⏎Spot ran out
+I.  the clock and got stuck. The bird was scared and didn't know[[ what]] to do.⏎
+J.  everyday. She would always find a new way to solve the problem of[[ what]] to do with the
+
+### Q089
+LABEL: Mixed ('.', calm, clown, decided)
+A.  loud. But then, his mommy read him a book about a[[ little]] boy who learned to
+B. One day, all[[ the]] kids at the park
+C.  bird," said the bug. "You are very pretty. Can I[[ smell]] your flower?"⏎
+D.  pulled him back and said, "No Spot, stay here."⏎[[⏎]]Spot didn't understand
+E. apped their hands as hard as they could, and it worked! Soon[[ a]] law appeared in front
+F.  first home run."⏎⏎Sam runs to the fence. He looks[[ for]] the ball. He
+G.  I can't play anymore."⏎⏎Timmy's team was losing[[ and]] they needed Billy to
+H. Follow the map and see where it leads!"⏎⏎The clumsy bear[[ set]] off, following the
+I.  for the advice," said the clumsy bear.⏎⏎The fox smiled[[ and]] replied, "You
+J. . He opened the book and showed it to Lily.⏎⏎"[[Wow]], a book!
+
+### Q090
+LABEL: Sentence-initial ' We' in speech
+A.  are very nice. Yes, you can have some cake. But first[[,]] let's play a
+B.  that day on, Lily always made sure to keep her pencil close to[[ her]].
+C. ⏎⏎The next day, Sally went back to the park with her[[ mom]]. They found the
+D.  and Jamie shared stories from home. They talked about their families, hobbies[[,]] and school. It
+E. Once upon a time, there was a girl called Maggie. Maggie was[[ nos]]y, so even
+F.  the couch and ran to the kitchen drawer.⏎⏎It was a[[ funny]] rubber stamp that said
+G.  "I want to work hard too, like the people who made that[[ flag]]." ⏎⏎
+H.  Ben decided to help the boy find his toy. They searched and found[[ the]] toy under a bush
+I.  She liked to sing her songs while she was playing with the fishes.[[ One]] day, Sarah was
+J.  and sit on the floor. They do not look at each other.[[ They]] do not sign to
+
+### Q091
+LABEL: ' feel' in 'make you feel'
+A. A man came out of the car. He was angry. He pointed[[ at]] Tom and Lily and
+B.  make her cry. He held one page over the flame and watched it[[ turn]] black and curl.
+C. , Mia?" Tom asks.⏎⏎"Yes, Tom, I[[ am]] ready. Are you
+D.  it made a funny sound. It was big enough to cover her whole[[ body]] so she wouldn't
+E.  day, a boy named Tim and a girl named Sue went to a[[ party]]. They were very
+F.  stood on the bear to make herself taller. Now she could reach the[[ attractive]] sheet! Lily was
+G.  up the root. It took them a long time. Finally, they[[ were]] able to pull it
+H. [[Billy]] was a regular boy
+I.  soar, something she thought impossible. Now she could fly high in the[[ sky]] and be free.
+J.  some water. But when she looked inside her box, she saw the[[ thread]] had melted away.
+
+### Q092
+LABEL: Dense, mixed tokens near the end of a story (7.4% of tokens)
+A. : she was hearing animals talking on the radio. â€�[[�]]Itâ€™
+B.  then on Tess asked the family to bring clean water from a clean source[[ to]] everyone in the village
+C.  Amy and stared at her knee. The cat wanted to make Amy feel[[ better]].⏎⏎Amy
+D.  was destroyed! Lily was very sad, but her mommy and daddy[[ told]] her that it's
+E.  behind her. It was a rabbit, hopping around happily. Mandy[[ held]] up the brick to
+F.  and other animals. The bird never forgot the amazing fish it had seen[[ and]] often thought about it
+G.  the situation. The lady told them that it's not nice to fight[[ over]] things and that they
+H. . They thanked him for his thoughtfulness and shared the apples with their[[ whole]] family. ⏎
+I.  After some time, he realized he had to go back home. But[[ the]] lake was too deep
+J.  They saw a man sitting on a chair. He was the dog's[[ owner]].⏎⏎"
+
+### Q093
+LABEL: ' for' marking who/what something is for ('a cake for Ben')
+A.  he could sleep, he remembered that he had a toy car that he[[ wanted]] to store away.
+B. ⏎⏎Mum smiled and said, â€œThat[[â]]€™s a
+C.  looking. We are here to get milk, remember?"⏎⏎But[[ Lily]] had already forgotten and
+D.  on adventures. One day, Emily went to the park with her mom[[.]] She saw a big
+E.  bought the milk and they walked back home. Lily felt proud of herself[[ for]] being brave and helping
+F. loe stopped crying, but Laure started to weep because she was so sorry[[ for]] hurting her friend.
+G.  and had a picture of a tree on it. Lily took her pillow[[ everywhere]] she went.⏎
+H.  cry out for help.⏎⏎A kind lady heard Sarah's cries[[ for]] help and quickly came
+I. . He asked his friend, Sally, "Can you help me dress[[ up]]?" Sally was patient
+J.  animals and plants.⏎⏎His favorite thing to do was to search[[ for]] floating leaves. He
+
+### Q094
+LABEL: Adjective after 'saw a' for a newly noticed thing (mixed)
+A.  Tom, I don't want to play this. I want to play[[ something]] else. Let me
+B.  day, Lily went outside to play and saw a big, bright light[[ in]] the sky. She
+C.  the oyster and its pearls.⏎⏎One day, a[[ mean]] fish wanted to destroy
+D.  play outside in the park. One day, she saw a big,[[ sm]]elly garbage can.
+E.  couldn't help but jump up and down.⏎⏎Suddenly, a[[ 3]] year old child named
+F.  She had a glass of water, a spoon and a bottle of pink[[ medicine]]. She smiled at
+G.  a net. Max was happy to have his boat back, and Lily[[ was]] happy to have made
+H.  next day, Lily went to the store with her mom. She saw[[ a]] toy that she really
+I. Once upon a time,[[ there]] was a little boy
+J.  loops with fake food topping. She gasped and smiled.⏎⏎"[[Grand]]ma! You made
+
+### Q095
+LABEL: ' idea' in 'had an idea'
+A. ⏎The jet stayed in this place for a while, enjoying the beautiful[[ view]]. Then, when
+B. -year-old then picked up the triangle and used it to make[[ a]] paper airplane. She
+C.  expensive?"⏎⏎Grandma answered, "That's a very good[[ question]], Jack! They
+D.  regular spoon again. She was a little sad but also grateful for the[[ fun]] breakfast she had.
+E.  herself to take a kayak out for a ride. She grabbed her[[ life]] jacket, jumped in
+F.  friends were really happy that they could help out. It was a great[[ reminder]] of the power of
+G.  to the park to play and have lots of fun. As they ran[[ around]] the playground, they
+H.  but she couldn't get the diamond out. Then her friend Jack came[[ over]].⏎⏎"
+I. ⏎⏎One day, he found a big, red kite and[[ thought]] it might be fun
+J.  to the gas station, the road was very bumpy and rough.[[ "]]Why is the road
+
+### Q096
+LABEL: ' cold' (weather)
+A.  was a little girl named Lily. She loved to play outside in the[[ rain]]. One day,
+B. ?" Tim thought for a moment and said, "A ball!" The[[ man]] pointed at a ball
+C.  went to the park by herself.⏎⏎At first, Jane felt[[ excited]] to be wearing her
+D.  levels. Sometimes there was a lot and sometimes there was very little.[[ One]] hot summer's day
+E.  powerful wizard came to the tower. He wanted to set up his magic[[ shop]] inside. ⏎
+F.  He felt happy and free.⏎⏎But one day, a big[[ wind]] came and took his
+G. ⏎⏎They walked and walked. Lily got tired. She also got[[ cold]]. The mall was
+H.  had never been there before. Its eyes were wide and it looked very[[ upset]]. Sam wanted to
+I.  the truck, but it was taking a long time. He was getting[[ tired]] and frustrated.⏎
+J. , Tom had a very special dream. He heard a loud noise outside[[ his]] window. He got
+
+### Q097
+LABEL: ' adventure'
+A.  then on, Mommy and Daddy mixed only delicious things together. They[[ never]] mixed anything terrible again
+B.  He joyfully chewed away on his cookie as his bushy mustache[[ w]]iggled.⏎
+C.  She carefully picked the biggest black one and ran back inside. She washed[[ it]] off, and asked
+D. Once upon a time, there was a[[ lively]] lizard. He liked
+E. . Max ran away with them and Lily chased him.⏎⏎Max[[ went]] to the kitchen and
+F. Once upon a time, there was a witch. She lived in a[[ big]], open house.
+G.  their mom.⏎⏎After the operation, Timmy's sister felt[[ much]] better. Timmy
+H.  was playing hide and seek with her friends. She hid behind the brick[[ wall]] in the garden.
+I.  are tired. Then they sit on the floor and play with the ball[[.]] They toss the ball
+J.  so excited because she loved carrots! She was about to take a big[[ bite]] when the carrot spoke
+
+### Q098
+LABEL: ' no' in 'Oh no'
+A.  They wanted their holes and rocks and sticks back.⏎⏎"Hey[[,]] you!" they heard
+B.  shouts at the turkey. He throws stones at the turkey.⏎⏎[[The]] turkey is scared.
+C.  She did not hear her mom's warning voice.⏎⏎Then something[[ bad]] happened. One of
+D.  the blueberries and had fun together. In the end, Lily realized[[ that]] sharing is important and
+E.  and tried over and over again to blow the bug away. Finally,[[ the]] bug was so scared
+F. , and Tim laughed. He said, "Hello, ostrich.[[ You]] are nice."⏎
+G.  what she had accomplished. She had learned to soar, something she thought[[ impossible]]. Now she could
+H.  "I am the master!"⏎⏎Just then, a fierce gust[[ of]] wind blew in.
+I. ! The lizard got scared and said, "Help! Help!" But[[ no]] one was there to
+J.  we need to be careful because the glue we will use is hot."[[⏎]]⏎Amy and her
+
+### Q099
+LABEL: Mojibake byte of an opening curly quote
+A.  eyes and he saw a sparkling gemstone. He reached out to grab[[ it]], but the eagle
+B.  clapped their hands and waited to see what would happen.⏎⏎[[After]] a few moments,
+C. , there was a famous dog named Max. Max loved to play fetch[[ with]] his owner, Sarah
+D.  water from the well. Max ran to the well and filled up the[[ bucket]].⏎⏎Suddenly
+E. my always found her and they laughed and giggled together. It was[[ a]] very fun day for
+F.  had an idea. It said it could make the hammer vanish. Everyone[[ was]] excited about this idea
+G. 's load the freezer with food!" Sara says. She runs to the[[ fridge]] and takes out some
+H.  had big, red cherries on it. Lily was very happy.[[⏎]]⏎Lily picked
+I.  mom smiled at him and said, "Don't worry, I can[[ help]] you. Let's
+J. , Timmy," said Benny. "I like your shiny cane.[[ Can]] I carry it for

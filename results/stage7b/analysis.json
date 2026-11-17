@@ -1,0 +1,1549 @@
+{
+ "n_prompts": 120,
+ "baseline": {
+  "heldout_name_only": {
+   "n": 40,
+   "score": 7.3717942237854,
+   "drop": 0.0,
+   "pair_preference_correct": 1.0,
+   "top1_correct": 0.7,
+   "top1_other_pronoun": 0.0,
+   "prompt_loss_change": 0.0
+  },
+  "heldout_name_only_girl": {
+   "n": 20,
+   "score": 7.997675895690918,
+   "drop": 0.0,
+   "pair_preference_correct": 1.0,
+   "top1_correct": 0.65,
+   "top1_other_pronoun": 0.0,
+   "prompt_loss_change": 0.0
+  },
+  "heldout_name_only_boy": {
+   "n": 20,
+   "score": 6.745912075042725,
+   "drop": 0.0,
+   "pair_preference_correct": 1.0,
+   "top1_correct": 0.75,
+   "top1_other_pronoun": 0.0,
+   "prompt_loss_change": 0.0
+  },
+  "heldout_noun_name": {
+   "n": 20,
+   "score": 8.295770645141602,
+   "drop": 0.0,
+   "pair_preference_correct": 1.0,
+   "top1_correct": 1.0,
+   "top1_other_pronoun": 0.0,
+   "prompt_loss_change": 0.0
+  },
+  "rank_name_only": {
+   "n": 40,
+   "score": 9.060195922851562,
+   "drop": 0.0,
+   "pair_preference_correct": 1.0,
+   "top1_correct": 0.75,
+   "top1_other_pronoun": 0.0,
+   "prompt_loss_change": 0.0
+  }
+ },
+ "gate_passed": true,
+ "n_firing": 890,
+ "n_selective_candidates_girl": 59,
+ "n_selective_candidates_boy": 39,
+ "story_loss_clean": 1.4980567530363267,
+ "top10": {
+  "features": [
+   1493,
+   88,
+   1314,
+   1511,
+   1384,
+   1879,
+   1416,
+   1869,
+   668,
+   1532
+  ],
+  "total_activation_heldout": 14.262251853942871,
+  "rank_effect_each": [
+   3.664991855621338,
+   2.78629994392395,
+   1.443811058998108,
+   1.3462871313095093,
+   1.139002799987793,
+   1.0879437923431396,
+   0.9852638244628906,
+   0.9451940655708313,
+   0.8194332122802734,
+   0.5484137535095215
+  ],
+  "heldout_effect_each": [
+   -0.0009374141809530556,
+   -0.05723218992352486,
+   0.33980268239974976,
+   2.195878505706787,
+   0.663861870765686,
+   0.11416278034448624,
+   0.08751256763935089,
+   0.012990879826247692,
+   1.0105390548706055,
+   0.22795669734477997
+  ],
+  "peak_act_girl_boy_rank": [
+   [
+    8.538683891296387,
+    8.538683891296387
+   ],
+   [
+    7.847470283508301,
+    7.847470283508301
+   ],
+   [
+    0.0,
+    1.816886305809021
+   ],
+   [
+    1.2377980947494507,
+    0.08648433536291122
+   ],
+   [
+    5.736639976501465,
+    5.736639976501465
+   ],
+   [
+    3.5848228931427,
+    3.5848228931427
+   ],
+   [
+    0.0,
+    2.211052417755127
+   ],
+   [
+    2.701699733734131,
+    2.6798083782196045
+   ],
+   [
+    2.1803526878356934,
+    2.1799819469451904
+   ],
+   [
+    0.0216217041015625,
+    2.899202823638916
+   ]
+  ],
+  "peak_act_heldout_by_name": [
+   {
+    "Anna": 0.14116674661636353,
+    "Lucy": 0.14116674661636353,
+    "Sue": 0.14116674661636353,
+    "Jane": 0.14116674661636353,
+    "Amy": 0.14116674661636353,
+    "Ben": 0.14116674661636353,
+    "Jack": 0.14116674661636353,
+    "Joe": 0.14116674661636353,
+    "Billy": 0.14116674661636353,
+    "Jim": 0.14116674661636353
+   },
+   {
+    "Anna": 2.8866608142852783,
+    "Lucy": 2.8866608142852783,
+    "Sue": 2.8866608142852783,
+    "Jane": 2.8866608142852783,
+    "Amy": 2.8866608142852783,
+    "Ben": 2.8866608142852783,
+    "Jack": 2.8866608142852783,
+    "Joe": 2.8866608142852783,
+    "Billy": 2.8866608142852783,
+    "Jim": 2.8866608142852783
+   },
+   {
+    "Anna": 0.0,
+    "Lucy": 0.0,
+    "Sue": 0.03552640229463577,
+    "Jane": 0.18091167509555817,
+    "Amy": 0.0,
+    "Ben": 0.15724366903305054,
+    "Jack": 0.3576069474220276,
+    "Joe": 1.2663359642028809,
+    "Billy": 0.0,
+    "Jim": 1.345210075378418
+   },
+   {
+    "Anna": 0.0,
+    "Lucy": 2.988067150115967,
+    "Sue": 2.5387930870056152,
+    "Jane": 3.3387112617492676,
+    "Amy": 2.2847843170166016,
+    "Ben": 0.0,
+    "Jack": 0.0,
+    "Joe": 0.0,
+    "Billy": 0.016704179346561432,
+    "Jim": 0.0
+   },
+   {
+    "Anna": 3.995488166809082,
+    "Lucy": 3.995488166809082,
+    "Sue": 3.995488166809082,
+    "Jane": 3.995488166809082,
+    "Amy": 3.995488166809082,
+    "Ben": 3.995488166809082,
+    "Jack": 3.995488166809082,
+    "Joe": 3.995488166809082,
+    "Billy": 3.995488166809082,
+    "Jim": 3.995488166809082
+   },
+   {
+    "Anna": 0.9076565504074097,
+    "Lucy": 0.9076565504074097,
+    "Sue": 0.9076565504074097,
+    "Jane": 0.9076565504074097,
+    "Amy": 0.9076565504074097,
+    "Ben": 0.9076565504074097,
+    "Jack": 0.9076565504074097,
+    "Joe": 0.9076565504074097,
+    "Billy": 0.9076565504074097,
+    "Jim": 0.9076565504074097
+   },
+   {
+    "Anna": 0.0,
+    "Lucy": 0.0,
+    "Sue": 0.0,
+    "Jane": 0.0,
+    "Amy": 0.0,
+    "Ben": 0.6745132207870483,
+    "Jack": 0.5267926454544067,
+    "Joe": 0.0,
+    "Billy": 0.6614738702774048,
+    "Jim": 0.0402282252907753
+   },
+   {
+    "Anna": 0.19132772088050842,
+    "Lucy": 0.15818144381046295,
+    "Sue": 0.1624232977628708,
+    "Jane": 0.15930500626564026,
+    "Amy": 0.18468019366264343,
+    "Ben": 0.2085447609424591,
+    "Jack": 0.16729135811328888,
+    "Joe": 0.15823107957839966,
+    "Billy": 0.16935281455516815,
+    "Jim": 0.1655738800764084
+   },
+   {
+    "Anna": 2.1771750450134277,
+    "Lucy": 2.182705879211426,
+    "Sue": 2.1459712982177734,
+    "Jane": 2.2062764167785645,
+    "Amy": 2.1565651893615723,
+    "Ben": 2.1569628715515137,
+    "Jack": 2.219815254211426,
+    "Joe": 2.211045980453491,
+    "Billy": 2.188434362411499,
+    "Jim": 2.2055630683898926
+   },
+   {
+    "Anna": 0.29299789667129517,
+    "Lucy": 0.29299789667129517,
+    "Sue": 0.29299789667129517,
+    "Jane": 0.49087193608283997,
+    "Amy": 0.29299789667129517,
+    "Ben": 3.4048800468444824,
+    "Jack": 3.3096601963043213,
+    "Joe": 3.7073569297790527,
+    "Billy": 2.6015186309814453,
+    "Jim": 3.5010643005371094
+   }
+  ],
+  "measures": {
+   "overall": {
+    "n": 40,
+    "score": 3.6769981384277344,
+    "drop": 3.6947968006134033,
+    "pair_preference_correct": 1.0,
+    "top1_correct": 0.4,
+    "top1_other_pronoun": 0.0,
+    "prompt_loss_change": 0.2608533501625061
+   },
+   "girl": {
+    "n": 20,
+    "score": 3.125673294067383,
+    "drop": 4.872003078460693,
+    "pair_preference_correct": 1.0,
+    "top1_correct": 0.3,
+    "top1_other_pronoun": 0.0,
+    "prompt_loss_change": 0.23951967060565948
+   },
+   "boy": {
+    "n": 20,
+    "score": 4.2283220291137695,
+    "drop": 2.517590284347534,
+    "pair_preference_correct": 1.0,
+    "top1_correct": 0.5,
+    "top1_other_pronoun": 0.0,
+    "prompt_loss_change": 0.2821870446205139
+   }
+  },
+  "noun_name": {
+   "n": 20,
+   "score": 2.0871834754943848,
+   "drop": 6.208587646484375,
+   "pair_preference_correct": 1.0,
+   "top1_correct": 0.0,
+   "top1_other_pronoun": 0.0,
+   "prompt_loss_change": 1.0165026187896729
+  },
+  "story_loss_change": 0.24742914942887895,
+  "matched_random": {
+   "activation_ratio_mean": 0.8908091187477112,
+   "overall": {
+    "drop_mean": 0.18909521400928497,
+    "drop_max": 1.0611226558685303,
+    "drop_p95": 0.7374473214149475,
+    "tested_beats": 100
+   },
+   "girl": {
+    "drop_mean": 0.0362820141017437,
+    "drop_max": 1.0880405902862549,
+    "drop_p95": 0.8641802668571472,
+    "tested_beats": 100
+   },
+   "boy": {
+    "drop_mean": 0.34190845489501953,
+    "drop_max": 1.4107387065887451,
+    "drop_p95": 1.1668857336044312,
+    "tested_beats": 100
+   },
+   "pair_preference_correct_mean": 1.0,
+   "top1_correct_mean": 0.6887499999999999,
+   "prompt_loss_change_mean": 0.15606769919395447,
+   "story_loss_change_mean_first_sets": 0.02967160419957754
+  }
+ },
+ "R1_passed": true,
+ "selective": {
+  "girl": {
+   "features": [
+    1511,
+    1735,
+    905,
+    1630,
+    1324
+   ],
+   "total_activation_heldout": 1.327595829963684,
+   "rank_effect_each": [
+    1.3462871313095093,
+    0.2871648967266083,
+    0.23790593445301056,
+    0.23284725844860077,
+    0.17981930077075958
+   ],
+   "heldout_effect_each": [
+    2.195878505706787,
+    0.09256839752197266,
+    -0.010755086317658424,
+    -2.8610230629055877e-07,
+    -0.013731623068451881
+   ],
+   "peak_act_girl_boy_rank": [
+    [
+     1.2377980947494507,
+     0.08648433536291122
+    ],
+    [
+     1.0020304918289185,
+     0.01159544475376606
+    ],
+    [
+     0.501515805721283,
+     0.0
+    ],
+    [
+     0.3262173533439636,
+     0.0
+    ],
+    [
+     0.8577594757080078,
+     0.02177557349205017
+    ]
+   ],
+   "peak_act_heldout_by_name": [
+    {
+     "Anna": 0.0,
+     "Lucy": 2.988067150115967,
+     "Sue": 2.5387930870056152,
+     "Jane": 3.3387112617492676,
+     "Amy": 2.2847843170166016,
+     "Ben": 0.0,
+     "Jack": 0.0,
+     "Joe": 0.0,
+     "Billy": 0.016704179346561432,
+     "Jim": 0.0
+    },
+    {
+     "Anna": 0.0,
+     "Lucy": 0.0,
+     "Sue": 1.57516610622406,
+     "Jane": 0.0,
+     "Amy": 0.0,
+     "Ben": 0.0,
+     "Jack": 0.0,
+     "Joe": 0.0,
+     "Billy": 0.0,
+     "Jim": 0.0
+    },
+    {
+     "Anna": 0.0,
+     "Lucy": 0.014777541160583496,
+     "Sue": 0.0,
+     "Jane": 0.0,
+     "Amy": 0.0,
+     "Ben": 0.0,
+     "Jack": 0.0,
+     "Joe": 0.0,
+     "Billy": 0.0,
+     "Jim": 0.14652830362319946
+    },
+    {
+     "Anna": 0.0,
+     "Lucy": 0.0,
+     "Sue": 0.0,
+     "Jane": 0.0,
+     "Amy": 0.0,
+     "Ben": 0.0,
+     "Jack": 0.0,
+     "Joe": 0.0,
+     "Billy": 0.0,
+     "Jim": 0.0
+    },
+    {
+     "Anna": 0.0,
+     "Lucy": 0.19742625951766968,
+     "Sue": 0.0,
+     "Jane": 0.0065526291728019714,
+     "Amy": 0.0,
+     "Ben": 0.0,
+     "Jack": 0.16844722628593445,
+     "Joe": 0.0,
+     "Billy": 0.0,
+     "Jim": 0.0
+    }
+   ],
+   "measures": {
+    "overall": {
+     "n": 40,
+     "score": 5.0862836837768555,
+     "drop": 2.285511016845703,
+     "pair_preference_correct": 1.0,
+     "top1_correct": 0.65,
+     "top1_other_pronoun": 0.0,
+     "prompt_loss_change": -0.00604595523327589
+    },
+    "girl": {
+     "n": 20,
+     "score": 3.347038984298706,
+     "drop": 4.650637626647949,
+     "pair_preference_correct": 1.0,
+     "top1_correct": 0.55,
+     "top1_other_pronoun": 0.0,
+     "prompt_loss_change": -0.012079966254532337
+    },
+    "boy": {
+     "n": 20,
+     "score": 6.825528144836426,
+     "drop": -0.07961587607860565,
+     "pair_preference_correct": 1.0,
+     "top1_correct": 0.75,
+     "top1_other_pronoun": 0.0,
+     "prompt_loss_change": -1.19447704491904e-05
+    }
+   },
+   "noun_name": {
+    "n": 20,
+    "score": 7.1490044593811035,
+    "drop": 1.1467666625976562,
+    "pair_preference_correct": 1.0,
+    "top1_correct": 1.0,
+    "top1_other_pronoun": 0.0,
+    "prompt_loss_change": -0.004128408618271351
+   },
+   "story_loss_change": 0.004031695351501385,
+   "matched_random": {
+    "activation_ratio_mean": 0.9988855719566345,
+    "overall": {
+     "drop_mean": 0.07234376668930054,
+     "drop_max": 0.320066899061203,
+     "drop_p95": 0.29695090651512146,
+     "tested_beats": 100
+    },
+    "girl": {
+     "drop_mean": 0.05161920189857483,
+     "drop_max": 0.2244281768798828,
+     "drop_p95": 0.19371297955513,
+     "tested_beats": 100
+    },
+    "boy": {
+     "drop_mean": 0.09306833893060684,
+     "drop_max": 0.44736844301223755,
+     "drop_p95": 0.3960866332054138,
+     "tested_beats": 0
+    },
+    "pair_preference_correct_mean": 1.0,
+    "top1_correct_mean": 0.6665000000000001,
+    "prompt_loss_change_mean": -0.0010271132923662663,
+    "story_loss_change_mean_first_sets": 0.008184875652309586
+   },
+   "specificity": {
+    "tested": 4.730253502726555,
+    "random_mean": -0.041449133306741714,
+    "tested_beats": 100
+   },
+   "R2_passed": true
+  },
+  "boy": {
+   "features": [
+    1314,
+    1416,
+    1532,
+    1197,
+    2037
+   ],
+   "total_activation_heldout": 3.04122257232666,
+   "rank_effect_each": [
+    1.443811058998108,
+    0.9852638244628906,
+    0.5484137535095215,
+    0.4113233983516693,
+    0.44244927167892456
+   ],
+   "heldout_effect_each": [
+    0.33980268239974976,
+    0.08751256763935089,
+    0.22795669734477997,
+    0.19841814041137695,
+    0.0072664739564061165
+   ],
+   "peak_act_girl_boy_rank": [
+    [
+     0.0,
+     1.816886305809021
+    ],
+    [
+     0.0,
+     2.211052417755127
+    ],
+    [
+     0.0216217041015625,
+     2.899202823638916
+    ],
+    [
+     0.08378490060567856,
+     1.052335500717163
+    ],
+    [
+     0.0,
+     0.811915397644043
+    ]
+   ],
+   "peak_act_heldout_by_name": [
+    {
+     "Anna": 0.0,
+     "Lucy": 0.0,
+     "Sue": 0.03552640229463577,
+     "Jane": 0.18091167509555817,
+     "Amy": 0.0,
+     "Ben": 0.15724366903305054,
+     "Jack": 0.3576069474220276,
+     "Joe": 1.2663359642028809,
+     "Billy": 0.0,
+     "Jim": 1.345210075378418
+    },
+    {
+     "Anna": 0.0,
+     "Lucy": 0.0,
+     "Sue": 0.0,
+     "Jane": 0.0,
+     "Amy": 0.0,
+     "Ben": 0.6745132207870483,
+     "Jack": 0.5267926454544067,
+     "Joe": 0.0,
+     "Billy": 0.6614738702774048,
+     "Jim": 0.0402282252907753
+    },
+    {
+     "Anna": 0.29299789667129517,
+     "Lucy": 0.29299789667129517,
+     "Sue": 0.29299789667129517,
+     "Jane": 0.49087193608283997,
+     "Amy": 0.29299789667129517,
+     "Ben": 3.4048800468444824,
+     "Jack": 3.3096601963043213,
+     "Joe": 3.7073569297790527,
+     "Billy": 2.6015186309814453,
+     "Jim": 3.5010643005371094
+    },
+    {
+     "Anna": 0.0,
+     "Lucy": 0.28216326236724854,
+     "Sue": 0.4177209138870239,
+     "Jane": 0.26171281933784485,
+     "Amy": 0.0,
+     "Ben": 0.06540347635746002,
+     "Jack": 0.016458913683891296,
+     "Joe": 1.6926524639129639,
+     "Billy": 1.056435465812683,
+     "Jim": 1.2219903469085693
+    },
+    {
+     "Anna": 0.0,
+     "Lucy": 0.0,
+     "Sue": 0.0,
+     "Jane": 0.0,
+     "Amy": 0.0,
+     "Ben": 0.0,
+     "Jack": 0.0,
+     "Joe": 0.0,
+     "Billy": 0.04920035973191261,
+     "Jim": 0.0
+    }
+   ],
+   "measures": {
+    "overall": {
+     "n": 40,
+     "score": 6.169783115386963,
+     "drop": 1.2020118236541748,
+     "pair_preference_correct": 1.0,
+     "top1_correct": 0.7,
+     "top1_other_pronoun": 0.0,
+     "prompt_loss_change": 0.013170922175049782
+    },
+    "girl": {
+     "n": 20,
+     "score": 8.382624626159668,
+     "drop": -0.38494792580604553,
+     "pair_preference_correct": 1.0,
+     "top1_correct": 0.65,
+     "top1_other_pronoun": 0.0,
+     "prompt_loss_change": 0.004189276602119207
+    },
+    "boy": {
+     "n": 20,
+     "score": 3.9569408893585205,
+     "drop": 2.7889719009399414,
+     "pair_preference_correct": 1.0,
+     "top1_correct": 0.75,
+     "top1_other_pronoun": 0.0,
+     "prompt_loss_change": 0.02215256728231907
+    }
+   },
+   "noun_name": {
+    "n": 20,
+    "score": 7.511521816253662,
+    "drop": 0.7842496633529663,
+    "pair_preference_correct": 1.0,
+    "top1_correct": 1.0,
+    "top1_other_pronoun": 0.0,
+    "prompt_loss_change": 0.0065292478539049625
+   },
+   "story_loss_change": 0.01633237225455586,
+   "matched_random": {
+    "activation_ratio_mean": 1.007976770401001,
+    "overall": {
+     "drop_mean": 0.058933768421411514,
+     "drop_max": 1.1955375671386719,
+     "drop_p95": 1.0616205930709839,
+     "tested_beats": 100
+    },
+    "girl": {
+     "drop_mean": 0.012136716395616531,
+     "drop_max": 1.1734588146209717,
+     "drop_p95": 1.0413357019424438,
+     "tested_beats": 11
+    },
+    "boy": {
+     "drop_mean": 0.10573084652423859,
+     "drop_max": 1.2176164388656616,
+     "drop_p95": 1.0473413467407227,
+     "tested_beats": 100
+    },
+    "pair_preference_correct_mean": 1.0,
+    "top1_correct_mean": 0.7205000000000001,
+    "prompt_loss_change_mean": 0.044081494212150574,
+    "story_loss_change_mean_first_sets": 0.010527193207272967
+   },
+   "specificity": {
+    "tested": 3.173919826745987,
+    "random_mean": 0.09359409660100937,
+    "tested_beats": 100
+   },
+   "R2_passed": true
+  }
+ },
+ "flip": {
+  "girl": {
+   "added_features_of": "boy",
+   "added_features": [
+    1314,
+    1416,
+    1532,
+    1197,
+    2037
+   ],
+   "by_strength": [
+    {
+     "strength": 0.5,
+     "added_norm_name_pos": 0.518811821937561,
+     "added_norm_later_pos": 2.192440842918586e-05,
+     "name_only": {
+      "n": 20,
+      "add": {
+       "score": 3.255636215209961,
+       "pair_flip": 0.0,
+       "top1_other_pronoun": 0.0,
+       "top1_correct": 0.55,
+       "prompt_loss_change": 0.005428505130112171,
+       "names_majority_flipped": 0,
+       "pair_flip_by_name": {
+        "Anna": 0.0,
+        "Lucy": 0.0,
+        "Sue": 0.0,
+        "Jane": 0.0,
+        "Amy": 0.0
+       }
+      },
+      "swap": {
+       "score": -0.72651207447052,
+       "pair_flip": 0.75,
+       "top1_other_pronoun": 0.35,
+       "top1_correct": 0.2,
+       "prompt_loss_change": -0.0005714177968911827,
+       "names_majority_flipped": 4,
+       "pair_flip_by_name": {
+        "Anna": 0.0,
+        "Lucy": 1.0,
+        "Sue": 1.0,
+        "Jane": 1.0,
+        "Amy": 0.75
+       }
+      },
+      "random": {
+       "score": 7.730594635009766,
+       "pair_flip": 0.0,
+       "top1_other_pronoun": 0.0,
+       "top1_correct": 0.6275000000000001,
+       "prompt_loss_change": 0.0028182922396808863,
+       "names_majority_flipped": 0
+      },
+      "clean": {
+       "n": 20,
+       "score": 7.997675895690918,
+       "drop": 0.0,
+       "pair_preference_correct": 1.0,
+       "top1_correct": 0.65,
+       "top1_other_pronoun": 0.0,
+       "prompt_loss_change": 0.0
+      }
+     },
+     "noun_name": {
+      "n": 10,
+      "add": {
+       "score": 6.244637489318848,
+       "pair_flip": 0.0,
+       "top1_other_pronoun": 0.0,
+       "top1_correct": 1.0,
+       "prompt_loss_change": -0.015164422802627087,
+       "names_majority_flipped": 0,
+       "pair_flip_by_name": {
+        "Anna": 0.0,
+        "Lucy": 0.0,
+        "Sue": 0.0,
+        "Jane": 0.0,
+        "Amy": 0.0
+       }
+      },
+      "swap": {
+       "score": 4.477596282958984,
+       "pair_flip": 0.0,
+       "top1_other_pronoun": 0.0,
+       "top1_correct": 1.0,
+       "prompt_loss_change": -0.026499604806303978,
+       "names_majority_flipped": 0,
+       "pair_flip_by_name": {
+        "Anna": 0.0,
+        "Lucy": 0.0,
+        "Sue": 0.0,
+        "Jane": 0.0,
+        "Amy": 0.0
+       }
+      },
+      "random": {
+       "score": 8.68562126159668,
+       "pair_flip": 0.0,
+       "top1_other_pronoun": 0.0,
+       "top1_correct": 1.0,
+       "prompt_loss_change": 0.0029669348150491714,
+       "names_majority_flipped": 0
+      },
+      "clean": {
+       "n": 10,
+       "score": 8.735332489013672,
+       "drop": 0.0,
+       "pair_preference_correct": 1.0,
+       "top1_correct": 1.0,
+       "top1_other_pronoun": 0.0,
+       "prompt_loss_change": 0.0
+      }
+     }
+    },
+    {
+     "strength": 1,
+     "added_norm_name_pos": 1.037623643875122,
+     "added_norm_later_pos": 4.384881685837172e-05,
+     "name_only": {
+      "n": 20,
+      "add": {
+       "score": -0.18619418144226074,
+       "pair_flip": 0.65,
+       "top1_other_pronoun": 0.25,
+       "top1_correct": 0.25,
+       "prompt_loss_change": 0.01460965909063816,
+       "names_majority_flipped": 3,
+       "pair_flip_by_name": {
+        "Anna": 0.5,
+        "Lucy": 0.25,
+        "Sue": 1.0,
+        "Jane": 0.75,
+        "Amy": 0.75
+       }
+      },
+      "swap": {
+       "score": -3.5108909606933594,
+       "pair_flip": 0.9,
+       "top1_other_pronoun": 0.45,
+       "top1_correct": 0.05,
+       "prompt_loss_change": 0.01857440546154976,
+       "names_majority_flipped": 4,
+       "pair_flip_by_name": {
+        "Anna": 0.5,
+        "Lucy": 1.0,
+        "Sue": 1.0,
+        "Jane": 1.0,
+        "Amy": 1.0
+       }
+      },
+      "random": {
+       "score": 7.221739768981934,
+       "pair_flip": 0.0,
+       "top1_other_pronoun": 0.0,
+       "top1_correct": 0.6549999999999999,
+       "prompt_loss_change": 0.026071107015013695,
+       "names_majority_flipped": 0
+      },
+      "clean": {
+       "n": 20,
+       "score": 7.997675895690918,
+       "drop": 0.0,
+       "pair_preference_correct": 1.0,
+       "top1_correct": 0.65,
+       "top1_other_pronoun": 0.0,
+       "prompt_loss_change": 0.0
+      }
+     },
+     "noun_name": {
+      "n": 10,
+      "add": {
+       "score": 4.172194957733154,
+       "pair_flip": 0.0,
+       "top1_other_pronoun": 0.0,
+       "top1_correct": 1.0,
+       "prompt_loss_change": -0.021216202527284622,
+       "names_majority_flipped": 0,
+       "pair_flip_by_name": {
+        "Anna": 0.0,
+        "Lucy": 0.0,
+        "Sue": 0.0,
+        "Jane": 0.0,
+        "Amy": 0.0
+       }
+      },
+      "swap": {
+       "score": 2.879973888397217,
+       "pair_flip": 0.0,
+       "top1_other_pronoun": 0.0,
+       "top1_correct": 1.0,
+       "prompt_loss_change": -0.034351132810115814,
+       "names_majority_flipped": 0,
+       "pair_flip_by_name": {
+        "Anna": 0.0,
+        "Lucy": 0.0,
+        "Sue": 0.0,
+        "Jane": 0.0,
+        "Amy": 0.0
+       }
+      },
+      "random": {
+       "score": 8.64971923828125,
+       "pair_flip": 0.0,
+       "top1_other_pronoun": 0.0,
+       "top1_correct": 1.0,
+       "prompt_loss_change": -0.007408140692859888,
+       "names_majority_flipped": 0
+      },
+      "clean": {
+       "n": 10,
+       "score": 8.735332489013672,
+       "drop": 0.0,
+       "pair_preference_correct": 1.0,
+       "top1_correct": 1.0,
+       "top1_other_pronoun": 0.0,
+       "prompt_loss_change": 0.0
+      }
+     }
+    },
+    {
+     "strength": 1.5,
+     "added_norm_name_pos": 1.5564353466033936,
+     "added_norm_later_pos": 6.577322346856818e-05,
+     "name_only": {
+      "n": 20,
+      "add": {
+       "score": -2.863193988800049,
+       "pair_flip": 1.0,
+       "top1_other_pronoun": 0.6,
+       "top1_correct": 0.0,
+       "prompt_loss_change": 0.055996693670749664,
+       "names_majority_flipped": 5,
+       "pair_flip_by_name": {
+        "Anna": 1.0,
+        "Lucy": 1.0,
+        "Sue": 1.0,
+        "Jane": 1.0,
+        "Amy": 1.0
+       }
+      },
+      "swap": {
+       "score": -5.705223560333252,
+       "pair_flip": 1.0,
+       "top1_other_pronoun": 0.75,
+       "top1_correct": 0.0,
+       "prompt_loss_change": 0.07246017456054688,
+       "names_majority_flipped": 5,
+       "pair_flip_by_name": {
+        "Anna": 1.0,
+        "Lucy": 1.0,
+        "Sue": 1.0,
+        "Jane": 1.0,
+        "Amy": 1.0
+       }
+      },
+      "random": {
+       "score": 6.427087306976318,
+       "pair_flip": 0.015,
+       "top1_other_pronoun": 0.0025,
+       "top1_correct": 0.5975,
+       "prompt_loss_change": 0.056278128176927567,
+       "names_majority_flipped": 0
+      },
+      "clean": {
+       "n": 20,
+       "score": 7.997675895690918,
+       "drop": 0.0,
+       "pair_preference_correct": 1.0,
+       "top1_correct": 0.65,
+       "top1_other_pronoun": 0.0,
+       "prompt_loss_change": 0.0
+      }
+     },
+     "noun_name": {
+      "n": 10,
+      "add": {
+       "score": 2.127584934234619,
+       "pair_flip": 0.0,
+       "top1_other_pronoun": 0.0,
+       "top1_correct": 1.0,
+       "prompt_loss_change": -0.01565101183950901,
+       "names_majority_flipped": 0,
+       "pair_flip_by_name": {
+        "Anna": 0.0,
+        "Lucy": 0.0,
+        "Sue": 0.0,
+        "Jane": 0.0,
+        "Amy": 0.0
+       }
+      },
+      "swap": {
+       "score": 1.129740595817566,
+       "pair_flip": 0.0,
+       "top1_other_pronoun": 0.0,
+       "top1_correct": 0.9,
+       "prompt_loss_change": -0.02450733259320259,
+       "names_majority_flipped": 0,
+       "pair_flip_by_name": {
+        "Anna": 0.0,
+        "Lucy": 0.0,
+        "Sue": 0.0,
+        "Jane": 0.0,
+        "Amy": 0.0
+       }
+      },
+      "random": {
+       "score": 8.657994270324707,
+       "pair_flip": 0.0,
+       "top1_other_pronoun": 0.0,
+       "top1_correct": 0.9949999999999999,
+       "prompt_loss_change": 0.05377354100346565,
+       "names_majority_flipped": 0
+      },
+      "clean": {
+       "n": 10,
+       "score": 8.735332489013672,
+       "drop": 0.0,
+       "pair_preference_correct": 1.0,
+       "top1_correct": 1.0,
+       "top1_other_pronoun": 0.0,
+       "prompt_loss_change": 0.0
+      }
+     }
+    },
+    {
+     "strength": 2,
+     "added_norm_name_pos": 2.075247287750244,
+     "added_norm_later_pos": 8.769763371674344e-05,
+     "name_only": {
+      "n": 20,
+      "add": {
+       "score": -5.308804512023926,
+       "pair_flip": 1.0,
+       "top1_other_pronoun": 0.75,
+       "top1_correct": 0.0,
+       "prompt_loss_change": 0.13613669574260712,
+       "names_majority_flipped": 5,
+       "pair_flip_by_name": {
+        "Anna": 1.0,
+        "Lucy": 1.0,
+        "Sue": 1.0,
+        "Jane": 1.0,
+        "Amy": 1.0
+       }
+      },
+      "swap": {
+       "score": -7.7763824462890625,
+       "pair_flip": 1.0,
+       "top1_other_pronoun": 0.75,
+       "top1_correct": 0.0,
+       "prompt_loss_change": 0.16862745583057404,
+       "names_majority_flipped": 5,
+       "pair_flip_by_name": {
+        "Anna": 1.0,
+        "Lucy": 1.0,
+        "Sue": 1.0,
+        "Jane": 1.0,
+        "Amy": 1.0
+       }
+      },
+      "random": {
+       "score": 5.771386623382568,
+       "pair_flip": 0.015,
+       "top1_other_pronoun": 0.0,
+       "top1_correct": 0.645,
+       "prompt_loss_change": 0.1958182156085968,
+       "names_majority_flipped": 0
+      },
+      "clean": {
+       "n": 20,
+       "score": 7.997675895690918,
+       "drop": 0.0,
+       "pair_preference_correct": 1.0,
+       "top1_correct": 0.65,
+       "top1_other_pronoun": 0.0,
+       "prompt_loss_change": 0.0
+      }
+     },
+     "noun_name": {
+      "n": 10,
+      "add": {
+       "score": -0.06742449104785919,
+       "pair_flip": 0.4,
+       "top1_other_pronoun": 0.4,
+       "top1_correct": 0.6,
+       "prompt_loss_change": 0.02027111127972603,
+       "names_majority_flipped": 1,
+       "pair_flip_by_name": {
+        "Anna": 0.0,
+        "Lucy": 0.5,
+        "Sue": 1.0,
+        "Jane": 0.0,
+        "Amy": 0.5
+       }
+      },
+      "swap": {
+       "score": -0.9382820129394531,
+       "pair_flip": 0.8,
+       "top1_other_pronoun": 0.8,
+       "top1_correct": 0.2,
+       "prompt_loss_change": 0.02703719213604927,
+       "names_majority_flipped": 4,
+       "pair_flip_by_name": {
+        "Anna": 0.0,
+        "Lucy": 1.0,
+        "Sue": 1.0,
+        "Jane": 1.0,
+        "Amy": 1.0
+       }
+      },
+      "random": {
+       "score": 8.445108413696289,
+       "pair_flip": 0.0,
+       "top1_other_pronoun": 0.0,
+       "top1_correct": 1.0,
+       "prompt_loss_change": 0.04335325211286545,
+       "names_majority_flipped": 0
+      },
+      "clean": {
+       "n": 10,
+       "score": 8.735332489013672,
+       "drop": 0.0,
+       "pair_preference_correct": 1.0,
+       "top1_correct": 1.0,
+       "top1_other_pronoun": 0.0,
+       "prompt_loss_change": 0.0
+      }
+     }
+    }
+   ],
+   "R3_passed": true
+  },
+  "boy": {
+   "added_features_of": "girl",
+   "added_features": [
+    1511,
+    1735,
+    905,
+    1630,
+    1324
+   ],
+   "by_strength": [
+    {
+     "strength": 0.5,
+     "added_norm_name_pos": 0.21540461480617523,
+     "added_norm_later_pos": 7.066871330607682e-05,
+     "name_only": {
+      "n": 20,
+      "add": {
+       "score": 4.474769592285156,
+       "pair_flip": 0.0,
+       "top1_other_pronoun": 0.0,
+       "top1_correct": 0.75,
+       "prompt_loss_change": 0.011440670117735863,
+       "names_majority_flipped": 0,
+       "pair_flip_by_name": {
+        "Ben": 0.0,
+        "Jack": 0.0,
+        "Joe": 0.0,
+        "Billy": 0.0,
+        "Jim": 0.0
+       }
+      },
+      "swap": {
+       "score": 0.9173022508621216,
+       "pair_flip": 0.4,
+       "top1_other_pronoun": 0.25,
+       "top1_correct": 0.45,
+       "prompt_loss_change": 0.03330923244357109,
+       "names_majority_flipped": 2,
+       "pair_flip_by_name": {
+        "Ben": 0.0,
+        "Jack": 0.0,
+        "Joe": 1.0,
+        "Billy": 0.0,
+        "Jim": 1.0
+       }
+      },
+      "random": {
+       "score": 6.7577409744262695,
+       "pair_flip": 0.0,
+       "top1_other_pronoun": 0.0,
+       "top1_correct": 0.75,
+       "prompt_loss_change": -0.0014976597158238292,
+       "names_majority_flipped": 0
+      },
+      "clean": {
+       "n": 20,
+       "score": 6.745912075042725,
+       "drop": 0.0,
+       "pair_preference_correct": 1.0,
+       "top1_correct": 0.75,
+       "top1_other_pronoun": 0.0,
+       "prompt_loss_change": 0.0
+      }
+     },
+     "noun_name": {
+      "n": 10,
+      "add": {
+       "score": 6.718060493469238,
+       "pair_flip": 0.0,
+       "top1_other_pronoun": 0.0,
+       "top1_correct": 1.0,
+       "prompt_loss_change": 0.017209887504577637,
+       "names_majority_flipped": 0,
+       "pair_flip_by_name": {
+        "Ben": 0.0,
+        "Jack": 0.0,
+        "Joe": 0.0,
+        "Billy": 0.0,
+        "Jim": 0.0
+       }
+      },
+      "swap": {
+       "score": 4.3393025398254395,
+       "pair_flip": 0.0,
+       "top1_other_pronoun": 0.0,
+       "top1_correct": 1.0,
+       "prompt_loss_change": 0.04451422765851021,
+       "names_majority_flipped": 0,
+       "pair_flip_by_name": {
+        "Ben": 0.0,
+        "Jack": 0.0,
+        "Joe": 0.0,
+        "Billy": 0.0,
+        "Jim": 0.0
+       }
+      },
+      "random": {
+       "score": 7.8495893478393555,
+       "pair_flip": 0.0,
+       "top1_other_pronoun": 0.0,
+       "top1_correct": 1.0,
+       "prompt_loss_change": 0.005857176147401333,
+       "names_majority_flipped": 0
+      },
+      "clean": {
+       "n": 10,
+       "score": 7.856210231781006,
+       "drop": 0.0,
+       "pair_preference_correct": 1.0,
+       "top1_correct": 1.0,
+       "top1_other_pronoun": 0.0,
+       "prompt_loss_change": 0.0
+      }
+     }
+    },
+    {
+     "strength": 1,
+     "added_norm_name_pos": 0.43080922961235046,
+     "added_norm_later_pos": 0.00014133742661215365,
+     "name_only": {
+      "n": 20,
+      "add": {
+       "score": 2.1737658977508545,
+       "pair_flip": 0.0,
+       "top1_other_pronoun": 0.0,
+       "top1_correct": 0.7,
+       "prompt_loss_change": 0.020793139934539795,
+       "names_majority_flipped": 0,
+       "pair_flip_by_name": {
+        "Ben": 0.0,
+        "Jack": 0.0,
+        "Joe": 0.0,
+        "Billy": 0.0,
+        "Jim": 0.0
+       }
+      },
+      "swap": {
+       "score": -1.9556512832641602,
+       "pair_flip": 0.95,
+       "top1_other_pronoun": 0.7,
+       "top1_correct": 0.05,
+       "prompt_loss_change": 0.04865975305438042,
+       "names_majority_flipped": 5,
+       "pair_flip_by_name": {
+        "Ben": 1.0,
+        "Jack": 0.75,
+        "Joe": 1.0,
+        "Billy": 1.0,
+        "Jim": 1.0
+       }
+      },
+      "random": {
+       "score": 6.5324530601501465,
+       "pair_flip": 0.0,
+       "top1_other_pronoun": 0.0,
+       "top1_correct": 0.75,
+       "prompt_loss_change": 0.011337997391819954,
+       "names_majority_flipped": 0
+      },
+      "clean": {
+       "n": 20,
+       "score": 6.745912075042725,
+       "drop": 0.0,
+       "pair_preference_correct": 1.0,
+       "top1_correct": 0.75,
+       "top1_other_pronoun": 0.0,
+       "prompt_loss_change": 0.0
+      }
+     },
+     "noun_name": {
+      "n": 10,
+      "add": {
+       "score": 5.367239475250244,
+       "pair_flip": 0.0,
+       "top1_other_pronoun": 0.0,
+       "top1_correct": 1.0,
+       "prompt_loss_change": 0.03479499742388725,
+       "names_majority_flipped": 0,
+       "pair_flip_by_name": {
+        "Ben": 0.0,
+        "Jack": 0.0,
+        "Joe": 0.0,
+        "Billy": 0.0,
+        "Jim": 0.0
+       }
+      },
+      "swap": {
+       "score": 2.5473575592041016,
+       "pair_flip": 0.0,
+       "top1_other_pronoun": 0.0,
+       "top1_correct": 1.0,
+       "prompt_loss_change": 0.064719557762146,
+       "names_majority_flipped": 0,
+       "pair_flip_by_name": {
+        "Ben": 0.0,
+        "Jack": 0.0,
+        "Joe": 0.0,
+        "Billy": 0.0,
+        "Jim": 0.0
+       }
+      },
+      "random": {
+       "score": 7.804727077484131,
+       "pair_flip": 0.0,
+       "top1_other_pronoun": 0.0,
+       "top1_correct": 1.0,
+       "prompt_loss_change": 0.0009044306352734566,
+       "names_majority_flipped": 0
+      },
+      "clean": {
+       "n": 10,
+       "score": 7.856210231781006,
+       "drop": 0.0,
+       "pair_preference_correct": 1.0,
+       "top1_correct": 1.0,
+       "top1_other_pronoun": 0.0,
+       "prompt_loss_change": 0.0
+      }
+     }
+    },
+    {
+     "strength": 1.5,
+     "added_norm_name_pos": 0.6462138295173645,
+     "added_norm_later_pos": 0.00021200613991823047,
+     "name_only": {
+      "n": 20,
+      "add": {
+       "score": 0.039713334292173386,
+       "pair_flip": 0.4,
+       "top1_other_pronoun": 0.4,
+       "top1_correct": 0.15,
+       "prompt_loss_change": 0.029867887496948242,
+       "names_majority_flipped": 0,
+       "pair_flip_by_name": {
+        "Ben": 0.25,
+        "Jack": 0.5,
+        "Joe": 0.25,
+        "Billy": 0.5,
+        "Jim": 0.5
+       }
+      },
+      "swap": {
+       "score": -4.661414623260498,
+       "pair_flip": 1.0,
+       "top1_other_pronoun": 0.75,
+       "top1_correct": 0.0,
+       "prompt_loss_change": 0.06304023414850235,
+       "names_majority_flipped": 5,
+       "pair_flip_by_name": {
+        "Ben": 1.0,
+        "Jack": 1.0,
+        "Joe": 1.0,
+        "Billy": 1.0,
+        "Jim": 1.0
+       }
+      },
+      "random": {
+       "score": 6.761528015136719,
+       "pair_flip": 0.0,
+       "top1_other_pronoun": 0.0,
+       "top1_correct": 0.7325,
+       "prompt_loss_change": 0.005295503884553909,
+       "names_majority_flipped": 0
+      },
+      "clean": {
+       "n": 20,
+       "score": 6.745912075042725,
+       "drop": 0.0,
+       "pair_preference_correct": 1.0,
+       "top1_correct": 0.75,
+       "top1_other_pronoun": 0.0,
+       "prompt_loss_change": 0.0
+      }
+     },
+     "noun_name": {
+      "n": 10,
+      "add": {
+       "score": 3.8053321838378906,
+       "pair_flip": 0.0,
+       "top1_other_pronoun": 0.0,
+       "top1_correct": 1.0,
+       "prompt_loss_change": 0.052384138107299805,
+       "names_majority_flipped": 0,
+       "pair_flip_by_name": {
+        "Ben": 0.0,
+        "Jack": 0.0,
+        "Joe": 0.0,
+        "Billy": 0.0,
+        "Jim": 0.0
+       }
+      },
+      "swap": {
+       "score": 0.6656303405761719,
+       "pair_flip": 0.2,
+       "top1_other_pronoun": 0.2,
+       "top1_correct": 0.8,
+       "prompt_loss_change": 0.08356735855340958,
+       "names_majority_flipped": 0,
+       "pair_flip_by_name": {
+        "Ben": 0.0,
+        "Jack": 0.0,
+        "Joe": 0.0,
+        "Billy": 0.5,
+        "Jim": 0.5
+       }
+      },
+      "random": {
+       "score": 7.703421115875244,
+       "pair_flip": 0.0,
+       "top1_other_pronoun": 0.0,
+       "top1_correct": 1.0,
+       "prompt_loss_change": 0.006612835917621851,
+       "names_majority_flipped": 0
+      },
+      "clean": {
+       "n": 10,
+       "score": 7.856210231781006,
+       "drop": 0.0,
+       "pair_preference_correct": 1.0,
+       "top1_correct": 1.0,
+       "top1_other_pronoun": 0.0,
+       "prompt_loss_change": 0.0
+      }
+     }
+    },
+    {
+     "strength": 2,
+     "added_norm_name_pos": 0.8616184592247009,
+     "added_norm_later_pos": 0.0002826748532243073,
+     "name_only": {
+      "n": 20,
+      "add": {
+       "score": -1.9178794622421265,
+       "pair_flip": 1.0,
+       "top1_other_pronoun": 0.75,
+       "top1_correct": 0.0,
+       "prompt_loss_change": 0.040064312517642975,
+       "names_majority_flipped": 5,
+       "pair_flip_by_name": {
+        "Ben": 1.0,
+        "Jack": 1.0,
+        "Joe": 1.0,
+        "Billy": 1.0,
+        "Jim": 1.0
+       }
+      },
+      "swap": {
+       "score": -7.206717491149902,
+       "pair_flip": 1.0,
+       "top1_other_pronoun": 0.75,
+       "top1_correct": 0.0,
+       "prompt_loss_change": 0.07432087510824203,
+       "names_majority_flipped": 5,
+       "pair_flip_by_name": {
+        "Ben": 1.0,
+        "Jack": 1.0,
+        "Joe": 1.0,
+        "Billy": 1.0,
+        "Jim": 1.0
+       }
+      },
+      "random": {
+       "score": 6.341257572174072,
+       "pair_flip": 0.0,
+       "top1_other_pronoun": 0.0,
+       "top1_correct": 0.73,
+       "prompt_loss_change": 0.023243118077516556,
+       "names_majority_flipped": 0
+      },
+      "clean": {
+       "n": 20,
+       "score": 6.745912075042725,
+       "drop": 0.0,
+       "pair_preference_correct": 1.0,
+       "top1_correct": 0.75,
+       "top1_other_pronoun": 0.0,
+       "prompt_loss_change": 0.0
+      }
+     },
+     "noun_name": {
+      "n": 10,
+      "add": {
+       "score": 2.0599894523620605,
+       "pair_flip": 0.0,
+       "top1_other_pronoun": 0.0,
+       "top1_correct": 1.0,
+       "prompt_loss_change": 0.06969404220581055,
+       "names_majority_flipped": 0,
+       "pair_flip_by_name": {
+        "Ben": 0.0,
+        "Jack": 0.0,
+        "Joe": 0.0,
+        "Billy": 0.0,
+        "Jim": 0.0
+       }
+      },
+      "swap": {
+       "score": -1.270887017250061,
+       "pair_flip": 1.0,
+       "top1_other_pronoun": 1.0,
+       "top1_correct": 0.0,
+       "prompt_loss_change": 0.10064706951379776,
+       "names_majority_flipped": 5,
+       "pair_flip_by_name": {
+        "Ben": 1.0,
+        "Jack": 1.0,
+        "Joe": 1.0,
+        "Billy": 1.0,
+        "Jim": 1.0
+       }
+      },
+      "random": {
+       "score": 7.8758721351623535,
+       "pair_flip": 0.0,
+       "top1_other_pronoun": 0.0,
+       "top1_correct": 1.0,
+       "prompt_loss_change": 0.015074700117111206,
+       "names_majority_flipped": 0
+      },
+      "clean": {
+       "n": 10,
+       "score": 7.856210231781006,
+       "drop": 0.0,
+       "pair_preference_correct": 1.0,
+       "top1_correct": 1.0,
+       "top1_other_pronoun": 0.0,
+       "prompt_loss_change": 0.0
+      }
+     }
+    }
+   ],
+   "R3_passed": false
+  }
+ }
+}

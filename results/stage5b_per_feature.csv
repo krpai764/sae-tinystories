@@ -1,0 +1,251 @@
+item_id,set,index_in_list,feature,label,old_nonblind_clear,j1_top_fit,j1_random_fit,j2_top_fit,j2_random_fit,j1_clear,j2_clear,blind_strict_clear
+V000,real,32,236,' coming' in 'heard a noise coming from',False,20,1,20,1,False,False,False
+V001,real,49,1137,' rain' in 'started to rain',True,18,1,18,1,False,False,False
+V002,control,49,1137,' home' (back home / go home),False,20,1,20,1,False,False,False
+V003,real,15,578,"' feeling' after a comma ('walked home, feeling happy')",False,20,0,20,0,False,False,False
+V004,control,15,578,' hand',False,20,0,20,0,False,False,False
+V005,real,85,687,"Parental safety warnings (""don't go too close""); promotes 'dangerous'",False,20,0,18,0,False,False,False
+V006,control,13,1674,' wish',False,18,0,18,0,False,False,False
+V007,real,37,1479,' and' after a movement verb + place ('ran outside and'),True,20,4,20,5,False,False,False
+V008,real,95,479,' bit' in 'a (little) bit scared',False,16,0,16,0,False,False,False
+V009,real,88,1643,' more' in 'make it more fun/angry',False,16,0,6,0,False,False,False
+V010,real,186,2043,"' girl' in 'One day, a little girl'",False,20,0,18,0,False,False,False
+V011,control,16,1828,' hear',False,20,0,20,0,False,False,False
+V012,real,114,1933,' frustrated' / ' troubled',False,19,0,19,0,False,False,False
+V013,control,46,1408,"'Let' at the start of a quote (""Let's"")",False,20,0,20,0,False,False,False
+V014,real,171,1472,"Paragraph break after a short, sad/injury sentence sequence",False,17,1,18,1,False,False,False
+V015,real,132,485,' mixed' (mixing ingredients),False,20,0,20,0,False,False,False
+V016,real,66,338,' and' before the last item of a list of nouns ('cars and trains and dolls and'),False,19,0,19,0,False,False,False
+V017,real,105,793,' gir' (start of giraffe),False,18,0,18,0,False,False,False
+V018,real,6,1794,' called' in 'a little girl called <Name>',False,20,2,20,2,False,False,False
+V019,control,8,1541,Name-initial sub-token ' L' (Lila) / 'O'(w); mixed,False,17,0,17,0,False,False,False
+V020,real,94,106,'.' ending a 'he was so sad/disappointed' sentence,False,11,2,11,2,False,False,False
+V021,real,102,1959,' around' in 'looked around',False,20,0,20,0,False,False,False
+V022,real,142,1967,' worked' (worked hard),False,20,0,17,0,False,False,False
+V023,real,34,1211,"' mom' as companion ('with her mom', 'her mom and dad')",True,17,1,17,0,False,False,False
+V024,real,152,832,' room' in 'living room',False,20,0,20,0,False,False,False
+V025,real,160,902,' found' in 'happy that she had found',False,20,0,20,0,False,False,False
+V026,real,159,1384,"',' after 'One day'",True,20,1,20,1,False,False,False
+V027,real,195,144,' little' in 'there was a little boy/girl',True,20,5,20,5,False,False,False
+V028,real,25,719,' very' before a negative emotion ('very sad and scared'),False,12,0,12,0,False,False,False
+V029,real,42,476,' big' in 'gave X a big hug',True,20,1,20,1,False,False,False
+V030,real,45,397,"Sentence-initial 'She', often after 'smiled.' (weak theme)",False,19,1,19,1,False,False,False
+V031,control,38,426,' feel' in 'make you feel',False,13,2,13,2,False,False,False
+V032,control,30,1463,' brought',False,20,0,20,0,False,False,False
+V033,real,80,487,' dropped' (dropping something in fright),False,15,0,19,0,False,False,False
+V034,real,190,1711,"Dense (5.5%): rescue/fetch verbs (got, brought, used); weak",False,12,0,12,0,False,False,False
+V035,real,122,824,' fit' (fit in / fit through),False,20,0,20,0,False,False,False
+V036,real,87,1469,Adjective after 'It was' describing an object's state (open/hidden); mixed,False,11,0,17,0,False,False,False
+V037,real,12,137,"Mojibake byte of an opening curly quote after 'said,' (dataset encoding artefact)",False,20,2,20,3,False,False,False
+V038,control,20,1417,"Mixed (working, cat, tea, away)",False,9,0,9,0,False,False,False
+V039,real,188,593,' fun' in 'not as fun / looked fun',False,20,0,20,0,False,False,False
+V040,real,93,996,' long' in 'for a long time',False,20,1,20,1,False,False,False
+V041,real,164,834,Dense (5.5%): mixed; no theme,False,0,0,0,0,False,False,False
+V042,real,128,1446,' extra' in 'was extra careful' (lesson learned),False,8,0,8,0,False,False,False
+V043,control,37,1479,' spot' (a place),False,19,1,19,1,False,False,False
+V044,real,31,1141,' idea' in 'had an idea',True,20,0,20,0,False,False,False
+V045,real,172,638,'.' ending a short simple description sentence; weak,False,20,4,20,3,False,False,False
+V046,real,180,1876,"Opening quote after a narration sentence ('She gasped. ""Wow')",True,20,1,20,1,False,False,False
+V047,real,181,1046,' fly',False,20,0,20,0,False,False,False
+V048,real,118,1526,' bunny',False,20,1,20,1,False,False,False
+V049,real,46,1408,'John' as first token of a story,False,20,0,20,0,False,False,False
+V050,real,179,912,"Rare place/plant words and sub-tokens (oasis, creek, poppies); mixed",False,20,0,20,0,False,False,False
+V051,real,154,1342,' that' as a demonstrative object ('eat that berry'),False,20,0,20,0,False,False,False
+V052,real,137,1937,' swim',False,20,0,20,0,False,False,False
+V053,real,17,545,' mom' as recipient ('a surprise for mom'),True,11,0,10,0,False,False,False
+V054,real,14,828,' anything' in 'could do anything',False,18,0,18,0,False,False,False
+V055,real,166,1217,' in' after 'loved to play',False,20,0,17,0,False,False,False
+V056,real,21,2038,' part' in 'be part of the family/band',False,18,0,18,0,False,False,False
+V057,control,11,1470,' and' after laughing/emotion ('Mommy laughed and'),True,7,1,7,1,False,False,False
+V058,real,141,114,' wings',False,20,0,20,0,False,False,False
+V059,control,23,1008,'ite' completing kite / excite,False,19,0,19,0,False,False,False
+V060,real,174,367,' said' after 'smiled ... and' (warm reply follows),True,20,2,10,2,False,False,False
+V061,real,74,498,"Character name right after 'One day,'",False,20,1,20,1,False,False,False
+V062,real,138,1024,' looked' in 'X looked at Y',False,19,3,18,3,False,False,False
+V063,real,4,1806,'.' ending a sentence about having an idea/plan,True,18,0,17,0,False,False,False
+V064,real,127,1808,"Dense (6.9%): mixed (determined, calm, head); no theme",False,6,0,6,0,False,False,False
+V065,real,16,1828,' heart' in 'with a happy/heavy heart',False,7,0,7,0,False,False,False
+V066,real,196,324,' a' after 'X had' (describing what each child had),False,17,3,17,3,False,False,False
+V067,control,42,476,Mojibake byte of an opening curly quote,False,20,0,20,0,False,False,False
+V068,real,8,1541,' was' after 'He' in a character introduction ('named Tim. He was'),True,20,1,20,1,False,False,False
+V069,real,69,1798,' yes' in 'Her mom said yes',True,20,0,20,0,False,False,False
+V070,real,72,1271,' outside' in 'loved to play outside',False,20,0,20,0,False,False,False
+V071,control,22,2014,'Yes' at the start of a reply,False,20,0,20,0,False,False,False
+V072,real,97,1968,'apped' completing 'clapped',False,20,0,20,0,False,False,False
+V073,real,125,49,"' see' in 'They see a big ...' (present tense, park scenes)",False,19,0,19,0,False,False,False
+V074,real,36,1789,A character's name right after 'named' / 'name is',False,18,0,19,1,False,False,False
+V075,real,169,1752,' to' in 'X loved to ...' (character introduction),False,20,2,20,2,False,False,False
+V076,real,18,386,"' The' starting the 2nd sentence, referring back to a just-introduced noun",False,20,1,20,2,False,False,False
+V077,control,5,1852,' adventure',False,20,0,20,0,False,False,False
+V078,control,3,1812,' Every' in 'Every day/morning',False,20,0,20,0,False,False,False
+V079,real,43,1067,' share' (deciding to share),False,20,0,20,0,False,False,False
+V080,real,99,1235,' write' / ' wrote' (in a journal),False,12,0,11,0,False,False,False
+V081,real,70,155,' the' after 'looked at / checked',True,18,0,18,0,False,False,False
+V082,real,163,88,' day' in story-initial 'One day',True,20,1,20,1,False,False,False
+V083,real,79,619,Dashes / interruptions ('happened--the ball'); mixed,False,12,0,12,0,False,False,False
+V084,real,2,5,Sentence-initial 'She'/'He' after a sentence about a character's hobby,False,20,1,18,1,False,False,False
+V085,control,25,719,"'.""' closing a spoken sentence",False,20,5,20,5,False,False,False
+V086,control,0,1905,"Opening quote after 'says,' / 'asked his mom,'",False,16,3,16,3,False,False,False
+V087,real,82,1693,' time' in 'it was time to go home',False,20,3,20,3,False,False,False
+V088,real,48,1014,Story-initial capital 'M' (start of a name),False,20,1,20,1,False,False,False
+V089,real,65,1371,' reminded' (someone reminded someone that...),False,17,0,17,0,False,False,False
+V090,real,130,823,' practice' / ' practiced',False,20,0,20,0,False,False,False
+V091,real,126,813,'.' ending a mid-story sentence; weak theme,False,20,10,20,10,True,True,True
+V092,real,39,1338,' no' in 'Oh no',False,20,0,20,0,False,False,False
+V093,real,109,1766,"',' before a name/vocative in 'We love you, X'",False,19,3,19,6,False,False,False
+V094,real,165,702,"Role-play identity noun ('I am a scary dragon', 'bad dog')",False,19,0,14,0,False,False,False
+V095,control,31,1141,"' matter' / ' longer' in 'no matter', 'any longer'",False,17,0,17,0,False,False,False
+V096,real,157,1231,"' okay' in ""it's okay""",False,20,1,20,1,False,False,False
+V097,control,27,194,' late' in 'it was too late',False,16,0,16,0,False,False,False
+V098,real,68,179,' bell' / ' whistle' (sound-making objects),False,17,0,17,0,False,False,False
+V099,control,48,1014,' some' (get/have some),False,19,0,19,0,False,False,False
+V100,real,28,715,' play' a musical instrument,False,20,0,20,0,False,False,False
+V101,real,146,542,Character name opening a sentence after a bad event ('Lily saw everything'),False,20,1,20,2,False,False,False
+V102,real,113,680,' forever',False,20,0,20,0,False,False,False
+V103,real,54,474,' the' after 'went/ran to' (destination; promotes park/garden),False,20,1,20,1,False,False,False
+V104,real,147,15,"First sub-token of a story-initial name (Ab-by, Su-zie)",False,20,0,20,0,False,False,False
+V105,real,184,270,'.' after 'Mr'/'Mrs',False,20,0,20,0,False,False,False
+V106,real,51,653,' they' after sentence-initial 'When' ('When they got home'),False,18,0,18,0,False,False,False
+V107,real,183,78,' town',False,20,1,20,1,False,False,False
+V108,control,41,838,' go',False,20,0,20,0,False,False,False
+V109,real,115,167,' as' in 'laughed and smiled as they...',False,18,0,20,0,False,False,False
+V110,control,4,1806,' stick' (noun or verb),False,20,0,20,0,False,False,False
+V111,real,83,556,' Lily' after 'a little girl named',False,20,2,20,2,False,False,False
+V112,control,40,1705,' tell',False,20,0,20,0,False,False,False
+V113,real,76,1255,' the' inside quoted speech before a destination/object; vague,False,20,0,20,0,False,False,False
+V114,real,24,1599,' button' after 'pushed the',False,18,0,18,0,False,False,False
+V115,control,10,219,' likes' / ' money' (two unrelated tokens),False,20,0,20,0,False,False,False
+V116,real,145,897,Paragraph-initial 'But',False,20,2,20,2,False,False,False
+V117,control,7,294,"Mixed (seemed, patient, tiny)",False,19,0,19,0,False,False,False
+V118,real,86,171,' and' joining two character names as subject ('Tom and Mia nod'),False,20,1,20,1,False,False,False
+V119,real,182,1091,' remember' (remember this forever),False,20,0,20,0,False,False,False
+V120,real,103,766,' looking' in 'looking for',False,15,2,15,2,False,False,False
+V121,real,100,1596,"Dense (7.3%): perception/desire verbs after 'They/He' (see, want); weak",False,14,1,14,1,False,False,False
+V122,control,19,336,'-' inside hyphenated compounds,False,19,1,19,1,False,False,False
+V123,control,32,236,' bench',False,18,0,18,0,False,False,False
+V124,real,131,597,' big' in 'saw a big ...' (encounter),True,18,3,18,3,False,False,False
+V125,real,167,940,' what' in 'sorry for what she did',False,10,0,10,0,False,False,False
+V126,real,158,1857,' colors' in 'different colors and sizes',False,20,0,20,0,False,False,False
+V127,real,47,264,Adjective after 'saw a' for a newly noticed thing (mixed),False,18,1,16,1,False,False,False
+V128,real,197,1431,' standing' (someone standing nearby),False,20,0,19,0,False,False,False
+V129,real,193,839,Story-initial names 'Lu(cy)' / 'Harry',False,8,0,8,0,False,False,False
+V130,real,71,1038,' hard' in 'worked hard',False,20,0,20,0,False,False,False
+V131,real,135,1836,'.' ending a sentence followed by dialogue/new paragraph; weak,False,8,1,8,1,False,False,False
+V132,real,61,1946,Adjective after 'She had (a)' in a character introduction,False,20,0,19,0,False,False,False
+V133,real,35,978,' sunshine' in 'in the sunshine',False,18,0,18,0,False,False,False
+V134,control,33,1612,' just',False,20,0,20,0,False,False,False
+V135,real,177,1267,' climb' / ' climbed',False,20,1,20,1,False,False,False
+V136,real,140,1620,' and' joining two adjectives after 'It was brown and ...',True,10,1,10,0,False,False,False
+V137,real,3,1812,' instead' (choosing an alternative),False,20,0,20,0,False,False,False
+V138,real,91,690,' very' in 'a boy who was very ...' (story opening),False,20,0,20,0,False,False,False
+V139,control,6,1794,Sentence-initial ' We' in speech,False,20,1,20,1,False,False,False
+V140,real,26,441,' and' joining two adjectives ('old and shaky'),True,16,0,16,0,False,False,False
+V141,control,34,1211,' Ho' (start of Hoppy/Hopper),False,16,0,16,0,False,False,False
+V142,real,161,1512,' big' in 'there was a big ...' (story opening),False,20,0,20,0,False,False,False
+V143,real,1,592,"',' before the last item of a list ('a, b, c[,] and d')",True,14,0,14,0,False,False,False
+V144,real,139,1683,' to' in 'going to (do something)',False,15,1,15,1,False,False,False
+V145,real,81,1634,"'After' at the start of a paragraph ('After the game,')",False,20,3,20,3,False,False,False
+V146,real,106,1639,' things' in 'saw many things',False,17,0,17,0,False,False,False
+V147,control,29,44,' broken',False,20,0,20,0,False,False,False
+V148,real,149,1979,' y' (start of 'yummy'),False,19,1,19,1,False,False,False
+V149,real,9,1890,' nearby' ('to a nearby pond/tree'),False,20,0,20,0,False,False,False
+V150,real,123,926,' next' in 'The next day/morning',False,20,2,20,2,False,False,False
+V151,real,92,1531,' loved' after a character's name in the introduction,True,20,3,20,2,False,False,False
+V152,control,28,715,' Billy',False,20,0,20,0,False,False,False
+V153,real,185,1467,'-' inside compound words (ice-cream),False,20,2,20,2,False,False,False
+V154,real,101,1464,' tasted',False,18,0,18,0,False,False,False
+V155,real,112,870,Greeting call 'Hey' / 'Hello little ...',False,19,0,19,1,False,False,False
+V156,real,13,1674,"' new' in 'One day, X saw a new ...'",False,20,0,20,0,False,False,False
+V157,real,176,306,' was' in 'Once there was',True,20,3,20,3,False,False,False
+V158,real,33,1612,' excited',True,20,4,20,4,False,False,False
+V159,real,58,1680,' naughty' (and 'stupid'): misbehaviour adjectives,False,20,0,20,0,False,False,False
+V160,real,153,275,"Possessive in 'He is her friend' / ""Anna's sister"" (relationships)",False,16,9,6,2,True,False,False
+V161,control,14,828,' loved' after 'She' in a character introduction,False,10,1,10,1,False,False,False
+V162,control,43,1067,' though' in 'even though',False,18,0,18,0,False,False,False
+V163,real,10,219,' for' marking who/what something is for ('a cake for Ben'),True,20,2,20,2,False,False,False
+V164,real,156,877,' all' in 'was all ripped/alone' (intensifier),False,19,2,19,2,False,False,False
+V165,real,121,1487,' bite' in 'wanted to bite (us)' (threat),False,10,0,10,0,False,False,False
+V166,real,134,767,Noun after 'like' in comparisons ('like the older kids'); mixed,False,19,0,19,0,False,False,False
+V167,real,136,1481,' listened' (to mom/advice),False,14,0,20,0,False,False,False
+V168,real,84,442,' touch' / ' touched',False,20,0,20,0,False,False,False
+V169,real,120,1056,' something' after 'noticed',False,10,0,10,0,False,False,False
+V170,real,41,838,' TV' / ' television',False,20,0,20,0,False,False,False
+V171,control,21,2038,' rabbit',False,20,0,20,0,False,False,False
+V172,control,39,1338,'apped' completing flapped/clapped,False,20,0,19,0,False,False,False
+V173,real,189,1992,' blanket',False,20,0,20,0,False,False,False
+V174,real,38,426,"Dense, mixed tokens near the end of a story (7.4% of tokens)",False,20,4,20,3,False,False,False
+V175,control,9,1890,' brave',False,20,0,20,0,False,False,False
+V176,real,19,336,' grandma' after 'going to visit (their)',False,19,0,19,0,False,False,False
+V177,real,150,113,' go' in 'make the trains go fast',False,13,0,9,0,False,False,False
+V178,real,78,1663,Animal noun after 'The' as sentence subject (the cat/bee...),False,20,3,20,3,False,False,False
+V179,real,129,492,' real' (real vs pretend),False,20,0,20,0,False,False,False
+V180,real,175,1782,' modest' / ' normal' / ' ordinary',False,19,0,19,0,False,False,False
+V181,real,40,1705,' sne' (start of sneeze),False,18,0,18,0,False,False,False
+V182,real,5,1852,' day' in 'The next day',False,20,0,20,0,False,False,False
+V183,real,22,2014,"Animal noun introduced as protagonist in the opening sentence (fox, cat)",True,20,1,20,1,False,False,False
+V184,control,24,1599,'ite' completing kite / excite (duplicate of #23),False,20,0,20,0,False,False,False
+V185,real,107,1390,"Dense (7.6%): mixed tokens, no shared theme",False,0,0,0,0,False,False,False
+V186,real,0,1905,'.' ending a story's closing/moral sentence (e.g. 'happily ever after.'),True,20,2,20,2,False,False,False
+V187,real,30,1463,' cold' (weather),False,20,2,20,1,False,False,False
+V188,real,59,55,"' tried' (attempting something, often failing)",False,20,3,20,3,False,False,False
+V189,real,119,450,' while' in 'After a while',False,20,0,20,0,False,False,False
+V190,real,63,1491,Dense (5.6%): opening quotes / dialogue boundaries; mixed,False,12,1,12,1,False,False,False
+V191,real,75,617,' needed' in 'when he needed it',False,19,0,19,0,False,False,False
+V192,real,90,1488,' he'/' she' after 'Everywhere',False,16,0,16,0,False,False,False
+V193,control,2,5,' been' (had been / never been),False,20,0,20,0,False,False,False
+V194,real,55,1319,' pick' (pick out / pick up),False,20,0,20,0,False,False,False
+V195,real,57,419,' at' in 'at home/school/night',False,12,0,12,0,False,False,False
+V196,real,60,1810,' it' in 'picked it up',False,18,0,18,0,False,False,False
+V197,real,178,257,' today' in speech (can't do it today),False,20,0,20,0,False,False,False
+V198,real,104,237,Stray space token before a paragraph break (formatting),True,20,10,20,10,True,True,True
+V199,control,1,592,"Mixed tokens (moo, from, paws, dreaming); no theme",False,4,0,4,0,False,False,False
+V200,real,173,151,' on' in 'sit on the sofa/grass',False,20,0,20,0,False,False,False
+V201,real,108,1293,' together' in 'let's ... together',False,13,0,13,0,False,False,False
+V202,real,67,1591,' something'/' things' after 'build/create/design',False,13,0,13,0,False,False,False
+V203,real,7,294,"',' after 'X was sad' (predicts 'but')",True,19,1,19,1,False,False,False
+V204,real,89,938,' little' in paragraph-initial 'The little boy/girl',False,17,2,17,3,False,False,False
+V205,real,56,11,' felt' after 'suddenly' (sudden sensation),False,13,0,17,0,False,False,False
+V206,real,116,1748,' the'/' a' after 'put them on',False,19,0,18,0,False,False,False
+V207,real,50,333,' way' in 'went on his way',False,18,0,18,0,False,False,False
+V208,real,11,1470,"Small-animal nouns (squirrel, mouse)",True,20,4,20,4,False,False,False
+V209,real,144,1240,"' glad' in ""I'm glad you ...""",False,20,0,20,0,False,False,False
+V210,real,111,1919,' turned' (turned into / around / out),False,20,0,19,0,False,False,False
+V211,real,27,194,Sentence-initial 'Her' followed by mom/mommy,True,20,0,20,0,False,False,False
+V212,control,18,386,' felt' after a sensory action; mixed (5.5% dense),False,2,0,2,0,False,False,False
+V213,control,17,545,' name',False,20,0,20,0,False,False,False
+V214,real,77,1618,'Sam' as the first token of a story,False,20,0,20,0,False,False,False
+V215,real,53,1323,"Opening quote mark for a written word/title/sign ('wrote the word ""play')",True,19,0,19,0,False,False,False
+V216,real,117,1930,' mom'/' parents' as speaker replying to a request ('Her mom said yes'),False,19,1,19,1,False,False,False
+V217,real,20,1417,"' what' in ""didn't know what to do""",True,20,0,20,0,False,False,False
+V218,real,155,388,' music',False,20,0,20,0,False,False,False
+V219,real,52,1938,Dense (5%): 'it'/adjectives when describing or touching an animal; mixed,False,19,2,19,2,False,False,False
+V220,control,47,264,' castle',False,18,0,18,0,False,False,False
+V221,real,62,512,Sentence-initial 'She' for a parent/adult taking action,True,20,1,20,1,False,False,False
+V222,real,110,68,"',' after a sentence-initial 'Yes' / 'Wow' reply",True,20,1,20,1,False,False,False
+V223,real,192,997,' out' in 'jumped out',False,19,0,19,0,False,False,False
+V224,real,168,1214,' one' in 'But then one (of / day)',True,19,0,19,0,False,False,False
+V225,real,44,215,' was' followed by 'so' + emotion after a mishap ('He was so sad'),True,8,0,7,0,False,False,False
+V226,control,26,441,"Mixed (steel, gives, silly, wand)",False,12,0,12,0,False,False,False
+V227,real,98,67,' fast' in 'too fast',False,20,0,20,0,False,False,False
+V228,control,12,137,' man' (the old man),False,20,2,20,2,False,False,False
+V229,real,143,973,' her'/' his' in moral reflections ('her own unique qualities'); vague,False,19,1,19,1,False,False,False
+V230,real,23,1008,' might' in a warning ('you might fall'),False,20,0,20,0,False,False,False
+V231,real,96,862,' sang' / ' sing',False,20,0,20,0,False,False,False
+V232,real,191,1631,' forget' in 'would never forget',False,17,0,17,0,False,False,False
+V233,real,64,916,"Bees, hives and honey",False,15,0,15,0,False,False,False
+V234,control,45,397,' stop',False,20,0,20,0,False,False,False
+V235,real,187,350,' mom' after 'asked her',True,20,0,20,0,False,False,False
+V236,real,124,898,Inanimate object/plant as a speaking character ('The flower nodded'),False,20,0,20,0,False,False,False
+V237,real,194,1279,' the' after 'put',False,20,0,20,0,False,False,False
+V238,real,133,1638,' two' in 'the two (friends / of them)',False,20,0,20,0,False,False,False
+V239,real,198,1854,"' a' in exclamation 'Wow, a ...!'",False,20,0,20,0,False,False,False
+V240,real,148,1970,"Objects of household chores (dishes, laundry, weeds)",False,19,1,17,1,False,False,False
+V241,real,199,317,"' boss' (bossy, bossing around)",False,19,0,19,0,False,False,False
+V242,real,170,401,' hugged' / ' hug',False,20,3,20,3,False,False,False
+V243,real,29,44,' lived' in 'there lived a ...',False,20,1,20,1,False,False,False
+V244,real,73,704,' just' in 'But X just smiled/kept...' (ignoring a request),False,13,0,13,0,False,False,False
+V245,real,162,1040,'.'/'!' right before a closing (mojibake) quote,False,6,0,6,0,False,False,False
+V246,real,151,1158,'Once' as the first token of a story,True,20,8,20,8,True,True,True
+V247,control,35,978,' hold',False,20,0,20,0,False,False,False
+V248,control,36,1789,"Mixed ('.', calm, clown, decided)",False,13,1,13,1,False,False,False
+V249,control,44,215,'.' ending a mid-paragraph sentence (dense),False,15,8,14,8,False,False,False

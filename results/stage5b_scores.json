@@ -1,0 +1,76 @@
+{
+ "verdicts": {
+  "n_items": 250,
+  "n_invalid": 0,
+  "real": {
+   "n": 200,
+   "strict_clear": 3,
+   "share": 0.015,
+   "clear_by_either_judge": 4,
+   "j1_clear": 4,
+   "j2_clear": 3,
+   "mean_top_fit_of_20": 17.805,
+   "mean_random_fit_of_10": 0.8125,
+   "old_nonblind_clear": 37,
+   "old_clear_confirmed_blind": 2
+  },
+  "control": {
+   "n": 50,
+   "strict_clear": 0,
+   "share": 0.0,
+   "clear_by_either_judge": 0,
+   "j1_clear": 0,
+   "j2_clear": 0,
+   "mean_top_fit_of_20": 17.46,
+   "mean_random_fit_of_10": 0.54,
+   "old_nonblind_clear": 1,
+   "old_clear_confirmed_blind": 0
+  },
+  "fisher_one_sided_p": 0.5104547221142635,
+  "supported": false,
+  "judge_agreement_on_clear": 0.996,
+  "judge_corr_random_fit": 0.9410487419937408,
+  "judge_mean_abs_diff_random_fit": 0.092
+ },
+ "blind_test_fresh_text": {
+  "n_invalid": 0,
+  "real_50": {
+   "n": 50,
+   "mean_accuracy": 0.8160000000000001,
+   "n_5of5": 17,
+   "n_at_or_below_3of5": 12
+  },
+  "control_50": {
+   "n": 50,
+   "mean_accuracy": 0.5320000000000001,
+   "n_5of5": 2,
+   "n_at_or_below_3of5": 44,
+   "p_vs_chance": 0.07453
+  },
+  "difference": 0.2839999999999999,
+  "permutation_p_one_sided": 0.0,
+  "supported": true,
+  "per_subagent": {
+   "puzzles_00": {
+    "real": 0.8,
+    "control": 0.5714285714285714
+   },
+   "puzzles_01": {
+    "real": 0.8200000000000001,
+    "control": 0.5066666666666667
+   },
+   "puzzles_02": {
+    "real": 0.8833333333333333,
+    "control": 0.5230769230769231
+   },
+   "puzzles_03": {
+    "real": 0.7764705882352941,
+    "control": 0.525
+   }
+  },
+  "original_test": {
+   "real_first_50": 0.8,
+   "control_50_on_its_training_text": 0.5640000000000001
+  }
+ }
+}
