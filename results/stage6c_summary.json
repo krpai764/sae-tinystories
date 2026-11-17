@@ -1,0 +1,1473 @@
+{
+ "fluent_threshold_ppl": 7.807538127899169,
+ "unsteered_ppl_p95": 3.9037690639495843,
+ "unsteered_ppl_median": 2.451082706451416,
+ "n_unsteered_samples": 140,
+ "n_prompts": 10,
+ "n_random_directions": 3,
+ "multipliers": [
+  0.1,
+  0.2,
+  0.35,
+  0.5,
+  0.75,
+  1.0
+ ],
+ "features": [
+  {
+   "feature": 144,
+   "group": "main_clear",
+   "label": "' little' in 'there was a little boy/girl'",
+   "blind": 5,
+   "strict_clear_stage5": true,
+   "label_words": [
+    "boy",
+    "girl",
+    "little"
+   ],
+   "median_act": 6.037403106689453,
+   "unsteered_hits_mean": 0.5,
+   "by_k": {
+    "0.1": {
+     "vector_norm_model_units": 0.2514171123504639,
+     "feature_hits_mean": 0.9,
+     "random_hits_mean": 0.3333333333333333,
+     "prompts_feature_beats_random_mean": 4,
+     "feature_ppl_median": 2.7414464950561523,
+     "random_ppl_median": 2.2618640661239624,
+     "random_fluent": true,
+     "fluent": true,
+     "on_label": false,
+     "success": false
+    },
+    "0.2": {
+     "vector_norm_model_units": 0.5028342247009278,
+     "feature_hits_mean": 0.8,
+     "random_hits_mean": 0.6,
+     "prompts_feature_beats_random_mean": 4,
+     "feature_ppl_median": 3.199919819831848,
+     "random_ppl_median": 3.12105393409729,
+     "random_fluent": true,
+     "fluent": true,
+     "on_label": false,
+     "success": false
+    },
+    "0.35": {
+     "vector_norm_model_units": 0.8799598932266235,
+     "feature_hits_mean": 0.3,
+     "random_hits_mean": 0.6,
+     "prompts_feature_beats_random_mean": 1,
+     "feature_ppl_median": 5.931836843490601,
+     "random_ppl_median": 4.906489133834839,
+     "random_fluent": true,
+     "fluent": true,
+     "on_label": false,
+     "success": false
+    },
+    "0.5": {
+     "vector_norm_model_units": 1.2570855617523193,
+     "feature_hits_mean": 0.5,
+     "random_hits_mean": 0.16666666666666666,
+     "prompts_feature_beats_random_mean": 3,
+     "feature_ppl_median": 10.729693412780762,
+     "random_ppl_median": 9.956554889678955,
+     "random_fluent": false,
+     "fluent": false,
+     "on_label": false,
+     "success": false
+    },
+    "0.75": {
+     "vector_norm_model_units": 1.885628342628479,
+     "feature_hits_mean": 2.1,
+     "random_hits_mean": 0.16666666666666666,
+     "prompts_feature_beats_random_mean": 6,
+     "feature_ppl_median": 61.56615447998047,
+     "random_ppl_median": 61.23540496826172,
+     "random_fluent": false,
+     "fluent": false,
+     "on_label": false,
+     "success": false
+    },
+    "1.0": {
+     "vector_norm_model_units": 2.5141711235046387,
+     "feature_hits_mean": 37.0,
+     "random_hits_mean": 0.03333333333333333,
+     "prompts_feature_beats_random_mean": 10,
+     "feature_ppl_median": 42.83967399597168,
+     "random_ppl_median": 209.8067626953125,
+     "random_fluent": false,
+     "fluent": false,
+     "on_label": true,
+     "success": false
+    }
+   },
+   "steers": false,
+   "success_strengths": [],
+   "on_label_strengths": [
+    1.0
+   ],
+   "fluent_strengths": [
+    0.1,
+    0.2,
+    0.35
+   ],
+   "steers_under_v2_cutoff": false
+  },
+  {
+   "feature": 597,
+   "group": "main_clear",
+   "label": "' big' in 'saw a big ...' (encounter)",
+   "blind": 5,
+   "strict_clear_stage5": true,
+   "label_words": [
+    "big",
+    "saw"
+   ],
+   "median_act": 1.5813400745391846,
+   "unsteered_hits_mean": 1.3,
+   "by_k": {
+    "0.1": {
+     "vector_norm_model_units": 0.2514171123504639,
+     "feature_hits_mean": 1.4,
+     "random_hits_mean": 1.6333333333333333,
+     "prompts_feature_beats_random_mean": 2,
+     "feature_ppl_median": 2.768578052520752,
+     "random_ppl_median": 2.48799729347229,
+     "random_fluent": true,
+     "fluent": true,
+     "on_label": false,
+     "success": false
+    },
+    "0.2": {
+     "vector_norm_model_units": 0.5028342247009278,
+     "feature_hits_mean": 1.4,
+     "random_hits_mean": 1.3333333333333333,
+     "prompts_feature_beats_random_mean": 6,
+     "feature_ppl_median": 2.9136340618133545,
+     "random_ppl_median": 3.0990962982177734,
+     "random_fluent": true,
+     "fluent": true,
+     "on_label": false,
+     "success": false
+    },
+    "0.35": {
+     "vector_norm_model_units": 0.8799598932266235,
+     "feature_hits_mean": 1.5,
+     "random_hits_mean": 1.2333333333333334,
+     "prompts_feature_beats_random_mean": 6,
+     "feature_ppl_median": 5.77684760093689,
+     "random_ppl_median": 4.480326890945435,
+     "random_fluent": true,
+     "fluent": true,
+     "on_label": false,
+     "success": false
+    },
+    "0.5": {
+     "vector_norm_model_units": 1.2570855617523193,
+     "feature_hits_mean": 0.5,
+     "random_hits_mean": 0.8,
+     "prompts_feature_beats_random_mean": 4,
+     "feature_ppl_median": 16.28169536590576,
+     "random_ppl_median": 8.69310998916626,
+     "random_fluent": false,
+     "fluent": false,
+     "on_label": false,
+     "success": false
+    },
+    "0.75": {
+     "vector_norm_model_units": 1.885628342628479,
+     "feature_hits_mean": 0.5,
+     "random_hits_mean": 0.9333333333333333,
+     "prompts_feature_beats_random_mean": 3,
+     "feature_ppl_median": 211.34681701660156,
+     "random_ppl_median": 46.55536651611328,
+     "random_fluent": false,
+     "fluent": false,
+     "on_label": false,
+     "success": false
+    },
+    "1.0": {
+     "vector_norm_model_units": 2.5141711235046387,
+     "feature_hits_mean": 0.3,
+     "random_hits_mean": 0.7333333333333333,
+     "prompts_feature_beats_random_mean": 2,
+     "feature_ppl_median": 960.3532104492188,
+     "random_ppl_median": 143.54893493652344,
+     "random_fluent": false,
+     "fluent": false,
+     "on_label": false,
+     "success": false
+    }
+   },
+   "steers": false,
+   "success_strengths": [],
+   "on_label_strengths": [],
+   "fluent_strengths": [
+    0.1,
+    0.2,
+    0.35
+   ],
+   "steers_under_v2_cutoff": false
+  },
+  {
+   "feature": 1211,
+   "group": "main_clear",
+   "label": "' mom' as companion ('with her mom', 'her mom and dad')",
+   "blind": 5,
+   "strict_clear_stage5": true,
+   "label_words": [
+    "dad",
+    "mom",
+    "mommy",
+    "mother",
+    "mum"
+   ],
+   "median_act": 1.189060926437378,
+   "unsteered_hits_mean": 0.2,
+   "by_k": {
+    "0.1": {
+     "vector_norm_model_units": 0.2514171123504639,
+     "feature_hits_mean": 0.7,
+     "random_hits_mean": 0.43333333333333335,
+     "prompts_feature_beats_random_mean": 3,
+     "feature_ppl_median": 2.6536364555358887,
+     "random_ppl_median": 2.4329463243484497,
+     "random_fluent": true,
+     "fluent": true,
+     "on_label": false,
+     "success": false
+    },
+    "0.2": {
+     "vector_norm_model_units": 0.5028342247009278,
+     "feature_hits_mean": 0.6,
+     "random_hits_mean": 0.13333333333333333,
+     "prompts_feature_beats_random_mean": 4,
+     "feature_ppl_median": 3.5541231632232666,
+     "random_ppl_median": 2.722057342529297,
+     "random_fluent": true,
+     "fluent": true,
+     "on_label": false,
+     "success": false
+    },
+    "0.35": {
+     "vector_norm_model_units": 0.8799598932266235,
+     "feature_hits_mean": 0.7,
+     "random_hits_mean": 0.3,
+     "prompts_feature_beats_random_mean": 5,
+     "feature_ppl_median": 5.194605112075806,
+     "random_ppl_median": 4.526796340942383,
+     "random_fluent": true,
+     "fluent": true,
+     "on_label": false,
+     "success": false
+    },
+    "0.5": {
+     "vector_norm_model_units": 1.2570855617523193,
+     "feature_hits_mean": 0.5,
+     "random_hits_mean": 0.13333333333333333,
+     "prompts_feature_beats_random_mean": 4,
+     "feature_ppl_median": 11.502485275268555,
+     "random_ppl_median": 10.74567985534668,
+     "random_fluent": false,
+     "fluent": false,
+     "on_label": false,
+     "success": false
+    },
+    "0.75": {
+     "vector_norm_model_units": 1.885628342628479,
+     "feature_hits_mean": 0.0,
+     "random_hits_mean": 0.1,
+     "prompts_feature_beats_random_mean": 0,
+     "feature_ppl_median": 427.10948181152344,
+     "random_ppl_median": 46.91381645202637,
+     "random_fluent": false,
+     "fluent": false,
+     "on_label": false,
+     "success": false
+    },
+    "1.0": {
+     "vector_norm_model_units": 2.5141711235046387,
+     "feature_hits_mean": 0.0,
+     "random_hits_mean": 0.0,
+     "prompts_feature_beats_random_mean": 0,
+     "feature_ppl_median": 877.83056640625,
+     "random_ppl_median": 294.55702209472656,
+     "random_fluent": false,
+     "fluent": false,
+     "on_label": false,
+     "success": false
+    }
+   },
+   "steers": false,
+   "success_strengths": [],
+   "on_label_strengths": [],
+   "fluent_strengths": [
+    0.1,
+    0.2,
+    0.35
+   ],
+   "steers_under_v2_cutoff": false
+  },
+  {
+   "feature": 2014,
+   "group": "main_clear",
+   "label": "Animal noun introduced as protagonist in the opening sentence (fox, cat)",
+   "blind": 5,
+   "strict_clear_stage5": true,
+   "label_words": [
+    "bear",
+    "bird",
+    "bunny",
+    "cat",
+    "cow",
+    "dog",
+    "duck",
+    "elephant",
+    "fish",
+    "fox",
+    "frog",
+    "horse",
+    "kitten",
+    "lion",
+    "monkey",
+    "mouse",
+    "owl",
+    "pig",
+    "puppy",
+    "rabbit",
+    "squirrel",
+    "turtle"
+   ],
+   "median_act": 0.5103473663330078,
+   "unsteered_hits_mean": 1.3,
+   "by_k": {
+    "0.1": {
+     "vector_norm_model_units": 0.2514171123504639,
+     "feature_hits_mean": 2.0,
+     "random_hits_mean": 1.2666666666666666,
+     "prompts_feature_beats_random_mean": 4,
+     "feature_ppl_median": 2.758219599723816,
+     "random_ppl_median": 2.7661584615707397,
+     "random_fluent": true,
+     "fluent": true,
+     "on_label": false,
+     "success": false
+    },
+    "0.2": {
+     "vector_norm_model_units": 0.5028342247009278,
+     "feature_hits_mean": 3.5,
+     "random_hits_mean": 1.0333333333333334,
+     "prompts_feature_beats_random_mean": 5,
+     "feature_ppl_median": 2.959930181503296,
+     "random_ppl_median": 3.1633840799331665,
+     "random_fluent": true,
+     "fluent": true,
+     "on_label": false,
+     "success": false
+    },
+    "0.35": {
+     "vector_norm_model_units": 0.8799598932266235,
+     "feature_hits_mean": 1.4,
+     "random_hits_mean": 0.4666666666666667,
+     "prompts_feature_beats_random_mean": 5,
+     "feature_ppl_median": 5.103801965713501,
+     "random_ppl_median": 4.768141984939575,
+     "random_fluent": true,
+     "fluent": true,
+     "on_label": false,
+     "success": false
+    },
+    "0.5": {
+     "vector_norm_model_units": 1.2570855617523193,
+     "feature_hits_mean": 2.6,
+     "random_hits_mean": 0.5,
+     "prompts_feature_beats_random_mean": 7,
+     "feature_ppl_median": 7.610044717788696,
+     "random_ppl_median": 9.804037094116211,
+     "random_fluent": false,
+     "fluent": true,
+     "on_label": false,
+     "success": false
+    },
+    "0.75": {
+     "vector_norm_model_units": 1.885628342628479,
+     "feature_hits_mean": 2.2,
+     "random_hits_mean": 0.26666666666666666,
+     "prompts_feature_beats_random_mean": 8,
+     "feature_ppl_median": 36.96055793762207,
+     "random_ppl_median": 41.6402473449707,
+     "random_fluent": false,
+     "fluent": false,
+     "on_label": false,
+     "success": false
+    },
+    "1.0": {
+     "vector_norm_model_units": 2.5141711235046387,
+     "feature_hits_mean": 1.6,
+     "random_hits_mean": 0.03333333333333333,
+     "prompts_feature_beats_random_mean": 6,
+     "feature_ppl_median": 90.06256103515625,
+     "random_ppl_median": 249.07362365722656,
+     "random_fluent": false,
+     "fluent": false,
+     "on_label": false,
+     "success": false
+    }
+   },
+   "steers": false,
+   "success_strengths": [],
+   "on_label_strengths": [],
+   "fluent_strengths": [
+    0.1,
+    0.2,
+    0.35,
+    0.5
+   ],
+   "steers_under_v2_cutoff": false
+  },
+  {
+   "feature": 215,
+   "group": "main_clear",
+   "label": "' was' followed by 'so' + emotion after a mishap ('He was so sad')",
+   "blind": 5,
+   "strict_clear_stage5": true,
+   "label_words": [
+    "angry",
+    "mad",
+    "sad",
+    "scared",
+    "so",
+    "upset",
+    "worried"
+   ],
+   "median_act": 0.8811653852462769,
+   "unsteered_hits_mean": 0.6,
+   "by_k": {
+    "0.1": {
+     "vector_norm_model_units": 0.2514171123504639,
+     "feature_hits_mean": 1.0,
+     "random_hits_mean": 0.4666666666666667,
+     "prompts_feature_beats_random_mean": 6,
+     "feature_ppl_median": 2.4126553535461426,
+     "random_ppl_median": 2.735778331756592,
+     "random_fluent": true,
+     "fluent": true,
+     "on_label": false,
+     "success": false
+    },
+    "0.2": {
+     "vector_norm_model_units": 0.5028342247009278,
+     "feature_hits_mean": 0.8,
+     "random_hits_mean": 0.6,
+     "prompts_feature_beats_random_mean": 6,
+     "feature_ppl_median": 2.9040690660476685,
+     "random_ppl_median": 2.9130141735076904,
+     "random_fluent": true,
+     "fluent": true,
+     "on_label": false,
+     "success": false
+    },
+    "0.35": {
+     "vector_norm_model_units": 0.8799598932266235,
+     "feature_hits_mean": 2.6,
+     "random_hits_mean": 0.6333333333333333,
+     "prompts_feature_beats_random_mean": 7,
+     "feature_ppl_median": 8.923437595367432,
+     "random_ppl_median": 4.941132068634033,
+     "random_fluent": true,
+     "fluent": false,
+     "on_label": false,
+     "success": false
+    },
+    "0.5": {
+     "vector_norm_model_units": 1.2570855617523193,
+     "feature_hits_mean": 2.7,
+     "random_hits_mean": 0.4666666666666667,
+     "prompts_feature_beats_random_mean": 8,
+     "feature_ppl_median": 67.74142837524414,
+     "random_ppl_median": 9.266629219055176,
+     "random_fluent": false,
+     "fluent": false,
+     "on_label": false,
+     "success": false
+    },
+    "0.75": {
+     "vector_norm_model_units": 1.885628342628479,
+     "feature_hits_mean": 9.7,
+     "random_hits_mean": 0.5333333333333333,
+     "prompts_feature_beats_random_mean": 10,
+     "feature_ppl_median": 752.1105651855469,
+     "random_ppl_median": 46.90224075317383,
+     "random_fluent": false,
+     "fluent": false,
+     "on_label": true,
+     "success": false
+    },
+    "1.0": {
+     "vector_norm_model_units": 2.5141711235046387,
+     "feature_hits_mean": 13.6,
+     "random_hits_mean": 0.3,
+     "prompts_feature_beats_random_mean": 9,
+     "feature_ppl_median": 3177.23583984375,
+     "random_ppl_median": 234.36279296875,
+     "random_fluent": false,
+     "fluent": false,
+     "on_label": true,
+     "success": false
+    }
+   },
+   "steers": false,
+   "success_strengths": [],
+   "on_label_strengths": [
+    0.75,
+    1.0
+   ],
+   "fluent_strengths": [
+    0.1,
+    0.2
+   ],
+   "steers_under_v2_cutoff": false
+  },
+  {
+   "feature": 1905,
+   "group": "main_clear",
+   "label": "'.' ending a story's closing/moral sentence (e.g. 'happily ever after.')",
+   "blind": 5,
+   "strict_clear_stage5": true,
+   "label_words": [
+    "after",
+    "end",
+    "ever",
+    "happily",
+    "learned",
+    "lesson",
+    "moral"
+   ],
+   "median_act": 1.080044150352478,
+   "unsteered_hits_mean": 0.0,
+   "by_k": {
+    "0.1": {
+     "vector_norm_model_units": 0.2514171123504639,
+     "feature_hits_mean": 0.0,
+     "random_hits_mean": 0.03333333333333333,
+     "prompts_feature_beats_random_mean": 0,
+     "feature_ppl_median": 2.5880749225616455,
+     "random_ppl_median": 2.4766221046447754,
+     "random_fluent": true,
+     "fluent": true,
+     "on_label": false,
+     "success": false
+    },
+    "0.2": {
+     "vector_norm_model_units": 0.5028342247009278,
+     "feature_hits_mean": 0.0,
+     "random_hits_mean": 0.0,
+     "prompts_feature_beats_random_mean": 0,
+     "feature_ppl_median": 2.7501505613327026,
+     "random_ppl_median": 2.9474339485168457,
+     "random_fluent": true,
+     "fluent": true,
+     "on_label": false,
+     "success": false
+    },
+    "0.35": {
+     "vector_norm_model_units": 0.8799598932266235,
+     "feature_hits_mean": 0.1,
+     "random_hits_mean": 0.03333333333333333,
+     "prompts_feature_beats_random_mean": 1,
+     "feature_ppl_median": 4.712841510772705,
+     "random_ppl_median": 4.693508148193359,
+     "random_fluent": true,
+     "fluent": true,
+     "on_label": false,
+     "success": false
+    },
+    "0.5": {
+     "vector_norm_model_units": 1.2570855617523193,
+     "feature_hits_mean": 0.0,
+     "random_hits_mean": 0.03333333333333333,
+     "prompts_feature_beats_random_mean": 0,
+     "feature_ppl_median": 7.485522031784058,
+     "random_ppl_median": 9.209418296813965,
+     "random_fluent": false,
+     "fluent": true,
+     "on_label": false,
+     "success": false
+    },
+    "0.75": {
+     "vector_norm_model_units": 1.885628342628479,
+     "feature_hits_mean": 0.0,
+     "random_hits_mean": 0.1,
+     "prompts_feature_beats_random_mean": 0,
+     "feature_ppl_median": 154.5924835205078,
+     "random_ppl_median": 68.07634353637695,
+     "random_fluent": false,
+     "fluent": false,
+     "on_label": false,
+     "success": false
+    },
+    "1.0": {
+     "vector_norm_model_units": 2.5141711235046387,
+     "feature_hits_mean": 0.0,
+     "random_hits_mean": 0.06666666666666667,
+     "prompts_feature_beats_random_mean": 0,
+     "feature_ppl_median": 10773.7685546875,
+     "random_ppl_median": 346.9680633544922,
+     "random_fluent": false,
+     "fluent": false,
+     "on_label": false,
+     "success": false
+    }
+   },
+   "steers": false,
+   "success_strengths": [],
+   "on_label_strengths": [],
+   "fluent_strengths": [
+    0.1,
+    0.2,
+    0.35,
+    0.5
+   ],
+   "steers_under_v2_cutoff": false
+  },
+  {
+   "feature": 1693,
+   "group": "main_unclear",
+   "label": "' time' in 'it was time to go home'",
+   "blind": 1,
+   "strict_clear_stage5": false,
+   "label_words": [
+    "home",
+    "time"
+   ],
+   "median_act": 0.37307387590408325,
+   "unsteered_hits_mean": 0.0,
+   "by_k": {
+    "0.1": {
+     "vector_norm_model_units": 0.2514171123504639,
+     "feature_hits_mean": 0.2,
+     "random_hits_mean": 0.16666666666666666,
+     "prompts_feature_beats_random_mean": 1,
+     "feature_ppl_median": 2.4572314023971558,
+     "random_ppl_median": 2.7277196645736694,
+     "random_fluent": true,
+     "fluent": true,
+     "on_label": false,
+     "success": false
+    },
+    "0.2": {
+     "vector_norm_model_units": 0.5028342247009278,
+     "feature_hits_mean": 0.1,
+     "random_hits_mean": 0.1,
+     "prompts_feature_beats_random_mean": 1,
+     "feature_ppl_median": 2.633568525314331,
+     "random_ppl_median": 2.663559675216675,
+     "random_fluent": true,
+     "fluent": true,
+     "on_label": false,
+     "success": false
+    },
+    "0.35": {
+     "vector_norm_model_units": 0.8799598932266235,
+     "feature_hits_mean": 0.4,
+     "random_hits_mean": 0.1,
+     "prompts_feature_beats_random_mean": 3,
+     "feature_ppl_median": 4.943989276885986,
+     "random_ppl_median": 4.070566654205322,
+     "random_fluent": true,
+     "fluent": true,
+     "on_label": false,
+     "success": false
+    },
+    "0.5": {
+     "vector_norm_model_units": 1.2570855617523193,
+     "feature_hits_mean": 0.1,
+     "random_hits_mean": 0.2,
+     "prompts_feature_beats_random_mean": 1,
+     "feature_ppl_median": 7.921934604644775,
+     "random_ppl_median": 7.5088183879852295,
+     "random_fluent": true,
+     "fluent": false,
+     "on_label": false,
+     "success": false
+    },
+    "0.75": {
+     "vector_norm_model_units": 1.885628342628479,
+     "feature_hits_mean": 0.2,
+     "random_hits_mean": 0.16666666666666666,
+     "prompts_feature_beats_random_mean": 1,
+     "feature_ppl_median": 52.21633720397949,
+     "random_ppl_median": 39.22955894470215,
+     "random_fluent": false,
+     "fluent": false,
+     "on_label": false,
+     "success": false
+    },
+    "1.0": {
+     "vector_norm_model_units": 2.5141711235046387,
+     "feature_hits_mean": 0.0,
+     "random_hits_mean": 0.16666666666666666,
+     "prompts_feature_beats_random_mean": 0,
+     "feature_ppl_median": 1374.3441772460938,
+     "random_ppl_median": 385.6416473388672,
+     "random_fluent": false,
+     "fluent": false,
+     "on_label": false,
+     "success": false
+    }
+   },
+   "steers": false,
+   "success_strengths": [],
+   "on_label_strengths": [],
+   "fluent_strengths": [
+    0.1,
+    0.2,
+    0.35
+   ],
+   "steers_under_v2_cutoff": false
+  },
+  {
+   "feature": 978,
+   "group": "main_unclear",
+   "label": "' sunshine' in 'in the sunshine'",
+   "blind": 2,
+   "strict_clear_stage5": false,
+   "label_words": [
+    "sun",
+    "sunny",
+    "sunshine"
+   ],
+   "median_act": 0.1949056088924408,
+   "unsteered_hits_mean": 0.1,
+   "by_k": {
+    "0.1": {
+     "vector_norm_model_units": 0.2514171123504639,
+     "feature_hits_mean": 0.4,
+     "random_hits_mean": 0.16666666666666666,
+     "prompts_feature_beats_random_mean": 1,
+     "feature_ppl_median": 3.1449657678604126,
+     "random_ppl_median": 2.6092642545700073,
+     "random_fluent": true,
+     "fluent": true,
+     "on_label": false,
+     "success": false
+    },
+    "0.2": {
+     "vector_norm_model_units": 0.5028342247009278,
+     "feature_hits_mean": 0.1,
+     "random_hits_mean": 0.13333333333333333,
+     "prompts_feature_beats_random_mean": 1,
+     "feature_ppl_median": 2.1071563959121704,
+     "random_ppl_median": 2.9578641653060913,
+     "random_fluent": true,
+     "fluent": true,
+     "on_label": false,
+     "success": false
+    },
+    "0.35": {
+     "vector_norm_model_units": 0.8799598932266235,
+     "feature_hits_mean": 0.3,
+     "random_hits_mean": 0.1,
+     "prompts_feature_beats_random_mean": 3,
+     "feature_ppl_median": 3.641342282295227,
+     "random_ppl_median": 4.420598983764648,
+     "random_fluent": true,
+     "fluent": true,
+     "on_label": false,
+     "success": false
+    },
+    "0.5": {
+     "vector_norm_model_units": 1.2570855617523193,
+     "feature_hits_mean": 1.2,
+     "random_hits_mean": 0.2,
+     "prompts_feature_beats_random_mean": 7,
+     "feature_ppl_median": 7.940833568572998,
+     "random_ppl_median": 9.613004684448242,
+     "random_fluent": false,
+     "fluent": false,
+     "on_label": false,
+     "success": false
+    },
+    "0.75": {
+     "vector_norm_model_units": 1.885628342628479,
+     "feature_hits_mean": 3.2,
+     "random_hits_mean": 0.0,
+     "prompts_feature_beats_random_mean": 9,
+     "feature_ppl_median": 30.495631217956543,
+     "random_ppl_median": 50.705467224121094,
+     "random_fluent": false,
+     "fluent": false,
+     "on_label": true,
+     "success": false
+    },
+    "1.0": {
+     "vector_norm_model_units": 2.5141711235046387,
+     "feature_hits_mean": 6.5,
+     "random_hits_mean": 0.06666666666666667,
+     "prompts_feature_beats_random_mean": 10,
+     "feature_ppl_median": 104.8184928894043,
+     "random_ppl_median": 325.52569580078125,
+     "random_fluent": false,
+     "fluent": false,
+     "on_label": true,
+     "success": false
+    }
+   },
+   "steers": false,
+   "success_strengths": [],
+   "on_label_strengths": [
+    0.75,
+    1.0
+   ],
+   "fluent_strengths": [
+    0.1,
+    0.2,
+    0.35
+   ],
+   "steers_under_v2_cutoff": false
+  },
+  {
+   "feature": 1137,
+   "group": "topic",
+   "label": "' rain' in 'started to rain'",
+   "blind": 3,
+   "strict_clear_stage5": true,
+   "label_words": [
+    "rain",
+    "raindrops",
+    "rained",
+    "raining",
+    "rainy"
+   ],
+   "median_act": 0.29635801911354065,
+   "unsteered_hits_mean": 0.0,
+   "by_k": {
+    "0.1": {
+     "vector_norm_model_units": 0.2514171123504639,
+     "feature_hits_mean": 0.0,
+     "random_hits_mean": 0.0,
+     "prompts_feature_beats_random_mean": 0,
+     "feature_ppl_median": 2.061354398727417,
+     "random_ppl_median": 2.6068501472473145,
+     "random_fluent": true,
+     "fluent": true,
+     "on_label": false,
+     "success": false
+    },
+    "0.2": {
+     "vector_norm_model_units": 0.5028342247009278,
+     "feature_hits_mean": 0.2,
+     "random_hits_mean": 0.0,
+     "prompts_feature_beats_random_mean": 2,
+     "feature_ppl_median": 3.007258415222168,
+     "random_ppl_median": 2.7605249881744385,
+     "random_fluent": true,
+     "fluent": true,
+     "on_label": false,
+     "success": false
+    },
+    "0.35": {
+     "vector_norm_model_units": 0.8799598932266235,
+     "feature_hits_mean": 0.6,
+     "random_hits_mean": 0.0,
+     "prompts_feature_beats_random_mean": 2,
+     "feature_ppl_median": 4.920849800109863,
+     "random_ppl_median": 4.164734125137329,
+     "random_fluent": true,
+     "fluent": true,
+     "on_label": false,
+     "success": false
+    },
+    "0.5": {
+     "vector_norm_model_units": 1.2570855617523193,
+     "feature_hits_mean": 2.2,
+     "random_hits_mean": 0.0,
+     "prompts_feature_beats_random_mean": 9,
+     "feature_ppl_median": 15.95522165298462,
+     "random_ppl_median": 8.020338535308838,
+     "random_fluent": false,
+     "fluent": false,
+     "on_label": true,
+     "success": false
+    },
+    "0.75": {
+     "vector_norm_model_units": 1.885628342628479,
+     "feature_hits_mean": 2.2,
+     "random_hits_mean": 0.0,
+     "prompts_feature_beats_random_mean": 10,
+     "feature_ppl_median": 60.38592529296875,
+     "random_ppl_median": 35.21384048461914,
+     "random_fluent": false,
+     "fluent": false,
+     "on_label": true,
+     "success": false
+    },
+    "1.0": {
+     "vector_norm_model_units": 2.5141711235046387,
+     "feature_hits_mean": 3.9,
+     "random_hits_mean": 0.0,
+     "prompts_feature_beats_random_mean": 9,
+     "feature_ppl_median": 293.0030975341797,
+     "random_ppl_median": 121.30989074707031,
+     "random_fluent": false,
+     "fluent": false,
+     "on_label": true,
+     "success": false
+    }
+   },
+   "steers": false,
+   "success_strengths": [],
+   "on_label_strengths": [
+    0.5,
+    0.75,
+    1.0
+   ],
+   "fluent_strengths": [
+    0.1,
+    0.2,
+    0.35
+   ],
+   "steers_under_v2_cutoff": false
+  },
+  {
+   "feature": 916,
+   "group": "topic",
+   "label": "Bees, hives and honey",
+   "blind": 5,
+   "strict_clear_stage5": false,
+   "label_words": [
+    "bee",
+    "beehive",
+    "bees",
+    "hive",
+    "hives",
+    "honey"
+   ],
+   "median_act": 0.24920925498008728,
+   "unsteered_hits_mean": 0.0,
+   "by_k": {
+    "0.1": {
+     "vector_norm_model_units": 0.2514171123504639,
+     "feature_hits_mean": 0.6,
+     "random_hits_mean": 0.0,
+     "prompts_feature_beats_random_mean": 2,
+     "feature_ppl_median": 2.703235149383545,
+     "random_ppl_median": 2.5781383514404297,
+     "random_fluent": true,
+     "fluent": true,
+     "on_label": false,
+     "success": false
+    },
+    "0.2": {
+     "vector_norm_model_units": 0.5028342247009278,
+     "feature_hits_mean": 1.9,
+     "random_hits_mean": 0.0,
+     "prompts_feature_beats_random_mean": 5,
+     "feature_ppl_median": 4.032576680183411,
+     "random_ppl_median": 2.879475951194763,
+     "random_fluent": true,
+     "fluent": true,
+     "on_label": false,
+     "success": false
+    },
+    "0.35": {
+     "vector_norm_model_units": 0.8799598932266235,
+     "feature_hits_mean": 4.0,
+     "random_hits_mean": 0.0,
+     "prompts_feature_beats_random_mean": 9,
+     "feature_ppl_median": 6.842563152313232,
+     "random_ppl_median": 3.976418614387512,
+     "random_fluent": true,
+     "fluent": true,
+     "on_label": true,
+     "success": true
+    },
+    "0.5": {
+     "vector_norm_model_units": 1.2570855617523193,
+     "feature_hits_mean": 10.4,
+     "random_hits_mean": 0.0,
+     "prompts_feature_beats_random_mean": 9,
+     "feature_ppl_median": 22.47665786743164,
+     "random_ppl_median": 8.063515663146973,
+     "random_fluent": false,
+     "fluent": false,
+     "on_label": true,
+     "success": false
+    },
+    "0.75": {
+     "vector_norm_model_units": 1.885628342628479,
+     "feature_hits_mean": 19.4,
+     "random_hits_mean": 0.43333333333333335,
+     "prompts_feature_beats_random_mean": 10,
+     "feature_ppl_median": 235.2238998413086,
+     "random_ppl_median": 43.82686233520508,
+     "random_fluent": false,
+     "fluent": false,
+     "on_label": true,
+     "success": false
+    },
+    "1.0": {
+     "vector_norm_model_units": 2.5141711235046387,
+     "feature_hits_mean": 34.5,
+     "random_hits_mean": 0.03333333333333333,
+     "prompts_feature_beats_random_mean": 10,
+     "feature_ppl_median": 349.9222717285156,
+     "random_ppl_median": 181.1404037475586,
+     "random_fluent": false,
+     "fluent": false,
+     "on_label": true,
+     "success": false
+    }
+   },
+   "steers": true,
+   "success_strengths": [
+    0.35
+   ],
+   "on_label_strengths": [
+    0.35,
+    0.5,
+    0.75,
+    1.0
+   ],
+   "fluent_strengths": [
+    0.1,
+    0.2,
+    0.35
+   ],
+   "steers_under_v2_cutoff": true
+  },
+  {
+   "feature": 1463,
+   "group": "topic",
+   "label": "' cold' (weather)",
+   "blind": 3,
+   "strict_clear_stage5": false,
+   "label_words": [
+    "chilly",
+    "cold",
+    "colder",
+    "freezing",
+    "icy",
+    "snow",
+    "snowy",
+    "winter"
+   ],
+   "median_act": 0.3175013065338135,
+   "unsteered_hits_mean": 0.0,
+   "by_k": {
+    "0.1": {
+     "vector_norm_model_units": 0.2514171123504639,
+     "feature_hits_mean": 0.0,
+     "random_hits_mean": 0.0,
+     "prompts_feature_beats_random_mean": 0,
+     "feature_ppl_median": 2.5317158699035645,
+     "random_ppl_median": 2.594242811203003,
+     "random_fluent": true,
+     "fluent": true,
+     "on_label": false,
+     "success": false
+    },
+    "0.2": {
+     "vector_norm_model_units": 0.5028342247009278,
+     "feature_hits_mean": 0.6,
+     "random_hits_mean": 0.16666666666666666,
+     "prompts_feature_beats_random_mean": 4,
+     "feature_ppl_median": 2.750623106956482,
+     "random_ppl_median": 2.7310214042663574,
+     "random_fluent": true,
+     "fluent": true,
+     "on_label": false,
+     "success": false
+    },
+    "0.35": {
+     "vector_norm_model_units": 0.8799598932266235,
+     "feature_hits_mean": 1.0,
+     "random_hits_mean": 0.1,
+     "prompts_feature_beats_random_mean": 5,
+     "feature_ppl_median": 4.407469749450684,
+     "random_ppl_median": 4.273464679718018,
+     "random_fluent": true,
+     "fluent": true,
+     "on_label": false,
+     "success": false
+    },
+    "0.5": {
+     "vector_norm_model_units": 1.2570855617523193,
+     "feature_hits_mean": 2.1,
+     "random_hits_mean": 0.13333333333333333,
+     "prompts_feature_beats_random_mean": 7,
+     "feature_ppl_median": 10.038188934326172,
+     "random_ppl_median": 8.929511547088623,
+     "random_fluent": false,
+     "fluent": false,
+     "on_label": false,
+     "success": false
+    },
+    "0.75": {
+     "vector_norm_model_units": 1.885628342628479,
+     "feature_hits_mean": 3.4,
+     "random_hits_mean": 1.0666666666666667,
+     "prompts_feature_beats_random_mean": 7,
+     "feature_ppl_median": 47.988304138183594,
+     "random_ppl_median": 67.0036506652832,
+     "random_fluent": false,
+     "fluent": false,
+     "on_label": false,
+     "success": false
+    },
+    "1.0": {
+     "vector_norm_model_units": 2.5141711235046387,
+     "feature_hits_mean": 4.5,
+     "random_hits_mean": 1.0,
+     "prompts_feature_beats_random_mean": 10,
+     "feature_ppl_median": 268.71614837646484,
+     "random_ppl_median": 213.76609802246094,
+     "random_fluent": false,
+     "fluent": false,
+     "on_label": true,
+     "success": false
+    }
+   },
+   "steers": false,
+   "success_strengths": [],
+   "on_label_strengths": [
+    1.0
+   ],
+   "fluent_strengths": [
+    0.1,
+    0.2,
+    0.35
+   ],
+   "steers_under_v2_cutoff": false
+  },
+  {
+   "feature": 687,
+   "group": "topic",
+   "label": "Parental safety warnings (\"don't go too close\"); promotes 'dangerous'",
+   "blind": 4,
+   "strict_clear_stage5": false,
+   "label_words": [
+    "careful",
+    "danger",
+    "dangerous",
+    "safe",
+    "warned",
+    "warning"
+   ],
+   "median_act": 0.22634930908679962,
+   "unsteered_hits_mean": 0.0,
+   "by_k": {
+    "0.1": {
+     "vector_norm_model_units": 0.2514171123504639,
+     "feature_hits_mean": 0.1,
+     "random_hits_mean": 0.03333333333333333,
+     "prompts_feature_beats_random_mean": 1,
+     "feature_ppl_median": 2.9144269227981567,
+     "random_ppl_median": 2.412407636642456,
+     "random_fluent": true,
+     "fluent": true,
+     "on_label": false,
+     "success": false
+    },
+    "0.2": {
+     "vector_norm_model_units": 0.5028342247009278,
+     "feature_hits_mean": 0.2,
+     "random_hits_mean": 0.0,
+     "prompts_feature_beats_random_mean": 2,
+     "feature_ppl_median": 3.389534831047058,
+     "random_ppl_median": 3.0154449939727783,
+     "random_fluent": true,
+     "fluent": true,
+     "on_label": false,
+     "success": false
+    },
+    "0.35": {
+     "vector_norm_model_units": 0.8799598932266235,
+     "feature_hits_mean": 0.5,
+     "random_hits_mean": 0.03333333333333333,
+     "prompts_feature_beats_random_mean": 4,
+     "feature_ppl_median": 4.363370656967163,
+     "random_ppl_median": 4.750731706619263,
+     "random_fluent": true,
+     "fluent": true,
+     "on_label": false,
+     "success": false
+    },
+    "0.5": {
+     "vector_norm_model_units": 1.2570855617523193,
+     "feature_hits_mean": 0.9,
+     "random_hits_mean": 0.03333333333333333,
+     "prompts_feature_beats_random_mean": 6,
+     "feature_ppl_median": 9.711772918701172,
+     "random_ppl_median": 9.584475040435791,
+     "random_fluent": false,
+     "fluent": false,
+     "on_label": false,
+     "success": false
+    },
+    "0.75": {
+     "vector_norm_model_units": 1.885628342628479,
+     "feature_hits_mean": 1.1,
+     "random_hits_mean": 0.0,
+     "prompts_feature_beats_random_mean": 8,
+     "feature_ppl_median": 33.913893699645996,
+     "random_ppl_median": 41.28165626525879,
+     "random_fluent": false,
+     "fluent": false,
+     "on_label": false,
+     "success": false
+    },
+    "1.0": {
+     "vector_norm_model_units": 2.5141711235046387,
+     "feature_hits_mean": 0.4,
+     "random_hits_mean": 0.0,
+     "prompts_feature_beats_random_mean": 4,
+     "feature_ppl_median": 391.6216125488281,
+     "random_ppl_median": 133.64360809326172,
+     "random_fluent": false,
+     "fluent": false,
+     "on_label": false,
+     "success": false
+    }
+   },
+   "steers": false,
+   "success_strengths": [],
+   "on_label_strengths": [],
+   "fluent_strengths": [
+    0.1,
+    0.2,
+    0.35
+   ],
+   "steers_under_v2_cutoff": false
+  },
+  {
+   "feature": 1970,
+   "group": "topic",
+   "label": "Objects of household chores (dishes, laundry, weeds)",
+   "blind": 4,
+   "strict_clear_stage5": false,
+   "label_words": [
+    "chore",
+    "chores",
+    "clothes",
+    "dish",
+    "dishes",
+    "floor",
+    "laundry",
+    "weeds"
+   ],
+   "median_act": 0.1805465966463089,
+   "unsteered_hits_mean": 0.0,
+   "by_k": {
+    "0.1": {
+     "vector_norm_model_units": 0.2514171123504639,
+     "feature_hits_mean": 0.0,
+     "random_hits_mean": 0.03333333333333333,
+     "prompts_feature_beats_random_mean": 0,
+     "feature_ppl_median": 2.6817116737365723,
+     "random_ppl_median": 2.6378663778305054,
+     "random_fluent": true,
+     "fluent": true,
+     "on_label": false,
+     "success": false
+    },
+    "0.2": {
+     "vector_norm_model_units": 0.5028342247009278,
+     "feature_hits_mean": 0.1,
+     "random_hits_mean": 0.0,
+     "prompts_feature_beats_random_mean": 1,
+     "feature_ppl_median": 3.6499369144439697,
+     "random_ppl_median": 3.30074942111969,
+     "random_fluent": true,
+     "fluent": true,
+     "on_label": false,
+     "success": false
+    },
+    "0.35": {
+     "vector_norm_model_units": 0.8799598932266235,
+     "feature_hits_mean": 0.1,
+     "random_hits_mean": 0.03333333333333333,
+     "prompts_feature_beats_random_mean": 1,
+     "feature_ppl_median": 6.359077453613281,
+     "random_ppl_median": 4.439361810684204,
+     "random_fluent": true,
+     "fluent": true,
+     "on_label": false,
+     "success": false
+    },
+    "0.5": {
+     "vector_norm_model_units": 1.2570855617523193,
+     "feature_hits_mean": 0.1,
+     "random_hits_mean": 0.13333333333333333,
+     "prompts_feature_beats_random_mean": 1,
+     "feature_ppl_median": 12.962138175964355,
+     "random_ppl_median": 8.1356041431427,
+     "random_fluent": false,
+     "fluent": false,
+     "on_label": false,
+     "success": false
+    },
+    "0.75": {
+     "vector_norm_model_units": 1.885628342628479,
+     "feature_hits_mean": 0.4,
+     "random_hits_mean": 0.0,
+     "prompts_feature_beats_random_mean": 2,
+     "feature_ppl_median": 32.84219169616699,
+     "random_ppl_median": 50.82105255126953,
+     "random_fluent": false,
+     "fluent": false,
+     "on_label": false,
+     "success": false
+    },
+    "1.0": {
+     "vector_norm_model_units": 2.5141711235046387,
+     "feature_hits_mean": 0.4,
+     "random_hits_mean": 0.03333333333333333,
+     "prompts_feature_beats_random_mean": 4,
+     "feature_ppl_median": 143.62308502197266,
+     "random_ppl_median": 159.1122817993164,
+     "random_fluent": false,
+     "fluent": false,
+     "on_label": false,
+     "success": false
+    }
+   },
+   "steers": false,
+   "success_strengths": [],
+   "on_label_strengths": [],
+   "fluent_strengths": [
+    0.1,
+    0.2,
+    0.35
+   ],
+   "steers_under_v2_cutoff": false
+  },
+  {
+   "feature": 715,
+   "group": "topic",
+   "label": "' play' a musical instrument",
+   "blind": 3,
+   "strict_clear_stage5": false,
+   "label_words": [
+    "drum",
+    "drums",
+    "flute",
+    "guitar",
+    "instrument",
+    "music",
+    "piano",
+    "song",
+    "songs",
+    "violin"
+   ],
+   "median_act": 0.26818203926086426,
+   "unsteered_hits_mean": 0.1,
+   "by_k": {
+    "0.1": {
+     "vector_norm_model_units": 0.2514171123504639,
+     "feature_hits_mean": 0.0,
+     "random_hits_mean": 0.0,
+     "prompts_feature_beats_random_mean": 0,
+     "feature_ppl_median": 2.7033804655075073,
+     "random_ppl_median": 2.7318035364151,
+     "random_fluent": true,
+     "fluent": true,
+     "on_label": false,
+     "success": false
+    },
+    "0.2": {
+     "vector_norm_model_units": 0.5028342247009278,
+     "feature_hits_mean": 0.0,
+     "random_hits_mean": 0.0,
+     "prompts_feature_beats_random_mean": 0,
+     "feature_ppl_median": 3.01655650138855,
+     "random_ppl_median": 2.6615105867385864,
+     "random_fluent": true,
+     "fluent": true,
+     "on_label": false,
+     "success": false
+    },
+    "0.35": {
+     "vector_norm_model_units": 0.8799598932266235,
+     "feature_hits_mean": 0.4,
+     "random_hits_mean": 0.0,
+     "prompts_feature_beats_random_mean": 1,
+     "feature_ppl_median": 4.696849822998047,
+     "random_ppl_median": 4.061530351638794,
+     "random_fluent": true,
+     "fluent": true,
+     "on_label": false,
+     "success": false
+    },
+    "0.5": {
+     "vector_norm_model_units": 1.2570855617523193,
+     "feature_hits_mean": 0.2,
+     "random_hits_mean": 0.06666666666666667,
+     "prompts_feature_beats_random_mean": 2,
+     "feature_ppl_median": 12.911322116851807,
+     "random_ppl_median": 7.516729116439819,
+     "random_fluent": true,
+     "fluent": false,
+     "on_label": false,
+     "success": false
+    },
+    "0.75": {
+     "vector_norm_model_units": 1.885628342628479,
+     "feature_hits_mean": 0.2,
+     "random_hits_mean": 0.0,
+     "prompts_feature_beats_random_mean": 2,
+     "feature_ppl_median": 92.3402328491211,
+     "random_ppl_median": 35.714473724365234,
+     "random_fluent": false,
+     "fluent": false,
+     "on_label": false,
+     "success": false
+    },
+    "1.0": {
+     "vector_norm_model_units": 2.5141711235046387,
+     "feature_hits_mean": 0.5,
+     "random_hits_mean": 0.0,
+     "prompts_feature_beats_random_mean": 4,
+     "feature_ppl_median": 505.74427795410156,
+     "random_ppl_median": 174.65538787841797,
+     "random_fluent": false,
+     "fluent": false,
+     "on_label": false,
+     "success": false
+    }
+   },
+   "steers": false,
+   "success_strengths": [],
+   "on_label_strengths": [],
+   "fluent_strengths": [
+    0.1,
+    0.2,
+    0.35
+   ],
+   "steers_under_v2_cutoff": false
+  }
+ ],
+ "v2_cutoff": 7.124700713157654,
+ "groups": {
+  "main_clear": {
+   "n_features": 6,
+   "n_steer": 0,
+   "steering_features": [],
+   "verdict": "not supported"
+  },
+  "main_unclear": {
+   "n_features": 2,
+   "n_steer": 0,
+   "steering_features": [],
+   "verdict": "n/a (group of 2)"
+  },
+  "topic": {
+   "n_features": 6,
+   "n_steer": 1,
+   "steering_features": [
+    916
+   ],
+   "verdict": "not supported"
+  }
+ }
+}

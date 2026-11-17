@@ -20,7 +20,11 @@ from src.config import ROOT, load_config, set_seed
 from src.model import load_model, residual_hook
 from src.sae import SparseAutoencoder
 
-cfg = load_config(); sc = cfg["steering_v2"]; set_seed(cfg["seed"])
+cfg = load_config(); sc = dict(cfg["steering_v2"]); set_seed(cfg["seed"])
+V3 = "--v3" in sys.argv   # third design: strength = fraction of the mean activation length (config steering_v3); all else as v2
+if V3:
+    sc["multipliers"] = cfg["steering_v3"]["multipliers"]
+    MEAN_NORM = json.loads((ROOT / "results" / "stage2_stats.json").read_text())["splits"]["train"]["norm_excluding_pos0"]["mean"]
 SMOKE = "--smoke" in sys.argv
 layer, lam = cfg["model"]["layer"], cfg["interpret"]["chosen_lambda"]
 scale = json.loads((ROOT / "results" / "stage3_runs.json").read_text())["rescale_factor"]
@@ -30,7 +34,7 @@ model, tok = load_model(cfg, device="cpu")
 feats = {f["feature"]: f for f in json.loads((ROOT / "results" / "stage5" / "features.json").read_text())["features"]}
 eos = tok.eos_token_id
 od = ROOT / "results" / "stage6b"; od.mkdir(parents=True, exist_ok=True)
-out_path = od / ("steering_v2_smoke.json" if SMOKE else "steering_v2.json")
+out_path = od / ("steering_v2_smoke.json" if SMOKE else "steering_v3.json" if V3 else "steering_v2.json")
 K, NR, T = sc["multipliers"], sc["n_random_directions"], sc["max_new_tokens"]
 groups = [(g, f) for g, fs in sc["groups"].items() for f in fs]
 prompts = sc["prompts"]
@@ -53,9 +57,12 @@ for group, fid in groups:
         for r in range(NR):
             meta.append(("random", r, k)); V.append(k * med * rd[r] / scale)
     V = torch.stack(V)
+    # v3: rescale every steering vector so that |vector| = k x mean activation length
+    if V3:
+        V = torch.stack([V[0]] + [v / v.norm() * k * MEAN_NORM for v, (_, _, k) in zip(V[1:], meta[1:])])
     W = set(sc["label_words"][fid])
     rec = {"feature": fid, "group": group, "median_act": med, "label_words": sorted(W), "rows": [],
-           "vector_norm_model_units": {str(k): float(k * med / scale) for k in K}}
+           "vector_norm_model_units": {str(k): float(k * MEAN_NORM if V3 else k * med / scale) for k in K}}
     for pi, prompt in enumerate(prompts):
         ids = torch.tensor([[eos] + tok(prompt).input_ids]).repeat(len(V), 1)
         n_p = ids.shape[1]

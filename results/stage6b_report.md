@@ -92,7 +92,7 @@ hits = label words per 50 tokens, mean over prompts. wins = prompts (of 10) wher
 | 715 | topic | ' play' a musical instrument | drum, drums, flute, guitar, instrument, music… | 7 | 0.29 | 0.0 | 0.2 | 0.0 | 1 | 2.6 | 2.8 | yes | no | no |
 | 715 | topic | ' play' a musical instrument | drum, drums, flute, guitar, instrument, music… | 10 | 0.42 | 0.0 | 0.1 | 0.0 | 1 | 2.8 | 2.6 | yes | no | no |
 
-![steering v2](../figures/stage6b_steering_v2.png)
+![steering](../figures/stage6b_steering_v2.png)
 
 ## Sample text (prompts 0 and 4; feature and first random direction)
 

@@ -12,7 +12,11 @@ import numpy as np
 from src.config import ROOT, load_config
 
 sc = load_config()["steering_v2"]
-D = json.loads((ROOT / "results" / "stage6b" / "steering_v2.json").read_text())
+V3 = "--v3" in sys.argv
+TAG = "v3" if V3 else "v2"
+if V3:
+    sc = {**sc, "multipliers": load_config()["steering_v3"]["multipliers"]}
+D = json.loads((ROOT / "results" / "stage6b" / f"steering_{TAG}.json").read_text())
 K, P, NR = D["multipliers"], len(D["prompts"]), D["n_random"]
 labels = {int(r["feature"]): r for r in csv.DictReader(open(ROOT / "results" / "stage5_blind_per_feature.csv")) if r["set"] == "real"}
 un = [r["ppl"] for f in D["features"] for r in f["rows"] if r["kind"] == "none" and r["ppl"] is not None]
@@ -42,13 +46,18 @@ for f in D["features"]:
     rec["on_label_strengths"] = [k for k in K if rec["by_k"][str(k)]["on_label"]]
     rec["fluent_strengths"] = [k for k in K if rec["by_k"][str(k)]["fluent"]]
     S["features"].append(rec)
+if V3:
+    t2 = json.loads((ROOT / "results" / "stage6b_summary.json").read_text())["fluent_threshold_ppl"]
+    S["v2_cutoff"] = t2
+    for r in S["features"]:
+        r["steers_under_v2_cutoff"] = any(c["on_label"] and c["feature_ppl_median"] <= t2 for c in r["by_k"].values())
 S["groups"] = {}
 for g in sc["groups"]:
     fs = [r for r in S["features"] if r["group"] == g]
     n = sum(r["steers"] for r in fs)
     S["groups"][g] = {"n_features": len(fs), "n_steer": n, "steering_features": [r["feature"] for r in fs if r["steers"]],
                       "verdict": ("reliably" if n >= 5 else "sometimes" if n >= 2 else "not supported") if len(fs) == 6 else "n/a (group of %d)" % len(fs)}
-(ROOT / "results" / "stage6b_summary.json").write_text(json.dumps(S, indent=1, ensure_ascii=False))
+(ROOT / "results" / ("stage6c_summary.json" if V3 else "stage6b_summary.json")).write_text(json.dumps(S, indent=1, ensure_ascii=False))
 
 fig, axes = plt.subplots(2, 7, figsize=(21, 6), sharex=True)
 for ax, r in zip(axes.flat, S["features"]):
@@ -61,12 +70,12 @@ for ax, r in zip(axes.flat, S["features"]):
         if r["by_k"][str(k)]["success"]:
             ax.plot(k, r["by_k"][str(k)]["feature_hits_mean"], "*", ms=16, color="gold", mec="k")
     ax.set_title(f"{r['feature']} [{r['group']}] {r['label'][:26]}", fontsize=8)
-axes[0, 0].legend(fontsize=6); fig.supxlabel("strength (x median firing); red = not fluent; star = fluent and on-label"); fig.supylabel("label words in 50 tokens (mean of 10 prompts)")
-fig.tight_layout(); fig.savefig(ROOT / "figures" / "stage6b_steering_v2.png", dpi=110)
+axes[0, 0].legend(fontsize=6); fig.supxlabel(("strength (fraction of mean activation length)" if V3 else "strength (x median firing)") + "; red = not fluent; star = fluent and on-label"); fig.supylabel("label words in 50 tokens (mean of 10 prompts)")
+fig.tight_layout(); fig.savefig(ROOT / "figures" / f"stage6b_steering_{TAG}.png", dpi=110)
 
-L = ["# Review rerun 1a: steering in units of median firing\n",
+L = [("# Steering, third and last design: strength as a fraction of the mean activation length\n" if V3 else "# Review rerun 1a: steering in units of median firing\n"),
      "> All feature labels are AI-written (by Claude) and have not been verified by a human.\n",
-     f"Design, word lists and success rule were committed in `config.yaml` (`steering_v2`) before the run. {P} prompts, {NR} random directions per feature, strengths {K} x each feature's median non-zero firing, 50 tokens.",
+     f"Design, word lists and success rule were committed in `config.yaml` (`steering_{TAG}`) before the run. {P} prompts, {NR} random directions per feature, strengths {K} x {'the mean activation length at layer 3' if V3 else 'each feature\'s median non-zero firing'}, 50 tokens.",
      f"Fluent threshold (rule: 2 x the 95th percentile of unsteered perplexity, {len(un)} samples): **{thr:.2f}** (unsteered median {S['unsteered_ppl_median']:.2f}, 95th percentile {S['unsteered_ppl_p95']:.2f}).\n",
      "**Rule.** " + " ".join(f"*{k}*: {v}" for k, v in sc["success_rule"].items()) + "\n",
      "## Result by group\n", "| group | features that steer | verdict under the rule |", "|---|---|---|"]
@@ -77,7 +86,7 @@ for r in S["features"]:
     for k in K:
         c = r["by_k"][str(k)]
         L.append(f"| {r['feature']} | {r['group']} | {r['label'].replace('|', '/')} | {', '.join(r['label_words'][:6])}{'…' if len(r['label_words']) > 6 else ''} | {k} | {c['vector_norm_model_units']:.2f} | {r['unsteered_hits_mean']:.1f} | {c['feature_hits_mean']:.1f} | {c['random_hits_mean']:.1f} | {c['prompts_feature_beats_random_mean']} | {c['feature_ppl_median']:.1f} | {c['random_ppl_median']:.1f} | {'yes' if c['fluent'] else 'no'} | {'yes' if c['on_label'] else 'no'} | {'**yes**' if c['success'] else 'no'} |")
-L.append("\n![steering v2](../figures/stage6b_steering_v2.png)\n\n## Sample text (prompts 0 and 4; feature and first random direction)\n")
+L.append("\n![steering](../figures/stage6b_steering_" + TAG + ".png)\n\n## Sample text (prompts 0 and 4; feature and first random direction)\n")
 for f in D["features"]:
     L.append(f"\n### Feature {f['feature']}: {labels[f['feature']]['label']}\n")
     for p in (0, 4):
@@ -86,7 +95,7 @@ for f in D["features"]:
             if r["p"] == p and (r["kind"] != "random" or r["r"] == 0):
                 nm = "unsteered" if r["kind"] == "none" else f"{r['kind']} {r['k']}x"
                 L.append(f"| {nm} | {r['hits']} | {r['ppl']:.1f} | {r['text'].replace(chr(10), ' ⏎ ').replace('|', '/')} |")
-(ROOT / "results" / "stage6b_report.md").write_text("\n".join(L) + "\n")
+(ROOT / "results" / ("stage6c_report.md" if V3 else "stage6b_report.md")).write_text("\n".join(L) + "\n")
 print("threshold", round(thr, 2), "unsteered median", round(S["unsteered_ppl_median"], 2))
 print(json.dumps(S["groups"], indent=0))
 for r in S["features"]:
