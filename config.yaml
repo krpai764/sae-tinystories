@@ -116,6 +116,49 @@ trace:                      # Stage 7: pronoun after a named character
   selective_ratio: 5        # mean peak activation on one gender's ranking-name prompts >= 5x the other's
   selective_k: 5
 
+steering_v2:                # Review rerun 1a. Everything in this block was fixed and committed BEFORE the run.
+  unit: median_nonzero_firing   # strength k means k x the feature's median activation over all its training firings (results/stage5/features.json median_act)
+  multipliers: [2, 3, 5, 7, 10] # the brief's 2, 5, 10 plus two values in between
+  n_random_directions: 3        # per feature, same length as the feature vector at each strength
+  max_new_tokens: 50
+  groups:
+    main_clear: [144, 597, 1211, 2014, 215, 1905]   # the original six (hand-picked from the 20 strict-clear & 5/5 features)
+    main_unclear: [1693, 978]
+    topic: [1137, 916, 1463, 687, 1970, 715]        # hand-picked topic labels (NOT every topic label; e.g. 1470 was left out)
+  prompts:
+    - "Once upon a time, there was a little girl named Lily."
+    - "Tom and his dog went to the park. They saw"
+    - "One day, a small rabbit found a shiny red ball."
+    - "Ben woke up early and looked out of the window."
+    - "There was a big tree near the house. Under the tree,"
+    - "Mia and her brother wanted to make a cake."
+    - "The little bird could not find its way home."
+    - "Sam had a new toy car. He took it"
+    - "It was a quiet day in the village."
+    - "Anna opened the door and"
+  # Word lists written from the LABEL TEXT ONLY (words quoted in the label, their plain inflections, and members of a
+  # category the label names). Not taken from decoder promoted tokens or from any steered text. Counted as whole lower-case words.
+  label_words:
+    144: [little, boy, girl]                       # ' little' in 'there was a little boy/girl'
+    597: [big, saw]                                # ' big' in 'saw a big ...'
+    1211: [mom, mommy, mum, mother, dad]           # ' mom' as companion ('with her mom', 'her mom and dad')
+    2014: [fox, cat, dog, bird, rabbit, bear, mouse, squirrel, frog, duck, pig, cow, horse, lion, monkey, fish, bunny, kitten, puppy, elephant, owl, turtle]  # animal noun as protagonist
+    215: [so, sad, upset, scared, angry, mad, worried]   # ' was' followed by 'so' + emotion after a mishap
+    1905: [happily, ever, after, end, lesson, learned, moral]  # '.' ending a story's closing/moral sentence
+    1693: [time, home]                             # ' time' in 'it was time to go home'
+    978: [sunshine, sun, sunny]                    # ' sunshine' in 'in the sunshine'
+    1137: [rain, raining, rained, rainy, raindrops]
+    916: [bee, bees, hive, hives, honey, beehive]
+    1463: [cold, colder, chilly, freezing, snow, snowy, winter, icy]
+    687: [dangerous, danger, careful, safe, warned, warning]
+    1970: [dishes, dish, laundry, weeds, chores, chore, clothes, floor]
+    715: [music, instrument, piano, guitar, drum, drums, violin, flute, song, songs]
+  success_rule:
+    fluent: "a (feature, strength) cell is fluent if the median over prompts of the steered text's perplexity under the unsteered model is <= 2 x the 95th percentile of the perplexity of all unsteered samples in this run"
+    on_label: "a cell is on-label if the steered text has more label words than the mean of the 3 random-direction texts on at least 9 of the 10 prompts (ties count against; one-sided sign test p = 0.011), and its mean label-word count also exceeds the unsteered mean"
+    feature_succeeds: "a feature steers if at least one of the 5 strengths is both fluent and on-label (5 chances per feature, so a false pass has probability up to about 0.05 per feature)"
+    claim: "'steering reliably moves text toward the label' is supported for a group only if at least 5 of its 6 features steer; 2 to 4 = 'sometimes'; 0 or 1 = not supported. Counts are reported whatever they are."
+
 generation:
   seed: 1234                # same seed + prompt -> same story
   prompts:
