@@ -159,6 +159,40 @@ steering_v2:                # Review rerun 1a. Everything in this block was fixe
     feature_succeeds: "a feature steers if at least one of the 5 strengths is both fluent and on-label (5 chances per feature, so a false pass has probability up to about 0.05 per feature)"
     claim: "'steering reliably moves text toward the label' is supported for a group only if at least 5 of its 6 features steer; 2 to 4 = 'sometimes'; 0 or 1 = not supported. Counts are reported whatever they are."
 
+trace_v2:                   # Review rerun 1b. Everything in this block was fixed and committed BEFORE the run.
+  # names: same as `trace` (ranking half / held-out half). NEW: sentence frames are held out too.
+  frames_rank:              # used to rank features and to build activation profiles (with the ranking names)
+    - {id: went,    kind: name_only, case: cap,   text: "One day, {N} went to the park."}
+    - {id: found,   kind: name_only, case: cap,   text: "Once upon a time, {N} found a big red ball."}
+    - {id: because, kind: name_only, case: lower, text: "Yesterday, {N} was very happy because"}
+    - {id: but,     kind: name_only, case: lower, text: "One day, {N} wanted to play outside, but"}
+    - {id: named,   kind: noun_name, case: cap,   text: "Once upon a time, there was a little {G} named {N}."}
+    - {id: who,     kind: noun_name, case: lower, text: "There was a kind {G} named {N} who was sad because"}
+  frames_heldout:           # used only for testing (with the held-out names); never seen when ranking
+    - {id: ran,     kind: name_only, case: cap,   text: "After lunch, {N} ran to the garden."}
+    - {id: bird,    kind: name_only, case: cap,   text: "In the morning, {N} saw a little bird."}
+    - {id: sleep,   kind: name_only, case: lower, text: "Last night, {N} could not sleep because"}
+    - {id: read,    kind: name_only, case: lower, text: "At school, {N} tried to read the book, but"}
+    - {id: outside, kind: noun_name, case: cap,   text: "One day, a happy {G} named {N} went outside."}
+    - {id: tired,   kind: noun_name, case: lower, text: "Mom knew a {G} named {N} who was tired because"}
+  top_k: 10
+  selective_ratio: 5        # gender-selective = mean peak activation on own-gender ranking prompts >= 5x other gender's (name-only)
+  selective_k: 5
+  n_random_sets: 100
+  matched_control: "for each feature in the tested set, draw one feature uniformly from the 10 firing features nearest to it in total activation (sum over positions > 0, mean over the held-out name-only prompts), excluding the tested set and features already drawn; 100 such sets. The ratio of random-set to tested-set total activation is reported."
+  loss_stories: 64          # first N held-out stories for the overall next-token loss
+  loss_random_sets: 20      # overall story loss is computed for the tested set and for this many of its matched random sets
+  flip_strengths: [0.5, 1, 1.5, 2]
+  flip_random_draws: 20
+  flip_profile: "added from the name token onward: at the name position, strength x the feature's mean activation at the name position on the OTHER gender's ranking prompts; at each later position, strength x its mean activation over later positions on those prompts; random control = random directions of the same length at each position"
+  measures: "every ablation and flip reports: mean score (logit correct - logit wrong), pair-preference rate, top-1-is-correct rate, top-1-is-the-other-pronoun rate, change in next-token loss on the test prompts; set ablations also report change in loss on held-out stories"
+  success_rule:
+    gate: "the unmodified model must prefer the correct pronoun on at least 90% of held-out (held-out names x held-out frames) name-only prompts; otherwise stop"
+    R1_top10: "rank all firing features by single-feature ablation effect on ranking prompts (ranking names x ranking frames, name-only). Passes if switching off the top 10 together lowers the held-out name-only score by more than at least 95 of the 100 activation-matched random sets."
+    R2_selective: "for each gender, the top 5 gender-selective features (chosen on ranking prompts only) pass if (a) their own-gender held-out drop exceeds at least 95 of 100 activation-matched random sets, and (b) own-gender drop minus other-gender drop exceeds the same quantity for at least 95 of those sets."
+    R3_flip: "for each direction, passes if at some strength <= 1.5 the pair preference flips on a majority of the 4 held-out name-only prompts for at least 4 of the 5 held-out names, while random directions at that strength flip a majority for 0 of 5 names (flip rate averaged over draws). Top-1 rates are reported beside it."
+    reading: "R1 passing would support 'the highest-ranked features matter beyond their activation size'. R2 and R3 passing would support 'gender-selective features carry pronoun information that transfers to new names and new sentences'. If the selective features turn out to fire on specific names only, that is reported as a limit whatever the rules say."
+
 generation:
   seed: 1234                # same seed + prompt -> same story
   prompts:
