@@ -212,6 +212,12 @@ stage5_v2:                  # Review rerun 1c. Everything in this block was fixe
     blind_test: "'real labels predict firings better than control labels' is supported if real-50 mean accuracy exceeds control mean accuracy with one-sided permutation p < 0.05 (10,000 permutations over features). Control vs chance (0.5) is reported with the same simulation as before, and per-sub-agent means are shown."
     known_limits: "labels themselves were written non-blind; the control SAE is denser (L0 56 vs 27) and saw less data; labeller, judges and guessers are the same model family."
 
+steering_v3:                # THIRD and LAST steering design (user instruction). Fixed and committed BEFORE the run. No further designs after it.
+  unit: fraction_of_mean_activation_length   # vector length = fraction x the mean activation length at layer 3 (positions > 0; results/stage2_stats.json), along the feature's unit decoder direction
+  multipliers: [0.1, 0.2, 0.35, 0.5, 0.75, 1.0]
+  same_as_v2: "features and groups, the 10 prompts, 3 random directions per feature (same length), 50 new tokens, label_words lists, and the whole success_rule are taken unchanged from `steering_v2`. The fluent cut-off uses the same rule (2 x the 95th percentile of this run's unsteered perplexity); verdicts under v2's numeric cut-off are also reported."
+  note: "with 6 strengths instead of 5 there are 6 chances per feature, so a false pass has probability up to about 0.07 per feature"
+
 generation:
   seed: 1234                # same seed + prompt -> same story
   prompts:
