@@ -10,7 +10,7 @@ tc = load_config()["trace_v2"]
 A = json.loads((ROOT / "results" / "stage7b" / "analysis.json").read_text())
 f2 = lambda x: f"{x:.2f}"; f3 = lambda x: f"{x:.3f}"; pc = lambda x: f"{x:.0%}"
 L = ["# Review rerun 1b: tracing with held-out frames and an activation-matched control\n",
-     "> Any feature descriptions are AI-written (by Claude) and have not been verified by a human.\n",
+     "> No feature label here has been verified by a human.\n",
      "Design and success rules were committed in `config.yaml` (`trace_v2`) before the run. Ranking uses ranking names x ranking frames; every test uses held-out names x held-out frames (name-only unless marked).\n",
      "**Rules.** " + " ".join(f"*{k}*: {v}" for k, v in tc["success_rule"].items()) + "\n",
      "## Baseline (unmodified model)\n", "| prompts | n | score | pair preference correct | top-1 is correct pronoun |", "|---|---|---|---|---|"]

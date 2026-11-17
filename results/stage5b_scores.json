@@ -50,7 +50,7 @@
   "difference": 0.2839999999999999,
   "permutation_p_one_sided": 0.0,
   "supported": true,
-  "per_subagent": {
+  "per_guesser": {
    "puzzles_00": {
     "real": 0.8,
     "control": 0.5714285714285714

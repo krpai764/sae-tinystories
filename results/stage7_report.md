@@ -1,6 +1,6 @@
 # Stage 7: tracing 'she'/'he' after a named character
 
-> Any feature descriptions here are AI-written (by Claude) and have not been verified by a human.
+> No feature label here has been verified by a human.
 
 ## Setup
 

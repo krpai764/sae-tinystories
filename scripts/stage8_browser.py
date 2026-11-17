@@ -143,7 +143,7 @@ td.txt{font-family:ui-monospace,Menlo,monospace;font-size:12px;white-space:pre-w
 </style></head><body>
 <header><h1>Feature browser: sparse autoencoder on TinyStories-8M</h1>
 <div class="sub" id="sub"></div>
-<div class="banner"><b>All feature labels are AI-written (by Claude) and have not been verified by a human.</b> The blind tests and blind verdicts shown here were also done by Claude sub-agents, so nothing has had a human check. “Blind strict-clear” means two fresh judges, not told which autoencoder a feature came from, both found that the label fits most of its strongest examples <i>and</i> most of 10 randomly chosen firings. My own earlier non-blind verdicts are shown only as withdrawn. This page was updated after a review; see REPORT.md, “Review and corrections”.</div></header>
+<div class="banner"><b>No feature label or verdict on this page has been verified by a human.</b> “Blind strict-clear” means two fresh judges, not told which autoencoder a feature came from, both found that the label fits most of its strongest examples <i>and</i> most of 10 randomly chosen firings. My own earlier non-blind verdicts are shown only as withdrawn. This page was updated after a review; see REPORT.md, “Review and corrections”.</div></header>
 <div class="layout"><nav><div class="tools">
 <input id="q" placeholder="Search labels, tokens, feature number…" autocomplete="off">
 <select id="sae"><option value="real">Real autoencoder (200 random features + traced ones)</option><option value="control">Shuffled-weights control (50 features)</option></select>
@@ -159,7 +159,7 @@ function snip(a,t){const d=el('div','snip');if(a!==undefined&&a!==null){d.append
   const m=t.match(/^([\s\S]*?)\[\[([\s\S]*?)\]\]([\s\S]*)$/);
   if(!m){d.appendChild(document.createTextNode(t));return d}
   d.appendChild(document.createTextNode(m[1]));d.appendChild(el('mark',null,m[2]));d.appendChild(document.createTextNode(m[3]));return d}
-function name(e){return e.label===null?'Feature '+e.feature+(e.hint?': top examples fire on '+e.hint:' (no examples saved)')+' (no AI label; not among the 200 labelled)':e.label}
+function name(e){return e.label===null?'Feature '+e.feature+(e.hint?': top examples fire on '+e.hint:' (no examples saved)')+' (no label; not among the 200 labelled)':e.label}
 const f2=x=>Number(x).toFixed(2);
 $('#sub').textContent=S.model+', residual stream after block '+S.layer+'; sparse autoencoder with '+S.m+' features, λ='+S.lam+'. '
  +'Blind strict-clear: '+S.clear+'/'+S.n+' real, '+S.clear_ctrl_blind+'/'+S.n_control+' control (my withdrawn non-blind count was '+S.old_clear+'). Blind label test on fresh text: '+f2(S.fresh_real)+' (real) vs '+f2(S.fresh_control)+' (control); chance 0.50. Steering under fixed rules: '+S.d2+'/'+S.dn+' (design 2), '+S.d3+'/'+S.dn+' (design 3).';
@@ -181,7 +181,7 @@ function renderList(){const L=$('#list');L.textContent='';let n=0;
   $('#count').textContent=n+' features shown'}
 function chips(parent,items){items.forEach(([t,c])=>parent.appendChild(el('span','chip '+(c||''),t)))}
 function renderMain(){const M=$('#main');M.textContent='';const e=E.find(x=>x.id===sel);
-  if(!e){M.appendChild(el('p','note','Pick a feature on the left. Each page shows the AI-written label, the blind-test result, the strongest and random firings, and any steering or tracing results.'));return}
+  if(!e){M.appendChild(el('p','note','Pick a feature on the left. Each page shows the label, the blind-test result, the strongest and random firings, and any steering or tracing results.'));return}
   M.appendChild(el('h2',null,name(e))).style.borderTop='0';
   if(e.sae==='control')M.appendChild(el('p','warn','This feature belongs to the shuffled-weights control autoencoder (trained on a model with scrambled weights). It is here for comparison.'));
   const c=el('div');chips(c,[['feature '+e.feature],['λ='+S.lam+(e.sae==='control'?' control':'')]]);

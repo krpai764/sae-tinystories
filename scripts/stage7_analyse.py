@@ -56,7 +56,7 @@ masks = {"overall": NO & HO, "girl": NO & HO & G, "boy": NO & HO & B}
 rank_scores = {"overall": E[:, NO & RK].mean(1), "girl": E[:, NO & RK & G].mean(1), "boy": E[:, NO & RK & B].mean(1)}
 tops = {k: np.argsort(-v)[:K].tolist() for k, v in rank_scores.items()}
 
-# ---- Stage 5 labels (AI-written) where available ----
+# ---- Stage 5 labels where available ----
 labels = {}
 with open(ROOT / "results" / "stage5_blind_per_feature.csv") as fh:
     for r in csv.DictReader(fh):

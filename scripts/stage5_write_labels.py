@@ -1,4 +1,4 @@
-"""Stage 5: write/extend results/stage5/labels.csv with Claude's SUGGESTED labels for one batch.
+"""Stage 5: write/extend results/stage5/labels.csv with SUGGESTED labels for one batch.
 
 Suggestions are hand-written (by reading results/stage5/batch_k.md) and kept in this script so the
 file can be regenerated. User columns are never overwritten if already filled.

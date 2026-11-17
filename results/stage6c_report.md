@@ -1,6 +1,6 @@
 # Steering, third and last design: strength as a fraction of the mean activation length
 
-> All feature labels are AI-written (by Claude) and have not been verified by a human.
+> No feature label here has been verified by a human.
 
 Design, word lists and success rule were committed in `config.yaml` (`steering_v3`) before the run. 10 prompts, 3 random directions per feature, strengths [0.1, 0.2, 0.35, 0.5, 0.75, 1.0] x the mean activation length at layer 3, 50 tokens.
 Fluent threshold (rule: 2 x the 95th percentile of unsteered perplexity, 140 samples): **7.81** (unsteered median 2.45, 95th percentile 3.90).

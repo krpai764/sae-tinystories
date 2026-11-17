@@ -1,6 +1,6 @@
 # Stage 6: steering report
 
-> All feature labels are AI-written (by Claude) and have not been verified by a human.
+> No feature label here has been verified by a human.
 
 Model TinyStories-8M, residual stream after block 3, SAE λ=1. Seed 1234 per prompt (prompt i uses seed 1234+i); 50 new tokens; temperature 0.8, top-k 50.
 

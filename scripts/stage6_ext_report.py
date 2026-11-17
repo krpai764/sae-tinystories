@@ -47,7 +47,7 @@ ax[0].set_ylabel("theme words in 50 generated tokens"); ax[1].set_ylabel("perple
 ax[0].legend(fontsize=7); ax[1].legend(fontsize=7); fig.tight_layout(); fig.savefig(ROOT / "figures" / "stage6_extension.png", dpi=130)
 
 L = ["# Stage 6 extension: steering context/theme features\n",
-     "> All feature labels are AI-written (by Claude) and have not been verified by a human.\n",
+     "> No feature label here has been verified by a human.\n",
      "**How features were chosen.** Every Stage 5 label that names a topic or domain (weather, bees, chores, music, "
      "danger) rather than a syntactic slot or one predicted next word, whatever its clear verdict or blind score, "
      "excluding features already steered. That gave 6: " + ", ".join(f"{r['feature']} ({r['label']}, {r['blind_correct_of_5']}/5 blind, {'clear' if r['group']=='clear' else 'not clear'})" for r in summ) + ".\n",

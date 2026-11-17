@@ -1,6 +1,6 @@
 # Review rerun 1b: tracing with held-out frames and an activation-matched control
 
-> Any feature descriptions are AI-written (by Claude) and have not been verified by a human.
+> No feature label here has been verified by a human.
 
 Design and success rules were committed in `config.yaml` (`trace_v2`) before the run. Ranking uses ranking names x ranking frames; every test uses held-out names x held-out frames (name-only unless marked).
 

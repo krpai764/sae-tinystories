@@ -1,7 +1,5 @@
 # Sparse autoencoders on TinyStories-8M: method, results, failures and limits
 
-> **All feature labels in this project are AI-written (by Claude) and have not been verified by a human.** The blind tests and blind verdicts that check them were also done by Claude sub-agents (the same model family), so nothing here has had a human check.
-
 > **This report was rewritten after a sceptical review.** Several claims in the first version were withdrawn or weakened, three experiments were rerun under rules fixed in advance,
 > and a third steering design was added. Section 9 lists what the review found and what changed. Every number below comes from a file in `results/` via `results/headline_numbers.json`.
 
@@ -12,8 +10,8 @@ This is a small application of published methods ([Prior work](#7-prior-work)) t
 | Question | Answer | Main limit |
 |---|---|---|
 | Does the autoencoder capture the activations? | variance explained 0.890, L0 26.7, loss recovered 0.928 / 0.910, but perplexity +72% | weak baselines; one seed |
-| Do labels say where features fire? | better than chance: blind accuracy 0.816 vs control 0.532 | AI labels, AI guessers; easy distractors |
-| Are features cleanly interpretable? | almost none by a strict blind check: 3/200, not different from control | AI judges; one strict rule |
+| Do labels say where features fire? | better than chance: blind accuracy 0.816 vs control 0.532 | no human check; easy distractors |
+| Are features cleanly interpretable? | almost none by a strict blind check: 3/200, not different from control | no human check; one strict rule |
 | Do features steer the model toward their label? | not supported: 1/14 (design 2), 1/14 (design 3) | narrow word lists; 14 hand-picked features |
 | Can the pronoun choice be traced? | ablation shrinks the gap but never changes the choice; one flip direction works | exploratory analysis, few names |
 
@@ -33,10 +31,10 @@ This is a small application of published methods ([Prior work](#7-prior-work)) t
 Splice the reconstruction into the model at layer 3 and measure next-token loss on the held-out stories (198,858 predicted tokens), against zero-ablation and mean-ablation baselines. 95% bootstrap intervals over stories.
 
 ### 2.4 Interpretation (`scripts/stage5_*.py`, `scripts/stage5b_*.py`)
-- 200 features chosen at random (seed 1234); for each, its top 20 snippets, 5 random firings and promoted output tokens. Claude wrote one label per feature. These labels are final, AI-written and unverified.
-- **Original blind test:** a fresh sub-agent sees only the label and 10 snippets (5 firing, sampled uniformly among all firings; the rest non-firing) and picks the firing ones. Real snippets came from held-out text, but the control's came from its own training text.
-- **Review rerun, blind test on fresh text:** the first 50 real and the 50 control features, on held-out stories that neither autoencoder trained on (the shuffled model was run on them), mixed and anonymised; 4 fresh sub-agents.
-- **Review rerun, blind strict-clear verdicts:** all 250 features mixed and anonymised; each judged by 2 fresh sub-agents who were not told there were two sources. Each counted how many of the 20 strongest examples and of 10 new uniformly sampled firings fit the label.
+- 200 features chosen at random (seed 1234); for each, its top 20 snippets, 5 random firings and promoted output tokens. One label was written per feature. Feature labels and blind evaluations were generated with a language model and have not been human-verified.
+- **Original blind test:** a fresh judge sees only the label and 10 snippets (5 firing, sampled uniformly among all firings; the rest non-firing) and picks the firing ones. Real snippets came from held-out text, but the control's came from its own training text.
+- **Review rerun, blind test on fresh text:** the first 50 real and the 50 control features, on held-out stories that neither autoencoder trained on (the shuffled model was run on them), mixed and anonymised; 4 fresh guessers.
+- **Review rerun, blind strict-clear verdicts:** all 250 features mixed and anonymised; each judged by 2 fresh judges who were not told there were two sources. Each counted how many of the 20 strongest examples and of 10 new uniformly sampled firings fit the label.
   Clear = at least 16 of 20 and 8 of 10, by both judges. Rules in `config.yaml` `stage5_v2`, committed before the run.
 - **Control:** an autoencoder with the same settings trained on a shuffled-weights copy of the model (Bricken et al.): 357,783 half-precision tokens, 120 epochs; variance explained 0.899, L0 56.2.
 
@@ -86,7 +84,7 @@ At λ=1, 40% of features fire on more than 1% of held-out tokens. The reconstruc
 | Real, first 50, fresh text (rerun) | 50 | 0.816 | 17 | 12 |
 | Control, fresh text (rerun) | 50 | 0.532 | 2 | 44 |
 
-Fresh text: real minus control = 0.284, one-sided permutation p below 0.0001; control vs chance (0.5) p = 0.075. Each of the 4 sub-agents shows the same direction.
+Fresh text: real minus control = 0.284, one-sided permutation p below 0.0001; control vs chance (0.5) p = 0.075. Each of the 4 guessers shows the same direction.
 On its own training text the control scored 0.564, significantly above chance; on fresh text it does not. By firing-strength tercile (pooled across features, so this mixes strength with feature identity),
 the original test detected weak firings at 0.64 and strong at 0.94.
 
@@ -104,7 +102,7 @@ Per-feature results: `results/stage5b_per_feature.csv`; write-up: `results/stage
 ### 3.3 Steering: the three designs side by side
 Vector lengths are given as a fraction of the mean activation length (2.51 in model units), so the designs can be compared. Strengths in the design 2 column are in its own unit (× median firing), in the design 3 column as fractions.
 
-| feature | label (AI-written) | blind | how chosen | design 1 (exploratory): lengths covered; outcome | design 2: lengths; fluent up to; outcome | design 3: lengths; fluent up to; outcome |
+| feature | label | blind | how chosen | design 1 (exploratory): lengths covered; outcome | design 2: lengths; fluent up to; outcome | design 3: lengths; fluent up to; outcome |
 |---|---|---|---|---|---|---|
 | 144 | ' little' in 'there was a little boy/girl' | 5/5 | main: clear by my non-blind verdict, 5/5 blind | 0.25–4.93; both prompts broken from 0.99 | 0.75–3.77; never fluent; does not steer (on-label only where not fluent: 3, 5, 7, 10×) | 0.10–1.00; fluent up to 0.35; does not steer (on-label only where not fluent: 1.0) |
 | 597 | ' big' in 'saw a big ...' (encounter) | 5/5 | main: clear by my non-blind verdict, 5/5 blind | 0.27–5.41; both prompts broken from 1.08 | 0.20–0.99; fluent up to 0.30; does not steer | 0.10–1.00; fluent up to 0.35; does not steer |
@@ -179,9 +177,9 @@ Its tables remain in `results/stage7_report.md`. Rerun write-up: `results/stage7
 
 - One model, one layer, one dictionary size, one seed; no training-seed variation measured.
 - The autoencoder is lossy (+72% perplexity) and shifts the traced behaviour; anything carried by the reconstruction error is invisible to feature-level analysis.
-- **All labels are AI-written and unverified, and every check on them was done by AI sub-agents of the same family.** The blind test's non-firing snippets are random tokens (easy), and the strict-verdict rule (16/20 and 8/10) is one choice among many.
+- **No label or verdict has been checked by a human, and the labeller, guessers and judges may share biases.** The blind test's non-firing snippets are random tokens (easy), and the strict-verdict rule (16/20 and 8/10) is one choice among many.
 - Only 200 of 2048 features were labelled; the control is denser (L0 56.2 vs 26.7), used 357,783 half-precision tokens against 2,487,185, and is not a perfect match.
-- p-values treat puzzles as independent, although each sub-agent answered 25; per-sub-agent results are reported.
+- p-values treat puzzles as independent, although each guesser answered 25; per-guesser results are reported.
 - Steering: 14 hand-picked features, narrow label-word lists, one fluency rule; three designs in total, the last fixed by the user as final.
 - Tracing: 20 names, 5 held out per gender; frames hand-written; layer 3 only; the gender-selective analysis is exploratory.
 - Only exact duplicate stories were excluded from the held-out set; near-duplicates are possible.
@@ -197,7 +195,7 @@ Its tables remain in `results/stage7_report.md`. Rerun write-up: `results/stage7
 | Data size | Bricken: billions of vectors | 2,487,185 tokens, 20 epochs, with resampling | disk cap |
 | λ grid | 4 values about 3× apart | [0.5, 1, 2, 4] | 3× spacing would have put half the runs outside the usable range |
 | Loss recovered | zero baseline | zero and mean baselines | zero-ablation flatters |
-| Labels | not specified | AI-written, no human check; blind tests and blind verdicts by AI sub-agents | user's decision not to hand-label |
+| Labels | not specified | no human check | user's decision not to hand-label |
 | Steering strength | 2, 5 and 10 × "usual firing strength" | design 1 used the top-20 mean as the unit (an error); design 2 the median firing at 2, 3, 5, 7, 10×; design 3 fractions of the mean activation length | review |
 | Tracing | one test | plus a rerun with held-out frames, matched controls and loss measures, and an exploratory gender-selective analysis | review |
 
@@ -212,12 +210,12 @@ Its tables remain in `results/stage7_report.md`. Rerun write-up: `results/stage7
 
 - Seed 1234 in `config.yaml`. The review reruns' designs and success rules are in `config.yaml` and were committed before each run (git history shows the order).
 - Commands are in the README. `data/` and `checkpoints/` are git-ignored and regenerable.
-- Not fully scripted: the label text and the sub-agents' answers and verdicts, which are stored raw; scoring scripts recompute every number from them.
+- Not fully scripted: the label text and the judges' answers and verdicts, which are stored raw; scoring scripts recompute every number from them.
 - README and this report are generated from `results/headline_numbers.json` by `scripts/stage8_docs.py`; `scripts/stage8_check_numbers.py` flags untraceable numbers but cannot check wording.
 
 ## 9. Review and corrections
 
-After the first version was finished, a read-only sceptical review (by Claude, at the user's request) listed every claim the results did not support. The user then asked for reruns with rules fixed in advance,
+After the first version was finished, a sceptical review listed every claim the results did not support. This was followed by reruns with rules fixed in advance,
 a third and final steering design, and a rewrite. The table lists each finding, ranked by seriousness, what changed, and what the evidence now says. Nothing here has had a human check.
 
 | # | seriousness | what the review found | what changed | outcome |
@@ -233,7 +231,7 @@ a third and final steering design, and a rewrite. The table lists each finding, 
 | 9 | serious | False claim that the extension used every topic label; main six were hand-picked from 20 without saying so | Selection described as hand-picked (e.g. 1470, Small-animal nouns (squirrel, mouse), was left out) | Corrected in README and REPORT |
 | 10 | moderate | Control differs in more than weights; its blind-test text was its own training text | Control blind test rerun on held-out text it never saw | 0.532 (not significantly above chance); real 0.816; density and data differences stated as limits |
 | 11 | moderate | Blind test is easy and partly measures label style | Stated as a limit | Unchanged |
-| 12 | moderate | p-values assume independent puzzles, but answers come in batches of 25 | Per-sub-agent accuracies reported | All sub-agents show the same gap (`results/stage5b_report.md`) |
+| 12 | moderate | p-values assume independent puzzles, but answers come in batches of 25 | Per-guesser accuracies reported | All guessers show the same gap (`results/stage5b_report.md`) |
 | 13 | moderate | '3 of 6 topic features steered' used a rule written afterwards | Marked exploratory; superseded by designs 2 and 3 | Designs 2 and 3: 0 and 1 of 6 topic features steer |
 | 14 | moderate | 'Blind accuracy does not predict steering' drawn from 6 features | Removed | - |
 | 15 | moderate | 'Reproduces the activations well' was generous; dense features not mentioned | Perplexity rise and density stated | 72% perplexity rise; 40% of features fire on more than 1% of tokens |

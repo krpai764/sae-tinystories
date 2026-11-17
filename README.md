@@ -3,7 +3,7 @@
 Sparse autoencoders on the activations of a small story-writing model (roneneldan/TinyStories-8M): find features, test whether their labels hold up, steer the model with them, trace one behaviour.
 A careful small-scale application of published methods ([Prior work](#prior-work)), **not new research**: one model, one layer, one dictionary size, one seed.
 
-> **All feature labels in this project are AI-written (by Claude) and have not been verified by a human.** The blind tests and blind verdicts that check them were also done by Claude sub-agents (the same model family), so nothing here has had a human check.
+> Feature labels and blind evaluations were generated with a language model and have not been human-verified.
 
 > **This README was rewritten after a sceptical review, and several earlier claims were withdrawn or weakened.** The [Review and corrections](REPORT.md#9-review-and-corrections) section of REPORT.md lists what the review found and what changed.
 
@@ -26,7 +26,7 @@ Only **3 of 200 real features (1.5%)** and 0 of 50 control features passed, whic
 Strongest examples fit the labels about equally for both (17.8 and 17.5 of 20), but random firings almost never do (0.8 of 10 for real features):
 a typical firing is weak (median strength 0.35 against 7.2 for the strongest examples) and lands on loosely related tokens.
 **An earlier claim that 37 of 200 features were clear is withdrawn:** I made those verdicts myself, knowing which features were controls, and the blind judges confirmed 2 of them.
-*Limits:* labels, guessers and judges are all the same model family; the non-firing snippets in the blind test are random tokens, an easy contrast; the control autoencoder is denser (L0 56.2 against 26.7) and saw less data.
+*Limits:* no label or verdict has been checked by a human, and the labeller, guessers and judges may share biases; the non-firing snippets in the blind test are random tokens, an easy contrast; the control autoencoder is denser (L0 56.2 against 26.7) and saw less data.
 
 **3. Steering toward a label at fluent strengths is not supported.**
 I steered 14 features by adding a multiple of their decoder direction during generation, against random directions of the same length, with three designs.
@@ -53,7 +53,7 @@ The model prefers the right pronoun after a name on every test prompt. In a reru
 
 ## Feature browser
 
-Open [`browser/index.html`](browser/index.html) in any browser (no server, no network). Pick a feature to see its AI-written label, the blind judges' counts, its blind-test score,
+Open [`browser/index.html`](browser/index.html) in any browser (no server, no network). Pick a feature to see its label, the blind judges' counts, its blind-test score,
 its strongest and random firings, and steering and tracing results. A toggle switches to the shuffled-weights control's features.
 It holds the 200 labelled features, the 50 labelled control features, and the Stage 7 features that were not among the 200.
 
@@ -106,7 +106,7 @@ The collected activations take 2.79 GB (`data/`, git-ignored, regenerable); chec
 | 7 review rerun | `python scripts/stage7b_trace_v2.py`, `python scripts/stage7b_report.py` | `results/stage7b*` |
 | 8 browser, docs | `python scripts/stage8_numbers.py`, `python scripts/stage8_browser.py`, `python scripts/stage8_docs.py`, `python scripts/stage8_check_numbers.py` | `results/headline_numbers.json`, `browser/index.html`, `README.md`, `REPORT.md` |
 
-**Not fully scripted.** The labels were written by Claude; `stage5_write_labels.py` stores the text, so re-running it does not re-label. The blind answers and blind verdicts came from fresh Claude sub-agents
+**Not fully scripted.** The label text is stored in `stage5_write_labels.py`, so re-running it does not re-label. The blind answers and blind verdicts came from fresh judges
 reading only the puzzle or item files; their raw answers are saved under `results/stage5_blind/` and `results/stage5b/responses/`, and the scoring scripts recompute every number from them. Re-doing these steps needs new answers and would give slightly different numbers.
 
 **Where numbers come from.** `scripts/stage8_numbers.py` gathers every number cited here into `results/headline_numbers.json`; `scripts/stage8_docs.py` fills this README and `REPORT.md` from it;
@@ -134,7 +134,3 @@ LEARNING_NOTES.md  plain-language explanations and interview questions per stage
 - Hoagy Cunningham, Aidan Ewart, Logan Riggs, Robert Huben and Lee Sharkey. *Sparse Autoencoders Find Highly Interpretable Features in Language Models.* arXiv:2309.08600, 2023.
 
 `docs/method_comparison.md` lists where this project follows each paper and where it differs.
-
-## Credits
-
-Built by a student with Claude Code (Anthropic) as the coding assistant. Claude also wrote all feature labels, and Claude sub-agents took the blind tests and gave the blind verdicts, which is why nothing here counts as human-verified.

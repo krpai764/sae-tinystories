@@ -1,6 +1,6 @@
 # Stage 5 report: interpreting features (SAE λ=1)
 
-> **All feature labels in this project are AI-written (by Claude) and have NOT been verified by a human.**
+> **No feature label in this project has been verified by a human.**
 > The user chose not to hand-label. Labels were written from the top-20 and 5 random firing snippets plus
 > promoted output tokens, and then scored with a blind test (below), but nobody checked them by hand.
 
@@ -69,7 +69,7 @@ Lowest blind accuracy:
 - #46 (feature 1408): 'John' as first token of a story — blind accuracy 0.4
 
 ## Caveats
-- One AI wrote the labels and another instance of the same model family guessed; shared biases could inflate scores.
+- The labeller and the guessers may share biases, which could inflate scores.
 - The labeller's "unclear" verdicts did not predict blind accuracy (see table), so those verdicts are weak evidence.
 - Control used 400k tokens (fp16) vs 2.5M (fp32), and its eval is a random 10% of the same stories, so it is not a perfectly matched comparison.
 - Non-firing snippets are random tokens, an easy contrast; harder distractors (same token, feature off) would lower scores.

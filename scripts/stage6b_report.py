@@ -74,7 +74,7 @@ axes[0, 0].legend(fontsize=6); fig.supxlabel(("strength (fraction of mean activa
 fig.tight_layout(); fig.savefig(ROOT / "figures" / f"stage6b_steering_{TAG}.png", dpi=110)
 
 L = [("# Steering, third and last design: strength as a fraction of the mean activation length\n" if V3 else "# Review rerun 1a: steering in units of median firing\n"),
-     "> All feature labels are AI-written (by Claude) and have not been verified by a human.\n",
+     "> No feature label here has been verified by a human.\n",
      f"Design, word lists and success rule were committed in `config.yaml` (`steering_{TAG}`) before the run. {P} prompts, {NR} random directions per feature, strengths {K} x {'the mean activation length at layer 3' if V3 else 'each feature\'s median non-zero firing'}, 50 tokens.",
      f"Fluent threshold (rule: 2 x the 95th percentile of unsteered perplexity, {len(un)} samples): **{thr:.2f}** (unsteered median {S['unsteered_ppl_median']:.2f}, 95th percentile {S['unsteered_ppl_p95']:.2f}).\n",
      "**Rule.** " + " ".join(f"*{k}*: {v}" for k, v in sc["success_rule"].items()) + "\n",

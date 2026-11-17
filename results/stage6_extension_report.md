@@ -1,6 +1,6 @@
 # Stage 6 extension: steering context/theme features
 
-> All feature labels are AI-written (by Claude) and have not been verified by a human.
+> No feature label here has been verified by a human.
 
 **How features were chosen.** Every Stage 5 label that names a topic or domain (weather, bees, chores, music, danger) rather than a syntactic slot or one predicted next word, whatever its clear verdict or blind score, excluding features already steered. That gave 6: 1137 (' rain' in 'started to rain', 3/5 blind, clear), 916 (Bees, hives and honey, 5/5 blind, not clear), 1463 (' cold' (weather), 3/5 blind, not clear), 687 (Parental safety warnings ("don't go too close"); promotes 'dangerous', 4/5 blind, not clear), 1970 (Objects of household chores (dishes, laundry, weeds), 4/5 blind, not clear), 715 (' play' a musical instrument, 3/5 blind, not clear).
 

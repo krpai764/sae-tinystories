@@ -57,14 +57,14 @@
 
 ## Stage 5: Interpret features
 
-**What it did.** Took 200 random features from the chosen autoencoder and, for each, collected the 20 text snippets where it fires most strongly, 5 random firings, and the output words its direction promotes. Wrote a label for each (all labels are AI-written, not human-checked). Then tested the labels blind: a fresh AI that never saw the evidence got only the label and had to pick the 5 real firing snippets out of 10. Did the same for an autoencoder trained on a copy of the model with its weights shuffled.
+**What it did.** Took 200 random features from the chosen autoencoder and, for each, collected the 20 text snippets where it fires most strongly, 5 random firings, and the output words its direction promotes. Wrote a label for each (no label has been human-checked). Then tested the labels blind: a fresh judge who never saw the evidence got only the label and had to pick the 5 real firing snippets out of 10. Did the same for an autoencoder trained on a copy of the model with its weights shuffled.
 
 **Why.** Top examples are seductive: even the shuffled model's features looked clean at the top (41/50 seemed clear). The blind test with random (often weak) firings is a fairer check: real labels scored 0.78 versus 0.56 for the control (chance 0.50), and only 37/200 real features passed the strict "random firings fit too" rule.
 
 **Interview questions**
 1. *Why train an SAE on a model with shuffled weights?* As a control: if its features looked just as interpretable, our method would be finding patterns in the text or the method itself, not in the model.
 2. *Why sample firings uniformly rather than using the top ones in the blind test?* Top firings are the easiest cases; most firings are weaker, and a label should explain typical behaviour too. Detection fell from 0.94 for strong to 0.64 for weak firings.
-3. *What is the main weakness of this evaluation?* Labels were written and scored by AI models of the same family with no human check, and the non-firing distractors were random tokens, which makes the test easier than it could be.
+3. *What is the main weakness of this evaluation?* Labels were written and scored without any human check, the labeller and guessers may share biases, and the non-firing distractors were random tokens, which makes the test easier than it could be.
 
 ## Stage 6: Steering
 
@@ -96,11 +96,11 @@
 
 **What it did.** Built a single web page (open it straight from the folder) where you pick a feature and see its label, whether it passed the strict test, its blind-test score, its strongest and random examples, and any steering or tracing results. Wrote the README and report so that every number is filled in by a script from the saved result files, and wrote a checker that flags any number in them it cannot trace back.
 
-**Why.** A project like this is only worth showing if a reader can check it. Numbers typed by hand drift out of date and get rounded favourably; numbers filled in from files cannot. Leading with the limits next to each finding keeps the headline honest: the labels are AI-written, the blind test was taken by the same kind of model, and the steering and tracing tests are small.
+**Why.** A project like this is only worth showing if a reader can check it. Numbers typed by hand drift out of date and get rounded favourably; numbers filled in from files cannot. Leading with the limits next to each finding keeps the headline honest: the labels are not human-checked, the blind test's guessers may share the labeller's biases, and the steering and tracing tests are small.
 
 **Interview questions**
 1. *How do you make sure the numbers in your README are right?* They are not typed. One script collects them from the result files into one JSON file, another fills the README and report from it, and a checker flags any number in the text that is not in that file. The remaining risk is wording, so each claim is also checked against the tables.
-2. *What would you do first to make the interpretability claims stronger?* Have a human check a random sample of the labels, and run the blind test with a different model and with harder non-firing examples than random tokens, because right now the same model family writes and tests the labels.
+2. *What would you do first to make the interpretability claims stronger?* Have a human check a random sample of the labels, and run the blind test with independent judges and with harder non-firing examples than random tokens, because right now the labeller and the judges may share biases.
 3. *Why include the features that failed in the browser and report?* Showing only the successes would overstate the method. Most features did not pass the strict rule, two of six topic features failed to steer, and the first tracing test passed for a misleading reason; a reader needs those to judge the rest.
 
 ## After the review: reruns and corrections

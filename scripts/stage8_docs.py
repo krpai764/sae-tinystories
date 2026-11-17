@@ -57,8 +57,7 @@ n_1511_silent = sum(v < 0.05 for v in T2["peak_1511"].values())
 silent_1511 = [n for n, v in T2["peak_1511"].items() if v < 0.05]
 n_1532_fires = sum(v > 1 for v in T2["peak_1532"].values())
 
-DISCLAIMER = ("> **All feature labels in this project are AI-written (by Claude) and have not been verified by a human.** "
-              "The blind tests and blind verdicts that check them were also done by Claude sub-agents (the same model family), so nothing here has had a human check.")
+METHOD = "Feature labels and blind evaluations were generated with a language model and have not been human-verified."
 REVIEWED = ("> **This README was rewritten after a sceptical review, and several earlier claims were withdrawn or weakened.** "
             "The [Review and corrections](REPORT.md#9-review-and-corrections) section of REPORT.md lists what the review found and what changed.")
 
@@ -68,7 +67,7 @@ README = f"""# Sparse autoencoders on TinyStories-8M
 Sparse autoencoders on the activations of a small story-writing model ({S['model']}): find features, test whether their labels hold up, steer the model with them, trace one behaviour.
 A careful small-scale application of published methods ([Prior work](#prior-work)), **not new research**: one model, one layer, one dictionary size, one seed.
 
-{DISCLAIMER}
+> {METHOD}
 
 {REVIEWED}
 
@@ -91,7 +90,7 @@ Only **{VB['real']['strict_clear']} of {VB['real']['n']} real features ({pc1(VB[
 Strongest examples fit the labels about equally for both ({f1(VB['real']['mean_top_fit_of_20'])} and {f1(VB['control']['mean_top_fit_of_20'])} of 20), but random firings almost never do ({f1(VB['real']['mean_random_fit_of_10'])} of 10 for real features):
 a typical firing is weak (median strength {f2(V5['median_random_firing_act_real'])} against {f1(V5['median_top_act_real'])} for the strongest examples) and lands on loosely related tokens.
 **An earlier claim that {I['clear_real']} of {I['n_features_labelled']} features were clear is withdrawn:** I made those verdicts myself, knowing which features were controls, and the blind judges confirmed {VB['real']['old_clear_confirmed_blind']} of them.
-*Limits:* labels, guessers and judges are all the same model family; the non-firing snippets in the blind test are random tokens, an easy contrast; the control autoencoder is denser (L0 {f1(I['control_sae']['l0'])} against {f1(R1['l0'])}) and saw less data.
+*Limits:* no label or verdict has been checked by a human, and the labeller, guessers and judges may share biases; the non-firing snippets in the blind test are random tokens, an easy contrast; the control autoencoder is denser (L0 {f1(I['control_sae']['l0'])} against {f1(R1['l0'])}) and saw less data.
 
 **3. Steering toward a label at fluent strengths is not supported.**
 I steered {D2['n_features']} features by adding a multiple of their decoder direction during generation, against random directions of the same length, with three designs.
@@ -118,7 +117,7 @@ The model prefers the right pronoun after a name on every test prompt. In a reru
 
 ## Feature browser
 
-Open [`browser/index.html`](browser/index.html) in any browser (no server, no network). Pick a feature to see its AI-written label, the blind judges' counts, its blind-test score,
+Open [`browser/index.html`](browser/index.html) in any browser (no server, no network). Pick a feature to see its label, the blind judges' counts, its blind-test score,
 its strongest and random firings, and steering and tracing results. A toggle switches to the shuffled-weights control's features.
 It holds the {I['n_features_labelled']} labelled features, the {I['n_control_labelled']} labelled control features, and the Stage 7 features that were not among the {I['n_features_labelled']}.
 
@@ -170,7 +169,7 @@ The collected activations take {S['data_dir_GB']:.2f} GB (`data/`, git-ignored, 
 | 7 review rerun | `python scripts/stage7b_trace_v2.py`, `python scripts/stage7b_report.py` | `results/stage7b*` |
 | 8 browser, docs | `python scripts/stage8_numbers.py`, `python scripts/stage8_browser.py`, `python scripts/stage8_docs.py`, `python scripts/stage8_check_numbers.py` | `results/headline_numbers.json`, `browser/index.html`, `README.md`, `REPORT.md` |
 
-**Not fully scripted.** The labels were written by Claude; `stage5_write_labels.py` stores the text, so re-running it does not re-label. The blind answers and blind verdicts came from fresh Claude sub-agents
+**Not fully scripted.** The label text is stored in `stage5_write_labels.py`, so re-running it does not re-label. The blind answers and blind verdicts came from fresh judges
 reading only the puzzle or item files; their raw answers are saved under `results/stage5_blind/` and `results/stage5b/responses/`, and the scoring scripts recompute every number from them. Re-doing these steps needs new answers and would give slightly different numbers.
 
 **Where numbers come from.** `scripts/stage8_numbers.py` gathers every number cited here into `results/headline_numbers.json`; `scripts/stage8_docs.py` fills this README and `REPORT.md` from it;
@@ -198,10 +197,6 @@ LEARNING_NOTES.md  plain-language explanations and interview questions per stage
 - Hoagy Cunningham, Aidan Ewart, Logan Riggs, Robert Huben and Lee Sharkey. *Sparse Autoencoders Find Highly Interpretable Features in Language Models.* arXiv:2309.08600, 2023.
 
 `docs/method_comparison.md` lists where this project follows each paper and where it differs.
-
-## Credits
-
-Built by a student with Claude Code (Anthropic) as the coding assistant. Claude also wrote all feature labels, and Claude sub-agents took the blind tests and gave the blind verdicts, which is why nothing here counts as human-verified.
 """
 
 # ============================================================ REPORT ============================================================
@@ -268,7 +263,7 @@ REVIEW_ROWS = [
     ["9", "serious", "False claim that the extension used every topic label; main six were hand-picked from 20 without saying so", f"Selection described as hand-picked (e.g. {LEFT['feature']}, {LEFT['label']}, was left out)", "Corrected in README and REPORT"],
     ["10", "moderate", "Control differs in more than weights; its blind-test text was its own training text", "Control blind test rerun on held-out text it never saw", f"{f3(BT['control_50']['mean_accuracy'])} (not significantly above chance); real {f3(BT['real_50']['mean_accuracy'])}; density and data differences stated as limits"],
     ["11", "moderate", "Blind test is easy and partly measures label style", "Stated as a limit", "Unchanged"],
-    ["12", "moderate", f"p-values assume independent puzzles, but answers come in batches of {I['puzzles_per_subagent']}", "Per-sub-agent accuracies reported", "All sub-agents show the same gap (`results/stage5b_report.md`)"],
+    ["12", "moderate", f"p-values assume independent puzzles, but answers come in batches of {I['puzzles_per_guesser']}", "Per-guesser accuracies reported", "All guessers show the same gap (`results/stage5b_report.md`)"],
     ["13", "moderate", "'3 of 6 topic features steered' used a rule written afterwards", "Marked exploratory; superseded by designs 2 and 3", f"Designs 2 and 3: {sum(D2['features'][str(f)]['steers'] for f in FEATS if GROUP[f] == 'topic')} and {sum(D3['features'][str(f)]['steers'] for f in FEATS if GROUP[f] == 'topic')} of 6 topic features steer"],
     ["14", "moderate", "'Blind accuracy does not predict steering' drawn from 6 features", "Removed", "-"],
     ["15", "moderate", "'Reproduces the activations well' was generous; dense features not mentioned", "Perplexity rise and density stated", f"{pc(R1['perplexity_rise'])} perplexity rise; {pc(S['density_gt_1pct'])} of features fire on more than 1% of tokens"],
@@ -285,8 +280,6 @@ REVIEW_ROWS = [
 
 REPORT = f"""# Sparse autoencoders on TinyStories-8M: method, results, failures and limits
 
-{DISCLAIMER}
-
 > **This report was rewritten after a sceptical review.** Several claims in the first version were withdrawn or weakened, three experiments were rerun under rules fixed in advance,
 > and a third steering design was added. Section 9 lists what the review found and what changed. Every number below comes from a file in `results/` via `results/headline_numbers.json`.
 
@@ -297,8 +290,8 @@ This is a small application of published methods ([Prior work](#7-prior-work)) t
 | Question | Answer | Main limit |
 |---|---|---|
 | Does the autoencoder capture the activations? | variance explained {f3(R1['variance_explained'])}, L0 {f1(R1['l0'])}, loss recovered {f3(R1['loss_recovered_zero'])} / {f3(R1['loss_recovered_mean'])}, but perplexity +{pc(R1['perplexity_rise'])} | weak baselines; one seed |
-| Do labels say where features fire? | better than chance: blind accuracy {f3(BT['real_50']['mean_accuracy'])} vs control {f3(BT['control_50']['mean_accuracy'])} | AI labels, AI guessers; easy distractors |
-| Are features cleanly interpretable? | almost none by a strict blind check: {VB['real']['strict_clear']}/{VB['real']['n']}, not different from control | AI judges; one strict rule |
+| Do labels say where features fire? | better than chance: blind accuracy {f3(BT['real_50']['mean_accuracy'])} vs control {f3(BT['control_50']['mean_accuracy'])} | no human check; easy distractors |
+| Are features cleanly interpretable? | almost none by a strict blind check: {VB['real']['strict_clear']}/{VB['real']['n']}, not different from control | no human check; one strict rule |
 | Do features steer the model toward their label? | not supported: {D2['n_steer_total']}/{D2['n_features']} (design 2), {D3['n_steer_total']}/{D3['n_features']} (design 3) | narrow word lists; 14 hand-picked features |
 | Can the pronoun choice be traced? | ablation shrinks the gap but never changes the choice; one flip direction works | exploratory analysis, few names |
 
@@ -318,10 +311,10 @@ This is a small application of published methods ([Prior work](#7-prior-work)) t
 Splice the reconstruction into the model at layer {S['layer']} and measure next-token loss on the held-out stories ({F['n_predicted_tokens']:,} predicted tokens), against zero-ablation and mean-ablation baselines. 95% bootstrap intervals over stories.
 
 ### 2.4 Interpretation (`scripts/stage5_*.py`, `scripts/stage5b_*.py`)
-- {I['n_features_labelled']} features chosen at random (seed {S['seed']}); for each, its top {S['interpret_top_k']} snippets, {S['interpret_n_random']} random firings and promoted output tokens. Claude wrote one label per feature. These labels are final, AI-written and unverified.
-- **Original blind test:** a fresh sub-agent sees only the label and {I['n_snippets_per_puzzle']} snippets ({I['n_firing_snippets_per_puzzle']} firing, sampled uniformly among all firings; the rest non-firing) and picks the firing ones. Real snippets came from held-out text, but the control's came from its own training text.
-- **Review rerun, blind test on fresh text:** the first 50 real and the 50 control features, on held-out stories that neither autoencoder trained on (the shuffled model was run on them), mixed and anonymised; {V5['n_puzzle_files']} fresh sub-agents.
-- **Review rerun, blind strict-clear verdicts:** all {VB['n_items']} features mixed and anonymised; each judged by {V5['n_judges_per_item']} fresh sub-agents who were not told there were two sources. Each counted how many of the {RU['top_n']} strongest examples and of {RU['random_n']} new uniformly sampled firings fit the label.
+- {I['n_features_labelled']} features chosen at random (seed {S['seed']}); for each, its top {S['interpret_top_k']} snippets, {S['interpret_n_random']} random firings and promoted output tokens. One label was written per feature. {METHOD}
+- **Original blind test:** a fresh judge sees only the label and {I['n_snippets_per_puzzle']} snippets ({I['n_firing_snippets_per_puzzle']} firing, sampled uniformly among all firings; the rest non-firing) and picks the firing ones. Real snippets came from held-out text, but the control's came from its own training text.
+- **Review rerun, blind test on fresh text:** the first 50 real and the 50 control features, on held-out stories that neither autoencoder trained on (the shuffled model was run on them), mixed and anonymised; {V5['n_puzzle_files']} fresh guessers.
+- **Review rerun, blind strict-clear verdicts:** all {VB['n_items']} features mixed and anonymised; each judged by {V5['n_judges_per_item']} fresh judges who were not told there were two sources. Each counted how many of the {RU['top_n']} strongest examples and of {RU['random_n']} new uniformly sampled firings fit the label.
   Clear = at least {RU['top_min']} of {RU['top_n']} and {RU['random_min']} of {RU['random_n']}, by both judges. Rules in `config.yaml` `stage5_v2`, committed before the run.
 - **Control:** an autoencoder with the same settings trained on a shuffled-weights copy of the model (Bricken et al.): {I['control_sae']['train_tokens']:,} half-precision tokens, {I['control_sae']['epochs']} epochs; variance explained {f3(I['control_sae']['variance_explained'])}, L0 {f1(I['control_sae']['l0'])}.
 
@@ -360,7 +353,7 @@ At λ={lam}, {pc(S['density_gt_1pct'])} of features fire on more than 1% of held
 
 {table(["Set", "n", "mean accuracy", "5/5", "3/5 or fewer"], blind_rows + [["Real, first 50, fresh text (rerun)", BT['real_50']['n'], f3(BT['real_50']['mean_accuracy']), BT['real_50']['n_5of5'], BT['real_50']['n_at_or_below_3of5']], ["Control, fresh text (rerun)", BT['control_50']['n'], f3(BT['control_50']['mean_accuracy']), BT['control_50']['n_5of5'], BT['control_50']['n_at_or_below_3of5']]])}
 
-Fresh text: real minus control = {f3(BT['difference'])}, one-sided permutation p {p4(BT['permutation_p_one_sided'])}; control vs chance ({CH}) p = {f3(BT['control_50']['p_vs_chance'])}. Each of the {len(BT['per_subagent'])} sub-agents shows the same direction.
+Fresh text: real minus control = {f3(BT['difference'])}, one-sided permutation p {p4(BT['permutation_p_one_sided'])}; control vs chance ({CH}) p = {f3(BT['control_50']['p_vs_chance'])}. Each of the {len(BT['per_guesser'])} guessers shows the same direction.
 On its own training text the control scored {f3(B['control_50']['mean_accuracy'])}, significantly above chance; on fresh text it does not. By firing-strength tercile (pooled across features, so this mixes strength with feature identity),
 the original test detected weak firings at {f2(I['tercile_real']['weak'])} and strong at {f2(I['tercile_real']['strong'])}.
 
@@ -376,7 +369,7 @@ Per-feature results: `results/stage5b_per_feature.csv`; write-up: `results/stage
 ### 3.3 Steering: the three designs side by side
 Vector lengths are given as a fraction of the mean activation length ({f2(S['mean_activation_norm_model_units'])} in model units), so the designs can be compared. Strengths in the design 2 column are in its own unit (× median firing), in the design 3 column as fractions.
 
-{table(["feature", "label (AI-written)", "blind", "how chosen", "design 1 (exploratory): lengths covered; outcome", "design 2: lengths; fluent up to; outcome", "design 3: lengths; fluent up to; outcome"], steer_rows)}
+{table(["feature", "label", "blind", "how chosen", "design 1 (exploratory): lengths covered; outcome", "design 2: lengths; fluent up to; outcome", "design 3: lengths; fluent up to; outcome"], steer_rows)}
 
 - Design 2 rule verdicts: {'; '.join(f"{GNAME[g]}: {v['n_steer']}/{v['n_features']} ({v['verdict']})" for g, v in D2['groups'].items())}.
 - Design 3 rule verdicts: {'; '.join(f"{GNAME[g]}: {v['n_steer']}/{v['n_features']} ({v['verdict']})" for g, v in D3['groups'].items())}. Using design 2's numeric cut-off instead changes {D3['n_steer_total'] - D3['n_steer_under_design2_cutoff']} verdicts.
@@ -423,9 +416,9 @@ Its tables remain in `results/stage7_report.md`. Rerun write-up: `results/stage7
 
 - One model, one layer, one dictionary size, one seed; no training-seed variation measured.
 - The autoencoder is lossy (+{pc(R1['perplexity_rise'])} perplexity) and shifts the traced behaviour; anything carried by the reconstruction error is invisible to feature-level analysis.
-- **All labels are AI-written and unverified, and every check on them was done by AI sub-agents of the same family.** The blind test's non-firing snippets are random tokens (easy), and the strict-verdict rule ({RU['top_min']}/{RU['top_n']} and {RU['random_min']}/{RU['random_n']}) is one choice among many.
+- **No label or verdict has been checked by a human, and the labeller, guessers and judges may share biases.** The blind test's non-firing snippets are random tokens (easy), and the strict-verdict rule ({RU['top_min']}/{RU['top_n']} and {RU['random_min']}/{RU['random_n']}) is one choice among many.
 - Only {I['n_features_labelled']} of {S['dictionary_size']} features were labelled; the control is denser (L0 {f1(I['control_sae']['l0'])} vs {f1(R1['l0'])}), used {I['control_sae']['train_tokens']:,} half-precision tokens against {S['train_tokens_in_sae']:,}, and is not a perfect match.
-- p-values treat puzzles as independent, although each sub-agent answered {I['puzzles_per_subagent']}; per-sub-agent results are reported.
+- p-values treat puzzles as independent, although each guesser answered {I['puzzles_per_guesser']}; per-guesser results are reported.
 - Steering: 14 hand-picked features, narrow label-word lists, one fluency rule; three designs in total, the last fixed by the user as final.
 - Tracing: {N['trace']['n_names']} names, 5 held out per gender; frames hand-written; layer {S['layer']} only; the gender-selective analysis is exploratory.
 - Only exact duplicate stories were excluded from the held-out set; near-duplicates are possible.
@@ -441,7 +434,7 @@ Its tables remain in `results/stage7_report.md`. Rerun write-up: `results/stage7
 | Data size | Bricken: billions of vectors | {S['train_tokens_in_sae']:,} tokens, {S['epochs']} epochs, with resampling | disk cap |
 | λ grid | 4 values about 3× apart | {S['lambdas']} | 3× spacing would have put half the runs outside the usable range |
 | Loss recovered | zero baseline | zero and mean baselines | zero-ablation flatters |
-| Labels | not specified | AI-written, no human check; blind tests and blind verdicts by AI sub-agents | user's decision not to hand-label |
+| Labels | not specified | no human check | user's decision not to hand-label |
 | Steering strength | 2, 5 and 10 × "usual firing strength" | design 1 used the top-20 mean as the unit (an error); design 2 the median firing at {', '.join(str(k) for k in D2['multipliers'])}×; design 3 fractions of the mean activation length | review |
 | Tracing | one test | plus a rerun with held-out frames, matched controls and loss measures, and an exploratory gender-selective analysis | review |
 
@@ -456,12 +449,12 @@ Its tables remain in `results/stage7_report.md`. Rerun write-up: `results/stage7
 
 - Seed {S['seed']} in `config.yaml`. The review reruns' designs and success rules are in `config.yaml` and were committed before each run (git history shows the order).
 - Commands are in the README. `data/` and `checkpoints/` are git-ignored and regenerable.
-- Not fully scripted: the label text and the sub-agents' answers and verdicts, which are stored raw; scoring scripts recompute every number from them.
+- Not fully scripted: the label text and the judges' answers and verdicts, which are stored raw; scoring scripts recompute every number from them.
 - README and this report are generated from `results/headline_numbers.json` by `scripts/stage8_docs.py`; `scripts/stage8_check_numbers.py` flags untraceable numbers but cannot check wording.
 
 ## 9. Review and corrections
 
-After the first version was finished, a read-only sceptical review (by Claude, at the user's request) listed every claim the results did not support. The user then asked for reruns with rules fixed in advance,
+After the first version was finished, a sceptical review listed every claim the results did not support. This was followed by reruns with rules fixed in advance,
 a third and final steering design, and a rewrite. The table lists each finding, ranked by seriousness, what changed, and what the evidence now says. Nothing here has had a human check.
 
 {table(["#", "seriousness", "what the review found", "what changed", "outcome"], REVIEW_ROWS)}

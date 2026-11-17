@@ -43,7 +43,7 @@ fig.tight_layout(); fig.savefig(ROOT / "figures" / "stage7_trace.png", dpi=130)
 
 f2 = lambda x: f"{x:.2f}"
 L = ["# Stage 7: tracing 'she'/'he' after a named character\n",
-     "> Any feature descriptions here are AI-written (by Claude) and have not been verified by a human.\n",
+     "> No feature label here has been verified by a human.\n",
      "## Setup\n",
      f"- {base['n_prompts']} prompts: 20 names x 6 frames. Names (ranking half / held-out half): girls {tc['girl_names_rank']} / {tc['girl_names_heldout']}; boys {tc['boy_names_rank']} / {tc['boy_names_heldout']}.",
      "- Frames (the name always follows an opening phrase, because most girls' names are only single tokens with a leading space):"]

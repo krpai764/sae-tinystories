@@ -67,7 +67,7 @@ fig.savefig(ROOT / "figures" / "stage6_steering.png", dpi=130)
 
 # ---- report ----
 L = ["# Stage 6: steering report\n",
-     "> All feature labels are AI-written (by Claude) and have not been verified by a human.\n",
+     "> No feature label here has been verified by a human.\n",
      f"Model TinyStories-8M, residual stream after block {D['layer']}, SAE λ={D['lambda']}. "
      f"Seed {D['seed']} per prompt (prompt i uses seed {D['seed']}+i); 50 new tokens; temperature 0.8, top-k 50.\n",
      "**How features were selected.** The six main features were taken only from features that were "

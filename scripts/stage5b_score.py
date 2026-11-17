@@ -63,13 +63,13 @@ for f in sorted((od / "responses").glob("puzzles_*.json")):
     for k, v in json.loads(f.read_text()).items():
         resp[k] = (v, f.stem)
 if len(resp) >= len(K["puzzles"]):
-    acc, agent, bad = {"real": [], "control": []}, {}, 0
+    acc, by_guesser, bad = {"real": [], "control": []}, {}, 0
     for p in K["puzzles"]:
         ans, who = resp.get(p["puzzle_id"], (None, None))
         if not (isinstance(ans, list) and len(set(ans)) == 5 and set(ans) <= set("ABCDEFGHIJ")):
             bad += 1; continue
         a = len(set(ans) & set(p["firing_letters"])) / 5
-        acc[p["tag"]].append(a); agent.setdefault(who, {"real": [], "control": []})[p["tag"]].append(a)
+        acc[p["tag"]].append(a); by_guesser.setdefault(who, {"real": [], "control": []})[p["tag"]].append(a)
     r, c = np.array(acc["real"]), np.array(acc["control"])
     rng = np.random.default_rng(cfg["seed"] + 303)
     obs = r.mean() - c.mean(); pool = np.concatenate([r, c])
@@ -82,14 +82,14 @@ if len(resp) >= len(K["puzzles"]):
         "control_50": {"n": len(c), "mean_accuracy": float(c.mean()), "n_5of5": int((c == 1).sum()), "n_at_or_below_3of5": int((c <= .6).sum()),
                        "p_vs_chance": float((sim >= c.mean()).mean())},
         "difference": float(obs), "permutation_p_one_sided": float((perm >= obs).mean()), "supported": bool((perm >= obs).mean() < 0.05),
-        "per_subagent": {k: {t: float(np.mean(v[t])) for t in v} for k, v in agent.items()},
+        "per_guesser": {k: {t: float(np.mean(v[t])) for t in v} for k, v in by_guesser.items()},
         "original_test": {"real_first_50": old["real_first_50"]["mean_accuracy"], "control_50_on_its_training_text": old["control_50"]["mean_accuracy"]}}
 (ROOT / "results" / "stage5b_scores.json").write_text(json.dumps(S, indent=1))
 
 L = ["# Review rerun 1c: blind strict-clear verdicts and control blind test on fresh text\n",
-     "> All feature labels are AI-written (by Claude) and have not been verified by a human. The verdicts below are also AI judgements (fresh sub-agents, same model family).\n",
+     "> No feature label or verdict here has been verified by a human.\n",
      "Design and rules were committed in `config.yaml` (`stage5_v2`) before the run.\n", "## Blind verdicts\n",
-     f"{V['n_items']} items (real and control mixed, anonymised), each judged by 2 fresh sub-agents that were not told there were two sources; {invalid} invalid. "
+     f"{V['n_items']} items (real and control mixed, anonymised), each judged by 2 fresh judges who were not told there were two sources; {invalid} invalid. "
      f"Rule: {v2['blind_verdicts']['strict_clear_rule']}\n",
      "| set | n | blind strict-clear (both judges) | clear by judge 1 / judge 2 | mean top fit (of 20) | mean random fit (of 10) | old non-blind clear | of those, confirmed blind |", "|---|---|---|---|---|---|---|---|"]
 for tag in ("real", "control"):
@@ -104,7 +104,7 @@ if "blind_test_fresh_text" in S:
           f"| control | {T['control_50']['n']} | {T['control_50']['mean_accuracy']:.3f} | {T['control_50']['n_5of5']} | {T['control_50']['n_at_or_below_3of5']} |",
           f"\nDifference {T['difference']:.3f}, one-sided permutation p = {T['permutation_p_one_sided']:.4f}; supported: **{T['supported']}**. Control vs chance (0.5): p = {T['control_50']['p_vs_chance']:.4f}. {T['n_invalid']} invalid answers.",
           f"Original test for comparison: real first 50 = {T['original_test']['real_first_50']:.3f}, control on its own training text = {T['original_test']['control_50_on_its_training_text']:.3f}.",
-          "Per sub-agent (real / control): " + "; ".join(f"{k}: {v.get('real', float('nan')):.2f} / {v.get('control', float('nan')):.2f}" for k, v in T["per_subagent"].items()) + "\n"]
+          "Per guesser (real / control): " + "; ".join(f"{k}: {v.get('real', float('nan')):.2f} / {v.get('control', float('nan')):.2f}" for k, v in T["per_guesser"].items()) + "\n"]
 L.append("Known limits (stated before the run): " + v2["success_rule"]["known_limits"])
 (ROOT / "results" / "stage5b_report.md").write_text("\n".join(L) + "\n")
 print(json.dumps({k: v for k, v in S.items()}, indent=1))

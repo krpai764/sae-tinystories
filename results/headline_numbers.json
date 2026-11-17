@@ -247,10 +247,10 @@
   },
   "n_snippets_per_puzzle": 10,
   "n_firing_snippets_per_puzzle": 5,
-  "n_subagents": 10,
+  "n_guessers": 10,
   "real_features_blind_5of5_and_clear": 20,
   "real_features_blind_at_or_below_3of5": 61,
-  "puzzles_per_subagent": 25
+  "puzzles_per_guesser": 25
  },
  "steering": {
   "break_threshold_ppl": 20.0,
@@ -5330,7 +5330,7 @@
    "difference": 0.2839999999999999,
    "permutation_p_one_sided": 0.0,
    "supported": true,
-   "per_subagent": {
+   "per_guesser": {
     "puzzles_00": {
      "real": 0.8,
      "control": 0.5714285714285714

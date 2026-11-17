@@ -81,7 +81,7 @@ key = J("stage5_blind/key.json")
 N["interpretation"]["n_snippets_per_puzzle"] = len(key["puzzles"][0]["snippets"])
 N["interpretation"]["n_firing_snippets_per_puzzle"] = len(key["puzzles"][0]["firing_letters"])
 assert all(len(p["snippets"]) == N["interpretation"]["n_snippets_per_puzzle"] and len(p["firing_letters"]) == N["interpretation"]["n_firing_snippets_per_puzzle"] for p in key["puzzles"])
-N["interpretation"]["n_subagents"] = len(list((R / "stage5_blind").glob("puzzles_*.txt")))
+N["interpretation"]["n_guessers"] = len(list((R / "stage5_blind").glob("puzzles_*.txt")))
 rows = list(csv.DictReader(open(R / "stage5_blind_per_feature.csv")))
 real = [r for r in rows if r["set"] == "real"]
 N["interpretation"]["real_features_blind_5of5_and_clear"] = sum(r["final_clear"] == "True" and r["correct_of_5"] == "5" for r in real)
@@ -232,7 +232,7 @@ N["stage5_v2"]["rule"] = {"top_min": int(m_.group(1)), "top_n": int(m_.group(2))
 N["stage5_v2"]["selective_ratio"] = cfg["trace_v2"]["selective_ratio"]
 m_ = _re.search(r"at least (\d+) of the (\d+) prompts", cfg["steering_v2"]["success_rule"]["on_label"])
 N["steering_designs"]["rule_min_wins"], N["steering_designs"]["rule_n_prompts"] = int(m_.group(1)), int(m_.group(2))
-N["interpretation"]["puzzles_per_subagent"] = N["interpretation"]["n_puzzles"] // N["interpretation"]["n_subagents"]
+N["interpretation"]["puzzles_per_guesser"] = N["interpretation"]["n_puzzles"] // N["interpretation"]["n_guessers"]
 lab_ = {int(r["feature"]): r["label"] for r in rows if r["set"] == "real"}
 N["steering_designs"]["design1"]["example_topic_label_left_out"] = {"feature": 1470, "label": lab_[1470]}
 

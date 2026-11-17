@@ -73,8 +73,7 @@ Stop after every stage, show me the results, and wait for me to say continue.
 5. Write tests for the autoencoder (shapes, decoder normalisation, loss decreasing on a toy problem) and for the hooks.
 6. When a result looks surprising or too good, check for a bug before reporting it.
 7. Suggest a git commit after each stage, and wait for me to approve it.
-8. At the end of each stage, remind me which model this brief suggests for the next stage: Stages 0 to 4 on Opus or Sonnet, Stages 5 and 6 on Opus, Stage 7 on Fable if I have allowance, Stage 8 on Sonnet.
-9. Prior work to cite, after checking the exact titles and authors: the TinyStories paper (Eldan and Li, 2023), "Towards Monosemanticity" (Bricken et al., 2023), and "Sparse Autoencoders Find Highly Interpretable Features in Language Models" (Cunningham et al., 2023).
+8. Prior work to cite, after checking the exact titles and authors: the TinyStories paper (Eldan and Li, 2023), "Towards Monosemanticity" (Bricken et al., 2023), and "Sparse Autoencoders Find Highly Interpretable Features in Language Models" (Cunningham et al., 2023).
 
 ## Method notes
 
