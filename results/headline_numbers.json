@@ -1,0 +1,1529 @@
+{
+ "setup": {
+  "model": "roneneldan/TinyStories-8M",
+  "layer": 3,
+  "seed": 1234,
+  "width": 256,
+  "dictionary_size": 2048,
+  "expansion": 8,
+  "lr": 0.0003,
+  "batch_size": 4096,
+  "epochs": 20,
+  "lambdas": [
+   0.5,
+   1,
+   2,
+   4
+  ],
+  "chosen_lambda": 1,
+  "train_stories": 12747,
+  "train_tokens_in_sae": 2487185,
+  "heldout_stories": 1029,
+  "heldout_tokens_in_sae_eval": 198858,
+  "train_heldout_identical_stories": 0,
+  "data_dir_GB": 2.791724395,
+  "rescale_factor": 6.363926405175133,
+  "mean_activation_norm_model_units": 2.5141711235046387,
+  "fraction_squared_norm_in_mean": 0.38952091336250305,
+  "pos0_norm": 4.844306468963623,
+  "enc_init_scale": 0.25,
+  "resample_after_epochs": [
+   2,
+   4,
+   6,
+   8
+  ],
+  "resample_pool": 200000,
+  "b_d_geometric_median_minus_mean_norm": 0.31456178426742554,
+  "b_d_mean_norm": 10.00719165802002,
+  "generation_temperature": 0.8,
+  "steer_max_new_tokens": 50,
+  "interpret_top_k": 20,
+  "interpret_n_random": 5,
+  "n_promoted": 10,
+  "verify_max_abs_diff": 2.034008502960205e-06,
+  "verify_stories_checked": 50,
+  "n_blocks": 8
+ },
+ "faithfulness": {
+  "n_stories": 1029,
+  "n_predicted_tokens": 198858,
+  "L_clean": 1.5351268569305883,
+  "L_zero": 8.99118555084297,
+  "L_mean": 7.515304075111661,
+  "perplexity_clean": 4.641914351611816,
+  "runs": {
+   "0.5": {
+    "variance_explained": 0.929608138832951,
+    "l0": 88.23323175331141,
+    "never_fire_heldout": 0.0,
+    "dead_last_train_epoch": 0.0,
+    "l0_levelled_off": true,
+    "total_resampled": 0,
+    "loss_recovered_zero": 0.9594749691738254,
+    "loss_recovered_zero_ci95": [
+     0.9585987456258519,
+     0.9602727901967041
+    ],
+    "loss_recovered_mean": 0.9494735695300229,
+    "loss_recovered_mean_ci95": [
+     0.9483865332385908,
+     0.9505279730509145
+    ],
+    "extra_loss_nats": 0.3021570084125671,
+    "L_spliced": 1.8372838653431554,
+    "perplexity_spliced": 6.279459220224938
+   },
+   "1": {
+    "variance_explained": 0.8901769785104502,
+    "l0": 26.694646431121704,
+    "never_fire_heldout": 0.0,
+    "dead_last_train_epoch": 0.0,
+    "l0_levelled_off": true,
+    "total_resampled": 0,
+    "loss_recovered_zero": 0.9275383217214336,
+    "loss_recovered_zero_ci95": [
+     0.9261259320696038,
+     0.92888590956677
+    ],
+    "loss_recovered_mean": 0.9096550977349266,
+    "loss_recovered_mean_ci95": [
+     0.9078586009596503,
+     0.9113873628384972
+    ],
+    "extra_loss_nats": 0.5402785263043874,
+    "L_spliced": 2.0754053832349757,
+    "perplexity_spliced": 7.96777580716102
+   },
+   "2": {
+    "variance_explained": 0.8497826144196676,
+    "l0": 10.37252210119784,
+    "never_fire_heldout": 0.0,
+    "dead_last_train_epoch": 0.0,
+    "l0_levelled_off": true,
+    "total_resampled": 1,
+    "loss_recovered_zero": 0.8835683679485699,
+    "loss_recovered_zero_ci95": [
+     0.8816252566156351,
+     0.8854947142637759
+    ],
+    "loss_recovered_mean": 0.854833552463263,
+    "loss_recovered_mean_ci95": [
+     0.8523353901130207,
+     0.8573277505605792
+    ],
+    "extra_loss_nats": 0.8681210824034733,
+    "L_spliced": 2.4032479393340616,
+    "perplexity_spliced": 11.05903719414298
+   },
+   "4": {
+    "variance_explained": 0.783558196119214,
+    "l0": 5.544267768960766,
+    "never_fire_heldout": 0.08349609375,
+    "dead_last_train_epoch": 0.02197265625,
+    "l0_levelled_off": false,
+    "total_resampled": 624,
+    "loss_recovered_zero": 0.8064862686455013,
+    "loss_recovered_zero_ci95": [
+     0.8037504551094417,
+     0.8090946258205799
+    ],
+    "loss_recovered_mean": 0.7587279295552397,
+    "loss_recovered_mean_ci95": [
+     0.7553403677264302,
+     0.7619148573189494
+    ],
+    "extra_loss_nats": 1.4428497390571353,
+    "L_spliced": 2.9779765959877236,
+    "perplexity_spliced": 19.648020512974448
+   }
+  }
+ },
+ "interpretation": {
+  "n_features_labelled": 200,
+  "n_control_labelled": 50,
+  "clear_real": 37,
+  "clear_real_share": 0.185,
+  "clear_control": 1,
+  "clear_control_share": 0.02,
+  "clear_if_random_firings_ignored_real": 181,
+  "clear_if_random_firings_ignored_control": 41,
+  "blind": {
+   "real_all_200": {
+    "n": 200,
+    "mean_accuracy": 0.779,
+    "chance": 0.5,
+    "p_value_vs_chance": 0.0,
+    "n_perfect_5of5": 55,
+    "n_significant_p05": 55,
+    "n_at_or_below_chance": 61
+   },
+   "real_first_50": {
+    "n": 50,
+    "mean_accuracy": 0.8,
+    "chance": 0.5,
+    "p_value_vs_chance": 0.0,
+    "n_perfect_5of5": 15,
+    "n_significant_p05": 15,
+    "n_at_or_below_chance": 10
+   },
+   "control_50": {
+    "n": 50,
+    "mean_accuracy": 0.5640000000000001,
+    "chance": 0.5,
+    "p_value_vs_chance": 0.00285,
+    "n_perfect_5of5": 2,
+    "n_significant_p05": 2,
+    "n_at_or_below_chance": 40
+   },
+   "real_final_clear": {
+    "n": 37,
+    "mean_accuracy": 0.8864864864864866,
+    "chance": 0.5,
+    "p_value_vs_chance": 0.0,
+    "n_perfect_5of5": 20,
+    "n_significant_p05": 20,
+    "n_at_or_below_chance": 4
+   },
+   "real_not_final_clear": {
+    "n": 163,
+    "mean_accuracy": 0.754601226993865,
+    "chance": 0.5,
+    "p_value_vs_chance": 0.0,
+    "n_perfect_5of5": 35,
+    "n_significant_p05": 35,
+    "n_at_or_below_chance": 57
+   },
+   "real_suggested_unclear": {
+    "n": 19,
+    "mean_accuracy": 0.7789473684210527,
+    "chance": 0.5,
+    "p_value_vs_chance": 0.0,
+    "n_perfect_5of5": 7,
+    "n_significant_p05": 7,
+    "n_at_or_below_chance": 7
+   },
+   "control_final_clear": {
+    "n": 1,
+    "mean_accuracy": 1.0,
+    "chance": 0.5,
+    "p_value_vs_chance": 0.00417,
+    "n_perfect_5of5": 1,
+    "n_significant_p05": 1,
+    "n_at_or_below_chance": 0
+   }
+  },
+  "n_puzzles": 250,
+  "n_invalid": 0,
+  "tercile_real": {
+   "weak": 0.6437125748502994,
+   "middle": 0.7507507507507507,
+   "strong": 0.9429429429429429,
+   "tercile_edges": [
+    0.2039516121149063,
+    0.7625231742858887
+   ]
+  },
+  "tercile_control": {
+   "weak": 0.5238095238095238,
+   "middle": 0.5421686746987951,
+   "strong": 0.6265060240963856,
+   "tercile_edges": [
+    0.1169639527797699,
+    0.3194392919540405
+   ]
+  },
+  "control_sae": {
+   "variance_explained": 0.8990051355424635,
+   "l0": 56.195,
+   "train_tokens": 357783,
+   "eval_tokens": 40000,
+   "epochs": 120
+  },
+  "n_snippets_per_puzzle": 10,
+  "n_firing_snippets_per_puzzle": 5,
+  "n_subagents": 10,
+  "real_features_blind_5of5_and_clear": 20,
+  "real_features_blind_at_or_below_3of5": 61
+ },
+ "steering": {
+  "break_threshold_ppl": 20.0,
+  "mean_activation_norm": 2.5141711235046387,
+  "multipliers_main": [
+   0.5,
+   1,
+   2,
+   5,
+   10
+  ],
+  "n_prompts": 2,
+  "main": [
+   {
+    "feature": 144,
+    "group": "clear_5of5",
+    "label": "' little' in 'there was a little boy/girl'",
+    "blind": 5,
+    "by_k": {
+     "0.5": {
+      "feature_broken": "0/2",
+      "random_broken": "0/2",
+      "feature_promoted_hits": 0.5,
+      "random_promoted_hits": 0.0,
+      "feature_ppl": 2.7973222732543945,
+      "random_ppl": 3.372413992881775
+     },
+     "1": {
+      "feature_broken": "0/2",
+      "random_broken": "0/2",
+      "feature_promoted_hits": 0.0,
+      "random_promoted_hits": 0.0,
+      "feature_ppl": 11.160744190216064,
+      "random_ppl": 16.174565315246582
+     },
+     "2": {
+      "feature_broken": "2/2",
+      "random_broken": "2/2",
+      "feature_promoted_hits": 43.0,
+      "random_promoted_hits": 0.0,
+      "feature_ppl": 28.31853199005127,
+      "random_ppl": 198.5171241760254
+     },
+     "5": {
+      "feature_broken": "2/2",
+      "random_broken": "2/2",
+      "feature_promoted_hits": 49.5,
+      "random_promoted_hits": 0.0,
+      "feature_ppl": 70.97806739807129,
+      "random_ppl": 32192.80419921875
+     },
+     "10": {
+      "feature_broken": "2/2",
+      "random_broken": "2/2",
+      "feature_promoted_hits": 49.5,
+      "random_promoted_hits": 0.0,
+      "feature_ppl": 622.7686996459961,
+      "random_ppl": 359.81876373291016
+     }
+    },
+    "first_k_all_broken": 2,
+    "unsteered_ppl": 1.9427824020385742
+   },
+   {
+    "feature": 597,
+    "group": "clear_5of5",
+    "label": "' big' in 'saw a big ...' (encounter)",
+    "blind": 5,
+    "by_k": {
+     "0.5": {
+      "feature_broken": "0/2",
+      "random_broken": "0/2",
+      "feature_promoted_hits": 0.0,
+      "random_promoted_hits": 0.5,
+      "feature_ppl": 3.5324407815933228,
+      "random_ppl": 2.391149163246155
+     },
+     "1": {
+      "feature_broken": "1/2",
+      "random_broken": "1/2",
+      "feature_promoted_hits": 1.0,
+      "random_promoted_hits": 0.0,
+      "feature_ppl": 36.75285053253174,
+      "random_ppl": 17.536431312561035
+     },
+     "2": {
+      "feature_broken": "2/2",
+      "random_broken": "2/2",
+      "feature_promoted_hits": 10.0,
+      "random_promoted_hits": 0.0,
+      "feature_ppl": 680.2751617431641,
+      "random_ppl": 132.6957015991211
+     },
+     "5": {
+      "feature_broken": "2/2",
+      "random_broken": "2/2",
+      "feature_promoted_hits": 18.0,
+      "random_promoted_hits": 0.0,
+      "feature_ppl": 1979.3066635131836,
+      "random_ppl": 3242.5499877929688
+     },
+     "10": {
+      "feature_broken": "2/2",
+      "random_broken": "2/2",
+      "feature_promoted_hits": 16.5,
+      "random_promoted_hits": 0.5,
+      "feature_ppl": 2534.3306427001953,
+      "random_ppl": 29471.76220703125
+     }
+    },
+    "first_k_all_broken": 2,
+    "unsteered_ppl": 1.9427824020385742
+   },
+   {
+    "feature": 1211,
+    "group": "clear_5of5",
+    "label": "' mom' as companion ('with her mom', 'her mom and dad')",
+    "blind": 5,
+    "by_k": {
+     "0.5": {
+      "feature_broken": "0/2",
+      "random_broken": "0/2",
+      "feature_promoted_hits": 0.5,
+      "random_promoted_hits": 0.0,
+      "feature_ppl": 2.668266713619232,
+      "random_ppl": 2.1893985271453857
+     },
+     "1": {
+      "feature_broken": "0/2",
+      "random_broken": "0/2",
+      "feature_promoted_hits": 2.0,
+      "random_promoted_hits": 1.5,
+      "feature_ppl": 5.387308120727539,
+      "random_ppl": 4.843571901321411
+     },
+     "2": {
+      "feature_broken": "2/2",
+      "random_broken": "2/2",
+      "feature_promoted_hits": 8.5,
+      "random_promoted_hits": 1.0,
+      "feature_ppl": 240.24776458740234,
+      "random_ppl": 45.03023719787598
+     },
+     "5": {
+      "feature_broken": "2/2",
+      "random_broken": "2/2",
+      "feature_promoted_hits": 50.0,
+      "random_promoted_hits": 0.0,
+      "feature_ppl": 1464.851577758789,
+      "random_ppl": 15224.06494140625
+     },
+     "10": {
+      "feature_broken": "2/2",
+      "random_broken": "2/2",
+      "feature_promoted_hits": 50.0,
+      "random_promoted_hits": 0.0,
+      "feature_ppl": 1464.851577758789,
+      "random_ppl": 47353.978515625
+     }
+    },
+    "first_k_all_broken": 2,
+    "unsteered_ppl": 1.9427824020385742
+   },
+   {
+    "feature": 2014,
+    "group": "clear_5of5",
+    "label": "Animal noun introduced as protagonist in the opening sentence (fox, cat)",
+    "blind": 5,
+    "by_k": {
+     "0.5": {
+      "feature_broken": "0/2",
+      "random_broken": "0/2",
+      "feature_promoted_hits": 0.0,
+      "random_promoted_hits": 0.0,
+      "feature_ppl": 3.1952165365219116,
+      "random_ppl": 3.5384873151779175
+     },
+     "1": {
+      "feature_broken": "0/2",
+      "random_broken": "0/2",
+      "feature_promoted_hits": 0.5,
+      "random_promoted_hits": 0.0,
+      "feature_ppl": 6.484462738037109,
+      "random_ppl": 9.49244236946106
+     },
+     "2": {
+      "feature_broken": "2/2",
+      "random_broken": "2/2",
+      "feature_promoted_hits": 4.0,
+      "random_promoted_hits": 0.0,
+      "feature_ppl": 70.10121536254883,
+      "random_ppl": 268.66178131103516
+     },
+     "5": {
+      "feature_broken": "2/2",
+      "random_broken": "2/2",
+      "feature_promoted_hits": 15.0,
+      "random_promoted_hits": 0.0,
+      "feature_ppl": 38614.68798828125,
+      "random_ppl": 9161.7978515625
+     },
+     "10": {
+      "feature_broken": "2/2",
+      "random_broken": "2/2",
+      "feature_promoted_hits": 25.0,
+      "random_promoted_hits": 0.0,
+      "feature_ppl": 59186.919921875,
+      "random_ppl": 4901.2076416015625
+     }
+    },
+    "first_k_all_broken": 2,
+    "unsteered_ppl": 1.9427824020385742
+   },
+   {
+    "feature": 215,
+    "group": "clear_5of5",
+    "label": "' was' followed by 'so' + emotion after a mishap ('He was so sad')",
+    "blind": 5,
+    "by_k": {
+     "0.5": {
+      "feature_broken": "0/2",
+      "random_broken": "0/2",
+      "feature_promoted_hits": 0.0,
+      "random_promoted_hits": 0.5,
+      "feature_ppl": 2.3226852416992188,
+      "random_ppl": 3.0774868726730347
+     },
+     "1": {
+      "feature_broken": "0/2",
+      "random_broken": "0/2",
+      "feature_promoted_hits": 1.5,
+      "random_promoted_hits": 0.5,
+      "feature_ppl": 4.164025187492371,
+      "random_ppl": 3.395089864730835
+     },
+     "2": {
+      "feature_broken": "2/2",
+      "random_broken": "0/2",
+      "feature_promoted_hits": 4.0,
+      "random_promoted_hits": 0.0,
+      "feature_ppl": 213.12520599365234,
+      "random_ppl": 10.880284786224365
+     },
+     "5": {
+      "feature_broken": "2/2",
+      "random_broken": "2/2",
+      "feature_promoted_hits": 44.0,
+      "random_promoted_hits": 1.0,
+      "feature_ppl": 11072.154052734375,
+      "random_ppl": 1913.1698608398438
+     },
+     "10": {
+      "feature_broken": "2/2",
+      "random_broken": "2/2",
+      "feature_promoted_hits": 50.0,
+      "random_promoted_hits": 0.0,
+      "feature_ppl": 49180.58837890625,
+      "random_ppl": 29081.181640625
+     }
+    },
+    "first_k_all_broken": 2,
+    "unsteered_ppl": 1.9427824020385742
+   },
+   {
+    "feature": 1905,
+    "group": "clear_5of5",
+    "label": "'.' ending a story's closing/moral sentence (e.g. 'happily ever after.')",
+    "blind": 5,
+    "by_k": {
+     "0.5": {
+      "feature_broken": "0/2",
+      "random_broken": "0/2",
+      "feature_promoted_hits": 4.0,
+      "random_promoted_hits": 2.5,
+      "feature_ppl": 3.655696153640747,
+      "random_ppl": 3.3774664402008057
+     },
+     "1": {
+      "feature_broken": "0/2",
+      "random_broken": "1/2",
+      "feature_promoted_hits": 4.5,
+      "random_promoted_hits": 2.0,
+      "feature_ppl": 7.244681119918823,
+      "random_ppl": 25.289560317993164
+     },
+     "2": {
+      "feature_broken": "2/2",
+      "random_broken": "2/2",
+      "feature_promoted_hits": 35.0,
+      "random_promoted_hits": 1.0,
+      "feature_ppl": 2709.4107666015625,
+      "random_ppl": 164.56953811645508
+     },
+     "5": {
+      "feature_broken": "2/2",
+      "random_broken": "2/2",
+      "feature_promoted_hits": 50.0,
+      "random_promoted_hits": 0.0,
+      "feature_ppl": 109102.5625,
+      "random_ppl": 6712.5924072265625
+     },
+     "10": {
+      "feature_broken": "2/2",
+      "random_broken": "2/2",
+      "feature_promoted_hits": 50.0,
+      "random_promoted_hits": 0.0,
+      "feature_ppl": 11970.027709960938,
+      "random_ppl": 79947.716796875
+     }
+    },
+    "first_k_all_broken": 2,
+    "unsteered_ppl": 1.9427824020385742
+   },
+   {
+    "feature": 1693,
+    "group": "not_clear",
+    "label": "' time' in 'it was time to go home'",
+    "blind": 1,
+    "by_k": {
+     "0.5": {
+      "feature_broken": "0/2",
+      "random_broken": "0/2",
+      "feature_promoted_hits": 5.5,
+      "random_promoted_hits": 5.0,
+      "feature_ppl": 4.601974010467529,
+      "random_ppl": 3.8030182123184204
+     },
+     "1": {
+      "feature_broken": "2/2",
+      "random_broken": "2/2",
+      "feature_promoted_hits": 15.0,
+      "random_promoted_hits": 4.0,
+      "feature_ppl": 84.26446151733398,
+      "random_ppl": 41.02910232543945
+     },
+     "2": {
+      "feature_broken": "2/2",
+      "random_broken": "2/2",
+      "feature_promoted_hits": 49.0,
+      "random_promoted_hits": 3.0,
+      "feature_ppl": 16488.51416015625,
+      "random_ppl": 1663.1470947265625
+     },
+     "5": {
+      "feature_broken": "2/2",
+      "random_broken": "2/2",
+      "feature_promoted_hits": 49.0,
+      "random_promoted_hits": 0.0,
+      "feature_ppl": 16488.51416015625,
+      "random_ppl": 57891.744140625
+     },
+     "10": {
+      "feature_broken": "2/2",
+      "random_broken": "2/2",
+      "feature_promoted_hits": 48.5,
+      "random_promoted_hits": 0.0,
+      "feature_ppl": 17732.2548828125,
+      "random_ppl": 1062653.15625
+     }
+    },
+    "first_k_all_broken": 1,
+    "unsteered_ppl": 1.9427824020385742
+   },
+   {
+    "feature": 978,
+    "group": "not_clear",
+    "label": "' sunshine' in 'in the sunshine'",
+    "blind": 2,
+    "by_k": {
+     "0.5": {
+      "feature_broken": "0/2",
+      "random_broken": "0/2",
+      "feature_promoted_hits": 0.0,
+      "random_promoted_hits": 0.0,
+      "feature_ppl": 3.332735776901245,
+      "random_ppl": 2.399001955986023
+     },
+     "1": {
+      "feature_broken": "0/2",
+      "random_broken": "0/2",
+      "feature_promoted_hits": 0.0,
+      "random_promoted_hits": 0.0,
+      "feature_ppl": 3.9564292430877686,
+      "random_ppl": 2.2874401807785034
+     },
+     "2": {
+      "feature_broken": "0/2",
+      "random_broken": "0/2",
+      "feature_promoted_hits": 0.0,
+      "random_promoted_hits": 0.0,
+      "feature_ppl": 7.204669237136841,
+      "random_ppl": 6.325324296951294
+     },
+     "5": {
+      "feature_broken": "2/2",
+      "random_broken": "2/2",
+      "feature_promoted_hits": 0.0,
+      "random_promoted_hits": 0.0,
+      "feature_ppl": 842.9474334716797,
+      "random_ppl": 719.1880645751953
+     },
+     "10": {
+      "feature_broken": "2/2",
+      "random_broken": "2/2",
+      "feature_promoted_hits": 0.0,
+      "random_promoted_hits": 0.0,
+      "feature_ppl": 33965.12878417969,
+      "random_ppl": 6620.958251953125
+     }
+    },
+    "first_k_all_broken": 5,
+    "unsteered_ppl": 1.9427824020385742
+   }
+  ],
+  "extension": [
+   {
+    "feature": 1137,
+    "group": "clear",
+    "label": "' rain' in 'started to rain'",
+    "blind": 3,
+    "theme_words_unsteered": 0.0,
+    "max_theme_words_unbroken_feature": 3.0,
+    "max_theme_words_unbroken_random": 0.0,
+    "max_unbroken_k": 0.75,
+    "by_k": {
+     "0.5": {
+      "feature_theme": 2.0,
+      "random_theme": 0.0,
+      "feature_broken": "0/2",
+      "random_broken": "0/2"
+     },
+     "0.75": {
+      "feature_theme": 3.0,
+      "random_theme": 0.0,
+      "feature_broken": "0/2",
+      "random_broken": "0/2"
+     },
+     "1": {
+      "feature_theme": 3.5,
+      "random_theme": 0.0,
+      "feature_broken": "1/2",
+      "random_broken": "2/2"
+     },
+     "1.25": {
+      "feature_theme": 2.0,
+      "random_theme": 0.0,
+      "feature_broken": "2/2",
+      "random_broken": "2/2"
+     },
+     "1.5": {
+      "feature_theme": 8.0,
+      "random_theme": 0.0,
+      "feature_broken": "2/2",
+      "random_broken": "2/2"
+     },
+     "2": {
+      "feature_theme": 8.5,
+      "random_theme": 0.0,
+      "feature_broken": "2/2",
+      "random_broken": "2/2"
+     }
+    }
+   },
+   {
+    "feature": 916,
+    "group": "not_clear",
+    "label": "Bees, hives and honey",
+    "blind": 5,
+    "theme_words_unsteered": 0.5,
+    "max_theme_words_unbroken_feature": 8.5,
+    "max_theme_words_unbroken_random": 0.0,
+    "max_unbroken_k": 1.25,
+    "by_k": {
+     "0.5": {
+      "feature_theme": 2.5,
+      "random_theme": 0.0,
+      "feature_broken": "0/2",
+      "random_broken": "0/2"
+     },
+     "0.75": {
+      "feature_theme": 0.0,
+      "random_theme": 0.0,
+      "feature_broken": "0/2",
+      "random_broken": "0/2"
+     },
+     "1": {
+      "feature_theme": 1.5,
+      "random_theme": 0.0,
+      "feature_broken": "0/2",
+      "random_broken": "0/2"
+     },
+     "1.25": {
+      "feature_theme": 8.5,
+      "random_theme": 0.0,
+      "feature_broken": "0/2",
+      "random_broken": "0/2"
+     },
+     "1.5": {
+      "feature_theme": 10.5,
+      "random_theme": 0.0,
+      "feature_broken": "1/2",
+      "random_broken": "0/2"
+     },
+     "2": {
+      "feature_theme": 15.5,
+      "random_theme": 0.0,
+      "feature_broken": "2/2",
+      "random_broken": "1/2"
+     }
+    }
+   },
+   {
+    "feature": 1463,
+    "group": "not_clear",
+    "label": "' cold' (weather)",
+    "blind": 3,
+    "theme_words_unsteered": 0.5,
+    "max_theme_words_unbroken_feature": 3.5,
+    "max_theme_words_unbroken_random": 0.0,
+    "max_unbroken_k": 0.75,
+    "by_k": {
+     "0.5": {
+      "feature_theme": 0.5,
+      "random_theme": 0.0,
+      "feature_broken": "0/2",
+      "random_broken": "0/2"
+     },
+     "0.75": {
+      "feature_theme": 3.5,
+      "random_theme": 0.0,
+      "feature_broken": "0/2",
+      "random_broken": "0/2"
+     },
+     "1": {
+      "feature_theme": 5.5,
+      "random_theme": 0.0,
+      "feature_broken": "1/2",
+      "random_broken": "0/2"
+     },
+     "1.25": {
+      "feature_theme": 5.5,
+      "random_theme": 0.0,
+      "feature_broken": "2/2",
+      "random_broken": "2/2"
+     },
+     "1.5": {
+      "feature_theme": 4.0,
+      "random_theme": 0.0,
+      "feature_broken": "2/2",
+      "random_broken": "2/2"
+     },
+     "2": {
+      "feature_theme": 4.5,
+      "random_theme": 0.0,
+      "feature_broken": "2/2",
+      "random_broken": "2/2"
+     }
+    }
+   },
+   {
+    "feature": 687,
+    "group": "not_clear",
+    "label": "Parental safety warnings (\"don't go too close\"); promotes 'dangerous'",
+    "blind": 4,
+    "theme_words_unsteered": 0.0,
+    "max_theme_words_unbroken_feature": 1.0,
+    "max_theme_words_unbroken_random": 1.5,
+    "max_unbroken_k": 2.0,
+    "by_k": {
+     "0.5": {
+      "feature_theme": 0.5,
+      "random_theme": 0.0,
+      "feature_broken": "0/2",
+      "random_broken": "0/2"
+     },
+     "0.75": {
+      "feature_theme": 0.5,
+      "random_theme": 0.0,
+      "feature_broken": "0/2",
+      "random_broken": "0/2"
+     },
+     "1": {
+      "feature_theme": 1.0,
+      "random_theme": 1.0,
+      "feature_broken": "0/2",
+      "random_broken": "0/2"
+     },
+     "1.25": {
+      "feature_theme": 1.0,
+      "random_theme": 0.5,
+      "feature_broken": "0/2",
+      "random_broken": "0/2"
+     },
+     "1.5": {
+      "feature_theme": 0.5,
+      "random_theme": 0.0,
+      "feature_broken": "0/2",
+      "random_broken": "0/2"
+     },
+     "2": {
+      "feature_theme": 1.0,
+      "random_theme": 1.5,
+      "feature_broken": "0/2",
+      "random_broken": "0/2"
+     }
+    }
+   },
+   {
+    "feature": 1970,
+    "group": "not_clear",
+    "label": "Objects of household chores (dishes, laundry, weeds)",
+    "blind": 4,
+    "theme_words_unsteered": 0.0,
+    "max_theme_words_unbroken_feature": 0.5,
+    "max_theme_words_unbroken_random": 0.5,
+    "max_unbroken_k": 2.0,
+    "by_k": {
+     "0.5": {
+      "feature_theme": 0.0,
+      "random_theme": 0.0,
+      "feature_broken": "0/2",
+      "random_broken": "0/2"
+     },
+     "0.75": {
+      "feature_theme": 0.0,
+      "random_theme": 0.0,
+      "feature_broken": "0/2",
+      "random_broken": "0/2"
+     },
+     "1": {
+      "feature_theme": 0.0,
+      "random_theme": 0.0,
+      "feature_broken": "0/2",
+      "random_broken": "0/2"
+     },
+     "1.25": {
+      "feature_theme": 0.0,
+      "random_theme": 0.5,
+      "feature_broken": "0/2",
+      "random_broken": "0/2"
+     },
+     "1.5": {
+      "feature_theme": 0.0,
+      "random_theme": 0.5,
+      "feature_broken": "0/2",
+      "random_broken": "0/2"
+     },
+     "2": {
+      "feature_theme": 0.5,
+      "random_theme": 0.0,
+      "feature_broken": "0/2",
+      "random_broken": "0/2"
+     }
+    }
+   },
+   {
+    "feature": 715,
+    "group": "not_clear",
+    "label": "' play' a musical instrument",
+    "blind": 3,
+    "theme_words_unsteered": 1.5,
+    "max_theme_words_unbroken_feature": 2.0,
+    "max_theme_words_unbroken_random": 2.5,
+    "max_unbroken_k": 1.5,
+    "by_k": {
+     "0.5": {
+      "feature_theme": 1.5,
+      "random_theme": 1.0,
+      "feature_broken": "0/2",
+      "random_broken": "0/2"
+     },
+     "0.75": {
+      "feature_theme": 1.5,
+      "random_theme": 0.5,
+      "feature_broken": "0/2",
+      "random_broken": "0/2"
+     },
+     "1": {
+      "feature_theme": 1.0,
+      "random_theme": 1.0,
+      "feature_broken": "0/2",
+      "random_broken": "0/2"
+     },
+     "1.25": {
+      "feature_theme": 1.0,
+      "random_theme": 2.5,
+      "feature_broken": "0/2",
+      "random_broken": "0/2"
+     },
+     "1.5": {
+      "feature_theme": 2.0,
+      "random_theme": 0.5,
+      "feature_broken": "0/2",
+      "random_broken": "0/2"
+     },
+     "2": {
+      "feature_theme": 0.5,
+      "random_theme": 1.0,
+      "feature_broken": "2/2",
+      "random_broken": "0/2"
+     }
+    }
+   }
+  ],
+  "unsteered_ppl_min": 1.4211866855621338,
+  "unsteered_ppl_max": 2.4643781185150146,
+  "n_features_steered_total": 14,
+  "multipliers_extension": [
+   "0.5",
+   "0.75",
+   "1",
+   "1.25",
+   "1.5",
+   "2"
+  ]
+ },
+ "trace": {
+  "n_prompts": 120,
+  "name_only": {
+   "n": 80,
+   "clean_score": 9.059925079345703,
+   "clean_pair_accuracy": 1.0,
+   "clean_top1_is_correct": 0.75,
+   "recon_only_score": 10.064340591430664,
+   "recon_only_pair_accuracy": 1.0
+  },
+  "name_only_girl": {
+   "n": 40,
+   "clean_score": 9.190465927124023,
+   "clean_pair_accuracy": 1.0,
+   "clean_top1_is_correct": 0.75,
+   "recon_only_score": 10.36005973815918,
+   "recon_only_pair_accuracy": 1.0
+  },
+  "name_only_boy": {
+   "n": 40,
+   "clean_score": 8.929384231567383,
+   "clean_pair_accuracy": 1.0,
+   "clean_top1_is_correct": 0.75,
+   "recon_only_score": 9.768623352050781,
+   "recon_only_pair_accuracy": 1.0
+  },
+  "noun_name": {
+   "n": 40,
+   "clean_score": 9.584131240844727,
+   "clean_pair_accuracy": 1.0,
+   "clean_top1_is_correct": 0.699999988079071,
+   "recon_only_score": 10.162545204162598,
+   "recon_only_pair_accuracy": 1.0
+  },
+  "n_firing_features": 559,
+  "top10": [
+   1493,
+   88,
+   1314,
+   1511,
+   1384,
+   1879,
+   1416,
+   1869,
+   668,
+   1532
+  ],
+  "top10_passed": true,
+  "top10_fire_on_both_genders_count": 6,
+  "top10_fire_on_both_genders": [
+   1493,
+   88,
+   1384,
+   1879,
+   1869,
+   668
+  ],
+  "top10_joint": {
+   "overall": {
+    "clean_score": 9.059654235839844,
+    "top_drop": 7.646140098571777,
+    "score_after_top_ablation": 1.413513422012329,
+    "pair_accuracy_after": 0.85,
+    "random_drop_mean": 0.1229213997721672,
+    "random_drop_max": 1.3045215606689453,
+    "random_drop_p95": 0.5231990218162537,
+    "top_beats_n_random": 100,
+    "n_random": 100
+   },
+   "girl": {
+    "clean_score": 9.42003345489502,
+    "top_drop": 7.188626289367676,
+    "score_after_top_ablation": 2.2314083576202393,
+    "pair_accuracy_after": 1.0,
+    "random_drop_mean": 0.06848697364330292,
+    "random_drop_max": 1.6051170825958252,
+    "random_drop_p95": 0.4050321877002716,
+    "top_beats_n_random": 100,
+    "n_random": 100
+   },
+   "boy": {
+    "clean_score": 8.699274063110352,
+    "top_drop": 8.103655815124512,
+    "score_after_top_ablation": 0.595618486404419,
+    "pair_accuracy_after": 0.7,
+    "random_drop_mean": 0.1773558259010315,
+    "random_drop_max": 2.8652195930480957,
+    "random_drop_p95": 0.848594069480896,
+    "top_beats_n_random": 100,
+    "n_random": 100
+   }
+  },
+  "selective": {
+   "girl": {
+    "features": [
+     1511,
+     1735,
+     905,
+     1630,
+     1324
+    ],
+    "n_candidates": 59,
+    "own": {
+     "clean_score": 9.42003345489502,
+     "drop": 5.663760185241699,
+     "score_after": 3.7562732696533203,
+     "pair_accuracy_after": 1.0,
+     "random_drop_mean": 0.09625022858381271,
+     "random_drop_max": 1.7158010005950928,
+     "beats_n_random": 100,
+     "n_random": 100
+    },
+    "other": {
+     "clean_score": 8.699274063110352,
+     "drop": -0.20574431121349335,
+     "score_after": 8.90501880645752,
+     "pair_accuracy_after": 1.0,
+     "random_drop_mean": 0.11972547322511673,
+     "random_drop_max": 1.4338815212249756,
+     "beats_n_random": 3,
+     "n_random": 100
+    },
+    "ranking_names_drop": 5.082643985748291,
+    "ranking_names_clean": 8.960897445678711,
+    "per_feature": {
+     "1511": {
+      "rank_effect_own": 2.8756320476531982,
+      "heldout_effect_own": 5.249632835388184,
+      "heldout_effect_other": -1.4305115314527939e-07,
+      "mean_peak_act": {
+       "girl_rank": 1.2377980947494507,
+       "girl_heldout": 2.283719301223755,
+       "boy_rank": 0.08648433536291122,
+       "boy_heldout": 0.0
+      },
+      "heldout_names_peak_act": {
+       "Anna": 0.0,
+       "Lucy": 3.0356826782226562,
+       "Sue": 2.66168212890625,
+       "Jane": 3.4658849239349365,
+       "Amy": 2.2553462982177734
+      }
+     },
+     "1735": {
+      "rank_effect_own": 0.5813988447189331,
+      "heldout_effect_own": 0.1993924081325531,
+      "heldout_effect_other": -1.4305115314527939e-07,
+      "mean_peak_act": {
+       "girl_rank": 1.0020304918289185,
+       "girl_heldout": 0.3449578583240509,
+       "boy_rank": 0.01159544475376606,
+       "boy_heldout": 0.0
+      },
+      "heldout_names_peak_act": {
+       "Anna": 0.0,
+       "Lucy": 0.0,
+       "Sue": 1.7247892618179321,
+       "Jane": 0.0,
+       "Amy": 0.0
+      }
+     },
+     "905": {
+      "rank_effect_own": 0.4758111536502838,
+      "heldout_effect_own": 0.0470312125980854,
+      "heldout_effect_other": -0.11303691565990448,
+      "mean_peak_act": {
+       "girl_rank": 0.501515805721283,
+       "girl_heldout": 0.036310434341430664,
+       "boy_rank": 0.0,
+       "boy_heldout": 0.09799385815858841
+      },
+      "heldout_names_peak_act": {
+       "Anna": 0.10013587027788162,
+       "Lucy": 0.0814162865281105,
+       "Sue": 0.0,
+       "Jane": 0.0,
+       "Amy": 0.0
+      }
+     },
+     "1630": {
+      "rank_effect_own": 0.46569380164146423,
+      "heldout_effect_own": 3.814697322468419e-07,
+      "heldout_effect_other": -1.4305115314527939e-07,
+      "mean_peak_act": {
+       "girl_rank": 0.32621732354164124,
+       "girl_heldout": 0.0,
+       "boy_rank": 0.0,
+       "boy_heldout": 0.0
+      },
+      "heldout_names_peak_act": {
+       "Anna": 0.0,
+       "Lucy": 0.0,
+       "Sue": 0.0,
+       "Jane": 0.0,
+       "Amy": 0.0
+      }
+     },
+     "1324": {
+      "rank_effect_own": 0.3858192563056946,
+      "heldout_effect_own": 0.0768195167183876,
+      "heldout_effect_other": -0.09270753711462021,
+      "mean_peak_act": {
+       "girl_rank": 0.8577594757080078,
+       "girl_heldout": 0.12717323005199432,
+       "boy_rank": 0.02177557349205017,
+       "boy_heldout": 0.07662667334079742
+      },
+      "heldout_names_peak_act": {
+       "Anna": 0.00844106450676918,
+       "Lucy": 0.41962292790412903,
+       "Sue": 0.0,
+       "Jane": 0.0806240513920784,
+       "Amy": 0.1271781027317047
+      }
+     }
+    }
+   },
+   "boy": {
+    "features": [
+     1314,
+     1416,
+     1532,
+     1197,
+     2037
+    ],
+    "n_candidates": 39,
+    "own": {
+     "clean_score": 8.699274063110352,
+     "drop": 4.338440895080566,
+     "score_after": 4.36083459854126,
+     "pair_accuracy_after": 1.0,
+     "random_drop_mean": 0.16650576889514923,
+     "random_drop_max": 4.275879859924316,
+     "beats_n_random": 100,
+     "n_random": 100
+    },
+    "other": {
+     "clean_score": 9.42003345489502,
+     "drop": -0.3021218180656433,
+     "score_after": 9.72215461730957,
+     "pair_accuracy_after": 1.0,
+     "random_drop_mean": 0.14830642938613892,
+     "random_drop_max": 5.1306915283203125,
+     "beats_n_random": 5,
+     "n_random": 100
+    },
+    "ranking_names_drop": 10.235898971557617,
+    "ranking_names_clean": 9.159494400024414,
+    "per_feature": {
+     "1314": {
+      "rank_effect_own": 2.887624740600586,
+      "heldout_effect_own": 0.6699313521385193,
+      "heldout_effect_other": -0.045842695981264114,
+      "mean_peak_act": {
+       "girl_rank": 0.0,
+       "girl_heldout": 0.03410691022872925,
+       "boy_rank": 1.816886305809021,
+       "boy_heldout": 0.4949215054512024
+      },
+      "heldout_names_peak_act": {
+       "Ben": 0.03510531783103943,
+       "Jack": 0.19266483187675476,
+       "Joe": 1.1146671772003174,
+       "Billy": 0.0,
+       "Jim": 1.1321702003479004
+      }
+     },
+     "1416": {
+      "rank_effect_own": 1.9705299139022827,
+      "heldout_effect_own": 0.9135187268257141,
+      "heldout_effect_other": -0.001243162201717496,
+      "mean_peak_act": {
+       "girl_rank": 0.0,
+       "girl_heldout": 0.006992238573729992,
+       "boy_rank": 2.211052417755127,
+       "boy_heldout": 1.000274896621704
+      },
+      "heldout_names_peak_act": {
+       "Ben": 1.5797027349472046,
+       "Jack": 1.276068925857544,
+       "Joe": 0.0,
+       "Billy": 1.3606362342834473,
+       "Jim": 0.7849655747413635
+      }
+     },
+     "1532": {
+      "rank_effect_own": 1.098357081413269,
+      "heldout_effect_own": 1.2918403148651123,
+      "heldout_effect_other": -0.11059021949768066,
+      "mean_peak_act": {
+       "girl_rank": 0.0216217041015625,
+       "girl_heldout": 0.10964357852935791,
+       "boy_rank": 2.899202585220337,
+       "boy_heldout": 3.0583701133728027
+      },
+      "heldout_names_peak_act": {
+       "Ben": 3.1393871307373047,
+       "Jack": 2.977306604385376,
+       "Joe": 3.527470111846924,
+       "Billy": 2.3953733444213867,
+       "Jim": 3.2523140907287598
+      }
+     },
+     "1197": {
+      "rank_effect_own": 0.9256711006164551,
+      "heldout_effect_own": 0.6256094574928284,
+      "heldout_effect_other": -0.14423628151416779,
+      "mean_peak_act": {
+       "girl_rank": 0.08378490060567856,
+       "girl_heldout": 0.11794616281986237,
+       "boy_rank": 1.052335500717163,
+       "boy_heldout": 0.7336593866348267
+      },
+      "heldout_names_peak_act": {
+       "Ben": 0.0,
+       "Jack": 0.0,
+       "Joe": 1.6299586296081543,
+       "Billy": 0.9142507314682007,
+       "Jim": 1.1240875720977783
+      }
+     },
+     "2037": {
+      "rank_effect_own": 0.8849008679389954,
+      "heldout_effect_own": -1.4305115314527939e-07,
+      "heldout_effect_other": 3.814697322468419e-07,
+      "mean_peak_act": {
+       "girl_rank": 0.0,
+       "girl_heldout": 0.0,
+       "boy_rank": 0.811915397644043,
+       "boy_heldout": 0.0
+      },
+      "heldout_names_peak_act": {
+       "Ben": 0.0,
+       "Jack": 0.0,
+       "Joe": 0.0,
+       "Billy": 0.0,
+       "Jim": 0.0
+      }
+     }
+    }
+   }
+  },
+  "selection_ratio": 5,
+  "n_frames": 6,
+  "n_frames_name_only": 4,
+  "n_frames_noun_name": 2,
+  "n_names": 20,
+  "n_names_heldout_per_gender": 5,
+  "names": {
+   "girl_names_rank": [
+    "Lily",
+    "Mia",
+    "Sara",
+    "Sarah",
+    "Sally"
+   ],
+   "girl_names_heldout": [
+    "Anna",
+    "Lucy",
+    "Sue",
+    "Jane",
+    "Amy"
+   ],
+   "boy_names_rank": [
+    "Tim",
+    "Tom",
+    "Bob",
+    "John",
+    "Tommy"
+   ],
+   "boy_names_heldout": [
+    "Ben",
+    "Jack",
+    "Joe",
+    "Billy",
+    "Jim"
+   ]
+  },
+  "flip_strengths": [
+   0.5,
+   1,
+   1.5,
+   2
+  ],
+  "flip_selective": [
+   {
+    "target": "girl",
+    "strength": 0.5,
+    "kind": "name_only",
+    "n": 20,
+    "add_flip": 0.0,
+    "swap_flip": 0.75,
+    "random_flip": 0.0,
+    "add_score": 3.8598384857177734,
+    "clean_score": 9.42003345489502
+   },
+   {
+    "target": "girl",
+    "strength": 0.5,
+    "kind": "noun_name",
+    "n": 10,
+    "add_flip": 0.0,
+    "swap_flip": 0.0,
+    "random_flip": 0.0,
+    "add_score": 6.515805244445801,
+    "clean_score": 9.824731826782227
+   },
+   {
+    "target": "girl",
+    "strength": 1,
+    "kind": "name_only",
+    "n": 20,
+    "add_flip": 0.75,
+    "swap_flip": 0.9,
+    "random_flip": 0.0,
+    "add_score": -0.43705081939697266,
+    "clean_score": 9.42003345489502
+   },
+   {
+    "target": "girl",
+    "strength": 1,
+    "kind": "noun_name",
+    "n": 10,
+    "add_flip": 0.0,
+    "swap_flip": 0.0,
+    "random_flip": 0.0,
+    "add_score": 3.571361541748047,
+    "clean_score": 9.824731826782227
+   },
+   {
+    "target": "girl",
+    "strength": 1.5,
+    "kind": "name_only",
+    "n": 20,
+    "add_flip": 1.0,
+    "swap_flip": 1.0,
+    "random_flip": 0.0,
+    "add_score": -3.877669095993042,
+    "clean_score": 9.42003345489502
+   },
+   {
+    "target": "girl",
+    "strength": 1.5,
+    "kind": "noun_name",
+    "n": 10,
+    "add_flip": 0.2,
+    "swap_flip": 0.5,
+    "random_flip": 0.0,
+    "add_score": 0.6000418663024902,
+    "clean_score": 9.824731826782227
+   },
+   {
+    "target": "girl",
+    "strength": 2,
+    "kind": "name_only",
+    "n": 20,
+    "add_flip": 1.0,
+    "swap_flip": 1.0,
+    "random_flip": 0.03,
+    "add_score": -6.832758903503418,
+    "clean_score": 9.42003345489502
+   },
+   {
+    "target": "girl",
+    "strength": 2,
+    "kind": "noun_name",
+    "n": 10,
+    "add_flip": 1.0,
+    "swap_flip": 1.0,
+    "random_flip": 0.0,
+    "add_score": -2.778191089630127,
+    "clean_score": 9.824731826782227
+   },
+   {
+    "target": "boy",
+    "strength": 0.5,
+    "kind": "name_only",
+    "n": 20,
+    "add_flip": 0.0,
+    "swap_flip": 0.35,
+    "random_flip": 0.0,
+    "add_score": 5.917639255523682,
+    "clean_score": 8.699274063110352
+   },
+   {
+    "target": "boy",
+    "strength": 0.5,
+    "kind": "noun_name",
+    "n": 10,
+    "add_flip": 0.0,
+    "swap_flip": 0.0,
+    "random_flip": 0.0,
+    "add_score": 8.066078186035156,
+    "clean_score": 9.007217407226562
+   },
+   {
+    "target": "boy",
+    "strength": 1,
+    "kind": "name_only",
+    "n": 20,
+    "add_flip": 0.0,
+    "swap_flip": 1.0,
+    "random_flip": 0.0,
+    "add_score": 3.055356502532959,
+    "clean_score": 8.699274063110352
+   },
+   {
+    "target": "boy",
+    "strength": 1,
+    "kind": "noun_name",
+    "n": 10,
+    "add_flip": 0.0,
+    "swap_flip": 0.0,
+    "random_flip": 0.0,
+    "add_score": 6.875157833099365,
+    "clean_score": 9.007217407226562
+   },
+   {
+    "target": "boy",
+    "strength": 1.5,
+    "kind": "name_only",
+    "n": 20,
+    "add_flip": 0.3,
+    "swap_flip": 1.0,
+    "random_flip": 0.0,
+    "add_score": 0.4139522612094879,
+    "clean_score": 8.699274063110352
+   },
+   {
+    "target": "boy",
+    "strength": 1.5,
+    "kind": "noun_name",
+    "n": 10,
+    "add_flip": 0.0,
+    "swap_flip": 0.0,
+    "random_flip": 0.0,
+    "add_score": 5.467133045196533,
+    "clean_score": 9.007217407226562
+   },
+   {
+    "target": "boy",
+    "strength": 2,
+    "kind": "name_only",
+    "n": 20,
+    "add_flip": 1.0,
+    "swap_flip": 1.0,
+    "random_flip": 0.0,
+    "add_score": -1.946393609046936,
+    "clean_score": 8.699274063110352
+   },
+   {
+    "target": "boy",
+    "strength": 2,
+    "kind": "noun_name",
+    "n": 10,
+    "add_flip": 0.0,
+    "swap_flip": 0.2,
+    "random_flip": 0.0,
+    "add_score": 3.8961052894592285,
+    "clean_score": 9.007217407226562
+   }
+  ],
+  "n_random_sets": 100,
+  "flip_random_draws": 20
+ }
+}

@@ -91,3 +91,14 @@
 1. *Why did the first test pass without answering the question?* The score is a gap between two words; anything that disrupts the context shrinks that gap. Ablation finds everything the behaviour depends on, not just what carries the information. Requiring a feature to fire differently for the two genders isolates the information.
 2. *Why add the reconstruction error back when switching a feature off?* So the only change to the model is that one feature. Without it you would also be measuring the damage from the autoencoder's imperfect reconstruction.
 3. *What is the difference between the ablation and flip tests?* Ablation shows a feature is needed; adding it to the opposite prompts and flipping the answer shows it is enough to carry the information. Here ablation alone never flipped the pronoun, so other features or the error term also carry gender.
+
+## Stage 8: Browser, README and report
+
+**What it did.** Built a single web page (open it straight from the folder) where you pick a feature and see its label, whether it passed the strict test, its blind-test score, its strongest and random examples, and any steering or tracing results. Wrote the README and report so that every number is filled in by a script from the saved result files, and wrote a checker that flags any number in them it cannot trace back.
+
+**Why.** A project like this is only worth showing if a reader can check it. Numbers typed by hand drift out of date and get rounded favourably; numbers filled in from files cannot. Leading with the limits next to each finding keeps the headline honest: the labels are AI-written, the blind test was taken by the same kind of model, and the steering and tracing tests are small.
+
+**Interview questions**
+1. *How do you make sure the numbers in your README are right?* They are not typed. One script collects them from the result files into one JSON file, another fills the README and report from it, and a checker flags any number in the text that is not in that file. The remaining risk is wording, so each claim is also checked against the tables.
+2. *What would you do first to make the interpretability claims stronger?* Have a human check a random sample of the labels, and run the blind test with a different model and with harder non-firing examples than random tokens, because right now the same model family writes and tests the labels.
+3. *Why include the features that failed in the browser and report?* Showing only the successes would overstate the method. Most features did not pass the strict rule, two of six topic features failed to steer, and the first tracing test passed for a misleading reason; a reader needs those to judge the rest.
