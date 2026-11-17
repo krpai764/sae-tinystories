@@ -102,3 +102,14 @@
 1. *How do you make sure the numbers in your README are right?* They are not typed. One script collects them from the result files into one JSON file, another fills the README and report from it, and a checker flags any number in the text that is not in that file. The remaining risk is wording, so each claim is also checked against the tables.
 2. *What would you do first to make the interpretability claims stronger?* Have a human check a random sample of the labels, and run the blind test with a different model and with harder non-firing examples than random tokens, because right now the same model family writes and tests the labels.
 3. *Why include the features that failed in the browser and report?* Showing only the successes would overstate the method. Most features did not pass the strict rule, two of six topic features failed to steer, and the first tracing test passed for a misleading reason; a reader needs those to judge the rest.
+
+## After the review: reruns and corrections
+
+**What happened.** A sceptical read-through of my own write-up found claims the results did not support. I reran the three weakest parts with the success rules written down and committed before each run, added one last steering design, and rewrote the README and report so that every claim matches the new results, including those that got weaker.
+
+**What changed.** My earlier "37 of 200 features are clear" came from verdicts I made myself while knowing which features were controls. Judged blind, only 3 of 200 passed, no different from the control. Labels still predict where features fire much better for the real autoencoder than for the control. Steering toward a label at fluent strengths failed under fixed rules: 1 of 14 features in each of two designs. The pronoun tracing mostly held up against fairer controls, but the biggest effect was partly general damage, and switching features off never changed which pronoun the model chose.
+
+**Interview questions**
+1. *Why write the success rule down before running?* Otherwise you can choose the rule after seeing the numbers, often without noticing, and almost anything will look like a success. A committed rule makes a failure count as a failure.
+2. *Why did the strict-clear result collapse when made blind?* I knew which features came from the control and judged loosely; the blind judges counted strictly, and most randomly chosen firings are weak and off-label for both autoencoders.
+3. *What does an activation-matched control fix?* Switching off features with big activations damages the model more than switching off tiny ones, whatever they mean. Matching random features on activation size separates "this feature matters for this behaviour" from "removing a big vector breaks things".

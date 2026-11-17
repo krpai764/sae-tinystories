@@ -34,6 +34,7 @@ def walk(x):
 
 
 walk(N)
+vals += [abs(v) for v in vals]  # documents may state a negative drop as a positive rise
 # derived values the docs compute from the file (differences are not stored, so also allow sums of counts handled via the file itself)
 known = set()
 for v in vals:

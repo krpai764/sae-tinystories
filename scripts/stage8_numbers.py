@@ -146,6 +146,101 @@ N["trace"] = {
     "n_random_sets": cfg["trace"]["n_random_sets"], "flip_random_draws": cfg["trace"]["flip_random_draws"],
 }
 
+
+# ---------- review reruns (2026-11-17) ----------
+mean_norm = N["setup"]["mean_activation_norm_model_units"]
+N["setup"]["density_gt_1pct"] = s3["runs"][str(cfg["interpret"]["chosen_lambda"])]["final"]["density_gt_1pct"]
+for lam_, r in N["faithfulness"]["runs"].items():
+    r["perplexity_rise"] = r["perplexity_spliced"] / N["faithfulness"]["perplexity_clean"] - 1
+b7_ = J("stage7/baseline.json")
+N["trace"]["recon_only_name_only"] = b7_["name_only"]["recon_only_score"]
+
+# steering designs side by side; vector lengths as a fraction of the mean activation length
+def lengths_d1(fname):
+    out = {}
+    for f in J(fname)["features"]:
+        ks = sorted({r["multiplier"] for r in f["runs"] if r["kind"] == "feature"})
+        out[f["feature"]] = {str(k): next(r["vector_norm_model_units"] for r in f["runs"] if r["kind"] == "feature" and r["multiplier"] == k) / mean_norm for k in ks}
+    return out
+d1len = {**lengths_d1("stage6/steering.json"), **lengths_d1("stage6/steering_extension.json")}
+designs = {}
+for tag, summ, raw in (("design2", "stage6b_summary.json", "stage6b/steering_v2.json"), ("design3", "stage6c_summary.json", "stage6b/steering_v3.json")):
+    S_, D_ = J(summ), J(raw)
+    lens = {f["feature"]: {k: v / mean_norm for k, v in f["vector_norm_model_units"].items()} for f in D_["features"]}
+    designs[tag] = {"fluent_threshold_ppl": S_["fluent_threshold_ppl"], "unsteered_ppl_median": S_["unsteered_ppl_median"], "multipliers": S_["multipliers"],
+                    "n_prompts": S_["n_prompts"], "n_random": S_["n_random_directions"], "groups": S_["groups"],
+                    "n_steer_total": sum(r["steers"] for r in S_["features"]), "n_features": len(S_["features"]),
+                    "features": {r["feature"]: {"group": r["group"], "steers": r["steers"], "success_strengths": r["success_strengths"],
+                                                "on_label_strengths": r["on_label_strengths"], "fluent_strengths": r["fluent_strengths"],
+                                                "max_fluent_length_frac": max([lens[r["feature"]][str(k)] for k in r["fluent_strengths"]], default=0.0),
+                                                "length_frac_range": [min(lens[r["feature"]].values()), max(lens[r["feature"]].values())],
+                                                "best_fluent_hits": max([r["by_k"][str(k)]["feature_hits_mean"] for k in r["fluent_strengths"]], default=0.0),
+                                                "best_fluent_random_hits": max([r["by_k"][str(k)]["random_hits_mean"] for k in r["fluent_strengths"]], default=0.0),
+                                                "by_k": r["by_k"]} for r in S_["features"]}}
+    if tag == "design3":
+        designs[tag]["n_steer_under_design2_cutoff"] = sum(r["steers_under_v2_cutoff"] for r in S_["features"])
+d1 = {}
+for m in N["steering"]["main"]:
+    d1[m["feature"]] = {"kind": "main", "first_k_all_broken": m["first_k_all_broken"], "length_frac_range": [min(d1len[m["feature"]].values()), max(d1len[m["feature"]].values())],
+                        "first_broken_length_frac": d1len[m["feature"]][str(m["first_k_all_broken"])] if m["first_k_all_broken"] else None}
+for e in N["steering"]["extension"]:
+    d1[e["feature"]] = {"kind": "extension", "max_unbroken_k": e["max_unbroken_k"], "length_frac_range": [min(d1len[e["feature"]].values()), max(d1len[e["feature"]].values())],
+                        "more_theme_words_than_random": e["max_theme_words_unbroken_feature"] > e["max_theme_words_unbroken_random"],
+                        "theme_feature": e["max_theme_words_unbroken_feature"], "theme_random": e["max_theme_words_unbroken_random"]}
+designs["design1"] = {"features": d1, "n_prompts": len(J("stage6/steering.json")["prompts"]),
+                      "n_main_eligible": N["interpretation"]["real_features_blind_5of5_and_clear"]}
+N["steering_designs"] = designs
+
+# tracing rerun
+t2 = J("stage7b/analysis.json")
+N["trace_v2"] = {"baseline": t2["baseline"], "n_firing": t2["n_firing"], "story_loss_clean": t2["story_loss_clean"], "gate_passed": t2["gate_passed"],
+                 "R1_passed": t2["R1_passed"], "n_selective_candidates": {g: t2[f"n_selective_candidates_{g}"] for g in ("girl", "boy")},
+                 "loss_stories": cfg["trace_v2"]["loss_stories"], "loss_random_sets": cfg["trace_v2"]["loss_random_sets"], "n_random_sets": cfg["trace_v2"]["n_random_sets"],
+                 "n_frames_heldout": len(cfg["trace_v2"]["frames_heldout"]), "flip_random_draws": cfg["trace_v2"]["flip_random_draws"]}
+for name, s_ in (("top10", t2["top10"]), ("girl", t2["selective"]["girl"]), ("boy", t2["selective"]["boy"])):
+    N["trace_v2"][name] = {"features": s_["features"], "measures": s_["measures"], "matched_random": s_["matched_random"], "story_loss_change": s_["story_loss_change"],
+                           "specificity": s_.get("specificity"), "R2_passed": s_.get("R2_passed"),
+                           "heldout_effect_each": s_["heldout_effect_each"], "rank_effect_each": s_["rank_effect_each"],
+                           "n_heldout_effect_near_zero": sum(abs(x) < 0.1 for x in s_["heldout_effect_each"]),
+                           "peak_act_heldout_by_name": s_["peak_act_heldout_by_name"]}
+N["trace_v2"]["flip"] = {t: {"R3_passed": t2["flip"][t]["R3_passed"], "added_features_of": t2["flip"][t]["added_features_of"],
+                             "by_strength": [{"strength": r["strength"], "add": r["name_only"]["add"], "swap": r["name_only"]["swap"], "random": r["name_only"]["random"],
+                                              "noun_add": r["noun_name"]["add"], "added_norm_name_pos": r["added_norm_name_pos"]} for r in t2["flip"][t]["by_strength"]]}
+                         for t in ("girl", "boy")}
+# feature 1511 peak per held-out girl name; 1532 per held-out boy name
+pk = {j: d for j, d in zip(t2["top10"]["features"], t2["top10"]["peak_act_heldout_by_name"])}
+N["trace_v2"]["peak_1511"] = {n: pk[1511][n] for n in cfg["trace"]["girl_names_heldout"]}
+N["trace_v2"]["peak_1532"] = {n: pk[1532][n] for n in cfg["trace"]["boy_names_heldout"]}
+N["trace_v2"]["girl_effect_1511"] = t2["selective"]["girl"]["heldout_effect_each"][t2["selective"]["girl"]["features"].index(1511)]
+
+# Stage 5 blind verdicts and fresh-text blind test
+s5 = J("stage5b_scores.json")
+N["stage5_v2"] = s5
+k5 = J("stage5b/key.json")
+import statistics
+N["stage5_v2"]["median_random_firing_act_real"] = statistics.median(statistics.median(e["act"] for e in it["random"]) for it in k5["verdict_items"] if it["tag"] == "real")
+N["stage5_v2"]["median_top_act_real"] = statistics.median(statistics.median(e["act"] for e in it["top"]) for it in k5["verdict_items"] if it["tag"] == "real")
+N["stage5_v2"]["n_judges_per_item"] = cfg["stage5_v2"]["blind_verdicts"]["judges"]
+N["stage5_v2"]["n_verdict_files"] = len(list((R / "stage5b").glob("verdict_items_*.txt")))
+N["stage5_v2"]["n_puzzle_files"] = len(list((R / "stage5b").glob("puzzles_*.txt")))
+
+
+import re as _re
+_r = cfg["stage5_v2"]["blind_verdicts"]["strict_clear_rule"]
+m_ = _re.search(r"top_fit >= (\d+) of (\d+) AND random_fit >= (\d+) of (\d+)", _r)
+N["stage5_v2"]["rule"] = {"top_min": int(m_.group(1)), "top_n": int(m_.group(2)), "random_min": int(m_.group(3)), "random_n": int(m_.group(4))}
+N["stage5_v2"]["selective_ratio"] = cfg["trace_v2"]["selective_ratio"]
+m_ = _re.search(r"at least (\d+) of the (\d+) prompts", cfg["steering_v2"]["success_rule"]["on_label"])
+N["steering_designs"]["rule_min_wins"], N["steering_designs"]["rule_n_prompts"] = int(m_.group(1)), int(m_.group(2))
+N["interpretation"]["puzzles_per_subagent"] = N["interpretation"]["n_puzzles"] // N["interpretation"]["n_subagents"]
+lab_ = {int(r["feature"]): r["label"] for r in rows if r["set"] == "real"}
+N["steering_designs"]["design1"]["example_topic_label_left_out"] = {"feature": 1470, "label": lab_[1470]}
+
+
+m_ = _re.search(r"\(([\d,]+) permutations", cfg["stage5_v2"]["success_rule"]["blind_test"])
+N["stage5_v2"]["n_permutations"] = int(m_.group(1).replace(",", ""))
+N["stage5_v2"]["p_resolution"] = 1 / N["stage5_v2"]["n_permutations"]
+
 (R / "headline_numbers.json").write_text(json.dumps(N, indent=1, ensure_ascii=False))
 print("wrote results/headline_numbers.json")
 print("width", width, "| top-10 features firing on both genders:", len(shared), shared)
