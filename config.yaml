@@ -193,6 +193,25 @@ trace_v2:                   # Review rerun 1b. Everything in this block was fixe
     R3_flip: "for each direction, passes if at some strength <= 1.5 the pair preference flips on a majority of the 4 held-out name-only prompts for at least 4 of the 5 held-out names, while random directions at that strength flip a majority for 0 of 5 names (flip rate averaged over draws). Top-1 rates are reported beside it."
     reading: "R1 passing would support 'the highest-ranked features matter beyond their activation size'. R2 and R3 passing would support 'gender-selective features carry pronoun information that transfers to new names and new sentences'. If the selective features turn out to fire on specific names only, that is reported as a limit whatever the rules say."
 
+stage5_v2:                  # Review rerun 1c. Everything in this block was fixed and committed BEFORE the run.
+  fresh_text: "the held-out split (validation stories). The real SAE never trained on it; for the control, the shuffled-weights model is run on these same stories, so the control SAE never trained on them either. Neither labeller saw them."
+  blind_verdicts:
+    items: "all 200 real + 50 control labelled features, mixed, shuffled and given anonymous ids; judges are not told there are two sources"
+    evidence: "the AI-written label, the feature's 20 strongest training examples, and 10 firings sampled uniformly from ALL its firings on the fresh text (new sample, not the 5 the labeller saw)"
+    judges: 2               # independent fresh sub-agents per item; 10 files of 25 items -> 20 sub-agents
+    judge_output: "top_fit = how many of the 20 top examples are instances of what the label describes; random_fit = how many of the 10 random firings are"
+    n_random_firings: 10
+    strict_clear_rule: "a judge calls a feature clear if top_fit >= 16 of 20 AND random_fit >= 8 of 10; the feature is strict-clear only if BOTH judges call it clear"
+    seed_offset: 301
+  control_blind_test:
+    items: "the 50 labelled control features and the first 50 real features (same size), mixed and anonymised; 4 files of 25 -> 4 fresh sub-agents"
+    puzzle: "label + 5 firing snippets (uniform among all firings) + 5 non-firing snippets, all from the fresh text; pick the 5 that fire"
+    seed_offset: 302
+  success_rule:
+    verdicts: "'real features are more often strict-clear than control features' is supported if a one-sided Fisher exact test on the strict-clear counts (real vs control) gives p < 0.05. The shares are reported whatever they are, with judge agreement."
+    blind_test: "'real labels predict firings better than control labels' is supported if real-50 mean accuracy exceeds control mean accuracy with one-sided permutation p < 0.05 (10,000 permutations over features). Control vs chance (0.5) is reported with the same simulation as before, and per-sub-agent means are shown."
+    known_limits: "labels themselves were written non-blind; the control SAE is denser (L0 56 vs 27) and saw less data; labeller, judges and guessers are the same model family."
+
 generation:
   seed: 1234                # same seed + prompt -> same story
   prompts:
